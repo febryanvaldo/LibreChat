@@ -1,4 +1,17 @@
+version: 1.1.6
+
 cache: true
+
+interface:
+privacyPolicy:
+externalUrl: '#'
+openNewTab: true
+termsOfService:
+externalUrl: '#'
+openNewTab: true
+
+cache: true
+
 registration:
   socialLogins:
     - discord
@@ -258,7 +271,6 @@ endpoints:
       titleModel: google/gemini-flash-1.5-8b
       summarize: false
       summaryModel: google/gemini-flash-1.5-8b
-      forcePrompt: false
       modelDisplayLabel: OpenRouter
       iconURL: 'https://i.febryan.me/ofh3f.png'
     - name: APIpie
