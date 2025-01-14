@@ -263,9 +263,9 @@ endpoints:
           - xwin-lm/xwin-lm-70b
         fetch: false
       titleConvo: true
-      titleModel: google/gemini-flash-1.5-8b
+      titleModel: openai/gpt-4o-mini
       summarize: false
-      summaryModel: google/gemini-flash-1.5-8b
+      summaryModel: openai/gpt-4o-mini
       modelDisplayLabel: OpenRouter
       iconURL: 'https://i.febryan.me/ofh3f.png'
     - name: APIpie
@@ -597,9 +597,9 @@ endpoints:
           - zephyr-orpo-141b-A35b-v0.1
         fetch: false
       titleConvo: true
-      titleModel: gemini-1.5-flash-8b
+      titleModel: gpt-4o-mini
       summarize: false
-      summaryModel: gemini-1.5-flash-8b
+      summaryModel: gpt-4o-mini
       modelDisplayLabel: APIpie
       iconURL: 'https://i.febryan.me/fyi7g.png'
     - name: UnifyAI
@@ -760,9 +760,9 @@ endpoints:
           - qwen-qwq-32b-preview@together-ai
         fetch: false
       titleConvo: true
-      titleModel: gemini-1.5-flash@vertex-ai
+      titleModel: gpt-4o-mini@openai
       summarize: false
-      summaryModel: gemini-1.5-flash@vertex-ai
+      summaryModel: gpt-4o-mini@openai
       dropParams:
         - stop
         - user
