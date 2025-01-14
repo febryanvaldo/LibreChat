@@ -9,19 +9,21 @@ registration:
     - openid
 endpoints:
   custom:
-    - name: OpenRouter
-      apiKey: '${OPENROUTER_KEY}'
-      baseURL: 'https://openrouter.ai/api/v1/'
+    # OpenRouter.ai
+    # Model list: https://openrouter.ai/models
+    # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
+    - name: "OpenRouter"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
       models:
-        default: ["openrouter/auto"]
+        default: ["openai/gpt-3.5-turbo"]
         fetch: true
-      dropParams:
-        - stop
       titleConvo: true
-      titleModel: google/gemini-flash-1.5-8b
+      titleModel: "google/gemini-flash-1.5-8b"
       summarize: false
-      summaryModel: google/gemini-flash-1.5-8b
-      modelDisplayLabel: OpenRouter
+      summaryModel: "google/gemini-flash-1.5-8b"
+      forcePrompt: false
+      modelDisplayLabel: "OpenRouter"
       iconURL: 'https://i.febryan.me/ofh3f.png'
       
     - name: APIpie
