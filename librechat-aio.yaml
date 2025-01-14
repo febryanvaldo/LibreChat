@@ -1,17 +1,12 @@
 version: 1.1.6
-
-cache: true
-
 interface:
-privacyPolicy:
-externalUrl: '#'
-openNewTab: true
-termsOfService:
-externalUrl: '#'
-openNewTab: true
-
+  privacyPolicy:
+    externalUrl: 'https://libre.febryan.me/#'
+    openNewTab: true
+  termsOfService:
+    externalUrl: 'https://libre.febryan.me/#'
+    openNewTab: true
 cache: true
-
 registration:
   socialLogins:
     - discord
