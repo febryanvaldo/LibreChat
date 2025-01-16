@@ -1,11 +1,10 @@
----
 version: 16.1.25
 interface:
   privacyPolicy:
-    externalUrl: https://libre.febryan.me/#
+    externalUrl: 'https://libre.febryan.me/#'
     openNewTab: true
   termsOfService:
-    externalUrl: https://libre.febryan.me/#
+    externalUrl: 'https://libre.febryan.me/#'
     openNewTab: true
 cache: true
 registration:
@@ -18,8 +17,8 @@ registration:
 endpoints:
   custom:
     - name: OpenRouter
-      apiKey: ${OPENROUTER_KEY}
-      baseURL: https://openrouter.ai/api/v1
+      apiKey: '${OPENROUTER_KEY}'
+      baseURL: 'https://openrouter.ai/api/v1'
       models:
         default:
           - openrouter/auto
@@ -30,15 +29,15 @@ endpoints:
       summaryModel: openai/gpt-4o-mini
       forcePrompt: false
       modelDisplayLabel: OpenRouter
-      iconURL: https://i.febryan.me/ofh3f.png
+      iconURL: 'https://i.febryan.me/ofh3f.png'
     - name: APIpie
-      apiKey: ${APIPIE_API_KEY}
-      baseURL: https://apipie.ai/v1/
+      apiKey: '${APIPIE_API_KEY}'
+      baseURL: 'https://apipie.ai/v1/'
       models:
         default:
           - airoboros-70b
           - airoboros-l2-70b
-          - anthropic.claude-3-5-sonnet-20240620-v1:0
+          - 'anthropic.claude-3-5-sonnet-20240620-v1:0'
           - chat-bison
           - chatgpt-4o-latest
           - chatx_cheap_128k
@@ -62,7 +61,7 @@ endpoints:
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
-          - claude-3-5-sonnet-20240620-v1:0
+          - 'claude-3-5-sonnet-20240620-v1:0'
           - claude-3-5-sonnet-20241022
           - claude-3-5-sonnet-20241022-v2
           - claude-3-5-sonnet-latest
@@ -75,7 +74,7 @@ endpoints:
           - claude-3.5-haiku-20241022
           - claude-instant-v1
           - claude-v2
-          - claude-v2:1
+          - 'claude-v2:1'
           - claude2
           - command
           - command-light
@@ -217,11 +216,11 @@ endpoints:
           - llama2-13b-chat-v1
           - llama2-70b-chat-v1
           - llama3-1
-          - llama3-1-405b-instruct-v1:0
+          - 'llama3-1-405b-instruct-v1:0'
           - llama3-1-70b-instruct-v1
-          - llama3-1-70b-instruct-v1:0
+          - 'llama3-1-70b-instruct-v1:0'
           - llama3-1-8b-instruct-v1
-          - llama3-1-8b-instruct-v1:0
+          - 'llama3-1-8b-instruct-v1:0'
           - llama3-2
           - llama3-2-11b-instruct-v1
           - llama3-2-1b-instruct-v1
@@ -229,9 +228,9 @@ endpoints:
           - llama3-2-90b-instruct-v1
           - llama3-3-70b-instruct-v1
           - llama3-70b-instruct-v1
-          - llama3-70b-instruct-v1:0
+          - 'llama3-70b-instruct-v1:0'
           - llama3-8b-instruct-v1
-          - llama3-8b-instruct-v1:0
+          - 'llama3-8b-instruct-v1:0'
           - lzlv-70b-fp16-hf
           - magnum-72b
           - magnum-v2-72b
@@ -364,10 +363,10 @@ endpoints:
       summarize: false
       summaryModel: gpt-4o-mini
       modelDisplayLabel: APIpie
-      iconURL: https://i.febryan.me/fyi7g.png
+      iconURL: 'https://i.febryan.me/fyi7g.png'
     - name: UnifyAI
-      apiKey: ${UNIFY_API_KEY}
-      baseURL: https://api.unify.ai/v0/
+      apiKey: '${UNIFY_API_KEY}'
+      baseURL: 'https://api.unify.ai/v0/'
       models:
         default:
           - chatgpt-4o-latest@openai
@@ -532,7 +531,4 @@ endpoints:
         - frequency_penalty
         - presence_penalty
       modelDisplayLabel: UnifyAI
-      iconURL: https://i.febryan.me/pnpqd.png
-
----
-null
+      iconURL: 'https://i.febryan.me/pnpqd.png'
