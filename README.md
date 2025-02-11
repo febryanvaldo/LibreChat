@@ -14,7 +14,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 1. Choose either `librechat-env.yaml` or `librechat-user-provided.yaml`.
 2. Copy the RAW URL of the selected file.
 3. Locate and edit your `.env` file in the project folder.
-4. Uncomment the following section and replace `<RAW_URL_GOES_HERE>` with the RAW URL:
+4. Uncomment the following section and replace `<RAW_URL_GOES_HERE>` with the RAW URL provided below.
 
     ```plaintext
     #===============#
@@ -25,7 +25,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
     CONFIG_PATH=<RAW_URL_GOES_HERE>
     ```
   
-  5. If you are using `librechat-env.yaml`, edit the following section
+  5. If you are using `librechat-env.yaml`, replace `<ENV_GOES_HERE>` with the .ENV Configuration provided below.
      
     ```
     #===================================#
@@ -33,7 +33,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
     #===================================#
     # https://www.librechat.ai/docs/configuration/librechat_yaml/ai_endpoints
 
-    <Place the .ENV Configuration Here>
+    <ENV_GOES_HERE>
 
     ```
 
