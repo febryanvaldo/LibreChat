@@ -26,6 +26,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
     ```
   
   5. If you are using `librechat-env.yaml`, edit the following section
+     
     ```
     #===================================#
     # Known Endpoints - librechat.yaml  #
