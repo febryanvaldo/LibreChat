@@ -20,8 +20,6 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
   - [Update Policy](#update-policy)
   - [Validation and Formatting](#validation-and-formatting)
   - [Additional Resources](#additional-resources)
-  - [Contributing](#contributing)
-  - [License](#license)
 
 ---
 
@@ -188,19 +186,3 @@ To validate and format your YAML configuration files, you can use these online t
 For detailed documentation on LibreChat configuration, please see the [LibreChat Custom Config Documentation](https://www.librechat.ai/docs/configuration).
 
 ---
-
-## Contributing
-
-Contributions are welcome! If you encounter issues or have suggestions, feel free to open an issue or submit a pull request. Your feedback is invaluable in improving this project.
-
-For more details, please see our [Contributing Guidelines](CONTRIBUTING.md).
-
----
-
-## License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
---------------------------------------------------
-
-This enhanced README provides a clear structure and professional appearance while remaining fully functional for GitHub users. Enjoy and happy coding!
