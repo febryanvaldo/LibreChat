@@ -89,7 +89,7 @@ To validate and format your YAML configuration, you can use the following tools:
 
 ## Additional Resources
 
-For more detailed information regarding LibreChat configuration, refer to the [LibreChat Custom Config Documentation](https://www.librechat.ai/docs/configuration).
+For more detailed information regarding LibreChat configuration, refers [LibreChat Custom Config Documentation](https://www.librechat.ai/docs/configuration).
 
 ---
 
