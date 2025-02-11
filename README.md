@@ -16,26 +16,29 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 3. Locate and edit your `.env` file in the project folder.
 4. Uncomment the following section and replace `<RAW_URL_GOES_HERE>` with the RAW URL provided below.
 
-    ```plaintext
-    #===============#
-    # Configuration #
-    #===============#
-    # Use an absolute path, a relative path, or a URL
+```plaintext
 
-    CONFIG_PATH=<RAW_URL_GOES_HERE>
-    ```
+#===============#
+# Configuration #
+#===============#
+# Use an absolute path, a relative path, or a URL
+
+CONFIG_PATH=<RAW_URL_GOES_HERE>
+
+```
   
   5. If you are using `librechat-env.yaml`, replace `<ENV_GOES_HERE>` with the .ENV Configuration provided below.
      
-    ```
-    #===================================#
-    # Known Endpoints - librechat.yaml  #
-    #===================================#
-    # https://www.librechat.ai/docs/configuration/librechat_yaml/ai_endpoints
+```plaintext
 
-    <ENV_GOES_HERE>
+#===================================#
+# Known Endpoints - librechat.yaml  #
+#===================================#
+# https://www.librechat.ai/docs/configurationlibrechat_yamlai_endpoints
 
-    ```
+<ENV_GOES_HERE>
+
+```
 
 ### Advanced Usage
 
@@ -46,34 +49,36 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 ## RAW URLs
 
 - **`librechat-env.yaml`**:
-  ```plaintext
-  https://raw.githubusercontent.com/febryanvaldo/LibreChat/refs/heads/main/librechat-env.yaml
-  ```
+```plaintext
+https://raw.githubusercontent.com/febryanvaldo/LibreChat/refs/heads/main/librechat-env.yaml
+```
 
 - **`librechat-user-provided.yaml`**:
-  ```plaintext
-  https://raw.githubusercontent.com/febryanvaldo/LibreChat/refs/heads/main/librechat-user-provided.yaml
-  ```
+```plaintext
+https://raw.githubusercontent.com/febryanvaldo/LibreChat/refs/heads/main/librechat-user-provided.yaml
+```
 
 ## .ENV Configuration
-  ```
-  COHERE_KEY=YourAPIKey
-  DEEPSEEK_KEY=YourAPIKey
-  MISTRALAI_KEY=YourAPIKey
-  PERPLEXITY_KEY=YourAPIKey
-  XAI_KEY=YourAPIKey
-  GROQ_KEY=YourAPIKey
-  SAMBANOVA_KEY=YourAPIKey
-  FIREWORKSAI_KEY=YourAPIKey
-  NEBIUS_KEY=YourAPIKey
-  SHUTTLEAI_KEY=YourAPIKey
-  TOGETHERAI_KEY=YourAPIKey
-  APIPIE_KEY=YourAPIKey
-  NANOGPT_KEY=YourAPIKey
-  OPENROUTER_KEY=YourAPIKey
-  REQUESTY_KEY=YourAPIKey
-  UNIFY_KEY=YourAPIKey
-  ```
+```
+
+COHERE_KEY=YourAPIKey
+DEEPSEEK_KEY=YourAPIKey
+MISTRALAI_KEY=YourAPIKey
+PERPLEXITY_KEY=YourAPIKey
+XAI_KEY=YourAPIKey
+GROQ_KEY=YourAPIKey
+SAMBANOVA_KEY=YourAPIKey
+FIREWORKSAI_KEY=YourAPIKey
+NEBIUS_KEY=YourAPIKey
+SHUTTLEAI_KEY=YourAPIKey
+TOGETHERAI_KEY=YourAPIKey
+APIPIE_KEY=YourAPIKey
+NANOGPT_KEY=YourAPIKey
+OPENROUTER_KEY=YourAPIKey
+REQUESTY_KEY=YourAPIKey
+UNIFY_KEY=YourAPIKey
+
+```
 
 ## Validation and Formatting
 
