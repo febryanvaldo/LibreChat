@@ -1,7 +1,3 @@
-Below is an enhanced version of your README.md. It adds a table of contents, clearer section headings, improved code block formatting, and minor wording tweaks to give it a professional look. Feel free to adjust links, badges, or any text to your needs.
-
---------------------------------------------------
-
 # LibreChat YAML Configuration Files
 
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
