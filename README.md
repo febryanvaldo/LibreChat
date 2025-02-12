@@ -55,7 +55,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    CONFIG_PATH=<RAW_URL_GOES_HERE>
    ```
 
-5. **(For librechat-env.yaml only) Configure your environment keys**  
+5. **Configure your environment keys (For `librechat-env.yaml` only)**
    Replace `<ENV_GOES_HERE>` with the provided .env configuration values:
 
    ```plaintext
