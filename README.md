@@ -138,7 +138,11 @@ UNIFY_KEY=YourAPIKey
 🤖 Requesty    : 157 models (-3 models)
 🤖 UnifyAI     : 160 models (+2 models)
 ==================================================
-2025-02-12 11:06:48
+2025-02-11 10:11:47
+==================================================
+
+==================================================
+2025-02-12 13:40:21
 ==================================================
 🤖 Anthropic   : 6 models (no change)
 🤖 Google      : 26 models (no change)
@@ -155,10 +159,13 @@ UNIFY_KEY=YourAPIKey
 🤖 ShuttleAI   : 138 models (no change)
 🤖 Together AI : 49 models (no change)
 🤖 APIpie      : 273 models (+1 model)
-🤖 NanoGPT     : 142 models (+1 model)
+🤖 NanoGPT     : 145 models (+4 models)
 🤖 OpenRouter  : 230 models (+2 models)
 🤖 Requesty    : 157 models (no change)
 🤖 UnifyAI     : 160 models (no change)
+==================================================
+2025-02-12 13:40:21
+==================================================
 ```
 
 *Note: The above data reflects the model count at the indicated timestamps for the last 2 days*
