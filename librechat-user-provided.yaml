@@ -1,4 +1,4 @@
-version: 1.2.1.110225
+version: 1.2.1.120225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -146,6 +146,7 @@ endpoints:
       baseURL: https://api.groq.com/openai/v1
       models:
         default:
+          - allam-2-7b
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-70b-specdec
           - deepseek-r1-distill-qwen-32b
@@ -648,7 +649,6 @@ endpoints:
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-3-sonar-large-32k-chat
-          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -716,15 +716,17 @@ endpoints:
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
           - mistral-large-2411
+          - mistral-large-latest
           - mistral-nemo
           - mistral-small
           - mistral-small-2402-v1
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - Mixtral-8x22B-Instruct-v0.1
@@ -738,8 +740,8 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - mythomax-l2-13b
           - MythoMax-L2-13b
+          - mythomax-l2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -774,8 +776,8 @@ endpoints:
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -883,6 +885,7 @@ endpoints:
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
+          - kimi-k1.5-preview
           - learnlm-1.5-pro-experimental
           - Llama-3.1-Tulu-3-405B
           - Llama-3.3+3.1-70B-ArliAI-RPMax-v1.3
@@ -1092,8 +1095,10 @@ endpoints:
           - mistralai/mistral-large-2411
           - mistralai/mistral-medium
           - mistralai/mistral-nemo
+          - mistralai/mistral-nemo:free
           - mistralai/mistral-small
           - mistralai/mistral-small-24b-instruct-2501
+          - mistralai/mistral-small-24b-instruct-2501:free
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b
