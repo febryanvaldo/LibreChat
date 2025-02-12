@@ -25,8 +25,8 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 
 ## Key Differences
 
-- **`librechat-env.yaml`** – Uses `.env` variables so you don’t need to manually provide the API key.
-- **`librechat-user-provided.yaml`** – Allows you to manually input your API key via the LibreChat front end.
+- **`librechat-env.yaml`** - Uses `.env` variables with the API key hardcoded in the `.env` file, making it suitable for single-user usage.
+- **`librechat-user-provided.yaml`** – Allows users to manually input the API key via the LibreChat front end, suitable for multi-user environments.
 
 ---
 
