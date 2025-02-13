@@ -1,4 +1,4 @@
-version: 1.2.1.120225
+version: 1.2.1.130225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -649,6 +649,7 @@ endpoints:
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-3-sonar-large-32k-chat
+          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -673,7 +674,6 @@ endpoints:
           - llama-guard-2-8b
           - Llama-Guard-3-11B-Vision-Turbo
           - Llama-Guard-7b
-          - Llama-Rank-V1
           - llama2-13b-chat-v1
           - llama2-70b-chat-v1
           - llama3-1
@@ -716,8 +716,8 @@ endpoints:
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -776,8 +776,8 @@ endpoints:
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - QwQ-32B-Preview
           - qwq-32b-preview
+          - QwQ-32B-Preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -946,7 +946,10 @@ endpoints:
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - x-ai/grok-2-1212
           - x-ai/grok-beta
+          - yi-34b-chat-0205
+          - yi-34b-chat-200k
           - yi-large
+          - yi-large-turbo
           - yi-lightning
           - yi-medium-200k
         fetch: false
@@ -1073,6 +1076,7 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-3.3-70b-instruct:free
           - meta-llama/llama-guard-2-8b
+          - meta-llama/llama-guard-3-8b
           - microsoft/phi-3-medium-128k-instruct
           - microsoft/phi-3-medium-128k-instruct:free
           - microsoft/phi-3-mini-128k-instruct
@@ -1146,6 +1150,7 @@ endpoints:
           - openai/o1-preview
           - openai/o1-preview-2024-09-12
           - openai/o3-mini
+          - openai/o3-mini-high
           - openchat/openchat-7b
           - openchat/openchat-7b:free
           - perplexity/llama-3.1-sonar-huge-128k-online
