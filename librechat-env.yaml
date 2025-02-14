@@ -1,4 +1,4 @@
-version: 1.2.1.130225
+version: 1.2.1.140225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -146,7 +146,6 @@ endpoints:
       baseURL: https://api.groq.com/openai/v1
       models:
         default:
-          - allam-2-7b
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-70b-specdec
           - deepseek-r1-distill-qwen-32b
@@ -163,6 +162,7 @@ endpoints:
           - llama3-8b-8192
           - mixtral-8x7b-32768
           - qwen-2.5-32b
+          - qwen-2.5-coder-32b
         fetch: false
       titleConvo: true
       titleModel: llama-3.2-3b-preview
@@ -247,6 +247,7 @@ endpoints:
           - deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
           - deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct-fast
           - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-V3
           - google/gemma-2-27b-it
           - google/gemma-2-27b-it-fast
@@ -279,6 +280,7 @@ endpoints:
           - mistralai/Mixtral-8x22B-Instruct-v0.1-fast
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - mistralai/Mixtral-8x7B-Instruct-v0.1-fast
+          - NousResearch/Hermes-3-Llama-405B
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF-fast
           - Qwen/QVQ-72B-preview
@@ -713,11 +715,11 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
+          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -745,8 +747,8 @@ endpoints:
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -769,15 +771,13 @@ endpoints:
           - qvq-72b-preview
           - qwen-2-72b-instruct
           - qwen-2-7b-instruct
-          - qwen-2-vl-72b-instruct
-          - qwen-2-vl-7b-instruct
           - qwen-2.5-72b-instruct
           - qwen-2.5-7b-instruct
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -832,6 +832,7 @@ endpoints:
           - cognitivecomputations/dolphin-mixtral-8x22b
           - cohere/command-r
           - cohere/command-r-plus-08-2024
+          - deep-research
           - deepclaude
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-chat
@@ -1001,8 +1002,9 @@ endpoints:
           - anthropic/claude-3.5-sonnet-20240620
           - anthropic/claude-3.5-sonnet-20240620:beta
           - anthropic/claude-3.5-sonnet:beta
-          - cognitivecomputations/dolphin-mixtral-8x22b
           - cognitivecomputations/dolphin-mixtral-8x7b
+          - cognitivecomputations/dolphin3.0-mistral-24b:free
+          - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
           - cohere/command
           - cohere/command-r
           - cohere/command-r-03-2024
@@ -1018,7 +1020,6 @@ endpoints:
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-distill-llama-70b
           - deepseek/deepseek-r1-distill-llama-70b:free
-          - deepseek/deepseek-r1-distill-llama-8b
           - deepseek/deepseek-r1-distill-qwen-1.5b
           - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-32b
@@ -1054,7 +1055,6 @@ endpoints:
           - infermatic/mn-inferor-12b
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
-          - jondurbin/airoboros-l2-70b
           - liquid/lfm-3b
           - liquid/lfm-40b
           - liquid/lfm-7b
@@ -1163,8 +1163,6 @@ endpoints:
           - pygmalionai/mythalion-13b
           - qwen/qvq-72b-preview
           - qwen/qwen-2-72b-instruct
-          - qwen/qwen-2-7b-instruct
-          - qwen/qwen-2-7b-instruct:free
           - qwen/qwen-2-vl-72b-instruct
           - qwen/qwen-2-vl-7b-instruct
           - qwen/qwen-2.5-72b-instruct
@@ -1183,9 +1181,7 @@ endpoints:
           - sao10k/l3.1-70b-hanami-x1
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
-          - sophosympatheia/midnight-rose-70b
           - sophosympatheia/rogue-rose-103b-v0.2:free
-          - teknium/openhermes-2.5-mistral-7b
           - thedrummer/rocinante-12b
           - thedrummer/unslopnemo-12b
           - undi95/remm-slerp-l2-13b
