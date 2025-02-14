@@ -268,7 +268,7 @@ endpoints:
       iconURL: https://i.febryan.me/4mbk2.svg
     - name: Kluster AI
       apiKey: user_provided
-      baseURL: https://api.hyperbolic.xyz/v1
+      baseURL: https://api.kluster.ai/v1
       models:
         default:
           - deepseek-ai/DeepSeek-R1
