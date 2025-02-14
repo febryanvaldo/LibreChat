@@ -235,6 +235,53 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: Fireworks AI
       iconURL: https://i.febryan.me/r99kc.svg
+    - name: Hyperbolic
+      apiKey: ${HYPERBOLIC_KEY}
+      baseURL: https://api.hyperbolic.xyz/v1
+      models:
+        default:
+          - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-Zero
+          - deepseek-ai/DeepSeek-V3
+          - meta-llama/Llama-3.2-3B-Instruct
+          - meta-llama/Llama-3.3-70B-Instruct
+          - meta-llama/Meta-Llama-3-70B-Instruct
+          - meta-llama/Meta-Llama-3.1-405B
+          - meta-llama/Meta-Llama-3.1-405B-FP8
+          - meta-llama/Meta-Llama-3.1-405B-Instruct
+          - meta-llama/Meta-Llama-3.1-405B-Instruct-Virtuals
+          - meta-llama/Meta-Llama-3.1-70B-Instruct
+          - meta-llama/Meta-Llama-3.1-8B-Instruct
+          - mistralai/Pixtral-12B-2409
+          - NousResearch/Hermes-3-Llama-3.1-70B
+          - Qwen/Qwen2-VL-72B-Instruct
+          - Qwen/Qwen2-VL-7B-Instruct
+          - Qwen/Qwen2.5-72B-Instruct
+          - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen/QwQ-32B-Preview
+        fetch: false
+      titleConvo: true
+      titleModel: meta-llama/Llama-3.2-3B-Instruct
+      summarize: false
+      summaryModel: meta-llama/Llama-3.2-3B-Instruct
+      modelDisplayLabel: Hyperbolic
+      iconURL: https://i.febryan.me/4mbk2.svg
+    - name: Kluster AI
+      apiKey: ${KLUSTERAI_KEY}
+      baseURL: https://api.hyperbolic.xyz/v1
+      models:
+        default:
+          - deepseek-ai/DeepSeek-R1
+          - klusterai/Meta-Llama-3.1-405B-Instruct-Turbo
+          - klusterai/Meta-Llama-3.1-8B-Instruct-Turbo
+          - klusterai/Meta-Llama-3.3-70B-Instruct-Turbo
+        fetch: false
+      titleConvo: true
+      titleModel: klusterai/Meta-Llama-3.1-8B-Instruct-Turbo
+      summarize: false
+      summaryModel: klusterai/Meta-Llama-3.1-8B-Instruct-Turbo
+      modelDisplayLabel: Kluster AI
+      iconURL: https://i.febryan.me/ue02g.webp
     - name: Nebius
       apiKey: ${NEBIUS_KEY}
       baseURL: https://api.studio.nebius.ai/v1
@@ -248,6 +295,7 @@ endpoints:
           - deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct-fast
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+          - deepseek-ai/DeepSeek-R1-fast
           - deepseek-ai/DeepSeek-V3
           - google/gemma-2-27b-it
           - google/gemma-2-27b-it-fast
@@ -718,8 +766,8 @@ endpoints:
           - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -747,8 +795,8 @@ endpoints:
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - nous-hermes-2-mixtral-8x7b-dpo
           - Nous-Hermes-2-Mixtral-8x7B-DPO
+          - nous-hermes-2-mixtral-8x7b-dpo
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -771,13 +819,15 @@ endpoints:
           - qvq-72b-preview
           - qwen-2-72b-instruct
           - qwen-2-7b-instruct
+          - qwen-2-vl-72b-instruct
+          - qwen-2-vl-7b-instruct
           - qwen-2.5-72b-instruct
           - qwen-2.5-7b-instruct
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - QwQ-32B-Preview
           - qwq-32b-preview
+          - QwQ-32B-Preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -902,6 +952,7 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - Mistral-Nemo-12B-ArliAI-RPMax-v1.2
+          - Mistral-Nemo-12B-Wayfarer
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-large
           - mistralai/Mistral-Nemo-Instruct-2407
