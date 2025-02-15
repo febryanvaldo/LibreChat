@@ -506,6 +506,26 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: ShuttleAI
       iconURL: https://i.febryan.me/wy9c6.webp
+    - name: Targon
+      apiKey: user_provided
+      baseURL: https://api.targon.com/v1
+      models:
+        default:
+          - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+          - deepseek-ai/DeepSeek-V3
+          - EnvyIrys/EnvyIrys_sn111_14
+          - NousResearch/Hermes-3-Llama-3.1-8B
+          - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - TheDrummer/Cydonia-22B-v1.3
+        fetch: false
+      titleConvo: true
+      titleModel: NousResearch/Hermes-3-Llama-3.1-8B
+      summarize: false
+      summaryModel: NousResearch/Hermes-3-Llama-3.1-8B
+      forcePrompt: false
+      modelDisplayLabel: Targon
+      iconURL: https://i.febryan.me/gqvmm.svg
     - name: Together AI
       apiKey: user_provided
       baseURL: https://api.together.xyz/v1
