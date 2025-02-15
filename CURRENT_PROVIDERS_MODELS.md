@@ -1,28 +1,5 @@
 ```
 ==================================================
-2025-02-12 19:19:07
-==================================================
-🤖 Currently Anthropic has 6 models (none)
-🤖 Currently Google has 26 models (none)
-🤖 Currently OpenAI has 19 models (none)
-🤖 Currently Cohere has 8 models (none)
-🤖 Currently DeepSeek has 2 models (none)
-🤖 Currently Mistral AI has 37 models (none)
-🤖 Currently Perplexity has 4 models (none)
-🤖 Currently xAI has 4 models (none)
-🤖 Currently Groq has 17 models (none)
-🤖 Currently SambaNova has 14 models (none)
-🤖 Currently Fireworks has 26 models (none)
-🤖 Currently Nebius has 56 models (none)
-🤖 Currently ShuttleAI has 138 models (none)
-🤖 Currently Together AI has 49 models (none)
-🤖 Currently APIpie has 305 models (+21 models)
-🤖 Currently NanoGPT has 145 models (none)
-🤖 Currently OpenRouter has 230 models (none)
-🤖 Currently Requesty has 157 models (none)
-🤖 Currently UnifyAI has 160 models (none)
-
-==================================================
 2025-02-13 09:45:49
 ==================================================
 🤖 Currently Anthropic has 6 models (none)
@@ -70,5 +47,29 @@
 🤖 Currently OpenRouter has 227 models (-5 models)
 🤖 Currently Requesty has 157 models (none)
 🤖 Currently UnifyAI has 160 models (none)
+
+==================================================
+2025-02-15 10:48:41
+==================================================
+🤖 Currently Anthropic has 6 models (none)
+🤖 Currently Google has 26 models (none)
+🤖 Currently OpenAI has 20 models (none)
+🤖 Currently Cohere has 8 models (none)
+🤖 Currently DeepSeek has 2 models (none)
+🤖 Currently Mistral AI has 37 models (none)
+🤖 Currently Perplexity has 4 models (none)
+🤖 Currently xAI has 4 models (none)
+🤖 Currently Groq has 17 models (none)
+🤖 Currently SambaNova has 14 models (none)
+🤖 Currently Fireworks has 27 models (+1 model)
+🤖 Currently Hyperbolic has 19 models (none)
+🤖 Currently KlusterAI has 4 models (none)
+🤖 Currently Nebius has 59 models (none)
+🤖 Currently ShuttleAI has 138 models (none)
+🤖 Currently Together AI has 49 models (none)
+🤖 Currently APIpie has 266 models (-7 models)
+🤖 Currently NanoGPT has 147 models (none)
+🤖 Currently OpenRouter has 227 models (none)
+🤖 Currently Requesty has 157 models (none)
 🤖 Currently UnifyAI has 160 models (none)
 ```
