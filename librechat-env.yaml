@@ -1,4 +1,4 @@
-version: 1.2.1.150225
+version: 1.2.1.160225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -618,7 +618,6 @@ endpoints:
           - codestral-mamba
           - command
           - command-light
-          - command-light-nightly
           - command-light-text-v14
           - command-nightly
           - command-r
@@ -633,11 +632,13 @@ endpoints:
           - command-text-v14
           - dbrx-instruct
           - deepseek-chat
+          - deepseek-chat-v2.5
           - deepseek-llm-67b-chat
           - DeepSeek-V3
           - dolphin-2.6-mixtral-8x7b
           - dolphin-mixtral-8x7b
           - eva-llama-3.33-70b
+          - eva-qwen-2.5-32b
           - eva-qwen-2.5-72b
           - gemini-1.5-flash
           - gemini-1.5-flash-8b
@@ -806,13 +807,13 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - mythomax-l2-13b
           - MythoMax-L2-13b
+          - mythomax-l2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -840,8 +841,8 @@ endpoints:
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -982,6 +983,8 @@ endpoints:
           - o1-plus
           - o1-preview
           - o3-mini
+          - o3-mini-high
+          - o3-mini-low
           - qwen-long
           - qwen-max
           - qwen-plus
@@ -1024,7 +1027,7 @@ endpoints:
       summarize: false
       summaryModel: gpt-4o-mini
       modelDisplayLabel: NanoGPT
-      iconURL: https://i.febryan.me/o49gg.ico
+      iconURL: https://i.febryan.me/u1kjo.webp
     - name: OpenRouter 
       apiKey: ${OPENROUTER_KEY}
       baseURL: https://openrouter.ai/api/v1
