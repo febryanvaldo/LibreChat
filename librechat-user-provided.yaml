@@ -1,4 +1,4 @@
-version: 1.2.1.160225
+version: 1.2.1.170225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -783,8 +783,8 @@ endpoints:
           - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -804,11 +804,10 @@ endpoints:
           - Mixtral-8x7B-Instruct-v0.1
           - Mixtral-8x7B-v0.1
           - mn-celeste-12b
-          - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -901,6 +900,7 @@ endpoints:
           - deepclaude
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-chat
+          - deepseek-chat-cheaper
           - deepseek-r1-llama-70b
           - deepseek-r1-nano
           - deepseek-reasoner
@@ -942,6 +942,9 @@ endpoints:
           - gpt-4o-2024-08-06
           - gpt-4o-2024-11-20
           - gpt-4o-mini
+          - grok-2-1212
+          - grok-2-vision-1212
+          - grok-beta
           - Gryphe/MythoMax-L2-13b
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
@@ -1013,8 +1016,6 @@ endpoints:
           - TheDrummer/UnslopNemo-12B-v4.1
           - undi95/remm-slerp-l2-13b
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
-          - x-ai/grok-2-1212
-          - x-ai/grok-beta
           - yi-34b-chat-0205
           - yi-34b-chat-200k
           - yi-large
