@@ -143,6 +143,20 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: xAI
       iconURL: https://i.febryan.me/y8pum.svg
+    - name: Cerebras
+      apiKey: ${CEREBRAS_KEY}
+      baseURL: https://api.cerebras.ai/v1
+      models:
+        default:
+          - llama-3.3-70b
+          - llama3.1-8b
+        fetch: false
+      titleConvo: true
+      titleModel: llama3.1-8b
+      summarize: false
+      summaryModel: llama3.1-8b
+      modelDisplayLabel: Cerebras
+      iconURL: https://i.febryan.me/nsiw0.svg
     - name: Groq
       apiKey: ${GROQ_KEY}
       baseURL: https://api.groq.com/openai/v1
@@ -794,8 +808,8 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
+          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
@@ -821,13 +835,13 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -989,6 +1003,7 @@ endpoints:
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-large
           - mistralai/Mistral-Nemo-Instruct-2407
+          - mistralai/mistral-saba
           - mistralai/mistral-tiny
           - mlabonne/NeuralDaredevil-8B-abliterated
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
