@@ -58,7 +58,7 @@
 ==================================================
 
 ==================================================
-2025-02-18 13:40:48 GMT+7
+2025-02-18 20:15:12 GMT+7
 ==================================================
 🤖 Anthropic   : 6 models (no change)
 🤖 Google      : 25 models (-1 model)
@@ -71,6 +71,7 @@
 🤖 Cerebras    : 2 models (+2 models)
 🤖 Groq        : 17 models (no change)
 🤖 SambaNova   : 14 models (no change)
+🤖 Chutes      : 19 models (+19 models)
 🤖 Fireworks   : 27 models (no change)
 🤖 Hyperbolic  : 19 models (no change)
 🤖 KlusterAI   : 4 models (no change)
@@ -79,11 +80,11 @@
 🤖 Targon      : 7 models (no change)
 🤖 Together AI : 49 models (no change)
 🤖 APIpie      : 266 models (no change)
-🤖 NanoGPT     : 153 models (+1 model)
+🤖 NanoGPT     : 154 models (+2 models)
 🤖 OpenRouter  : 228 models (+1 model)
 🤖 Requesty    : 157 models (no change)
 🤖 UnifyAI     : 162 models (+2 models)
 ==================================================
-2025-02-18 13:40:48 GMT+7
+2025-02-18 20:15:12 GMT+7
 ==================================================
 ```
