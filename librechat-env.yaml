@@ -396,6 +396,8 @@ endpoints:
       summarize: false
       summaryModel: meta-llama-3.1-8b-instruct
       modelDisplayLabel: FriendliAI
+      dropParams:
+        - user
       iconURL: https://i.febryan.me/tl9ti.svg
     - name: Hyperbolic
       apiKey: ${HYPERBOLIC_KEY}
