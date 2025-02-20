@@ -1,4 +1,4 @@
-version: 1.2.1.200225
+version: 1.2.1.20022025
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -410,6 +410,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - meta-llama/Llama-3.2-3B-Instruct
           - meta-llama/Llama-3.3-70B-Instruct
+          - meta-llama/Meta-Llama-3-70B-Instruct
           - meta-llama/Meta-Llama-3.1-405B
           - meta-llama/Meta-Llama-3.1-405B-FP8
           - meta-llama/Meta-Llama-3.1-405B-Instruct
@@ -987,8 +988,8 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
@@ -1049,8 +1050,8 @@ endpoints:
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - QwQ-32B-Preview
           - qwq-32b-preview
+          - QwQ-32B-Preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -1112,6 +1113,7 @@ endpoints:
           - deepseek-chat-cheaper
           - deepseek-r1-llama-70b
           - deepseek-r1-nano
+          - deepseek-r1-sambanova
           - deepseek-reasoner
           - deepseek-reasoner-cheaper
           - dolphin-2.9.2-qwen2-72b
@@ -1165,6 +1167,7 @@ endpoints:
           - inflection/inflection-3-productivity
           - kimi-k1.5-preview
           - kimi-latest
+          - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - learnlm-1.5-pro-experimental
           - Llama-3.1-Tulu-3-405B
           - Llama-3.3+3.1-70B-ArliAI-RPMax-v1.3
@@ -1208,6 +1211,7 @@ endpoints:
           - Qwen/QwQ-32B-Preview
           - Qwen2.5-32B-Dazzling-Star-Aurora-32b-v0.0
           - Qwen2.5-32B-EVA-v0.2
+          - r1-1776
           - raifle/sorcererlm-8x22b
           - Sao10K/L3.1-70B-Euryale-v2.2
           - Sao10K/L3.1-70B-Hanami-x1
