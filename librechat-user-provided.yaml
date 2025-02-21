@@ -1,4 +1,4 @@
-version: 1.2.1.20022025
+version: 1.2.2.210225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -412,7 +412,6 @@ endpoints:
           - meta-llama/Llama-3.3-70B-Instruct
           - meta-llama/Meta-Llama-3-70B-Instruct
           - meta-llama/Meta-Llama-3.1-405B
-          - meta-llama/Meta-Llama-3.1-405B-FP8
           - meta-llama/Meta-Llama-3.1-405B-Instruct
           - meta-llama/Meta-Llama-3.1-405B-Instruct-Virtuals
           - meta-llama/Meta-Llama-3.1-70B-Instruct
@@ -853,6 +852,7 @@ endpoints:
           - gemini-1.5-flash-8b
           - gemini-1.5-flash-latest
           - gemini-1.5-pro
+          - gemini-1.5-pro-latest
           - gemini-flash
           - gemini-flash-1.5
           - gemini-flash-1.5-8b
@@ -909,6 +909,7 @@ endpoints:
           - jamba-instruct-v1
           - l3-euryale-70b
           - l3-lunaris-8b
+          - l3.1-70b-hanami-x1
           - l3.1-euryale-70b
           - l3.3-euryale-70b
           - lfm-40b
@@ -988,11 +989,11 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
+          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1050,8 +1051,8 @@ endpoints:
           - Qwen2-72B-Instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -1066,7 +1067,6 @@ endpoints:
           - toppy-m-7b
           - unslopnemo-12b
           - xwin-lm-70b
-          - yi-large
           - yi-vision
           - zephyr-orpo-141b-A35b-v0.1
         fetch: false
@@ -1155,6 +1155,7 @@ endpoints:
           - gpt-4o-mini
           - grok-2-1212
           - grok-2-vision-1212
+          - grok-3
           - grok-beta
           - Gryphe/MythoMax-L2-13b
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
@@ -1356,9 +1357,11 @@ endpoints:
           - meta-llama/llama-3.1-405b-instruct
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
+          - meta-llama/llama-3.1-8b-instruct:free
           - meta-llama/llama-3.2-11b-vision-instruct
           - meta-llama/llama-3.2-11b-vision-instruct:free
           - meta-llama/llama-3.2-1b-instruct
+          - meta-llama/llama-3.2-1b-instruct:free
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
@@ -1658,6 +1661,9 @@ endpoints:
           - together/meta-llama/Meta-Llama-Guard-3-8B
           - together/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - together/upstage/SOLAR-10.7B-Instruct-v1.0
+          - vertex/anthropic/claude-3-5-sonnet
+          - vertex/anthropic/claude-3-5-sonnet-20241022
+          - vertex/anthropic/claude-3-5-sonnet-latest
           - xai/grok-2-1212
           - xai/grok-2-latest
         fetch: false
