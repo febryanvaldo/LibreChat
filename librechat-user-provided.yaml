@@ -1,4 +1,4 @@
-version: 1.2.1.220225
+version: 1.2.1.230225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -923,6 +923,7 @@ endpoints:
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-3-sonar-large-32k-chat
+          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -988,8 +989,8 @@ endpoints:
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1012,8 +1013,8 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -1046,8 +1047,8 @@ endpoints:
           - qwen-2.5-7b-instruct
           - Qwen2.5-72B-Instruct-Turbo
           - Qwen2.5-7B-Instruct-Turbo
-          - QwQ-32B-Preview
           - qwq-32b-preview
+          - QwQ-32B-Preview
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
