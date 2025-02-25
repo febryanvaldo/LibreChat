@@ -1,4 +1,4 @@
-version: 1.2.1.25022025
+version: 1.2.1.250225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -1499,9 +1499,9 @@ endpoints:
           - xwin-lm/xwin-lm-70b
         fetch: false
       titleConvo: true
-      titleModel: google/gemini-flash-1.5-8b-exp
+      titleModel: google/gemini-2.0-flash-exp:free
       summarize: false
-      summaryModel: google/gemini-flash-1.5-8b-exp
+      summaryModel: google/gemini-2.0-flash-exp:free
       modelDisplayLabel: OpenRouter
       iconURL: https://i.febryan.me/ofh3f.png
     - name: Requesty
