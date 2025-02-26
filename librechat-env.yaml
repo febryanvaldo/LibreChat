@@ -1909,5 +1909,8 @@ endpoints:
       titleModel: gpt-4o-mini@openai
       summarize: false
       summaryModel: gpt-4o-mini@openai
+      dropParams:
+        - stop
+        - user
       modelDisplayLabel: UnifyAI
       iconURL: https://i.febryan.me/pnpqd.png
