@@ -18,7 +18,7 @@ endpoints:
   custom:
     - name: Cohere
       apiKey: ${COHERE_KEY}
-      baseURL: https://api.cohere.ai/v1
+      baseURL: https://api.cohere.ai/compatibility/v1
       models:
         default:
           - c4ai-aya-expanse-32b
