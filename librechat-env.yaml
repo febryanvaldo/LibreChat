@@ -1,4 +1,4 @@
-version: 1.2.1.27022025
+version: 1.2.1.270225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -35,6 +35,8 @@ endpoints:
       summarize: false
       summaryModel: command-r7b-12-2024
       modelDisplayLabel: Cohere
+      dropParams:
+        - user
       iconURL: https://i.febryan.me/9rj7t.png
     - name: DeepSeek
       apiKey: ${DEEPSEEK_KEY}
