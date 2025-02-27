@@ -1,4 +1,4 @@
-version: 1.2.1.2702
+version: 1.2.1.270225
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -32,9 +32,12 @@ endpoints:
         fetch: false
       titleConvo: true
       titleModel: command-r7b-12-2024
+      titleMessageRole: user
       summarize: false
       summaryModel: command-r7b-12-2024
       modelDisplayLabel: Cohere
+      dropParams:
+        - user
       iconURL: https://i.febryan.me/9rj7t.png
     - name: DeepSeek
       apiKey: ${DEEPSEEK_KEY}
@@ -101,10 +104,7 @@ endpoints:
       summaryModel: ministral-3b-latest
       modelDisplayLabel: Mistral AI
       dropParams:
-        - stop
         - user
-        - frequency_penalty
-        - presence_penalty
       iconURL: https://i.febryan.me/qyoiv.ico
     - name: Perplexity
       apiKey: ${PERPLEXITY_KEY}
