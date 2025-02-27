@@ -1,4 +1,4 @@
-version: 1.2.1.270225
+version: 1.2.1.2702
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -18,7 +18,7 @@ endpoints:
   custom:
     - name: Cohere
       apiKey: ${COHERE_KEY}
-      baseURL: https://api.cohere.ai/compatibility/v1
+      baseURL: https://api.cohere.ai/v1
       models:
         default:
           - c4ai-aya-expanse-32b
@@ -35,8 +35,6 @@ endpoints:
       summarize: false
       summaryModel: command-r7b-12-2024
       modelDisplayLabel: Cohere
-      dropParams:
-        - user
       iconURL: https://i.febryan.me/9rj7t.png
     - name: DeepSeek
       apiKey: ${DEEPSEEK_KEY}
