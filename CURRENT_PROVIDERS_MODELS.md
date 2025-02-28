@@ -202,4 +202,54 @@
 ==================================================
 2025-02-27 10:49:23 GMT+7
 ==================================================
+
+==================================================
+2025-02-28 13:28:22 GMT+7
+==================================================
+🤖 Anthropic   : 7 models (no change)
+🤖 Google      : 27 models (+2 models)
+🤖 OpenAI      : 22 models (+2 models)
+🤖 Cohere      : 9 models (+1 model)
+🤖 DeepSeek    : 2 models (no change)
+🤖 Mistral AI  : 38 models (no change)
+🤖 Perplexity  : 6 models (no change)
+🤖 xAI         : 4 models (no change)
+🤖 Cerebras    : 2 models (no change)
+🤖 Groq        : 18 models (no change)
+🤖 SambaNova   : 14 models (no change)
+🤖 Chutes      : 20 models (-2 models)
+🤖 DeepInfra   : 73 models (no change)
+🤖 Fireworks   : 28 models (no change)
+🤖 FriendliAI  : 4 models (no change)
+🤖 Hyperbolic  : 18 models (no change)
+🤖 KlusterAI   : 4 models (no change)
+🤖 Nebius      : 59 models (no change)
+🤖 Novita AI   : 34 models (no change)
+🤖 ShuttleAI   : 137 models (no change)
+🤖 Targon      : 7 models (no change)
+🤖 Together AI : 52 models (+1 model)
+🤖 APIpie      : 315 models (+13 models)
+🤖 NanoGPT     : 175 models (+8 models)
+🤖 OpenRouter  : 250 models (+10 models)
+🤖 Requesty    : 185 models (+1 model)
+🤖 UnifyAI     : 160 models (no change)
+==================================================
+2025-02-28 13:28:22 GMT+7
+==================================================
 ```
+
+### OpenRouter Web Search Models
+I added 3 models that use capabilities of OpenRouter Web Search feature. OpenRouter use Exa.ai for the Web Search capabilties.
+
+The models are;
+- `anthropic/claude-3.7-sonnet:online`
+- `google/gemini-2.0-flash-001:online`
+- `openai/chatgpt-4o-latest:online`
+
+### NanoGPT Web Search Models 
+Like OpenRouter above, i also added 3 models that can utilize the NanoGPT Web Search feature. NanoGPT uses Linkup.so for the Web Search.
+
+The models are;
+- `chatgpt-4o-latest:online`
+- `claude-3-7-sonnet-20250219:online`
+- `gemini-2.0-flash-001:online`
