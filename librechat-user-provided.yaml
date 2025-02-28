@@ -1,4 +1,4 @@
-version: 1.2.1.280225
+version: 1.2.1.28022025
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -1158,11 +1158,13 @@ endpoints:
           - azure-o3-mini
           - chatgpt-4o-latest
           - chatgpt-4o-latest:online
+          - chatgpt-4o-latest:online/linkup-deep
           - claude-3-5-haiku-20241022
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20241022
           - claude-3-7-sonnet-20250219
           - claude-3-7-sonnet-20250219:online
+          - claude-3-7-sonnet-20250219:online/linkup-deep
           - claude-3-7-sonnet-thinking
           - claude-3-7-sonnet-thinking:1024
           - claude-3-7-sonnet-thinking:128000
@@ -1197,6 +1199,7 @@ endpoints:
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - gemini-2.0-flash-001
           - gemini-2.0-flash-001:online
+          - gemini-2.0-flash-001:online/linkup-deep
           - gemini-2.0-flash-exp
           - gemini-2.0-flash-exp-search
           - gemini-2.0-flash-lite

@@ -247,9 +247,12 @@ The models are;
 - `openai/chatgpt-4o-latest:online`
 
 ### NanoGPT Web Search Models 
-Like OpenRouter above, i also added 3 models that can utilize the NanoGPT Web Search feature. NanoGPT uses Linkup.so for the Web Search.
+Like OpenRouter above, i also added 6 models that can utilize the NanoGPT Web Search feature. NanoGPT uses Linkup.so for the Web Search. The `:online` is the standard one, while `:online/linkup-deep` is the deep search one.
 
 The models are;
 - `chatgpt-4o-latest:online`
+- `chatgpt-4o-latest:online/linkup-deep`
 - `claude-3-7-sonnet-20250219:online`
+- `claude-3-7-sonnet-20250219:online/linkup-deep`
 - `gemini-2.0-flash-001:online`
+- `gemini-2.0-flash-001:online/linkup-deep`
