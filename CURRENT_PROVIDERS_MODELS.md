@@ -202,10 +202,44 @@
 ==================================================
 2025-03-01 16:04:53 GMT+7
 ==================================================
+
+==================================================
+2025-03-02 11:04:32 GMT+7
+==================================================
+🤖 Anthropic   : 7 models (no change)
+🤖 Google      : 27 models (no change)
+🤖 OpenAI      : 22 models (no change)
+🤖 Cohere      : 9 models (no change)
+🤖 DeepSeek    : 2 models (no change)
+🤖 Mistral AI  : 38 models (no change)
+🤖 Perplexity  : 6 models (no change)
+🤖 xAI         : 4 models (no change)
+🤖 Cerebras    : 2 models (no change)
+🤖 Groq        : 18 models (no change)
+🤖 SambaNova   : 14 models (no change)
+🤖 Chutes      : 23 models (no change)
+🤖 DeepInfra   : 73 models (no change)
+🤖 Fireworks   : 28 models (no change)
+🤖 FriendliAI  : 4 models (no change)
+🤖 Hyperbolic  : 18 models (no change)
+🤖 KlusterAI   : 4 models (no change)
+🤖 Nebius      : 59 models (no change)
+🤖 Novita AI   : 34 models (no change)
+🤖 ShuttleAI   : 139 models (no change)
+🤖 Targon      : 7 models (no change)
+🤖 Together AI : 53 models (no change)
+🤖 APIpie      : 314 models (+2 models)
+🤖 NanoGPT     : 178 models (no change)
+🤖 OpenRouter  : 251 models (no change)
+🤖 Requesty    : 186 models (+1 model)
+🤖 UnifyAI     : 161 models (no change)
+==================================================
+2025-03-02 11:04:32 GMT+7
+==================================================
 ```
 
 ### OpenRouter Web Search Models
-I added 3 models that use capabilities of OpenRouter Web Search feature. OpenRouter use Exa.ai for the Web Search capabilties.
+I added 3 models that use capabilities of OpenRouter Web Search feature. OpenRouter use Exa.ai for the Web Search.
 
 The models are;
 - `anthropic/claude-3.7-sonnet:online`

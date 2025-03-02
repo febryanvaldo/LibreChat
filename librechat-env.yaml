@@ -1,4 +1,4 @@
-version: 1.2.1.20250301
+version: 1.2.1.20250302
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -865,6 +865,7 @@ endpoints:
           - command-r7b-12-2024
           - command-text-v14
           - dbrx-instruct
+          - deephermes-3-llama-3-8b-preview
           - deepseek-chat
           - deepseek-r1
           - deepseek-r1-distill-llama-70b
@@ -990,7 +991,6 @@ endpoints:
           - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
           - llama-3.3-70b-instruct
-          - Llama-3.3-70B-Instruct-Turbo
           - llama-guard-2-8b
           - Llama-Guard-3-11B-Vision-Turbo
           - llama-guard-3-8b
@@ -1034,11 +1034,11 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1046,6 +1046,7 @@ endpoints:
           - mistral-large-latest
           - mistral-nemo
           - mistral-saba
+          - mistral-saba-latest
           - mistral-small
           - mistral-small-2402-v1
           - mistral-small-24b-instruct-2501
@@ -1062,9 +1063,10 @@ endpoints:
           - mn-celeste-12b
           - mn-inferor-12b
           - mn-starcannon-12b
+          - moonlight-16b-a3b-instruct
           - mythalion-13b
-          - mythomax-l2-13b
           - MythoMax-L2-13b
+          - mythomax-l2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -1656,6 +1658,7 @@ endpoints:
           - mistral/mistral-small-latest
           - mistral/open-mistral-7b
           - nebius/deepseek-ai/DeepSeek-R1
+          - nebius/deepseek-ai/DeepSeek-R1-fast
           - nebius/deepseek-ai/DeepSeek-V3
           - nebius/meta-llama/Llama-3.3-70B-Instruct
           - novita/Sao10K/L3-8B-Stheno-v3.2
