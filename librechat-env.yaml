@@ -1,4 +1,4 @@
-version: 1.2.1.20250302
+version: 1.2.1.XXXXXX
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
@@ -970,7 +970,6 @@ endpoints:
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-3-sonar-large-32k-chat
-          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -1065,13 +1064,13 @@ endpoints:
           - mn-starcannon-12b
           - moonlight-16b-a3b-instruct
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - nous-hermes-2-mixtral-8x7b-dpo
           - Nous-Hermes-2-Mixtral-8x7B-DPO
+          - nous-hermes-2-mixtral-8x7b-dpo
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
