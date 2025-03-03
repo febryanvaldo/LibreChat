@@ -1,4 +1,4 @@
-version: 1.2.1.XXXXXX
+version: 1.2.1.20250303
 interface:
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
