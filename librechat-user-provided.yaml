@@ -1,11 +1,13 @@
 version: 1.2.1.230307
 interface:
+  cache: true
   privacyPolicy:
     externalUrl: https://libre.febryan.me/#
     openNewTab: true
   termsOfService:
     externalUrl: https://libre.febryan.me/#
     openNewTab: true
+  customWelcome: "Welcome to LibreChat! Enjoy your experience."
 cache: true
 registration:
   socialLogins:
@@ -14,6 +16,15 @@ registration:
     - github
     - google
     - openid
+  endpointsMenu: true
+  modelSelect: true
+  parameters: true
+  sidePanel: true
+  presets: true
+  prompts: true
+  bookmarks: true
+  multiConvo: true
+  agents: true
 endpoints:
   custom:
     - name: Cohere
