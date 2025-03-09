@@ -1,4 +1,4 @@
-version: 1.2.1.20250308
+version: 1.2.1.20250309
 interface:
   cache: true
   privacyPolicy:
@@ -445,6 +445,7 @@ endpoints:
           - NousResearch/Hermes-3-Llama-3.1-70B
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -629,7 +630,9 @@ endpoints:
           - command-r-plus
           - command-r-plus-08-2024
           - deepseek-r1
+          - deepseek-v3
           - deepseek/deepseek-r1
+          - deepseek/deepseek-v3
           - gemini-1.5-flash
           - gemini-1.5-flash-8b-exp
           - gemini-1.5-flash-8b-exp-0924
@@ -687,11 +690,7 @@ endpoints:
           - mistral-tiny-latest
           - mistralai/codestral-2405
           - mistralai/mistral-nemo-instruct-2407
-          - o1
-          - o1-mini
-          - o1-mini-2024-09-12
-          - o1-preview
-          - o1-preview-2024-09-12
+          - o3-mini
           - openai/gpt-3.5-turbo-0125
           - openai/gpt-3.5-turbo-1106
           - openai/gpt-4-0125-preview
@@ -700,8 +699,7 @@ endpoints:
           - openai/gpt-4-turbo-2024-04-09
           - openai/gpt-4o
           - openai/gpt-4o-mini
-          - openai/o1-mini-2024-09-12
-          - openai/o1-preview-2024-09-12
+          - openai/o3-mini
           - perplexity/llama-3.1-sonar-large-128k-chat
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-chat
@@ -735,9 +733,6 @@ endpoints:
           - shuttleai/shuttle-2.5-mini-2024-09-11
           - shuttleai/shuttle-3
           - shuttleai/shuttle-3-mini
-          - strawberry
-          - strawberry-mini
-          - strawberry-preview
           - x/grok-3
         fetch: false
       titleConvo: true
@@ -971,7 +966,6 @@ endpoints:
           - jamba-instruct-v1
           - l3-euryale-70b
           - l3-lunaris-8b
-          - l3.1-70b-hanami-x1
           - l3.1-euryale-70b
           - l3.3-euryale-70b
           - lfm-3b
@@ -987,6 +981,7 @@ endpoints:
           - llama-3-70b-instruct
           - Llama-3-8b-chat-hf
           - llama-3-8b-instruct
+          - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-3-sonar-large-32k-chat
           - llama-3.1-405b
@@ -1053,11 +1048,11 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1078,15 +1073,16 @@ endpoints:
           - Mixtral-8x7B-Instruct-v0.1
           - Mixtral-8x7B-v0.1
           - mn-celeste-12b
+          - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -1107,6 +1103,7 @@ endpoints:
           - phi-3-mini-128k-instruct
           - phi-3.5-mini-128k-instruct
           - phi-4
+          - phi-4-multimodal-instruct
           - pixtral-12b
           - pixtral-large-2411
           - pixtral-large-latest
@@ -1122,6 +1119,7 @@ endpoints:
           - qwen-max
           - qwen-plus
           - qwen-turbo
+          - qwen-vl-max
           - qwen-vl-plus
           - qwen2.5-32b-instruct
           - Qwen2.5-72B-Instruct-Turbo
@@ -1477,6 +1475,7 @@ endpoints:
           - microsoft/phi-3-mini-128k-instruct:free
           - microsoft/phi-3.5-mini-128k-instruct
           - microsoft/phi-4
+          - microsoft/phi-4-multimodal-instruct
           - microsoft/wizardlm-2-7b
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
@@ -1575,6 +1574,7 @@ endpoints:
           - qwen/qwen-max
           - qwen/qwen-plus
           - qwen/qwen-turbo
+          - qwen/qwen-vl-max
           - qwen/qwen-vl-plus
           - qwen/qwen2.5-32b-instruct
           - qwen/qwen2.5-vl-72b-instruct
