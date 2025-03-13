@@ -1,4 +1,4 @@
-version: 1.2.1.20250312
+version: 1.2.1.20250313
 interface:
   cache: true
   privacyPolicy:
@@ -34,9 +34,10 @@ endpoints:
         default:
           - c4ai-aya-expanse-32b
           - c4ai-aya-vision-32b
-          - c4ai-aya-vision-8b
           - command
+          - command-a-03-2025
           - command-light-nightly
+          - command-nightly
           - command-r
           - command-r-plus
           - command-r7b-12-2024
@@ -265,13 +266,17 @@ endpoints:
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-3B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
+          - RekaAI/reka-flash-3
           - unsloth/gemma-2-9b-it
+          - unsloth/gemma-3-12b-it
+          - unsloth/gemma-3-1b-it
+          - unsloth/gemma-3-27b-it
           - unsloth/Llama-3.2-1B-Instruct
           - unsloth/Llama-3.2-3B-Instruct
-          - unsloth/Llama-3.3-70B-Instruct
           - unsloth/Meta-Llama-3.1-8B-Instruct
           - unsloth/Mistral-Nemo-Instruct-2407
           - unsloth/Mistral-Small-24B-Instruct-2501
@@ -287,6 +292,7 @@ endpoints:
       baseURL: https://api.deepinfra.com/v1/openai
       models:
         default:
+          - anthropic/claude-3-7-sonnet-latest
           - Austism/chronos-hermes-13b-v2
           - bigcode/starcoder2-15b-instruct-v0.1
           - cognitivecomputations/dolphin-2.6-mixtral-8x7b
@@ -396,8 +402,6 @@ endpoints:
           - accounts/fireworks/models/qwen2p5-coder-32b-instruct
           - accounts/fireworks/models/qwq-32b
           - accounts/perplexity/models/r1-1776
-          - accounts/sentientfoundation/models/dobby-mini-leashed-llama-3-1-8b
-          - accounts/sentientfoundation/models/dobby-mini-unhinged-llama-3-1-8b
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
           - accounts/yi-01-ai/models/yi-large
         fetch: false
@@ -446,6 +450,8 @@ endpoints:
           - NousResearch/Hermes-3-Llama-3.1-70B
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
+          - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
         fetch: false
@@ -941,6 +947,8 @@ endpoints:
           - gpt-4o-mini-2024-07-18
           - gpt-4o-mini-audio-preview
           - gpt-4o-mini-audio-preview-2024-12-17
+          - gpt-4o-mini-search-preview
+          - gpt-4o-search-preview
           - grok-2-1212
           - grok-2-vision-1212
           - grok-beta
@@ -993,6 +1001,7 @@ endpoints:
           - llama-3.1-sonar-large-128k-online
           - llama-3.1-sonar-small-128k-chat
           - llama-3.1-sonar-small-128k-online
+          - llama-3.1-swallow-70b-instruct-v0.3
           - llama-3.1-tulu-3-405b
           - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
@@ -1070,8 +1079,8 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - mythomax-l2-13b
           - MythoMax-L2-13b
+          - mythomax-l2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -1119,8 +1128,8 @@ endpoints:
           - Qwen2.5-7B-Instruct-Turbo
           - qwen2.5-vl-72b-instruct
           - qwq-32b
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - r1-1776
           - r1-v1
           - remm-slerp-l2-13b
@@ -1257,6 +1266,8 @@ endpoints:
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
+          - jamba-large-1.6
+          - jamba-mini-1.6
           - kimi-k1.5-preview
           - kimi-latest
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
@@ -1411,6 +1422,7 @@ endpoints:
           - deepseek/deepseek-r1-distill-llama-8b
           - deepseek/deepseek-r1-distill-qwen-1.5b
           - deepseek/deepseek-r1-distill-qwen-14b
+          - deepseek/deepseek-r1-distill-qwen-14b:free
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-r1-distill-qwen-32b:free
           - deepseek/deepseek-r1-zero:free
@@ -1436,6 +1448,8 @@ endpoints:
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
           - google/gemma-2-9b-it:free
+          - google/gemma-3-27b-it
+          - google/gemma-3-27b-it:free
           - google/gemma-7b-it
           - google/learnlm-1.5-pro-experimental:free
           - google/palm-2-chat-bison
@@ -1547,6 +1561,8 @@ endpoints:
           - openai/gpt-4o-2024-11-20
           - openai/gpt-4o-mini
           - openai/gpt-4o-mini-2024-07-18
+          - openai/gpt-4o-mini-search-preview
+          - openai/gpt-4o-search-preview
           - openai/gpt-4o:extended
           - openai/o1
           - openai/o1-mini
@@ -1572,6 +1588,7 @@ endpoints:
           - qwen/qwen-2-7b-instruct
           - qwen/qwen-2-7b-instruct:free
           - qwen/qwen-2.5-72b-instruct
+          - qwen/qwen-2.5-72b-instruct:free
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-2.5-coder-32b-instruct:free
@@ -1587,8 +1604,10 @@ endpoints:
           - qwen/qwen2.5-vl-72b-instruct:free
           - qwen/qwq-32b
           - qwen/qwq-32b-preview
+          - qwen/qwq-32b-preview:free
           - qwen/qwq-32b:free
           - raifle/sorcererlm-8x22b
+          - rekaai/reka-flash-3:free
           - sao10k/fimbulvetr-11b-v2
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
@@ -1602,6 +1621,7 @@ endpoints:
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
+          - tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.3
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
           - undi95/toppy-m-7b:free
