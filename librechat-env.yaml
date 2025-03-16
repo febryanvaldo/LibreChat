@@ -1,4 +1,4 @@
-version: 1.2.1.20250315
+version: 1.2.1.20250316
 interface:
   cache: true
   privacyPolicy:
@@ -263,10 +263,13 @@ endpoints:
           - hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4
           - moonshotai/Moonlight-16B-A3B-Instruct
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
+          - open-r1/OlympicCoder-32B
+          - open-r1/OlympicCoder-7B
           - Qwen/Qwen2-VL-72B-Instruct
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-3B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -303,7 +306,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-R1-Turbo
           - deepseek-ai/DeepSeek-V3
-          - deepseek-ai/DeepSeek-V3-Turbo
           - google/codegemma-7b-it
           - google/gemini-1.5-flash
           - google/gemini-1.5-flash-8b
@@ -924,6 +926,7 @@ endpoints:
           - gemma-2-9b-it
           - gemma-2b-it
           - gemma-3-12b-it
+          - gemma-3-1b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
           - goliath-120b
@@ -980,6 +983,7 @@ endpoints:
           - l3-lunaris-8b
           - l3.1-70b-hanami-x1
           - l3.1-euryale-70b
+          - l3.3-electra-r1-70b
           - l3.3-euryale-70b
           - lfm-3b
           - lfm-40b
@@ -1057,12 +1061,12 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
-          - mistral-7b-instruct-v0.2
+          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - mistral-7b-instruct-v0.3
+          - mistral-7b-instruct-v0.2
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1136,11 +1140,10 @@ endpoints:
           - Qwen2.5-7B-Instruct-Turbo
           - qwen2.5-vl-72b-instruct
           - qwq-32b
-          - QwQ-32B-Preview
           - qwq-32b-preview
+          - QwQ-32B-Preview
           - r1-1776
           - r1-v1
-          - reka-flash-3
           - remm-slerp-l2-13b
           - rocinante-12b
           - scb10x-llama3-typhoon-v1-5-8b-instruct
@@ -1265,7 +1268,9 @@ endpoints:
           - gpt-4o-2024-08-06
           - gpt-4o-2024-11-20
           - gpt-4o-mini
+          - gpt-4o-mini-search-preview
           - gpt-4o-reasoner
+          - gpt-4o-search-preview
           - Gryphe/MythoMax-L2-13b
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
@@ -1556,6 +1561,8 @@ endpoints:
           - nousresearch/nous-hermes-llama2-13b
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-70b-instruct:free
+          - open-r1/olympiccoder-32b:free
+          - open-r1/olympiccoder-7b:free
           - openai/chatgpt-4o-latest
           - openai/chatgpt-4o-latest:online
           - openai/gpt-3.5-turbo
@@ -1633,6 +1640,7 @@ endpoints:
           - sao10k/l3.3-euryale-70b
           - sophosympatheia/midnight-rose-70b
           - sophosympatheia/rogue-rose-103b-v0.2:free
+          - steelskull/l3.3-electra-r1-70b
           - teknium/openhermes-2.5-mistral-7b
           - thedrummer/anubis-pro-105b-v1
           - thedrummer/rocinante-12b
