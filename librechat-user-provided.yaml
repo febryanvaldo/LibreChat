@@ -1,4 +1,4 @@
-version: 1.2.1.20250316
+version: 1.2.2.20250317
 interface:
   cache: true
   privacyPolicy:
@@ -269,7 +269,6 @@ endpoints:
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-3B-Instruct
-          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -925,10 +924,8 @@ endpoints:
           - gemma-2-27b-it
           - gemma-2-9b-it
           - gemma-2b-it
-          - gemma-3-12b-it
           - gemma-3-1b-it
           - gemma-3-27b-it
-          - gemma-3-4b-it
           - goliath-120b
           - gpt-4-0125-preview
           - gpt-4-0314
@@ -981,7 +978,6 @@ endpoints:
           - jamba-instruct-v1
           - l3-euryale-70b
           - l3-lunaris-8b
-          - l3.1-70b-hanami-x1
           - l3.1-euryale-70b
           - l3.3-electra-r1-70b
           - l3.3-euryale-70b
@@ -1007,9 +1003,7 @@ endpoints:
           - llama-3.1-lumimaid-8b
           - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct-HF
-          - llama-3.1-sonar-large-128k-chat
           - llama-3.1-sonar-large-128k-online
-          - llama-3.1-sonar-small-128k-chat
           - llama-3.1-sonar-small-128k-online
           - llama-3.1-swallow-70b-instruct-v0.3
           - llama-3.1-tulu-3-405b
@@ -1065,8 +1059,8 @@ endpoints:
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1090,8 +1084,8 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -1140,8 +1134,8 @@ endpoints:
           - Qwen2.5-7B-Instruct-Turbo
           - qwen2.5-vl-72b-instruct
           - qwq-32b
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - r1-1776
           - r1-v1
           - remm-slerp-l2-13b
@@ -1259,7 +1253,6 @@ endpoints:
           - glm-4-plus-0111
           - glm-zero-preview
           - google/gemini-flash-1.5
-          - google/gemma-3-27b-it
           - gpt-3.5-turbo
           - gpt-4-turbo-preview
           - gpt-4.5-preview
@@ -1319,6 +1312,8 @@ endpoints:
           - o3-mini
           - o3-mini-high
           - o3-mini-low
+          - open-r1/OlympicCoder-32B
+          - open-r1/OlympicCoder-7b
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qwen-long
@@ -1346,6 +1341,8 @@ endpoints:
           - Steelskull/L3.3-Damascus-R1
           - Steelskull/L3.3-MS-Evalebis-70b
           - Steelskull/L3.3-MS-Evayale-70B
+          - Steelskull/L3.3-MS-Nevoria-70b
+          - Steelskull/L3.3-Nevoria-R1-70b
           - step-2-16k
           - step-2-16k-exp
           - step-2-mini
@@ -1356,6 +1353,11 @@ endpoints:
           - thedrummer/skyfall-36b-v2
           - TheDrummer/UnslopNemo-12B-v4.1
           - undi95/remm-slerp-l2-13b
+          - unsloth/gemma-3-12b-it
+          - unsloth/gemma-3-1b-it
+          - unsloth/gemma-3-27b-it
+          - unsloth/gemma-3-4b-it
+          - unsloth/gemma-3-9b-it
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - yi-34b-chat-0205
           - yi-34b-chat-200k
