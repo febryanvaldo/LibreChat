@@ -1,4 +1,4 @@
-version: 1.2.2.20250320
+version: 1.2.2.20250321
 interface:
   cache: true
   privacyPolicy:
@@ -196,7 +196,6 @@ endpoints:
           - llama3-70b-8192
           - llama3-8b-8192
           - mistral-saba-24b
-          - mixtral-8x7b-32768
           - qwen-2.5-32b
           - qwen-2.5-coder-32b
           - qwen-qwq-32b
@@ -213,6 +212,7 @@ endpoints:
       models:
         default:
           - DeepSeek-R1-Distill-Llama-70B
+          - E5-Mistral-7B-Instruct
           - Llama-3.1-Swallow-70B-Instruct-v0.3
           - Llama-3.1-Swallow-8B-Instruct-v0.3
           - Llama-3.1-Tulu-3-405B
@@ -453,9 +453,10 @@ endpoints:
           - meta-llama/Meta-Llama-3.1-70B-Instruct
           - meta-llama/Meta-Llama-3.1-8B-Instruct
           - mistralai/Pixtral-12B-2409
-          - NousResearch/Hermes-3-Llama-3.1-70B
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
+          - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
         fetch: false
@@ -1065,12 +1066,12 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
-          - mistral-7b-instruct-v0.2
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.2
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1146,8 +1147,8 @@ endpoints:
           - Qwen2.5-7B-Instruct-Turbo
           - qwen2.5-vl-72b-instruct
           - qwq-32b
-          - QwQ-32B-Preview
           - qwq-32b-preview
+          - QwQ-32B-Preview
           - r1-1776
           - r1-v1
           - remm-slerp-l2-13b
@@ -1704,9 +1705,11 @@ endpoints:
           - cline/claude-3-7-sonnet
           - cline/claude-3-7-sonnet:1024
           - cline/claude-3-7-sonnet:16384
+          - cline/claude-3-7-sonnet:64000
           - cline/claude-3-7-sonnet:8192
           - cline/claude-3-7-sonnet:high
           - cline/claude-3-7-sonnet:low
+          - cline/claude-3-7-sonnet:max
           - cline/claude-3-7-sonnet:medium
           - cline/deepseek-reasoner:alpha
           - cline/o3-mini
@@ -1890,6 +1893,7 @@ endpoints:
           - claude-3.7-sonnet@replicate
           - claude-3.7-sonnet@vertex-ai
           - command-r-plus@aws-bedrock
+          - deepseek-r1@aws-bedrock
           - deepseek-r1@deepinfra
           - deepseek-r1@deepseek
           - deepseek-r1@fireworks-ai
@@ -1916,6 +1920,7 @@ endpoints:
           - gemma-2-9b-it@groq
           - gemma-2-9b-it@lepton-ai
           - gemma-2-9b-it@together-ai
+          - gemma-3-27b-it@deepinfra
           - gpt-3.5-turbo@openai
           - gpt-4-turbo@openai
           - gpt-4.5-preview@openai
@@ -2012,6 +2017,7 @@ endpoints:
           - mixtral-8x7b-instruct-v0.1@mistral-ai
           - mixtral-8x7b-instruct-v0.1@together-ai
           - o1-mini@openai
+          - o1-pro@openai
           - o1@openai
           - o3-mini@openai
           - qwen-2-72b-instruct@together-ai
@@ -2026,6 +2032,7 @@ endpoints:
           - qwen-2.5-coder-32b-instruct@together-ai
           - qwen-qwq-32b@deepinfra
           - qwen-qwq-32b@fireworks-ai
+          - qwen-qwq-32b@groq
           - qwen-qwq-32b@together-ai
         fetch: false
       titleConvo: true
@@ -2034,4 +2041,3 @@ endpoints:
       summaryModel: gpt-4o-mini@openai
       modelDisplayLabel: UnifyAI
       iconURL: https://i.febryan.me/pnpqd.png
- 
