@@ -1,4 +1,4 @@
-version: 1.2.2.20250321
+version: 1.2.2.20250322
 interface:
   cache: true
   privacyPolicy:
@@ -271,7 +271,6 @@ endpoints:
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-3B-Instruct
-          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -453,9 +452,9 @@ endpoints:
           - meta-llama/Meta-Llama-3.1-70B-Instruct
           - meta-llama/Meta-Llama-3.1-8B-Instruct
           - mistralai/Pixtral-12B-2409
+          - NousResearch/Hermes-3-Llama-3.1-70B
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
-          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -549,6 +548,7 @@ endpoints:
           - Qwen/Qwen2.5-Coder-7B-fast
           - Qwen/Qwen2.5-Coder-7B-Instruct
           - Qwen/Qwen2.5-Coder-7B-Instruct-fast
+          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-fast
           - Qwen/QwQ-32B-Preview
@@ -895,8 +895,6 @@ endpoints:
           - command-r-v1
           - command-r7b-12-2024
           - command-text-v14
-          - computer-use-preview
-          - computer-use-preview-2025-03-11
           - deepseek-chat
           - deepseek-r1
           - deepseek-r1-distill-llama-70b
@@ -961,8 +959,10 @@ endpoints:
           - gpt-4o-mini-audio-preview-2024-12-17
           - gpt-4o-mini-search-preview
           - gpt-4o-mini-search-preview-2025-03-11
+          - gpt-4o-mini-transcribe
           - gpt-4o-search-preview
           - gpt-4o-search-preview-2025-03-11
+          - gpt-4o-transcribe
           - grok-2-1212
           - grok-2-vision-1212
           - grok-beta
@@ -1066,8 +1066,8 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
+          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.2
           - mistral-7b-instruct-v0.3
@@ -1097,8 +1097,8 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
@@ -1115,6 +1115,8 @@ endpoints:
           - o1-mini-2024-09-12
           - o1-preview
           - o1-preview-2024-09-12
+          - o1-pro
+          - o1-pro-2025-03-19
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
@@ -1329,6 +1331,7 @@ endpoints:
           - olmo-2-32b-instruct
           - open-r1/OlympicCoder-32B
           - open-r1/OlympicCoder-7b
+          - openai/o1-pro
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qwen-long
@@ -1613,6 +1616,7 @@ endpoints:
           - openai/o1-mini-2024-09-12
           - openai/o1-preview
           - openai/o1-preview-2024-09-12
+          - openai/o1-pro
           - openai/o3-mini
           - openai/o3-mini-high
           - openchat/openchat-7b
