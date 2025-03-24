@@ -1,4 +1,4 @@
-version: 1.2.2.20250324
+version: 1.2.2.24032025
 interface:
   cache: true
   privacyPolicy:
@@ -236,19 +236,6 @@ endpoints:
       summaryModel: Meta-Llama-3.2-3B-Instruct
       modelDisplayLabel: SambaNova
       iconURL: https://i.febryan.me/qgy8p.webp
-    - name: SambaNova Preview
-      apiKey: ${SAMBANOVA_KEY}
-      baseURL: https://preview.snova.ai/v1
-      models:
-        default:
-          - DeepSeek-R1
-        fetch: false
-      titleConvo: true
-      titleModel: DeepSeek-R1
-      summarize: false
-      summaryModel: DeepSeek-R1
-      modelDisplayLabel: SambaNova Preview
-      iconURL: https://i.febryan.me/qgy8p.webp
     - name: Chutes
       apiKey: ${CHUTES_KEY}
       baseURL: https://llm.chutes.ai/v1
@@ -457,7 +444,6 @@ endpoints:
           - NousResearch/Hermes-3-Llama-3.1-70B
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
-          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -1070,12 +1056,12 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
+          - mistral-7b-instruct-v0.1
           - mistral-7b-instruct-v0.2
           - Mistral-7B-Instruct-v0.2
-          - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1100,13 +1086,13 @@ endpoints:
           - mn-celeste-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - mythomax-l2-13b
           - MythoMax-L2-13b
+          - mythomax-l2-13b
           - MythoMax-L2-13b-Lite
           - nai-meta-v1
           - noromaid-20b
-          - nous-hermes-2-mixtral-8x7b-dpo
           - Nous-Hermes-2-Mixtral-8x7B-DPO
+          - nous-hermes-2-mixtral-8x7b-dpo
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
