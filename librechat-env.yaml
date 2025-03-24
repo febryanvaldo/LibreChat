@@ -1,4 +1,4 @@
-version: 1.2.2.20250323
+version: 1.2.2.20250324
 interface:
   cache: true
   privacyPolicy:
@@ -211,6 +211,7 @@ endpoints:
       baseURL: https://api.sambanova.ai/v1
       models:
         default:
+          - DeepSeek-R1
           - DeepSeek-R1-Distill-Llama-70B
           - E5-Mistral-7B-Instruct
           - Llama-3.1-Swallow-70B-Instruct-v0.3
@@ -254,6 +255,8 @@ endpoints:
       models:
         default:
           - allenai/Molmo-7B-D-0924
+          - bytedance-research/UI-TARS-72B-DPO
+          - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
           - deepseek-ai/DeepSeek-R1
@@ -262,7 +265,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3
           - hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4
-          - mistralai/Mistral-Small-3.1-24B-Instruct-2503
           - moonshotai/Moonlight-16B-A3B-Instruct
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
           - open-r1/OlympicCoder-32B
@@ -282,7 +284,6 @@ endpoints:
           - unsloth/gemma-3-4b-it
           - unsloth/Llama-3.2-1B-Instruct
           - unsloth/Llama-3.2-3B-Instruct
-          - unsloth/Llama-3.3-70B-Instruct
           - unsloth/Meta-Llama-3.1-8B-Instruct
           - unsloth/Mistral-Nemo-Instruct-2407
           - unsloth/Mistral-Small-24B-Instruct-2501
@@ -456,6 +457,7 @@ endpoints:
           - NousResearch/Hermes-3-Llama-3.1-70B
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -764,10 +766,12 @@ endpoints:
         default:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+          - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-V3
           - EnvyIrys/EnvyIrys_sn111_14
           - NousResearch/Hermes-3-Llama-3.1-8B
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - Qwen/QwQ-32B
           - TheDrummer/Cydonia-22B-v1.3
         fetch: false
       titleConvo: true
@@ -891,6 +895,7 @@ endpoints:
           - command-r-08-2024
           - command-r-plus
           - command-r-plus-04-2024
+          - command-r-plus-08-2024
           - command-r-plus-v1
           - command-r-v1
           - command-r7b-12-2024
@@ -990,6 +995,7 @@ endpoints:
           - l3-lunaris-8b
           - l3.1-70b-hanami-x1
           - l3.1-euryale-70b
+          - l3.3-electra-r1-70b
           - l3.3-euryale-70b
           - lfm-3b
           - lfm-40b
@@ -1005,7 +1011,6 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
-          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -1065,12 +1070,12 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
-          - Mistral-7B-Instruct-v0.2
+          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
+          - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1093,7 +1098,6 @@ endpoints:
           - Mixtral-8x7B-Instruct-v0.1
           - Mixtral-8x7B-v0.1
           - mn-celeste-12b
-          - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
           - mythomax-l2-13b
@@ -1749,6 +1753,7 @@ endpoints:
           - google/gemini-2.0-flash-exp
           - google/gemini-2.0-flash-thinking-exp-01-21
           - google/gemini-2.0-pro-exp-02-05
+          - google/gemma-3-27b-it
           - groq/qwen-qwq-32b
           - minimaxi/DeepSeek-R1
           - minimaxi/MiniMax-Text-01
