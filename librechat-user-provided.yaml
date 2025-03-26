@@ -7,7 +7,6 @@ interface:
   termsOfService:
     externalUrl: https://libre.febryan.me/#
     openNewTab: true
-  customWelcome: "Hello there... What can i help you with?"
 cache: true
 registration:
   socialLogins:
