@@ -1,4 +1,4 @@
-version: 1.2.3.20250402
+version: 1.2.3.20250403
 interface:
   cache: true
   privacyPolicy:
@@ -401,11 +401,14 @@ endpoints:
           - accounts/fireworks/models/qwen2-vl-72b-instruct
           - accounts/fireworks/models/qwen2p5-72b-instruct
           - accounts/fireworks/models/qwen2p5-coder-32b-instruct
+          - accounts/fireworks/models/qwen2p5-vl-32b-instruct
           - accounts/fireworks/models/qwq-32b
           - accounts/ks2025-c3e5c8/models/al1
           - accounts/perplexity/models/r1-1776
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
           - accounts/yi-01-ai/models/yi-large
+          - accounts/zmd5zer-d5cab1/models/ft-19dafd93-72ec8
+          - accounts/zmd5zer-d5cab1/models/ft-6474fbd1-ab2dd
         fetch: false
       titleConvo: true
       titleModel: accounts/fireworks/models/llama-v3p2-3b-instruct
@@ -900,6 +903,7 @@ endpoints:
           - command-r-08-2024
           - command-r-plus
           - command-r-plus-04-2024
+          - command-r-plus-08-2024
           - command-r-plus-v1
           - command-r-v1
           - command-r7b-12-2024
@@ -908,7 +912,6 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-r1
           - deepseek-r1-distill-llama-70b
-          - deepseek-r1-distill-llama-8b
           - deepseek-r1-distill-qwen-1.5b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
@@ -963,7 +966,6 @@ endpoints:
           - gpt-4o-2024-05-13
           - gpt-4o-2024-08-06
           - gpt-4o-2024-11-20
-          - gpt-4o-audio-preview
           - gpt-4o-audio-preview-2024-10-01
           - gpt-4o-audio-preview-2024-12-17
           - gpt-4o-mini
@@ -999,6 +1001,7 @@ endpoints:
           - jamba-instruct-v1
           - l3-euryale-70b
           - l3-lunaris-8b
+          - l3.1-70b-hanami-x1
           - l3.1-euryale-70b
           - l3.3-electra-r1-70b
           - l3.3-euryale-70b
@@ -1016,7 +1019,6 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
-          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -1131,6 +1133,7 @@ endpoints:
           - o3-mini-high
           - olmo-2-0325-32b-instruct
           - olympus-premier-v1
+          - openhands-lm-32b-v0.1
           - openhermes-2.5-mistral-7b
           - phi-3-medium-128k-instruct
           - phi-3-mini-128k-instruct
@@ -1139,6 +1142,7 @@ endpoints:
           - phi-4-multimodal-instruct
           - pixtral-12b
           - pixtral-large-2411
+          - pixtral-large-latest
           - qvq-72b-preview
           - qwen-2-72b-instruct
           - qwen-2-7b-instruct
@@ -1157,8 +1161,8 @@ endpoints:
           - Qwen2.5-7B-Instruct-Turbo
           - qwen2.5-vl-72b-instruct
           - qwq-32b
-          - qwq-32b-preview
           - QwQ-32B-Preview
+          - qwq-32b-preview
           - r1-1776
           - r1-v1
           - remm-slerp-l2-13b
@@ -1419,6 +1423,7 @@ endpoints:
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
+          - all-hands/openhands-lm-32b-v0.1
           - allenai/molmo-7b-d:free
           - allenai/olmo-2-0325-32b-instruct
           - alpindale/goliath-120b
@@ -1510,14 +1515,12 @@ endpoints:
           - google/gemma-3-27b-it:free
           - google/gemma-3-4b-it
           - google/gemma-3-4b-it:free
-          - google/gemma-7b-it
           - google/learnlm-1.5-pro-experimental:free
           - google/palm-2-chat-bison
           - google/palm-2-chat-bison-32k
           - google/palm-2-codechat-bison
           - google/palm-2-codechat-bison-32k
           - gryphe/mythomax-l2-13b
-          - gryphe/mythomax-l2-13b:free
           - huggingfaceh4/zephyr-7b-beta:free
           - infermatic/mn-inferor-12b
           - inflection/inflection-3-pi
@@ -1532,7 +1535,6 @@ endpoints:
           - meta-llama/llama-2-70b-chat
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
-          - meta-llama/llama-3-8b-instruct:free
           - meta-llama/llama-3.1-405b
           - meta-llama/llama-3.1-405b-instruct
           - meta-llama/llama-3.1-70b-instruct
