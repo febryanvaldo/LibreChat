@@ -1,4 +1,4 @@
-version: 1.2.3.20250403
+version: 1.2.3.20250404
 interface:
   cache: true
   privacyPolicy:
@@ -407,6 +407,7 @@ endpoints:
           - accounts/perplexity/models/r1-1776
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
           - accounts/yi-01-ai/models/yi-large
+          - accounts/zmd5zer-d5cab1/models/ft-03fade0c-dfa56
           - accounts/zmd5zer-d5cab1/models/ft-19dafd93-72ec8
           - accounts/zmd5zer-d5cab1/models/ft-6474fbd1-ab2dd
         fetch: false
@@ -912,6 +913,7 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-r1
           - deepseek-r1-distill-llama-70b
+          - deepseek-r1-distill-llama-8b
           - deepseek-r1-distill-qwen-1.5b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
@@ -926,7 +928,6 @@ endpoints:
           - fimbulvetr-11b-v2
           - gemini-1.5-flash
           - gemini-1.5-flash-8b
-          - gemini-1.5-flash-8b-latest
           - gemini-1.5-flash-latest
           - gemini-1.5-pro
           - gemini-1.5-pro-latest
@@ -1019,6 +1020,7 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
+          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instruct
@@ -1079,8 +1081,8 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.2
           - mistral-7b-instruct-v0.3
@@ -1134,7 +1136,6 @@ endpoints:
           - olmo-2-0325-32b-instruct
           - olympus-premier-v1
           - openhands-lm-32b-v0.1
-          - openhermes-2.5-mistral-7b
           - phi-3-medium-128k-instruct
           - phi-3-mini-128k-instruct
           - phi-3.5-mini-128k-instruct
@@ -1145,7 +1146,6 @@ endpoints:
           - pixtral-large-latest
           - qvq-72b-preview
           - qwen-2-72b-instruct
-          - qwen-2-7b-instruct
           - qwen-2-vl-7b-instruct
           - qwen-2.5-72b-instruct
           - qwen-2.5-7b-instruct
@@ -1177,6 +1177,7 @@ endpoints:
           - sonar-reasoning
           - sonar-reasoning-pro
           - sorcererlm-8x22b
+          - test
           - titan
           - titan-text-express-v1
           - titan-text-lite-v1
@@ -1254,6 +1255,7 @@ endpoints:
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - ernie-4.5-8k-preview
+          - ernie-x1-32k-preview
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
           - eva-unit-01/eva-qwen-2.5-72b
@@ -1642,6 +1644,7 @@ endpoints:
           - openai/o3-mini-high
           - openchat/openchat-7b
           - openchat/openchat-7b:free
+          - openrouter/quasar-alpha
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
           - perplexity/r1-1776
@@ -1652,8 +1655,6 @@ endpoints:
           - perplexity/sonar-reasoning-pro
           - pygmalionai/mythalion-13b
           - qwen/qwen-2-72b-instruct
-          - qwen/qwen-2-7b-instruct
-          - qwen/qwen-2-7b-instruct:free
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-72b-instruct:free
           - qwen/qwen-2.5-7b-instruct
@@ -1689,7 +1690,6 @@ endpoints:
           - sophosympatheia/midnight-rose-70b
           - sophosympatheia/rogue-rose-103b-v0.2:free
           - steelskull/l3.3-electra-r1-70b
-          - teknium/openhermes-2.5-mistral-7b
           - thedrummer/anubis-pro-105b-v1
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
