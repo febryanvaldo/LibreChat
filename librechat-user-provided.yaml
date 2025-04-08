@@ -1,4 +1,4 @@
-version: 1.2.4.202050407
+version: 1.2.4.20250408
 interface:
   cache: true
   privacyPolicy:
@@ -221,6 +221,7 @@ endpoints:
           - Llama-3.1-Tulu-3-405B
           - Llama-3.2-11B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct
+          - Llama-4-Scout-17B-16E-Instruct
           - Meta-Llama-3.1-405B-Instruct
           - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-8B-Instruct
@@ -391,6 +392,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-r1-basic
           - accounts/fireworks/models/deepseek-v3
           - accounts/fireworks/models/deepseek-v3-0324
+          - accounts/fireworks/models/firesearch-ocr-v6
           - accounts/fireworks/models/llama-guard-3-8b
           - accounts/fireworks/models/llama-v3-70b-instruct
           - accounts/fireworks/models/llama-v3p1-405b-instruct
@@ -416,10 +418,17 @@ endpoints:
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
           - accounts/yi-01-ai/models/yi-large
           - accounts/zmd5zer-d5cab1/models/ft-03fade0c-dfa56
+          - accounts/zmd5zer-d5cab1/models/ft-10cf39a6-ebbdd
           - accounts/zmd5zer-d5cab1/models/ft-19dafd93-72ec8
           - accounts/zmd5zer-d5cab1/models/ft-4d888079-6d48b
+          - accounts/zmd5zer-d5cab1/models/ft-592a9b1f-1bfb4
           - accounts/zmd5zer-d5cab1/models/ft-6474fbd1-ab2dd
+          - accounts/zmd5zer-d5cab1/models/ft-6a14a847-bb278
+          - accounts/zmd5zer-d5cab1/models/ft-755d1d57-2d702
+          - accounts/zmd5zer-d5cab1/models/ft-79313e32-d65d0
           - accounts/zmd5zer-d5cab1/models/ft-83d472ce-af151
+          - accounts/zmd5zer-d5cab1/models/ft-e6c8e46b-ea5e4
+          - accounts/zmd5zer-d5cab1/models/ft-fd5e5bdb-49bf1
         fetch: false
       titleConvo: true
       titleModel: accounts/fireworks/models/llama-v3p2-3b-instruct
@@ -927,11 +936,10 @@ endpoints:
           - command-text-v14
           - deepseek-chat
           - deepseek-chat-v3-0324
-          - deepseek-llm-67b-chat
           - DeepSeek-R1
           - deepseek-r1
-          - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-70b
+          - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-8b
           - DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-r1-distill-qwen-1.5b
@@ -948,8 +956,6 @@ endpoints:
           - dolphin-2.9.1-llama-3-70b
           - dolphin-mixtral-8x22b
           - dolphin-mixtral-8x7b
-          - eva-llama-3.33-70b
-          - eva-qwen-2.5-32b
           - eva-qwen-2.5-72b
           - fimbulvetr-11b-v2
           - gemini-1.5-flash
@@ -959,7 +965,7 @@ endpoints:
           - gemini-1.5-pro-latest
           - gemini-2.0-flash
           - gemini-2.0-flash-001
-          - gemini-2.0-flash-exp
+          - gemini-2.0-flash-lite
           - gemini-2.0-flash-lite-001
           - gemini-2.0-flash-lite-preview-02-05
           - gemini-2.5-pro-exp-03-25
@@ -1009,9 +1015,7 @@ endpoints:
           - grok-2
           - grok-2-1212
           - grok-2-latest
-          - grok-2-vision
           - grok-2-vision-1212
-          - grok-2-vision-latest
           - grok-beta
           - grok-vision-beta
           - hermes-2-pro-llama-3-8b
@@ -1064,12 +1068,13 @@ endpoints:
           - llama-3.1-8b-instruct
           - llama-3.1-lumimaid-70b
           - llama-3.1-lumimaid-8b
-          - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct
+          - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct-HF
           - llama-3.1-sonar-large-128k-online
           - llama-3.1-sonar-small-128k-online
           - llama-3.1-swallow-70b-instruct-v0.3
+          - llama-3.1-swallow-8b-instruct-v0.3
           - Llama-3.2-11B-Vision-Instruct
           - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
@@ -1078,11 +1083,11 @@ endpoints:
           - llama-3.2-3b-instruct
           - Llama-3.2-3B-Instruct
           - Llama-3.2-3B-Instruct-Turbo
-          - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct
+          - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
-          - llama-3.3-70b-instruct
           - Llama-3.3-70B-Instruct
+          - llama-3.3-70b-instruct
           - Llama-3.3-70B-Instruct-Turbo
           - llama-4-maverick
           - Llama-4-Maverick-17B-128E-Instruct-FP8
@@ -1126,8 +1131,8 @@ endpoints:
           - Meta-Llama-3.1-405B-Instruct-Turbo
           - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-70B-Instruct-Turbo
-          - Meta-Llama-3.1-8B-Instruct
           - meta-llama-3.1-8b-instruct
+          - Meta-Llama-3.1-8B-Instruct
           - Meta-Llama-3.1-8B-Instruct-Turbo
           - Meta-Llama-3.1-8B-Instruct-Turbo-128K
           - Meta-Llama-3.1-8B-Instruct-Turbo-classifier
@@ -1135,9 +1140,6 @@ endpoints:
           - Meta-Llama-Guard-3-8B-c7288101
           - Meta-Llama-Guard-3-8B-dc1baf04
           - meta-llama-llama-2-70b-hf
-          - meta.llama3-1-405b-instruct-v1:0
-          - meta.llama3-1-70b-instruct-v1:0
-          - meta.llama3-1-8b-instruct-v1:0
           - midnight-rose-70b
           - MiniCPM-Llama3-V-2_5
           - minimax-01
@@ -1145,10 +1147,10 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
-          - mistral-7b-instruct-v0.2
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
+          - mistral-7b-instruct-v0.2
           - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
           - mistral-large
@@ -1178,15 +1180,15 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - MythoMax-L2-13b-turbo
           - nai-meta-v1
           - Nemotron-4-340B-Instruct
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -1215,6 +1217,7 @@ endpoints:
           - Phind-CodeLlama-34B-v2
           - pixtral-12b
           - pixtral-large-2411
+          - pixtral-large-2502-v1
           - pixtral-large-latest
           - QVQ-72B-Preview
           - qvq-72b-preview
@@ -1241,12 +1244,11 @@ endpoints:
           - Qwen2.5-Coder-32B-Instruct
           - Qwen2.5-Coder-7B
           - qwen2.5-vl-32b-instruct
-          - Qwen2.5-VL-72B-Instruct
           - qwen2.5-vl-72b-instruct
-          - qwq-32b
+          - Qwen2.5-VL-72B-Instruct
           - QwQ-32B
+          - qwq-32b
           - QwQ-32B-Preview
-          - qwq-32b-preview
           - r1-1776
           - r1-v1
           - Reflection-Llama-3.1-70B
@@ -1274,8 +1276,6 @@ endpoints:
           - titan-tg1-large
           - toppy-m-7b
           - unslopnemo-12b
-          - Wan2.1-T2V-1.3B
-          - Wan2.1-T2V-14B
           - wayfarer-large-70b-llama-3.3
           - xwin-lm-70b
           - yi-large
@@ -1593,7 +1593,6 @@ endpoints:
           - google/gemini-2.0-flash-lite-001
           - google/gemini-2.0-flash-thinking-exp-1219:free
           - google/gemini-2.0-flash-thinking-exp:free
-          - google/gemini-2.0-pro-exp-02-05:free
           - google/gemini-2.5-pro-exp-03-25:free
           - google/gemini-2.5-pro-preview-03-25
           - google/gemini-flash-1.5
@@ -1653,9 +1652,7 @@ endpoints:
           - meta-llama/llama-guard-2-8b
           - meta-llama/llama-guard-3-8b
           - microsoft/phi-3-medium-128k-instruct
-          - microsoft/phi-3-medium-128k-instruct:free
           - microsoft/phi-3-mini-128k-instruct
-          - microsoft/phi-3-mini-128k-instruct:free
           - microsoft/phi-3.5-mini-128k-instruct
           - microsoft/phi-4
           - microsoft/phi-4-multimodal-instruct
@@ -1742,7 +1739,6 @@ endpoints:
           - openai/o3-mini
           - openai/o3-mini-high
           - openchat/openchat-7b
-          - openchat/openchat-7b:free
           - openrouter/quasar-alpha
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
@@ -1799,7 +1795,6 @@ endpoints:
           - tokyotech-llm/llama-3.1-swallow-8b-instruct-v0.3
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
-          - undi95/toppy-m-7b:free
           - x-ai/grok-2-1212
           - x-ai/grok-2-vision-1212
           - x-ai/grok-beta
@@ -2060,10 +2055,8 @@ endpoints:
           - deepseek-v3@deepinfra
           - deepseek-v3@deepseek
           - deepseek-v3@fireworks-ai
+          - deepseek-v3@replicate
           - deepseek-v3@together-ai
-          - gemini-1.0-pro-001@vertex-ai
-          - gemini-1.0-pro-002@vertex-ai
-          - gemini-1.0-pro@vertex-ai
           - gemini-1.5-flash-001@vertex-ai
           - gemini-1.5-flash-002@vertex-ai
           - gemini-1.5-flash@vertex-ai
@@ -2121,7 +2114,6 @@ endpoints:
           - llama-3.1-8b-chat@vertex-ai
           - llama-3.1-nemotron-70b-chat@deepinfra
           - llama-3.2-11b-chat@deepinfra
-          - llama-3.2-11b-chat@fireworks-ai
           - llama-3.2-11b-chat@groq
           - llama-3.2-11b-chat@together-ai
           - llama-3.2-11b-chat@vertex-ai
@@ -2135,7 +2127,6 @@ endpoints:
           - llama-3.2-3b-chat@lepton-ai
           - llama-3.2-3b-chat@together-ai
           - llama-3.2-90b-chat@deepinfra
-          - llama-3.2-90b-chat@fireworks-ai
           - llama-3.2-90b-chat@groq
           - llama-3.2-90b-chat@together-ai
           - llama-3.2-90b-chat@vertex-ai
@@ -2145,6 +2136,16 @@ endpoints:
           - llama-3.3-70b-chat@groq
           - llama-3.3-70b-chat@lepton-ai
           - llama-3.3-70b-chat@together-ai
+          - llama-4-maverick-instruct@deepinfra
+          - llama-4-maverick-instruct@fireworks-ai
+          - llama-4-maverick-instruct@groq
+          - llama-4-maverick-instruct@replicate
+          - llama-4-maverick-instruct@together-ai
+          - llama-4-scout-instruct@deepinfra
+          - llama-4-scout-instruct@fireworks-ai
+          - llama-4-scout-instruct@groq
+          - llama-4-scout-instruct@replicate
+          - llama-4-scout-instruct@together-ai
           - ministral-3b@mistral-ai
           - ministral-8b@mistral-ai
           - mistral-7b-instruct-v0.2@aws-bedrock
@@ -2162,10 +2163,8 @@ endpoints:
           - mistral-small@mistral-ai
           - mistral-small@together-ai
           - mixtral-8x22b-instruct-v0.1@fireworks-ai
-          - mixtral-8x22b-instruct-v0.1@together-ai
           - mixtral-8x7b-instruct-v0.1@aws-bedrock
           - mixtral-8x7b-instruct-v0.1@deepinfra
-          - mixtral-8x7b-instruct-v0.1@fireworks-ai
           - mixtral-8x7b-instruct-v0.1@lepton-ai
           - mixtral-8x7b-instruct-v0.1@together-ai
           - o1-mini@openai
@@ -2179,7 +2178,6 @@ endpoints:
           - qwen-2.5-7b-instruct@deepinfra
           - qwen-2.5-7b-instruct@together-ai
           - qwen-2.5-coder-32b-instruct@deepinfra
-          - qwen-2.5-coder-32b-instruct@fireworks-ai
           - qwen-2.5-coder-32b-instruct@groq
           - qwen-2.5-coder-32b-instruct@together-ai
           - qwen-qwq-32b@deepinfra
