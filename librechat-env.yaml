@@ -1,4 +1,4 @@
-version: 1.2.4.20250410
+version: 1.2.4.20250411
 interface:
   cache: true
   privacyPolicy:
@@ -267,6 +267,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3-Base
           - hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4
+          - moonshotai/Kimi-VL-A3B-Thinking
           - moonshotai/Moonlight-16B-A3B-Instruct
           - mrfakename/mistral-small-3.1-24b-instruct-2503-hf
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
@@ -427,7 +428,6 @@ endpoints:
           - accounts/perplexity/models/r1-1776
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
           - accounts/yi-01-ai/models/yi-large
-          - accounts/zmd5zer-d5cab1/models/ft-03fade0c-dfa56
           - accounts/zmd5zer-d5cab1/models/ft-10cf39a6-ebbdd
           - accounts/zmd5zer-d5cab1/models/ft-19dafd93-72ec8
           - accounts/zmd5zer-d5cab1/models/ft-4d888079-6d48b
@@ -572,6 +572,7 @@ endpoints:
           - NousResearch/Hermes-3-Llama-405B
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF-fast
+          - nvidia/Llama-3_1-Nemotron-Ultra-253B-v1
           - Qwen/QVQ-72B-preview
           - Qwen/Qwen2-VL-72B-Instruct
           - Qwen/Qwen2-VL-7B-Instruct
@@ -947,15 +948,15 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-r1
           - DeepSeek-R1
-          - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-70b
+          - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-8b
           - deepseek-r1-distill-qwen-1.5b
           - DeepSeek-R1-Distill-Qwen-1.5B
-          - DeepSeek-R1-Distill-Qwen-14B
           - deepseek-r1-distill-qwen-14b
-          - deepseek-r1-distill-qwen-32b
+          - DeepSeek-R1-Distill-Qwen-14B
           - DeepSeek-R1-Distill-Qwen-32B
+          - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Turbo
           - deepseek-reasoner
           - DeepSeek-V3
@@ -995,6 +996,8 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - goliath-120b
+          - gpt-35-turbo
+          - gpt-35-turbo-16k
           - gpt-4-0125-preview
           - gpt-4-0314
           - gpt-4-0613
@@ -1028,6 +1031,7 @@ endpoints:
           - grok-2-latest
           - grok-2-vision-1212
           - grok-3-beta
+          - grok-3-mini-beta
           - grok-beta
           - grok-vision-beta
           - hermes-2-pro-llama-3-8b
@@ -1052,6 +1056,7 @@ endpoints:
           - jamba-instruct-v1
           - L3-70B-Euryale-v2.1
           - L3-8B-Lunaris-v1
+          - L3-8B-Lunaris-v1-Turbo
           - l3-euryale-70b
           - l3-lunaris-8b
           - L3.1-70B-Euryale-v2.2
@@ -1080,8 +1085,8 @@ endpoints:
           - llama-3.1-8b-instruct
           - llama-3.1-lumimaid-70b
           - llama-3.1-lumimaid-8b
-          - Llama-3.1-Nemotron-70B-Instruct
           - llama-3.1-nemotron-70b-instruct
+          - Llama-3.1-Nemotron-70B-Instruct
           - Llama-3.1-Nemotron-70B-Instruct-HF
           - llama-3.1-nemotron-nano-8b-v1
           - llama-3.1-nemotron-ultra-253b-v1
@@ -1092,16 +1097,16 @@ endpoints:
           - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
-          - llama-3.2-1b-instruct
           - Llama-3.2-1B-Instruct
-          - llama-3.2-3b-instruct
+          - llama-3.2-1b-instruct
           - Llama-3.2-3B-Instruct
+          - llama-3.2-3b-instruct
           - Llama-3.2-3B-Instruct-Turbo
-          - Llama-3.2-90B-Vision-Instruct
           - llama-3.2-90b-vision-instruct
+          - Llama-3.2-90B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
-          - Llama-3.3-70B-Instruct
           - llama-3.3-70b-instruct
+          - Llama-3.3-70B-Instruct
           - Llama-3.3-70B-Instruct-Turbo
           - llama-3.3-nemotron-super-49b-v1
           - llama-4-maverick
@@ -1162,12 +1167,12 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
-          - Mistral-7B-Instruct-v0.2
+          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
+          - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1195,8 +1200,8 @@ endpoints:
           - mn-inferor-12b
           - mn-starcannon-12b
           - mythalion-13b
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - MythoMax-L2-13b-turbo
           - nai-meta-v1
@@ -1228,8 +1233,8 @@ endpoints:
           - phi-3-mini-128k-instruct
           - phi-3.5-mini-128k-instruct
           - phi-4
-          - Phi-4-multimodal-instruct
           - phi-4-multimodal-instruct
+          - Phi-4-multimodal-instruct
           - Phind-CodeLlama-34B-v2
           - pixtral-12b
           - pixtral-large-2411
@@ -1260,10 +1265,10 @@ endpoints:
           - Qwen2.5-Coder-32B-Instruct
           - Qwen2.5-Coder-7B
           - qwen2.5-vl-32b-instruct
-          - Qwen2.5-VL-72B-Instruct
           - qwen2.5-vl-72b-instruct
-          - qwq-32b
+          - Qwen2.5-VL-72B-Instruct
           - QwQ-32B
+          - qwq-32b
           - qwq-32b-preview
           - QwQ-32B-Preview
           - r1-1776
@@ -1447,6 +1452,7 @@ endpoints:
           - mistralai/mistral-saba
           - mistralai/mistral-tiny
           - mlabonne/NeuralDaredevil-8B-abliterated
+          - moonshotai/Kimi-VL-A3B-Thinking
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
           - NeverSleep/Lumimaid-v0.2-70B
           - Nexusflow/Athene-V2-Chat
@@ -1705,10 +1711,10 @@ endpoints:
           - mistralai/mistral-small-3.1-24b-instruct:free
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct
-          - mistralai/mixtral-8x7b
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
+          - moonshotai/kimi-vl-a3b-thinking:free
           - moonshotai/moonlight-16b-a3b-instruct:free
           - neversleep/llama-3-lumimaid-70b
           - neversleep/llama-3-lumimaid-8b
@@ -1764,7 +1770,7 @@ endpoints:
           - openai/o3-mini
           - openai/o3-mini-high
           - openchat/openchat-7b
-          - openrouter/quasar-alpha
+          - openrouter/optimus-alpha
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
           - perplexity/r1-1776
@@ -2034,6 +2040,10 @@ endpoints:
           - vertex/anthropic/claude-3-7-sonnet@us-east5
           - xai/grok-2-1212
           - xai/grok-2-latest
+          - xai/grok-3-beta
+          - xai/grok-3-fast-beta
+          - xai/grok-3-mini-beta
+          - xai/grok-3-mini-fast-beta
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-4o-mini
