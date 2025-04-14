@@ -1,4 +1,4 @@
-version: 1.2.4.20250413
+version: 1.2.4.20250414
 interface:
   cache: true
   privacyPolicy:
@@ -252,7 +252,9 @@ endpoints:
       baseURL: https://llm.chutes.ai/v1
       models:
         default:
+          - agentica-org/DeepCoder-14B-Preview
           - allenai/Molmo-7B-D-0924
+          - ArliAI/QwQ-32B-ArliAI-RpR-v1
           - bytedance-research/UI-TARS-72B-DPO
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Llama-4-Scout-17B-16E-Instruct
@@ -890,7 +892,6 @@ endpoints:
           - airoboros-70b
           - airoboros-l2-70b
           - amazon.nova-lite-v1:0
-          - amazon.nova-micro-v1:0
           - amazon.nova-pro-v1:0
           - anubis-pro-105b-v1
           - chatgpt-4o-latest
@@ -947,10 +948,10 @@ endpoints:
           - deepseek-r1-distill-llama-70b
           - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-8b
-          - DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-r1-distill-qwen-1.5b
-          - DeepSeek-R1-Distill-Qwen-14B
+          - DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-r1-distill-qwen-14b
+          - DeepSeek-R1-Distill-Qwen-14B
           - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Distill-Qwen-32B
           - DeepSeek-R1-Turbo
@@ -1022,7 +1023,6 @@ endpoints:
           - gpt-4o-mini-search-preview-2025-03-11
           - gpt-4o-search-preview
           - gpt-4o-search-preview-2025-03-11
-          - grok-2
           - grok-2-1212
           - grok-2-latest
           - grok-2-vision-1212
@@ -1031,8 +1031,8 @@ endpoints:
           - grok-beta
           - grok-vision-beta
           - hermes-2-pro-llama-3-8b
-          - Hermes-3-Llama-3.1-405B
           - hermes-3-llama-3.1-405b
+          - Hermes-3-Llama-3.1-405B
           - hermes-3-llama-3.1-70b
           - inflection-3-pi
           - inflection-3-productivity
@@ -1050,7 +1050,6 @@ endpoints:
           - jamba-1.6-mini
           - jamba-instruct
           - jamba-instruct-v1
-          - kimi-vl-a3b-thinking
           - L3-70B-Euryale-v2.1
           - L3-8B-Lunaris-v1
           - L3-8B-Lunaris-v1-Turbo
@@ -1082,15 +1081,15 @@ endpoints:
           - llama-3.1-8b-instruct
           - llama-3.1-lumimaid-70b
           - llama-3.1-lumimaid-8b
-          - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct
+          - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct-HF
           - llama-3.1-sonar-large-128k-online
           - llama-3.1-sonar-small-128k-online
           - llama-3.1-swallow-70b-instruct-v0.3
           - llama-3.1-swallow-8b-instruct-v0.3
-          - Llama-3.2-11B-Vision-Instruct
           - llama-3.2-11b-vision-instruct
+          - Llama-3.2-11B-Vision-Instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
           - llama-3.2-1b-instruct
           - Llama-3.2-1B-Instruct
@@ -1100,8 +1099,8 @@ endpoints:
           - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
-          - Llama-3.3-70B-Instruct
           - llama-3.3-70b-instruct
+          - Llama-3.3-70B-Instruct
           - Llama-3.3-70B-Instruct-Turbo
           - llama-4-maverick
           - Llama-4-Maverick-17B-128E-Instruct-FP8
@@ -1145,8 +1144,8 @@ endpoints:
           - Meta-Llama-3.1-405B-Instruct-Turbo
           - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-70B-Instruct-Turbo
-          - Meta-Llama-3.1-8B-Instruct
           - meta-llama-3.1-8b-instruct
+          - Meta-Llama-3.1-8B-Instruct
           - Meta-Llama-3.1-8B-Instruct-Turbo
           - Meta-Llama-3.1-8B-Instruct-Turbo-128K
           - Meta-Llama-3.1-8B-Instruct-Turbo-classifier
@@ -1154,18 +1153,19 @@ endpoints:
           - Meta-Llama-Guard-3-8B-c7288101
           - Meta-Llama-Guard-3-8B-dc1baf04
           - meta-llama-llama-2-70b-hf
+          - midnight-rose-70b
           - MiniCPM-Llama3-V-2_5
           - minimax-01
           - ministral-3b
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
-          - Mistral-7B-Instruct-v0.2
+          - mistral-7b-instruct-v0.1
           - mistral-7b-instruct-v0.2
-          - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.2
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1200,8 +1200,8 @@ endpoints:
           - nai-meta-v1
           - Nemotron-4-340B-Instruct
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -1214,12 +1214,12 @@ endpoints:
           - o1-mini-2024-09-12
           - o1-preview
           - o1-preview-2024-09-12
+          - o1-pro
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
           - olympus-premier-v1
           - openhands-lm-32b-v0.1
-          - optimus-alpha
           - phi-3-medium-128k-instruct
           - Phi-3-medium-4k-instruct
           - phi-3-mini-128k-instruct
@@ -1257,10 +1257,10 @@ endpoints:
           - Qwen2.5-Coder-32B-Instruct
           - Qwen2.5-Coder-7B
           - qwen2.5-vl-32b-instruct
-          - qwen2.5-vl-72b-instruct
           - Qwen2.5-VL-72B-Instruct
-          - qwq-32b
+          - qwen2.5-vl-72b-instruct
           - QwQ-32B
+          - qwq-32b
           - QwQ-32B-Preview
           - qwq-32b-preview
           - r1-1776
@@ -1308,6 +1308,7 @@ endpoints:
         default:
           - free-model
           - abacusai/Dracarys-72B-Instruct
+          - agentica-org/DeepCoder-14B-Preview
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
@@ -1531,6 +1532,7 @@ endpoints:
           - openrouter/auto
           - 01-ai/yi-large
           - aetherwiing/mn-starcannon-12b
+          - agentica-org/deepcoder-14b-preview:free
           - ai21/jamba-1-5-large
           - ai21/jamba-1-5-mini
           - ai21/jamba-1.6-large
@@ -1572,6 +1574,7 @@ endpoints:
           - anthropic/claude-3.7-sonnet:beta
           - anthropic/claude-3.7-sonnet:online
           - anthropic/claude-3.7-sonnet:thinking
+          - arliai/qwq-32b-arliai-rpr-v1:free
           - bytedance-research/ui-tars-72b:free
           - cognitivecomputations/dolphin-mixtral-8x22b
           - cognitivecomputations/dolphin-mixtral-8x7b
