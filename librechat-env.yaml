@@ -1,4 +1,4 @@
-version: 1.2.4.20250422
+version: 1.2.4.20250423
 interface:
   cache: true
   privacyPolicy:
@@ -327,6 +327,7 @@ endpoints:
           - Gryphe/MythoMax-L2-13b
           - Gryphe/MythoMax-L2-13b-turbo
           - KoboldAI/LLaMA2-13B-Tiefighter
+          - LatitudeGames/aid-wayfarer-2e-mixed-24b-dpo-rm-Turbo
           - lizpreciatior/lzlv_70b_fp16_hf
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
@@ -890,8 +891,8 @@ endpoints:
           - command-text-v14
           - deepseek-chat
           - deepseek-chat-v3-0324
-          - DeepSeek-R1
           - deepseek-r1
+          - DeepSeek-R1
           - deepseek-r1-distill-llama-70b
           - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-8b
@@ -899,8 +900,8 @@ endpoints:
           - deepseek-r1-distill-qwen-1.5b
           - DeepSeek-R1-Distill-Qwen-14B
           - deepseek-r1-distill-qwen-14b
-          - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Distill-Qwen-32B
+          - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Turbo
           - deepseek-reasoner
           - DeepSeek-V3
@@ -925,7 +926,6 @@ endpoints:
           - gemini-2.0-flash-lite-001
           - gemini-2.0-flash-lite-preview-02-05
           - gemini-2.5-flash-preview
-          - gemini-2.5-flash-preview-04-17
           - gemini-2.5-pro
           - gemini-2.5-pro-exp-03-25
           - gemini-2.5-pro-preview-03-25
@@ -988,8 +988,8 @@ endpoints:
           - grok-beta
           - grok-vision-beta
           - hermes-2-pro-llama-3-8b
-          - hermes-3-llama-3.1-405b
           - Hermes-3-Llama-3.1-405B
+          - hermes-3-llama-3.1-405b
           - hermes-3-llama-3.1-70b
           - inflection-3-pi
           - inflection-3-productivity
@@ -1044,8 +1044,8 @@ endpoints:
           - llama-3.1-8b-instruct
           - llama-3.1-lumimaid-70b
           - llama-3.1-lumimaid-8b
-          - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct
+          - llama-3.1-nemotron-70b-instruct
           - Llama-3.1-Nemotron-70B-Instruct-HF
           - llama-3.1-sonar-large-128k-online
           - llama-3.1-sonar-small-128k-online
@@ -1053,10 +1053,10 @@ endpoints:
           - Llama-3.2-11B-Vision-Instruct
           - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
-          - llama-3.2-1b-instruct
           - Llama-3.2-1B-Instruct
-          - Llama-3.2-3B-Instruct
+          - llama-3.2-1b-instruct
           - llama-3.2-3b-instruct
+          - Llama-3.2-3B-Instruct
           - Llama-3.2-3B-Instruct-Turbo
           - Llama-3.2-90B-Vision-Instruct
           - llama-3.2-90b-vision-instruct
@@ -1071,8 +1071,8 @@ endpoints:
           - Llama-4-Scout-17B-16E-Instruct
           - llama-guard-2-8b
           - Llama-Guard-3-11B-Vision-Turbo
-          - llama-guard-3-8b
           - Llama-Guard-3-8B
+          - llama-guard-3-8b
           - Llama-Guard-7b
           - Llama-Rank-V1
           - llama2-13b-chat-v1
@@ -1091,13 +1091,13 @@ endpoints:
           - llama3-70b-instruct-v1
           - llama3-8b-instruct-v1
           - llama3.1-typhoon2-70b-instruct
-          - llama3.1-typhoon2-8b-instruct
           - LlamaGuard-2-8b
           - llemma_7b
           - lzlv_70b_fp16_hf
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
+          - mai-ds-r1
           - Meta-Llama-3-70B-Instruct
           - Meta-Llama-3-70B-Instruct-Turbo
           - Meta-Llama-3-8B-Instruct
@@ -1125,8 +1125,8 @@ endpoints:
           - mistral-7b-instruct-v0
           - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
-          - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.2
+          - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
           - mistral-large
@@ -1165,8 +1165,8 @@ endpoints:
           - nai-meta-v1
           - Nemotron-4-340B-Instruct
           - noromaid-20b
-          - nous-hermes-2-mixtral-8x7b-dpo
           - Nous-Hermes-2-Mixtral-8x7B-DPO
+          - nous-hermes-2-mixtral-8x7b-dpo
           - nous-hermes-2-vision-7b
           - nous-hermes-llama2-13b
           - nova-lite-v1
@@ -1195,8 +1195,8 @@ endpoints:
           - phi-3-mini-128k-instruct
           - phi-3.5-mini-128k-instruct
           - phi-4
-          - phi-4-multimodal-instruct
           - Phi-4-multimodal-instruct
+          - phi-4-multimodal-instruct
           - Phind-CodeLlama-34B-v2
           - pixtral-12b
           - pixtral-large-2411
@@ -1204,8 +1204,8 @@ endpoints:
           - pixtral-large-latest
           - premium
           - premium-coding
-          - QVQ-72B-Preview
           - qvq-72b-preview
+          - QVQ-72B-Preview
           - qwen-2-5-large
           - qwen-2-5-small
           - qwen-2-72b-instruct
@@ -1221,7 +1221,6 @@ endpoints:
           - qwen-plus
           - qwen-turbo
           - qwen-vl-max
-          - qwen-vl-plus
           - Qwen2-72B-Instruct
           - Qwen2-7B-Instruct
           - Qwen2-VL-72B-Instruct
@@ -1236,7 +1235,6 @@ endpoints:
           - qwen2.5-vl-72b-instruct
           - Qwen2.5-VL-72B-Instruct
           - QwQ-32B
-          - qwq-32b
           - qwq-32b-preview
           - QwQ-32B-Preview
           - r1-1776
@@ -1265,7 +1263,6 @@ endpoints:
           - titan-text-premier-v1
           - titan-tg1-large
           - toppy-m-7b
-          - tts-1
           - ultra-fast
           - unslopnemo-12b
           - wayfarer-large-70b-llama-3.3
@@ -1615,8 +1612,6 @@ endpoints:
           - google/gemini-2.0-flash-001:online
           - google/gemini-2.0-flash-exp:free
           - google/gemini-2.0-flash-lite-001
-          - google/gemini-2.0-flash-thinking-exp-1219:free
-          - google/gemini-2.0-flash-thinking-exp:free
           - google/gemini-2.5-flash-preview
           - google/gemini-2.5-flash-preview:thinking
           - google/gemini-2.5-pro-exp-03-25:free
@@ -1624,7 +1619,6 @@ endpoints:
           - google/gemini-flash-1.5
           - google/gemini-flash-1.5-8b
           - google/gemini-flash-1.5-8b-exp
-          - google/gemini-pro
           - google/gemini-pro-1.5
           - google/gemini-pro-vision
           - google/gemma-2-27b-it
