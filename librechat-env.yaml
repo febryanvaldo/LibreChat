@@ -14,7 +14,7 @@ registration:
     - facebook
     - github
     - google
-    - openid
+    - openid 
   endpointsMenu: true
   modelSelect: true
   parameters: true

@@ -13,8 +13,8 @@ registration:
     - discord
     - facebook
     - github
-    - google
-    - openid
+    - google 
+    - openid 
   endpointsMenu: true
   modelSelect: true
   parameters: true
