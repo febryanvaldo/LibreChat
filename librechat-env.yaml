@@ -1,4 +1,4 @@
-version: 1.2.4.0507.4
+version: 1.2.4.20250507.9
 interface:
   cache: true
   privacyPolicy:
@@ -493,9 +493,9 @@ endpoints:
           - hf:Qwen/Qwen3-235B-A22B
         fetch: false
       titleConvo: true
-      titleModel: hf:google/gemma-2-27b-it
+      titleModel: hf:meta-llama/Llama-3.1-8B-Instruct
       summarize: false
-      summaryModel: hf:google/gemma-2-27b-it
+      summaryModel: hf:meta-llama/Llama-3.1-8B-Instruct
       dropParams:
         - stream
         - user
