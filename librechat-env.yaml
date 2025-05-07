@@ -1,4 +1,4 @@
-version: 1.2.4.20250506
+version: 1.2.4.20250507
 interface:
   cache: true
   privacyPolicy:
@@ -464,6 +464,41 @@ endpoints:
       dropParams:
         - user
       iconURL: https://i.febryan.me/tl9ti.svg
+    - name: GHLF.chat
+      apiKey: ${GLHF_KEY}
+      baseURL: https://api.glhf.chat/v1
+      models:
+        default:
+          - hf:deepseek-ai/DeepSeek-R1
+          - hf:deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+          - hf:deepseek-ai/DeepSeek-V3
+          - hf:deepseek-ai/DeepSeek-V3-0324
+          - hf:google/gemma-2-27b-it
+          - hf:meta-llama/Llama-3.1-405B-Instruct
+          - hf:meta-llama/Llama-3.1-70B-Instruct
+          - hf:meta-llama/Llama-3.1-8B-Instruct
+          - hf:meta-llama/Llama-3.2-11B-Vision-Instruct
+          - hf:meta-llama/Llama-3.2-3B-Instruct
+          - hf:meta-llama/Llama-3.3-70B-Instruct
+          - hf:meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
+          - hf:meta-llama/Llama-4-Scout-17B-16E-Instruct
+          - hf:mistralai/Mistral-7B-Instruct-v0.3
+          - hf:mistralai/Mixtral-8x22B-Instruct-v0.1
+          - hf:mistralai/Mixtral-8x7B-Instruct-v0.1
+          - hf:NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+          - hf:nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - hf:Qwen/Qwen2.5-72B-Instruct
+          - hf:Qwen/Qwen2.5-7B-Instruct
+          - hf:Qwen/Qwen2.5-Coder-32B-Instruct
+          - hf:Qwen/Qwen3-235B-A22B
+        fetch: false
+      titleConvo: true
+      titleModel: hf:meta-llama/Llama-3.2-3B-Instruct
+      summarize: false
+      summaryModel: hf:meta-llama/Llama-3.2-3B-Instruct
+      forcePrompt: false
+      modelDisplayLabel: GLHF.chat
+      iconURL: https://i.febryan.me/di7y5.webp
     - name: Hyperbolic
       apiKey: ${HYPERBOLIC_KEY}
       baseURL: https://api.hyperbolic.xyz/v1
@@ -677,82 +712,22 @@ endpoints:
         default:
           - alibaba-cloud/qwen-2.5-72b-instruct
           - anthropic/claude-3.7-sonnet
-          - chatgpt-4o
-          - chatgpt-4o-latest
-          - claude-3.7-sonnet
-          - deepseek-r1
-          - deepseek-v3
           - deepseek/deepseek-r1
           - deepseek/deepseek-v3
-          - gemini-1.5-flash
-          - gemini-1.5-flash-exp
-          - gemini-1.5-flash-exp-0827
-          - gemini-1.5-pro
           - google/gemini-1.5-flash
           - google/gemini-1.5-flash-exp-0827
           - google/gemini-1.5-pro
-          - gpt-3.5-turbo
-          - gpt-3.5-turbo-0125
-          - gpt-3.5-turbo-16k
-          - gpt-4.1
-          - gpt-4.1-2025-04-14
-          - gpt-4.1-mini
-          - gpt-4.1-mini-2025-04-14
-          - gpt-4.1-nano
-          - gpt-4.1-nano-2025-04-14
-          - gpt-4o
-          - gpt-4o-2024-05-13
-          - gpt-4o-2024-08-06
-          - gpt-4o-2024-11-20
-          - gpt-4o-mini
-          - gpt-4o-mini-2024-07-18
-          - grok-3
-          - o3
-          - o3-2025-04-16
-          - o3-mini
-          - o4-mini
-          - o4-mini-2025-04-16
-          - openai/chatgpt-4o
-          - openai/chatgpt-4o-latest
           - openai/gpt-3.5-turbo-0125
-          - openai/gpt-4.1
           - openai/gpt-4.1-2025-04-14
-          - openai/gpt-4.1-mini
           - openai/gpt-4.1-mini-2025-04-14
-          - openai/gpt-4.1-nano
           - openai/gpt-4.1-nano-2025-04-14
-          - openai/gpt-4o
-          - openai/gpt-4o-2024-05-13
-          - openai/gpt-4o-2024-08-06
           - openai/gpt-4o-2024-11-20
           - openai/gpt-4o-mini
-          - openai/gpt-4o-mini-2024-07-18
-          - openai/o3
           - openai/o3-2025-04-16
           - openai/o3-mini
-          - openai/o4-mini
           - openai/o4-mini-2025-04-16
-          - qwen-2.5
-          - qwen-2.5-72b
-          - qwen-2.5-72b-instruct
-          - s1
-          - s1-mini
-          - shuttle-2-turbo
-          - shuttle-2.5
-          - shuttle-2.5-mini
-          - shuttle-2.5-mini-2024-09-11
-          - shuttle-3
-          - shuttle-3-mini
-          - shuttle-3.5
-          - shuttle-s1
-          - shuttle-s1-mini
-          - shuttle-strawberry
-          - shuttle-strawberry-mini
           - shuttleai/s1
           - shuttleai/s1-mini
-          - shuttleai/shuttle-2.5
-          - shuttleai/shuttle-2.5-mini
-          - shuttleai/shuttle-2.5-mini-2024-09-11
           - shuttleai/shuttle-3
           - shuttleai/shuttle-3-mini
           - shuttleai/shuttle-3.5
@@ -934,13 +909,13 @@ endpoints:
           - DeepSeek-Prover-V2-671B
           - deepseek-r1
           - DeepSeek-R1
-          - deepseek-r1-distill-llama-70b
           - DeepSeek-R1-Distill-Llama-70B
+          - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-8b
           - deepseek-r1-distill-qwen-1.5b
           - DeepSeek-R1-Distill-Qwen-1.5B
-          - DeepSeek-R1-Distill-Qwen-14B
           - deepseek-r1-distill-qwen-14b
+          - DeepSeek-R1-Distill-Qwen-14B
           - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Distill-Qwen-32B
           - DeepSeek-R1-Turbo
@@ -958,7 +933,6 @@ endpoints:
           - dolphin3.0-r1-mistral-24b
           - eu.amazon.nova-lite-v1:0
           - eva-llama-3.33-70b
-          - eva-qwen-2.5-32b
           - eva-qwen-2.5-72b
           - fimbulvetr-11b-v2
           - gemini-1.5-flash
@@ -978,6 +952,7 @@ endpoints:
           - gemini-2.5-flash-preview-04-17
           - gemini-2.5-pro
           - gemini-2.5-pro-exp-03-25
+          - gemini-2.5-pro-preview
           - gemini-2.5-pro-preview-03-25
           - gemini-flash-1.5
           - gemini-flash-1.5-8b
@@ -1124,19 +1099,19 @@ endpoints:
           - llama-3.1-sonar-large-128k-online
           - llama-3.1-sonar-small-128k-online
           - llama-3.1-swallow-70b-instruct-v0.3
-          - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct
+          - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
-          - Llama-3.2-1B-Instruct
           - llama-3.2-1b-instruct
+          - Llama-3.2-1B-Instruct
           - llama-3.2-3b-instruct
           - Llama-3.2-3B-Instruct
           - Llama-3.2-3B-Instruct-Turbo
           - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
-          - Llama-3.3-70B-Instruct
           - llama-3.3-70b-instruct
+          - Llama-3.3-70B-Instruct
           - Llama-3.3-70B-Instruct-Turbo
           - llama-3.3-nemotron-super-49b-v1
           - llama-4
@@ -1148,8 +1123,8 @@ endpoints:
           - Llama-Guard-3-11B-Vision-Turbo
           - Llama-Guard-3-8B
           - llama-guard-3-8b
-          - llama-guard-4-12b
           - Llama-Guard-4-12B
+          - llama-guard-4-12b
           - Llama-Guard-7b
           - Llama-Rank-V1
           - llama2-13b-chat-v1
@@ -1176,6 +1151,7 @@ endpoints:
           - LlamaGuard-2-8b
           - llemma_7b
           - lzlv_70b_fp16_hf
+          - maestro-reasoning
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
@@ -1213,8 +1189,8 @@ endpoints:
           - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.2
-          - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
+          - Mistral-7B-Instruct-v0.3
           - mistral-large
           - mistral-large-2402-v1
           - mistral-large-2407
@@ -1246,8 +1222,8 @@ endpoints:
           - multimodal
           - mythalion-13b
           - mythomax
-          - MythoMax-L2-13b
           - mythomax-l2-13b
+          - MythoMax-L2-13b
           - MythoMax-L2-13b-Lite
           - MythoMax-L2-13b-turbo
           - nai-meta-v1
@@ -1334,8 +1310,8 @@ endpoints:
           - qwen3-1.7b
           - qwen3-14b
           - Qwen3-14B
-          - qwen3-235b-a22b
           - Qwen3-235B-A22B
+          - qwen3-235b-a22b
           - Qwen3-30B-A3B
           - qwen3-30b-a3b
           - qwen3-32b
@@ -1370,6 +1346,7 @@ endpoints:
           - sonar-reasoning
           - sonar-reasoning-pro
           - sorcererlm-8x22b
+          - spotlight
           - starcoder2-15b-instruct-v0.1
           - text-babbage-002
           - text-davinci-002
@@ -1379,10 +1356,13 @@ endpoints:
           - titan-text-lite-v1
           - titan-text-premier-v1
           - titan-tg1-large
+          - toppy-m-7b
           - tts-1
           - ui-tars-72b
           - ultra-fast
           - unslopnemo-12b
+          - virtuoso-large
+          - virtuoso-medium-v2
           - Wan2.1-T2V-1.3B
           - Wan2.1-T2V-14B
           - yi-large
@@ -1482,6 +1462,7 @@ endpoints:
           - gemini-2.5-flash-preview-04-17:thinking
           - gemini-2.5-pro-exp-03-25
           - gemini-2.5-pro-preview-03-25
+          - gemini-2.5-pro-preview-05-06
           - gemini-exp-1206
           - glm-4
           - glm-4-air
@@ -1754,7 +1735,7 @@ endpoints:
           - google/gemini-2.5-flash-preview
           - google/gemini-2.5-flash-preview:thinking
           - google/gemini-2.5-pro-exp-03-25
-          - google/gemini-2.5-pro-preview-03-25
+          - google/gemini-2.5-pro-preview
           - google/gemini-flash-1.5
           - google/gemini-flash-1.5-8b
           - google/gemini-flash-1.5-8b-exp
@@ -1940,7 +1921,6 @@ endpoints:
           - qwen/qwen3-14b
           - qwen/qwen3-14b:free
           - qwen/qwen3-235b-a22b
-          - qwen/qwen3-235b-a22b:free
           - qwen/qwen3-30b-a3b
           - qwen/qwen3-30b-a3b:free
           - qwen/qwen3-32b
@@ -2028,6 +2008,7 @@ endpoints:
           - cline/o3-mini:medium
           - coding/claude-3-7-sonnet
           - coding/gemini-2.5-pro-preview-03-25
+          - coding/gemini-2.5-pro-preview-05-06
           - deepinfra/Qwen/QwQ-32B
           - deepinfra/Qwen/Qwen2.5-72B-Instruct
           - deepinfra/Qwen/Qwen2.5-Coder-32B-Instruct
@@ -2061,6 +2042,7 @@ endpoints:
           - google/gemini-2.5-flash-preview-04-17
           - google/gemini-2.5-pro-exp-03-25
           - google/gemini-2.5-pro-preview-03-25
+          - google/gemini-2.5-pro-preview-05-06
           - google/gemma-3-27b-it
           - groq/qwen-qwq-32b
           - minimaxi/DeepSeek-R1
