@@ -1,4 +1,4 @@
-version: 1.2.4.0507.2
+version: 1.2.4.0507.3
 interface:
   cache: true
   privacyPolicy:
@@ -466,7 +466,7 @@ endpoints:
       iconURL: https://i.febryan.me/tl9ti.svg
     - name: GLHF.chat
       apiKey: ${GLHF_KEY}
-      baseURL: https://glhf.chat/api/openai/v1/chat/completions
+      baseURL: https://api.glhf.chat/v1
       models:
         default:
           - hf:deepseek-ai/DeepSeek-R1
@@ -496,7 +496,8 @@ endpoints:
       titleModel: hf:meta-llama/Llama-3.2-3B-Instruct
       summarize: false
       summaryModel: hf:meta-llama/Llama-3.2-3B-Instruct
-      directEndpoint: true
+      dropParams:
+        - stream
       forcePrompt: false
       modelDisplayLabel: GLHF.chat
       iconURL: https://i.febryan.me/di7y5.webp
