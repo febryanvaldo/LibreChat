@@ -1,4 +1,4 @@
-version: 1.2.4.0507.1
+version: 1.2.4.0507.2
 interface:
   cache: true
   privacyPolicy:
@@ -464,9 +464,9 @@ endpoints:
       dropParams:
         - user
       iconURL: https://i.febryan.me/tl9ti.svg
-    - name: GHLF.chat
+    - name: GLHF.chat
       apiKey: ${GLHF_KEY}
-      baseURL: https://api.glhf.chat/v1/chat/completions
+      baseURL: https://glhf.chat/api/openai/v1/chat/completions
       models:
         default:
           - hf:deepseek-ai/DeepSeek-R1

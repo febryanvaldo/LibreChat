@@ -464,7 +464,7 @@ endpoints:
       dropParams:
         - user
       iconURL: https://i.febryan.me/tl9ti.svg
-    - name: GHLF.chat
+    - name: GLHF.chat
       apiKey: user_provided
       baseURL: https://glhf.chat/api/openai/v1
       models:
@@ -497,7 +497,7 @@ endpoints:
       summarize: false
       summaryModel: hf:meta-llama/Llama-3.2-3B-Instruct
       forcePrompt: false
-      modelDisplayLabel: GHLF.chat
+      modelDisplayLabel: GLHF.chat
       iconURL: https://i.febryan.me/di7y5.webp
     - name: Hyperbolic
       apiKey: user_provided
