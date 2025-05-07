@@ -6,7 +6,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 
 ---
 
-## Table of Contents
+## Table of Contents 
 
 - [LibreChat YAML Configuration Files](#librechat-yaml-configuration-files)
   - [Table of Contents](#table-of-contents)
