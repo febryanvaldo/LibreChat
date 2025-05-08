@@ -499,7 +499,7 @@ endpoints:
       summaryModel: hf:meta-llama/Llama-3.1-8B-Instruct
       forcePrompt: false
       modelDisplayLabel: GLHF.chat
-      iconURL: https://i.febryan.me/di7y5.webp
+      iconURL: https://i.febryan.me/opdtx.webp
     - name: Hyperbolic
       apiKey: ${HYPERBOLIC_KEY}
       baseURL: https://api.hyperbolic.xyz/v1
