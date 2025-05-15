@@ -243,6 +243,41 @@
 ==================================================
 2025-05-14 11:13:37 GMT+7
 ==================================================
+
+==================================================
+2025-05-15 10:56:49 GMT+7
+==================================================
+🤖 Anthropic   : 7 models (no change)
+🤖 Google      : 22 models (no change)
+🤖 OpenAI      : 41 models (no change)
+🤖 Cohere      : 11 models (no change)
+🤖 DeepSeek    : 2 models (no change)
+🤖 Mistral AI  : 45 models (no change)
+🤖 Perplexity  : 6 models (no change)
+🤖 xAI         : 7 models (no change)
+🤖 Cerebras    : 3 models (no change)
+🤖 Groq        : 17 models (no change)
+🤖 Sambanova   : 15 models (no change)
+🤖 Chutes      : 60 models (+2 models)
+🤖 DeepInfra   : 88 models (no change)
+🤖 Fireworks   : 25 models (-1 model)
+🤖 FriendliAI  : 3 models (no change)
+🤖 GLHF.chat   : 23 models (+1 model)
+🤖 Hyperbolic  : 20 models (no change)
+🤖 KlusterAI   : 10 models (+1 model)
+🤖 Nebius      : 75 models (no change)
+🤖 Novita AI   : 52 models (no change)
+🤖 ShuttleAI   : 22 models (no change)
+🤖 Targon      : 4 models (no change)
+🤖 Together AI : 57 models (+2 models)
+🤖 APIpie      : 526 models (no change)
+🤖 NanoGPT     : 274 models (no change)
+🤖 OpenRouter  : 323 models (no change)
+🤖 Requesty    : 229 models (no change)
+🤖 UnifyAI     : 175 models (no change)
+==================================================
+2025-05-15 10:56:49 GMT+7
+==================================================
 ```
 
 ### OpenRouter Web Search Models
