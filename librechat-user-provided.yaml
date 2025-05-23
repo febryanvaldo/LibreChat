@@ -1,4 +1,4 @@
-version: 1.2.5.20250523.13
+version: 1.2.5.20250523.15
 interface:
   cache: true
   privacyPolicy:
@@ -213,9 +213,9 @@ endpoints:
           - qwen-qwq-32b
         fetch: false
       titleConvo: true
-      titleModel: llama-3.2-3b-preview
+      titleModel: llama-3.1-8b-instant
       summarize: false
-      summaryModel: llama-3.2-3b-preview
+      summaryModel: llama-3.1-8b-instant
       modelDisplayLabel: Groq
       iconURL: https://i.febryan.me/gesbn.svg
     - name: SambaNova
@@ -453,9 +453,9 @@ endpoints:
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
         fetch: false
       titleConvo: true
-      titleModel: accounts/fireworks/models/llama-v3p2-3b-instruct
+      titleModel: accounts/fireworks/models/llama-v3p1-8b-instruct
       summarize: false
-      summaryModel: accounts/fireworks/models/llama-v3p2-3b-instruct
+      summaryModel: accounts/fireworks/models/llama-v3p1-8b-instruct
       forcePrompt: false
       modelDisplayLabel: Fireworks AI
       iconURL: https://i.febryan.me/r99kc.svg
