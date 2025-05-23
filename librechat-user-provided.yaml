@@ -1,4 +1,4 @@
-version: 1.2.5.20250522
+version: 1.2.5.20250523
 interface:
   cache: true
   privacyPolicy:
@@ -234,6 +234,7 @@ endpoints:
           - Qwen2-Audio-7B-Instruct
           - Qwen3-32B
           - QwQ-32B
+          - Whisper-Large-v3
 
         fetch: false
       titleConvo: true
@@ -250,6 +251,7 @@ endpoints:
           - agentica-org/DeepCoder-14B-Preview
           - ArliAI/QwQ-32B-ArliAI-RpR-v1
           - ByteDance-Seed/Seed-Coder-8B-Reasoning-bf16
+          - casperhansen/deepseek-r1-distill-qwen-32b-awq
           - chutesai/Devstral-Small-2505
           - chutesai/Llama-3.1-405B-FP8
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
@@ -882,6 +884,10 @@ endpoints:
           - claude-3.5-haiku-20241022
           - claude-3.7-sonnet
           - claude-instant-v1
+          - claude-opus-4
+          - claude-opus-4-20250514-v1
+          - claude-sonnet-4
+          - claude-sonnet-4-20250514-v1
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
           - coder-large
@@ -921,14 +927,14 @@ endpoints:
           - DeepSeek-Prover-V2-671B
           - DeepSeek-R1
           - deepseek-r1
-          - deepseek-r1-distill-llama-70b
           - DeepSeek-R1-Distill-Llama-70B
+          - deepseek-r1-distill-llama-70b
           - DeepSeek-R1-Distill-Llama-70B-free
           - deepseek-r1-distill-llama-8b
-          - deepseek-r1-distill-qwen-1.5b
           - DeepSeek-R1-Distill-Qwen-1.5B
-          - deepseek-r1-distill-qwen-14b
+          - deepseek-r1-distill-qwen-1.5b
           - DeepSeek-R1-Distill-Qwen-14B
+          - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Distill-Qwen-32B
           - DeepSeek-R1-Turbo
@@ -1111,13 +1117,13 @@ endpoints:
           - llama-3.2-11b-vision-instruct
           - Llama-3.2-11B-Vision-Instruct
           - Llama-3.2-11B-Vision-Instruct-Turbo
-          - llama-3.2-1b-instruct
           - Llama-3.2-1B-Instruct
-          - Llama-3.2-3B-Instruct
+          - llama-3.2-1b-instruct
           - llama-3.2-3b-instruct
+          - Llama-3.2-3B-Instruct
           - Llama-3.2-3B-Instruct-Turbo
-          - Llama-3.2-90B-Vision-Instruct
           - llama-3.2-90b-vision-instruct
+          - Llama-3.2-90B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
           - llama-3.3-70b-instruct
           - Llama-3.3-70B-Instruct
@@ -1134,7 +1140,6 @@ endpoints:
           - llama-guard-2-8b
           - Llama-Guard-3-11B-Vision-Turbo
           - Llama-Guard-3-8B
-          - llama-guard-3-8b
           - Llama-Guard-4-12B
           - llama-guard-4-12b
           - Llama-Guard-7b
@@ -1147,7 +1152,6 @@ endpoints:
           - llama3-1-70b-instruct-v1
           - llama3-1-70b-instruct-v1:0
           - llama3-1-8b-instruct-v1
-          - llama3-1-8b-instruct-v1:0
           - llama3-2-11b-instruct-v1
           - llama3-2-1b-instruct-v1
           - llama3-2-3b-instruct-v1
@@ -1198,12 +1202,12 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - Mistral-7B-Instruct-v0.1
           - mistral-7b-instruct-v0.1
+          - Mistral-7B-Instruct-v0.1
           - Mistral-7B-Instruct-v0.2
           - mistral-7b-instruct-v0.2
-          - mistral-7b-instruct-v0.3
           - Mistral-7B-Instruct-v0.3
+          - mistral-7b-instruct-v0.3
           - mistral-large
           - mistral-large-2402
           - mistral-large-2402-v1
@@ -1237,14 +1241,14 @@ endpoints:
           - multimodal
           - mythalion-13b
           - mythomax
-          - mythomax-l2-13b
           - MythoMax-L2-13b
+          - mythomax-l2-13b
           - MythoMax-L2-13b-Lite
           - MythoMax-L2-13b-turbo
           - Nemotron-4-340B-Instruct
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nova-lite-v1
           - nova-micro-v1
@@ -1323,20 +1327,20 @@ endpoints:
           - qwen2.5-coder-7b-instruct
           - qwen2.5-vl-32b-instruct
           - qwen2.5-vl-3b-instruct
-          - Qwen2.5-VL-72B-Instruct
           - qwen2.5-vl-72b-instruct
+          - Qwen2.5-VL-72B-Instruct
           - qwen3-0.6b-04-28
           - qwen3-1.7b
-          - Qwen3-14B
           - qwen3-14b
-          - qwen3-235b-a22b
+          - Qwen3-14B
           - Qwen3-235B-A22B
+          - qwen3-235b-a22b
           - Qwen3-235B-A22B-fp8
           - Qwen3-235B-A22B-fp8-tput
           - Qwen3-30B-A3B
           - qwen3-30b-a3b
-          - Qwen3-32B
           - qwen3-32b
+          - Qwen3-32B
           - qwen3-4b
           - qwen3-8b
           - qwerky-72b
@@ -1432,6 +1436,18 @@ endpoints:
           - claude-3-7-sonnet-thinking:32768
           - claude-3-7-sonnet-thinking:8192
           - claude-3-opus-20240229
+          - claude-opus-4-20250514
+          - claude-opus-4-thinking
+          - claude-opus-4-thinking:1024
+          - claude-opus-4-thinking:128000
+          - claude-opus-4-thinking:32768
+          - claude-opus-4-thinking:8192
+          - claude-sonnet-4-20250514
+          - claude-sonnet-4-thinking
+          - claude-sonnet-4-thinking:1024
+          - claude-sonnet-4-thinking:128000
+          - claude-sonnet-4-thinking:32768
+          - claude-sonnet-4-thinking:8192
           - cognitivecomputations/dolphin-mixtral-8x22b
           - cohere/command-r
           - cohere/command-r-plus-08-2024
@@ -1738,6 +1754,8 @@ endpoints:
           - anthropic/claude-3.7-sonnet:beta
           - anthropic/claude-3.7-sonnet:online
           - anthropic/claude-3.7-sonnet:thinking
+          - anthropic/claude-opus-4
+          - anthropic/claude-sonnet-4
           - arcee-ai/arcee-blitz
           - arcee-ai/caller-large
           - arcee-ai/coder-large
@@ -2043,6 +2061,8 @@ endpoints:
           - anthropic/claude-3-opus-20240229
           - anthropic/claude-3-opus-latest
           - anthropic/claude-3-sonnet-20240229
+          - anthropic/claude-opus-4-20250514
+          - anthropic/claude-sonnet-4-20250514
           - cline/claude-3-5-sonnet
           - cline/claude-3-5-sonnet:alpha
           - cline/claude-3-5-sonnet:alpha-v2
@@ -2061,6 +2081,7 @@ endpoints:
           - cline/o3-mini:low
           - cline/o3-mini:medium
           - coding/claude-3-7-sonnet
+          - coding/claude-4-sonnet
           - coding/gemini-2.5-pro-preview-03-25
           - coding/gemini-2.5-pro-preview-05-06
           - deepinfra/Qwen/QwQ-32B
@@ -2249,6 +2270,8 @@ endpoints:
           - vertex/anthropic/claude-3-7-sonnet-latest@us-east5
           - vertex/anthropic/claude-3-7-sonnet@europe-west1
           - vertex/anthropic/claude-3-7-sonnet@us-east5
+          - vertex/anthropic/claude-4-sonnet
+          - vertex/anthropic/claude-4-sonnet-latest
           - xai/grok-2-1212
           - xai/grok-2-latest
           - xai/grok-3-beta
