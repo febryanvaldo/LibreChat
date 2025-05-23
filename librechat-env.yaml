@@ -1,4 +1,4 @@
-version: 1.2.5.20250523.3
+version: 1.2.5.20250523.4
 interface:
   cache: true
   privacyPolicy:
@@ -28,7 +28,7 @@ endpoints:
   custom:
     - name: Cohere
       apiKey: ${COHERE_KEY}
-      baseURL: https://api.cohere.ai/v1
+      baseURL: https://api.cohere.ai/v2
       models:
         default:
           - c4ai-aya-expanse-32b
@@ -54,7 +54,6 @@ endpoints:
         - stop
         - frequency_penalty
         - presence_penalty
-        - top_p
       iconURL: https://i.febryan.me/9rj7t.png
     - name: DeepSeek
       apiKey: ${DEEPSEEK_KEY}
