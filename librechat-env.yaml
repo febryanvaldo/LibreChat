@@ -1,4 +1,4 @@
-version: 1.2.5.20250523.4
+version: 1.2.5.20250523.5
 interface:
   cache: true
   privacyPolicy:
@@ -28,7 +28,7 @@ endpoints:
   custom:
     - name: Cohere
       apiKey: ${COHERE_KEY}
-      baseURL: https://api.cohere.ai/v2
+      baseURL: https://api.cohere.ai/v1
       models:
         default:
           - c4ai-aya-expanse-32b
