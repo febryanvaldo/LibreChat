@@ -1,4 +1,4 @@
-version: 1.2.5.20250523.7
+version: 1.2.5.20250523.11
 interface:
   cache: true
   privacyPolicy:
@@ -54,6 +54,7 @@ endpoints:
         - stop
         - frequency_penalty
         - presence_penalty
+        - top_p
       iconURL: https://i.febryan.me/9rj7t.png
     - name: DeepSeek
       apiKey: user_provided
