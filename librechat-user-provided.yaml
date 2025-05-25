@@ -1,4 +1,4 @@
-version: 1.2.5.20250525
+version: 1.2.6.20250525
 interface:
   cache: true
   privacyPolicy:
@@ -2472,3 +2472,13 @@ endpoints:
       summaryModel: gpt-4.1-mini@openai
       modelDisplayLabel: UnifyAI
       iconURL: https://i.febryan.me/pnpqd.png
+webSearch:
+  serperApiKey: ${SERPER_KEY}
+  firecrawlApiKey: ${FIRECRAWL_KEY}
+  jinaApiKey: ${JINA_KEY}
+  cohereApiKey: ${COHERE_KEY2}
+  searchProvider: serper
+  scraperType: firecrawl
+  rerankerType: jina
+  scraperTimeout: 7500
+  safeSearch: 0
