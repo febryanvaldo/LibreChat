@@ -15,7 +15,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
     - [Basic Usage](#basic-usage)
     - [Advanced Usage](#advanced-usage)
   - [RAW URLs](#raw-urls)
-  - [.ENV Configuration](#env-configuration)
+  - [.ENV Configuration for Custom Endpoints](#env-configuration-for-custom-endpoints)
   - [Update Policy](#update-policy)
   - [Validation and Formatting](#validation-and-formatting)
   - [Additional Resources](#additional-resources)
@@ -33,13 +33,13 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 
 ### Basic Usage
 
-1. **Select a configuration file**  
+1. **Select a Configuration File**  
    Choose either `librechat-env.yaml` or `librechat-user-provided.yaml`.
 
 2. **Obtain the RAW URL**  
    Copy the RAW URL of the chosen file (see [RAW URLs](#raw-urls)).
 
-3. **Edit your `.env` file**  
+3. **Edit Your `.env` File**  
    Locate your project’s `.env` file and open it for editing.
 
 4. **Update the CONFIG_PATH**  
@@ -54,9 +54,9 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    CONFIG_PATH=<RAW_URL_GOES_HERE>
    ```
 
-5. **Configure your environment keys (For `librechat-env.yaml` only)**
-   Replace `<ENV_GOES_HERE>` with the provided .env configuration values:
-
+5. **Configure Your Custom Endpoints Environment Keys (for `librechat-env.yaml` only)**
+   Replace `<ENV_GOES_HERE>` with the provided .ENV Configuration for Custom Endpoints values:
+   
    ```plaintext
    #===================================#
    # Known Endpoints - librechat.yaml  #
@@ -64,6 +64,32 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    # See: https://www.librechat.ai/docs/configurationlibrechat_yamlai_endpoints
 
    <ENV_GOES_HERE>
+   ```
+
+5. **Configure the Web Seach Environment Keys (for `librechat-env.yaml` only)** 
+   ```
+   #======================#
+   # Web Search           #
+   #======================#
+
+   # Note: All of the following variable names can be customized.
+   # Omit values to allow user to provide them.
+
+   # For more information on configuration values, see:
+   # https://librechat.ai/docs/features/web_search
+
+   # Search Provider (Required)
+   SERPER_KEY=Your_Serper_API_Key_Here
+
+   # Scraper (Required)
+   FIRECRAWL_KEY=Your_Firecrawl_API_Key_Here
+   # Optional: Custom Firecrawl API URL
+   # FIRECRAWL_API_URL=your_firecrawl_api_url
+
+   # Reranker (Required)
+   JINA_KEY=Your_Jina_API_Key_Here
+   # or if you want to use Cohere,
+   COHERE_KEY2=Your_Cohere2_API_Key_Here
    ```
 
 ### Advanced Usage
@@ -88,34 +114,34 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
 
 ---
 
-## .ENV Configuration
+## .ENV Configuration for Custom Endpoints
 
-```plaintext
-COHERE_KEY=Your_API_Key_Here
-DEEPSEEK_KEY=Your_API_Key_Here
-MISTRALAI_KEY=Your_API_Key_Here
-PERPLEXITY_KEY=Your_API_Key_Here
-XAI_KEY=Your_API_Key_Here
-CEREBRAS_KEY=Your_API_Key_Here
-GROQ_KEY=Your_API_Key_Here
-SAMBANOVA_KEY=Your_API_Key_Here
-CHUTES_KEY=Your_API_Key_Here
-DEEPINFRA_KEY=Your_API_Key_Here
-FIREWORKSAI_KEY=Your_API_Key_Here
-FRIENDLIAI_KEY=Your_API_Key_Here
-GLHF_KEY=Your_API_Key_Here
-HYPERBOLIC_KEY=Your_API_Key_Here
-KLUSTERAI_KEY=Your_API_Key_Here
-NEBIUS_KEY=Your_API_Key_Here
-NOVITAAI_KEY=Your_API_Key_Here
-SHUTTLEAI_KEY=Your_API_Key_Here
-TARGON_KEY=Your_API_Key_Here 
-TOGETHERAI_KEY=Your_API_Key_Here
-APIPIE_KEY=Your_API_Key_Here
-NANOGPT_KEY=Your_API_Key_Here
-OPENROUTER_KEY=Your_API_Key_Here
-REQUESTY_KEY=Your_API_Key_Here
-```
+   ```plaintext
+   COHERE_KEY=Your_API_Key_Here
+   DEEPSEEK_KEY=Your_API_Key_Here
+   MISTRALAI_KEY=Your_API_Key_Here
+   PERPLEXITY_KEY=Your_API_Key_Here
+   XAI_KEY=Your_API_Key_Here
+   CEREBRAS_KEY=Your_API_Key_Here
+   GROQ_KEY=Your_API_Key_Here
+   SAMBANOVA_KEY=Your_API_Key_Here
+   CHUTES_KEY=Your_API_Key_Here
+   DEEPINFRA_KEY=Your_API_Key_Here
+   FIREWORKSAI_KEY=Your_API_Key_Here
+   FRIENDLIAI_KEY=Your_API_Key_Here
+   GLHF_KEY=Your_API_Key_Here
+   HYPERBOLIC_KEY=Your_API_Key_Here
+   KLUSTERAI_KEY=Your_API_Key_Here
+   NEBIUS_KEY=Your_API_Key_Here
+   NOVITAAI_KEY=Your_API_Key_Here
+   SHUTTLEAI_KEY=Your_API_Key_Here
+   TARGON_KEY=Your_API_Key_Here 
+   TOGETHERAI_KEY=Your_API_Key_Here
+   APIPIE_KEY=Your_API_Key_Here
+   NANOGPT_KEY=Your_API_Key_Here
+   OPENROUTER_KEY=Your_API_Key_Here
+   REQUESTY_KEY=Your_API_Key_Here
+   ```
 
 ---
 
