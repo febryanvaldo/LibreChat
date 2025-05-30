@@ -1,4 +1,4 @@
-version: 1.2.6.20250529
+version: 1.2.6.20250530
 interface:
   cache: true
   privacyPolicy:
@@ -81,8 +81,6 @@ endpoints:
           - codestral-2412
           - codestral-2501
           - codestral-latest
-          - codestral-mamba-2407
-          - codestral-mamba-latest
           - devstral-small-2505
           - devstral-small-latest
           - ministral-3b-2410
@@ -111,7 +109,6 @@ endpoints:
           - mistral-tiny-2312
           - mistral-tiny-2407
           - mistral-tiny-latest
-          - open-codestral-mamba
           - open-mistral-7b
           - open-mistral-nemo
           - open-mistral-nemo-2407
@@ -265,6 +262,7 @@ endpoints:
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
+          - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-R1-Zero
@@ -485,8 +483,8 @@ endpoints:
       baseURL: https://api.glhf.chat/v1
       models:
         default:
-          - hf:accounts/fireworks/models/llama-v3p2-3b-instruct
           - hf:deepseek-ai/DeepSeek-R1
+          - hf:deepseek-ai/DeepSeek-R1-0528
           - hf:deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - hf:deepseek-ai/DeepSeek-V3
           - hf:deepseek-ai/DeepSeek-V3-0324
@@ -495,7 +493,7 @@ endpoints:
           - hf:meta-llama/Llama-3.1-70B-Instruct
           - hf:meta-llama/Llama-3.1-8B-Instruct
           - hf:meta-llama/Llama-3.2-11B-Vision-Instruct
-          - hf:meta-llama/Llama-3.2-3B-Instruct-Turbo
+          - hf:meta-llama/Llama-3.2-3B-Instruct
           - hf:meta-llama/Llama-3.3-70B-Instruct
           - hf:meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - hf:meta-llama/Llama-4-Scout-17B-16E-Instruct
@@ -637,6 +635,7 @@ endpoints:
           - cognitivecomputations/dolphin-mixtral-8x22b
           - deepseek/deepseek-prover-v2-671b
           - deepseek/deepseek-r1-0528
+          - deepseek/deepseek-r1-0528-qwen3-8b
           - deepseek/deepseek-r1-distill-llama-70b
           - deepseek/deepseek-r1-distill-llama-8b
           - deepseek/deepseek-r1-distill-qwen-14b
@@ -659,7 +658,6 @@ endpoints:
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-nemo
           - nousresearch/hermes-2-pro-llama-3-8b
-          - pa/cd-op-4-20250514
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen2.5-7b-instruct
           - qwen/qwen2.5-vl-72b-instruct
@@ -762,6 +760,8 @@ endpoints:
           - google/gemma-2b-it
           - Gryphe/MythoMax-L2-13b
           - Gryphe/MythoMax-L2-13b-Lite
+          - lgai/exaone-3-5-32b-instruct
+          - lgai/exaone-deep-32b
           - marin-community/marin-8b-instruct
           - meta-llama/Llama-3-70b-chat-hf
           - meta-llama/Llama-3-8b-chat-hf
@@ -820,7 +820,6 @@ endpoints:
           - airoboros-70b
           - amazon.nova-lite-v1
           - amazon.nova-lite-v1:0
-          - amazon.nova-micro-v1:0
           - anubis-pro-105b-v1
           - arcee-blitz
           - babbage-002
@@ -867,9 +866,7 @@ endpoints:
           - codestral-2405
           - codestral-2501
           - codestral-latest
-          - codestral-mamba
           - codestral-mamba-latest
-          - codex-mini
           - codex-mini-latest
           - command
           - command-a
@@ -887,7 +884,6 @@ endpoints:
           - command-r-v1
           - command-r7b-12-2024
           - command-text-v14
-          - computer-use-preview
           - computer-use-preview-2025-03-11
           - davinci-002
           - deepcoder-14b-preview
@@ -895,22 +891,15 @@ endpoints:
           - deephermes-3-mistral-24b-preview
           - deepseek-chat
           - deepseek-chat-v3-0324
-          - deepseek-coder
           - deepseek-prover-v2
           - DeepSeek-Prover-V2-671B
           - DeepSeek-R1
-          - deepseek-r1
-          - DeepSeek-R1-0528
           - deepseek-r1-0528
+          - DeepSeek-R1-0528
           - DeepSeek-R1-Distill-Llama-70B
-          - deepseek-r1-distill-llama-70b
           - DeepSeek-R1-Distill-Llama-70B-free
-          - deepseek-r1-distill-llama-8b
-          - deepseek-r1-distill-qwen-1.5b
           - DeepSeek-R1-Distill-Qwen-1.5B
           - DeepSeek-R1-Distill-Qwen-14B
-          - deepseek-r1-distill-qwen-14b
-          - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Distill-Qwen-32B
           - DeepSeek-R1-Turbo
           - deepseek-r1-zero
@@ -945,9 +934,7 @@ endpoints:
           - gemini-2.0-flash-lite-preview-02-05
           - gemini-2.5-flash
           - gemini-2.5-flash-preview
-          - gemini-2.5-flash-preview-04-17
           - gemini-2.5-flash-preview-05-20
-          - gemini-2.5-pro
           - gemini-2.5-pro-exp-03-25
           - gemini-2.5-pro-preview
           - gemini-2.5-pro-preview-03-25
@@ -1017,26 +1004,25 @@ endpoints:
           - gpt-4o-search-preview
           - gpt-4o-search-preview-2025-03-11
           - gpt-4o-transcribe
-          - gpt-image-1
           - grok-2
           - grok-2-1212
           - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
-          - grok-3
           - grok-3-beta
-          - grok-3-mini-beta
           - grok-beta
           - grok-vision-beta
           - hermes-2-pro-llama-3-8b
-          - Hermes-3-Llama-3.1-405B
           - hermes-3-llama-3.1-405b
+          - Hermes-3-Llama-3.1-405B
           - hermes-3-llama-3.1-70b
           - inflection-3-pi
           - inflection-3-productivity
           - internvl3-14b
           - internvl3-2b
+          - j2-mid
+          - j2-ultra
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-1.6-large
@@ -1060,7 +1046,6 @@ endpoints:
           - lfm-40b
           - lfm-7b
           - Llama-2-13b-chat-hf
-          - llama-2-70b-chat
           - Llama-2-70b-chat-hf
           - Llama-2-70b-hf
           - llama-3-2-large
@@ -1071,6 +1056,7 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
+          - llama-3.1-405b
           - llama-3.1-405b-instruct
           - llama-3.1-70b-instruct
           - llama-3.1-8b-instant
@@ -1095,8 +1081,8 @@ endpoints:
           - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
-          - llama-3.3-70b-instruct
           - Llama-3.3-70B-Instruct
+          - llama-3.3-70b-instruct
           - Llama-3.3-70B-Instruct-Turbo
           - Llama-3.3-70B-Instruct-Turbo-Free
           - llama-3.3-70b-versatile
@@ -1109,8 +1095,8 @@ endpoints:
           - Llama-4-Scout-17B-16E-Instruct
           - llama-guard-2-8b
           - Llama-Guard-3-11B-Vision-Turbo
-          - Llama-Guard-3-8B
           - llama-guard-3-8b
+          - Llama-Guard-3-8B
           - llama-guard-4-12b
           - Llama-Guard-4-12B
           - Llama-Guard-7b
@@ -1119,7 +1105,6 @@ endpoints:
           - LLaMA2-13B-Tiefighter
           - llama2-70b-chat-v1
           - llama3-1-405b-instruct-v1
-          - llama3-1-405b-instruct-v1:0
           - llama3-1-70b-instruct-v1
           - llama3-1-8b-instruct-v1
           - llama3-2-11b-instruct-v1
@@ -1127,6 +1112,7 @@ endpoints:
           - llama3-2-3b-instruct-v1
           - llama3-2-90b-instruct-v1
           - llama3-3-70b-instruct-v1
+          - llama3-70b-8192
           - llama3-70b-instruct-v1
           - llama3-70b-instruct-v1:0
           - llama3-8b-8192
@@ -1137,7 +1123,6 @@ endpoints:
           - llama4-maverick-17b-instruct-v1
           - llama4-scout-17b-instruct-v1
           - LlamaGuard-2-8b
-          - llemma_7b
           - lzlv_70b_fp16_hf
           - maestro-reasoning
           - magnum-72b
@@ -1145,7 +1130,6 @@ endpoints:
           - magnum-v4-72b
           - mai-ds-r1
           - medium
-          - mercury-coder-small-beta
           - Meta-Llama-3-70B-Instruct
           - Meta-Llama-3-70B-Instruct-Turbo
           - Meta-Llama-3-8B-Instruct
@@ -1154,8 +1138,8 @@ endpoints:
           - Meta-Llama-3.1-405B-Instruct-Turbo
           - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-70B-Instruct-Turbo
-          - Meta-Llama-3.1-8B-Instruct
           - meta-llama-3.1-8b-instruct
+          - Meta-Llama-3.1-8B-Instruct
           - Meta-Llama-3.1-8B-Instruct-Turbo
           - Meta-Llama-Guard-3-8B
           - Meta-Llama-Guard-3-8B-c7288101
@@ -1171,10 +1155,10 @@ endpoints:
           - ministral-8b
           - mistral-7b-instruct
           - mistral-7b-instruct-v0
-          - mistral-7b-instruct-v0.1
           - Mistral-7B-Instruct-v0.1
-          - Mistral-7B-Instruct-v0.2
+          - mistral-7b-instruct-v0.1
           - mistral-7b-instruct-v0.2
+          - Mistral-7B-Instruct-v0.2
           - Mistral-7B-Instruct-v0.3
           - mistral-7b-instruct-v0.3
           - mistral-large
@@ -1189,8 +1173,8 @@ endpoints:
           - mistral-saba-latest
           - mistral-small
           - mistral-small-2402-v1
-          - Mistral-Small-24B-Instruct-2501
           - mistral-small-24b-instruct-2501
+          - Mistral-Small-24B-Instruct-2501
           - mistral-small-3.1-24b-instruct
           - mistral-small-latest
           - mistral-tiny
@@ -1203,8 +1187,6 @@ endpoints:
           - mn-celeste-12b
           - mn-inferor-12b
           - mn-starcannon-12b
-          - MoA-1
-          - MoA-1-Turbo
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - multimodal
@@ -1236,11 +1218,8 @@ endpoints:
           - o3-2025-04-16
           - o3-mini
           - o3-mini-2025-01-31
-          - o3-mini-high
           - o4-mini
           - o4-mini-2025-04-16
-          - o4-mini-high
-          - olmo-7b-instruct
           - olympiccoder-32b
           - omni-moderation-2024-09-26
           - omni-moderation-latest
@@ -1291,7 +1270,6 @@ endpoints:
           - Qwen2.5-7B-Instruct-Turbo
           - Qwen2.5-Coder-32B-Instruct
           - Qwen2.5-Coder-7B
-          - qwen2.5-coder-7b-instruct
           - qwen2.5-vl-32b-instruct
           - qwen2.5-vl-3b-instruct
           - qwen2.5-vl-72b-instruct
@@ -1299,23 +1277,16 @@ endpoints:
           - qwen3-0.6b-04-28
           - qwen3-1.7b
           - Qwen3-14B
-          - qwen3-14b
-          - qwen3-235b-a22b
           - Qwen3-235B-A22B
           - Qwen3-235B-A22B-fp8
           - Qwen3-235B-A22B-fp8-tput
-          - qwen3-30b-a3b
           - Qwen3-30B-A3B
-          - qwen3-32b
           - Qwen3-32B
           - qwen3-4b
-          - qwen3-8b
           - qwerky-72b
-          - qwq-32b
           - QwQ-32B
           - qwq-32b-arliai-rpr-v1
           - QwQ-32B-Preview
-          - qwq-32b-preview
           - r1-1776
           - r1-v1
           - Reflection-Llama-3.1-70B
@@ -1332,10 +1303,7 @@ endpoints:
           - skyfall-36b-v2
           - small
           - sonar
-          - sonar-deep-research
           - sonar-pro
-          - sonar-reasoning
-          - sonar-reasoning-pro
           - sorcererlm-8x22b
           - spotlight
           - starcoder2-15b-instruct-v0.1
@@ -1422,6 +1390,7 @@ endpoints:
           - deepcogito/cogito-v1-preview-qwen-32B
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1-0528
+          - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-chat
           - deepseek-chat-cheaper
@@ -1725,6 +1694,7 @@ endpoints:
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:beta
           - anthropic/claude-3.7-sonnet:online
+          - anthropic/claude-3.7-sonnet:thinking
           - anthropic/claude-opus-4
           - anthropic/claude-sonnet-4
           - arcee-ai/arcee-blitz
@@ -1755,6 +1725,8 @@ endpoints:
           - deepseek/deepseek-prover-v2:free
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
+          - deepseek/deepseek-r1-0528-qwen3-8b
+          - deepseek/deepseek-r1-0528-qwen3-8b:free
           - deepseek/deepseek-r1-0528:free
           - deepseek/deepseek-r1-distill-llama-70b
           - deepseek/deepseek-r1-distill-llama-70b:free
@@ -1844,7 +1816,6 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - mistralai/codestral-2501
-          - mistralai/codestral-mamba
           - mistralai/devstral-small
           - mistralai/devstral-small:free
           - mistralai/ministral-3b
@@ -2109,6 +2080,7 @@ endpoints:
           - nebius/deepseek-ai/DeepSeek-V3-0324
           - nebius/deepseek-ai/DeepSeek-V3-0324-fast
           - nebius/meta-llama/Llama-3.3-70B-Instruct
+          - netmind/deepseek-ai/DeepSeek-R1-0528
           - novita/Sao10K/L3-8B-Stheno-v3.2
           - novita/deepseek/deepseek-prover-v2-671b
           - novita/deepseek/deepseek-r1
