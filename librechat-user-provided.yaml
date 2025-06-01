@@ -1,4 +1,4 @@
-version: 1.2.6.20250531
+version: 1.2.6.20250601
 interface:
   cache: true
   privacyPolicy:
@@ -204,6 +204,8 @@ endpoints:
           - meta-llama/llama-4-maverick-17b-128e-instruct
           - meta-llama/llama-4-scout-17b-16e-instruct
           - meta-llama/llama-guard-4-12b
+          - meta-llama/llama-prompt-guard-2-22m
+          - meta-llama/llama-prompt-guard-2-86m
           - mistral-saba-24b
           - playai-tts
           - playai-tts-arabic
@@ -691,7 +693,7 @@ endpoints:
       models:
         default:
           - alibaba-cloud/qwen-2.5-72b-instruct
-          - anthropic/claude-3.7-sonnet
+          - anthropic/claude-3-7-sonnet-20250219
           - anthropic/claude-opus-4-20250514
           - anthropic/claude-sonnet-4-20250514
           - deepseek/deepseek-r1
@@ -896,22 +898,21 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-prover-v2
           - DeepSeek-Prover-V2-671B
-          - DeepSeek-R1
           - deepseek-r1
+          - DeepSeek-R1
           - deepseek-r1-0528
           - DeepSeek-R1-0528
           - deepseek-r1-0528-qwen3-8b
-          - DeepSeek-R1-Distill-Llama-70B
           - deepseek-r1-distill-llama-70b
+          - DeepSeek-R1-Distill-Llama-70B
           - DeepSeek-R1-Distill-Llama-70B-free
           - deepseek-r1-distill-llama-8b
           - DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-r1-distill-qwen-1.5b
-          - deepseek-r1-distill-qwen-14b
           - DeepSeek-R1-Distill-Qwen-14B
-          - deepseek-r1-distill-qwen-32b
+          - deepseek-r1-distill-qwen-14b
           - DeepSeek-R1-Distill-Qwen-32B
-          - deepseek-r1-distill-qwen-7b
+          - deepseek-r1-distill-qwen-32b
           - DeepSeek-R1-Turbo
           - deepseek-r1-zero
           - deepseek-r1t-chimera
@@ -921,6 +922,7 @@ endpoints:
           - deepseek-v3-base
           - DeepSeek-V3-p-dp
           - devstral-small
+          - Devstral-Small-2505
           - dolphin-2.6-mixtral-8x7b
           - dolphin-2.9.1-llama-3-70b
           - dolphin-mixtral-8x22b
@@ -1079,8 +1081,8 @@ endpoints:
           - llama-3.1-8b-instruct
           - llama-3.1-lumimaid-70b
           - llama-3.1-lumimaid-8b
-          - Llama-3.1-Nemotron-70B-Instruct
           - llama-3.1-nemotron-70b-instruct
+          - Llama-3.1-Nemotron-70B-Instruct
           - Llama-3.1-Nemotron-70B-Instruct-HF
           - llama-3.1-nemotron-ultra-253b-v1
           - llama-3.1-sonar-large-128k-online
@@ -1091,14 +1093,14 @@ endpoints:
           - Llama-3.2-11B-Vision-Instruct-Turbo
           - Llama-3.2-1B-Instruct
           - llama-3.2-1b-instruct
-          - Llama-3.2-3B-Instruct
           - llama-3.2-3b-instruct
+          - Llama-3.2-3B-Instruct
           - Llama-3.2-3B-Instruct-Turbo
-          - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct
+          - llama-3.2-90b-vision-instruct
           - Llama-3.2-90B-Vision-Instruct-Turbo
-          - Llama-3.3-70B-Instruct
           - llama-3.3-70b-instruct
+          - Llama-3.3-70B-Instruct
           - Llama-3.3-70B-Instruct-Turbo
           - Llama-3.3-70B-Instruct-Turbo-Free
           - llama-3.3-70b-versatile
@@ -1111,8 +1113,8 @@ endpoints:
           - Llama-4-Scout-17B-16E-Instruct
           - llama-guard-2-8b
           - Llama-Guard-3-11B-Vision-Turbo
-          - llama-guard-3-8b
           - Llama-Guard-3-8B
+          - llama-guard-3-8b
           - Llama-Guard-4-12B
           - llama-guard-4-12b
           - Llama-Guard-7b
@@ -1191,8 +1193,8 @@ endpoints:
           - mistral-saba-latest
           - mistral-small
           - mistral-small-2402-v1
-          - Mistral-Small-24B-Instruct-2501
           - mistral-small-24b-instruct-2501
+          - Mistral-Small-24B-Instruct-2501
           - mistral-small-3.1-24b-instruct
           - mistral-small-latest
           - mistral-tiny
@@ -1216,8 +1218,8 @@ endpoints:
           - MythoMax-L2-13b-turbo
           - Nemotron-4-340B-Instruct
           - noromaid-20b
-          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-mixtral-8x7b-dpo
+          - Nous-Hermes-2-Mixtral-8x7B-DPO
           - nous-hermes-2-vision-7b
           - nova-lite-v1
           - nova-micro-v1
@@ -1255,8 +1257,8 @@ endpoints:
           - phi-3-mini-128k-instruct
           - phi-3.5-mini-128k-instruct
           - phi-4
-          - Phi-4-multimodal-instruct
           - phi-4-multimodal-instruct
+          - Phi-4-multimodal-instruct
           - phi-4-reasoning
           - phi-4-reasoning-plus
           - Phind-CodeLlama-34B-v2
@@ -1264,8 +1266,8 @@ endpoints:
           - pixtral-large-2411
           - pixtral-large-2502-v1
           - pixtral-large-latest
-          - QVQ-72B-Preview
           - qvq-72b-preview
+          - QVQ-72B-Preview
           - qwen-2-5-large
           - qwen-2-72b-instruct
           - qwen-2-large
@@ -1292,20 +1294,20 @@ endpoints:
           - Qwen2.5-Coder-7B
           - qwen2.5-vl-32b-instruct
           - qwen2.5-vl-3b-instruct
-          - Qwen2.5-VL-72B-Instruct
           - qwen2.5-vl-72b-instruct
+          - Qwen2.5-VL-72B-Instruct
           - qwen3-0.6b-04-28
           - qwen3-1.7b
-          - qwen3-14b
           - Qwen3-14B
+          - qwen3-14b
           - Qwen3-235B-A22B
           - qwen3-235b-a22b
           - Qwen3-235B-A22B-fp8
           - Qwen3-235B-A22B-fp8-tput
           - qwen3-30b-a3b
           - Qwen3-30B-A3B
-          - Qwen3-32B
           - qwen3-32b
+          - Qwen3-32B
           - qwen3-4b
           - qwen3-8b
           - qwerky-72b
