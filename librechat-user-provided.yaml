@@ -1,4 +1,4 @@
-version: 1.2.6.20250504
+version: 1.2.6.20250504.3
 interface:
   cache: true
   privacyPolicy:
@@ -164,9 +164,9 @@ endpoints:
           - grok-3-mini-fast
         fetch: false
       titleConvo: true
-      titleModel: grok-3-mini-fast
+      titleModel: grok-3
       summarize: false
-      summaryModel: grok-3-mini-fast
+      summaryModel: grok-3
       forcePrompt: false
       modelDisplayLabel: xAI
       iconURL: https://i.febryan.me/y8pum.svg
