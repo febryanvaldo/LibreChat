@@ -1,4 +1,4 @@
-version: 1.2.6.20250606
+version: 1.2.6.20250607
 interface:
   cache: true
   privacyPolicy:
@@ -737,6 +737,7 @@ endpoints:
       models:
         default:
           - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-trt
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - Nitral-AI/Captain-Eris_Violet-V0.420-12B
@@ -808,7 +809,6 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-fp8-tput
           - Qwen/QwQ-32B
           - scb10x/scb10x-llama3-1-typhoon2-70b-instruct
-          - scb10x/scb10x-llama3-1-typhoon2-8b-instruct
           - togethercomputer/MoA-1
           - togethercomputer/MoA-1-Turbo
           - togethercomputer/Refuel-Llm-V2
@@ -1106,7 +1106,6 @@ endpoints:
           - llama-3-1-sonar-small-128k-online
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-1-typhoon-2-70b-instruct
-          - llama-3-1-typhoon-2-8b-instruct
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
           - llama-3-2-11b-vision-instruct
@@ -1170,6 +1169,7 @@ endpoints:
           - mercury-coder-small-beta
           - midnight-rose-70b
           - minicpm-llama-3-v-2-5
+          - minimax-01
           - ministral-3b
           - ministral-8b
           - mistral-7b-instruct
@@ -1205,7 +1205,6 @@ endpoints:
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
           - mn-celeste-12b
-          - mn-inferor-12b
           - mn-starcannon-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
@@ -1299,6 +1298,11 @@ endpoints:
           - qwen-3-32b
           - qwen-3-4b
           - qwen-3-8b
+          - qwen-max
+          - qwen-plus
+          - qwen-turbo
+          - qwen-vl-max
+          - qwen-vl-plus
           - qwerky-72b
           - qwq-32b
           - qwq-32b-arliai-rpr-v1
@@ -1313,7 +1317,6 @@ endpoints:
           - rocinante-12b
           - sarvam-m
           - scb-10x-llama-3-1-typhoon-2-70b-instruct
-          - scb-10x-llama-3-1-typhoon-2-8b-instruct
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
           - skyfall-36b-v2
@@ -1995,7 +1998,6 @@ endpoints:
           - sarvamai/sarvam-m
           - sarvamai/sarvam-m:free
           - scb10x/llama3.1-typhoon2-70b-instruct
-          - scb10x/llama3.1-typhoon2-8b-instruct
           - sentientagi/dobby-mini-unhinged-plus-llama-3.1-8b
           - shisa-ai/shisa-v2-llama3.3-70b:free
           - sophosympatheia/midnight-rose-70b
