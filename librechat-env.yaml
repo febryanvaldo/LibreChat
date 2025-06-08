@@ -730,7 +730,7 @@ endpoints:
       summaryModel: hf:meta-llama/Llama-3.1-8B-Instruct
       forcePrompt: false
       modelDisplayLabel: Synthetic
-      iconURL: 
+      iconURL: https://i.febryan.me/1vpnu.svg
     - name: Targon
       apiKey: ${TARGON_KEY}
       baseURL: https://api.targon.com/v1
