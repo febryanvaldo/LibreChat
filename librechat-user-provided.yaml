@@ -1,4 +1,4 @@
-version: 1.2.6.20250608
+version: 1.2.6.20250607
 interface:
   cache: true
   privacyPolicy:
@@ -1204,7 +1204,9 @@ endpoints:
           - mixtral-8x7b-instruct-0-1
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
+          - mn-celeste-12b
           - mn-inferor-12b
+          - mn-starcannon-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - multimodal
@@ -1314,6 +1316,7 @@ endpoints:
           - reka-flash-3
           - remm-slerp-l2-13b
           - rocinante-12b
+          - sarvam-m
           - scb-10x-llama-3-1-typhoon-2-70b-instruct
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
@@ -1629,7 +1632,6 @@ endpoints:
           - r1-1776
           - raifle/sorcererlm-8x22b
           - ReadyArt/The-Omega-Abomination-L-70B-v1.0
-          - ReadyArt/The-Omega-Abomination-L-70B-v5.0
           - Salesforce/Llama-xLAM-2-70b-fc-r
           - Sao10K/L3-8B-Stheno-v3.2
           - Sao10K/L3.1-70B-Euryale-v2.2
@@ -2094,13 +2096,11 @@ endpoints:
           - google/gemini-1.5-pro
           - google/gemini-1.5-pro-latest
           - google/gemini-2.0-flash-001
-          - google/gemini-2.0-flash-thinking-exp-01-21
           - google/gemini-2.5-flash-preview-04-17
           - google/gemini-2.5-flash-preview-05-20
           - google/gemini-2.5-pro-preview-03-25
           - google/gemini-2.5-pro-preview-05-06
           - google/gemini-2.5-pro-preview-06-05
-          - google/gemma-3-27b-it
           - groq/qwen-qwq-32b
           - minimaxi/DeepSeek-R1
           - minimaxi/MiniMax-Text-01
