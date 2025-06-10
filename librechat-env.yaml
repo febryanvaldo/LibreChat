@@ -1,4 +1,4 @@
-version: 1.2.6.20250610
+version: 1.2.6.20250610.2
 interface:
   cache: true
   privacyPolicy:
@@ -750,7 +750,7 @@ endpoints:
       summaryModel: TheDrummer/Cydonia-24B-v2
       forcePrompt: false
       modelDisplayLabel: Targon
-      iconURL: https://i.febryan.me/gqvmm.svg
+      iconURL: https://i.febryan.me/wlzxq.svg
     - name: Together AI
       apiKey: ${TOGETHERAI_KEY}
       baseURL: https://api.together.xyz/v1
