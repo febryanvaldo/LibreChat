@@ -1,4 +1,4 @@
-version: 1.2.6.20250607
+version: 1.2.6.20250610
 interface:
   cache: true
   privacyPolicy:
@@ -771,7 +771,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-p-dp
           - google/gemma-2-27b-it
-          - google/gemma-2b-it
           - Gryphe/MythoMax-L2-13b
           - Gryphe/MythoMax-L2-13b-Lite
           - lgai/exaone-3-5-32b-instruct
@@ -1052,8 +1051,6 @@ endpoints:
           - inflection-3-productivity
           - internvl-3-14b
           - internvl-3-2b
-          - j2-mid
-          - j2-ultra
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-1-6-large
@@ -1129,9 +1126,7 @@ endpoints:
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
           - llama-3-70b-8192
-          - llama-3-70b-chat-hf
           - llama-3-70b-instruct
-          - llama-3-70b-instruct-turbo
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
           - llama-3-8b-chat-hf
@@ -1294,7 +1289,6 @@ endpoints:
           - qwen-3-14b
           - qwen-3-235b-a22b
           - qwen-3-235b-a22b-fp8
-          - qwen-3-235b-a22b-fp8-tput
           - qwen-3-30b-a3b
           - qwen-3-32b
           - qwen-3-4b
@@ -1344,6 +1338,7 @@ endpoints:
           - valkyrie-49b-v1
           - virtuoso-large
           - virtuoso-medium-v2
+          - visionx
           - wan-2-1-t2v-1-3b
           - yi-large
           - yi-vision
@@ -1804,7 +1799,6 @@ endpoints:
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
           - google/gemma-2-9b-it:free
-          - google/gemma-2b-it
           - google/gemma-3-12b-it
           - google/gemma-3-12b-it:free
           - google/gemma-3-1b-it:free
