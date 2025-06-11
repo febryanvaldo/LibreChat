@@ -1,4 +1,4 @@
-version: 1.2.6.20250610.2
+version: 1.2.6.20250611
 interface:
   cache: true
   privacyPolicy:
@@ -83,6 +83,10 @@ endpoints:
           - codestral-latest
           - devstral-small-2505
           - devstral-small-latest
+          - magistral-medium-2506
+          - magistral-medium-latest
+          - magistral-small-2506
+          - magistral-small-latest
           - ministral-3b-2410
           - ministral-3b-latest
           - ministral-8b-2410
@@ -216,6 +220,7 @@ endpoints:
           - playai-tts
           - playai-tts-arabic
           - qwen-qwq-32b
+          - qwen/qwen3-32b
         fetch: false
       titleConvo: true
       titleModel: llama-3.1-8b-instant
@@ -536,6 +541,7 @@ endpoints:
           - klusterai/verify-reliability
           - meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - meta-llama/Llama-4-Scout-17B-16E-Instruct
+          - mistralai/Magistral-Small-2506
           - mistralai/Mistral-Nemo-Instruct-2407
           - mistralai/Mistral-Small-24B-Instruct-2501
           - Qwen/Qwen2.5-VL-7B-Instruct
@@ -546,7 +552,7 @@ endpoints:
       summarize: false
       summaryModel: klusterai/Meta-Llama-3.1-8B-Instruct-Turbo
       modelDisplayLabel: Kluster AI
-      iconURL: https://i.febryan.me/ue02g.webp
+      iconURL: https://i.febryan.me/dlw7e.svg
     - name: Nebius
       apiKey: ${NEBIUS_KEY}
       baseURL: https://api.studio.nebius.ai/v1
@@ -808,6 +814,7 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-fp8-tput
           - Qwen/QwQ-32B
           - scb10x/scb10x-llama3-1-typhoon2-70b-instruct
+          - scb10x/scb10x-typhoon-2-1-gemma3-12b
           - togethercomputer/MoA-1
           - togethercomputer/MoA-1-Turbo
           - togethercomputer/Refuel-Llm-V2
@@ -1156,6 +1163,8 @@ endpoints:
           - llemma-7b
           - lzlv-70b-fp16-hf
           - maestro-reasoning
+          - magistral-medium-2506
+          - magistral-small-2506
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
@@ -1233,6 +1242,8 @@ endpoints:
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
+          - o3-pro
+          - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
           - o4-mini-high
@@ -1411,6 +1422,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-chat
           - deepseek-chat-cheaper
+          - deepseek-r1-70b
           - deepseek-r1-llama-70b
           - deepseek-r1-nano
           - deepseek-r1-sambanova
@@ -1528,6 +1540,7 @@ endpoints:
           - Llama-3.3-70B-Mokume-Gane-R1
           - Llama-3.3-70B-MS-Nevoria
           - Llama-3.3-70B-Vulpecula-R1
+          - llama3-3-70b
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
           - mercury-coder-small
           - Meta-Llama-3-1-405B-Instruct-FP8
@@ -1554,6 +1567,7 @@ endpoints:
           - Mistral-Nemo-12B-Starcannon-Unleashed-v1.0
           - Mistral-Nemo-12B-UnslopNemo-v4.1
           - Mistral-Nemo-12B-Wayfarer
+          - mistral-small-3-1-24b
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/mistral-7b-instruct
@@ -1606,6 +1620,7 @@ endpoints:
           - qwen/qwen3-32b
           - Qwen/Qwen3-8B
           - Qwen/QwQ-32B-Preview
+          - qwen2-5-72b
           - Qwen2.5-32B-AGI
           - Qwen2.5-32B-Dazzling-Star-Aurora-32b-v0.0
           - Qwen2.5-32B-EVA-v0.2
@@ -1652,10 +1667,6 @@ endpoints:
           - step-2-16k-exp
           - step-2-mini
           - step-r1-v-mini
-          - TEE/deepseek-r1-70b
-          - TEE/hermes-3-llama-3.1-70b
-          - TEE/llama-3.3-70b-instruct
-          - TEE/qwen-2.5-7b-instruct
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Rocinante-12B-v1.1
@@ -1856,6 +1867,9 @@ endpoints:
           - mistralai/codestral-2501
           - mistralai/devstral-small
           - mistralai/devstral-small:free
+          - mistralai/magistral-medium-2506
+          - mistralai/magistral-medium-2506:thinking
+          - mistralai/magistral-small-2506
           - mistralai/ministral-3b
           - mistralai/ministral-8b
           - mistralai/mistral-7b-instruct
@@ -1937,6 +1951,7 @@ endpoints:
           - openai/o3
           - openai/o3-mini
           - openai/o3-mini-high
+          - openai/o3-pro
           - openai/o4-mini
           - openai/o4-mini-high
           - opengvlab/internvl3-14b:free
@@ -2184,6 +2199,7 @@ endpoints:
           - openai/o3-mini:high
           - openai/o3-mini:low
           - openai/o3-mini:medium
+          - openai/o3-pro
           - openai/o3:flex
           - openai/o4-mini
           - openai/o4-mini-2025-04-16
