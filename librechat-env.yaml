@@ -1,4 +1,4 @@
-version: 1.2.6.20250612
+version: 1.2.6.20250613
 interface:
   cache: true
   privacyPolicy:
@@ -269,6 +269,7 @@ endpoints:
           - chutesai/Llama-3.1-405B-FP8
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Llama-4-Scout-17B-16E-Instruct
+          - chutesai/Magistral-Small-2506
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
@@ -341,6 +342,8 @@ endpoints:
       models:
         default:
           - anthropic/claude-3-7-sonnet-latest
+          - anthropic/claude-4-opus
+          - anthropic/claude-4-sonnet
           - Austism/chronos-hermes-13b-v2
           - bigcode/starcoder2-15b-instruct-v0.1
           - cognitivecomputations/dolphin-2.6-mixtral-8x7b
@@ -534,7 +537,6 @@ endpoints:
       baseURL: https://api.kluster.ai/v1
       models:
         default:
-          - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3-0324
           - google/gemma-3-27b-it
@@ -873,6 +875,7 @@ endpoints:
           - claude-3-sonnet
           - claude-3-sonnet-20240229
           - claude-3-sonnet-20240229-v1
+          - claude-4-sonnet
           - claude-opus-4
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
@@ -945,7 +948,6 @@ endpoints:
           - eva-llama-3-33-70b
           - eva-qwen-2-5-32b
           - eva-qwen-2-5-72b
-          - fimbulvetr-11b-v2
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
@@ -1085,7 +1087,6 @@ endpoints:
           - llama-2-13b-chat-v1
           - llama-2-13b-tiefighter
           - llama-2-70b
-          - llama-2-70b-chat
           - llama-2-70b-chat-hf
           - llama-2-70b-chat-v1
           - llama-2-70b-hf
@@ -1163,6 +1164,8 @@ endpoints:
           - llemma-7b
           - lzlv-70b-fp16-hf
           - maestro-reasoning
+          - magistral-medium-2506
+          - magistral-small-2506
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
@@ -1224,6 +1227,7 @@ endpoints:
           - nova-lite-v1
           - nova-micro
           - nova-micro-v1
+          - nova-premier-v1
           - nova-pro
           - nova-pro-v1
           - nova-sonic-v1
@@ -1240,6 +1244,8 @@ endpoints:
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
+          - o3-pro
+          - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
           - o4-mini-high
@@ -1425,6 +1431,8 @@ endpoints:
           - deepseek-reasoner
           - deepseek-reasoner-cheaper
           - deepseek-v3-0324
+          - dmind/dmind-1
+          - dmind/dmind-1-mini
           - dolphin-2.9.2-qwen2-72b
           - doubao-1-5-thinking-pro-250415
           - doubao-1-5-thinking-pro-vision-250415
