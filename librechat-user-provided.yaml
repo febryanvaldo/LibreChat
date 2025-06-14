@@ -1,4 +1,4 @@
-version: 1.2.6.20250613
+version: 1.2.6.20250614
 interface:
   cache: true
   privacyPolicy:
@@ -780,8 +780,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-p-dp
           - google/gemma-2-27b-it
-          - Gryphe/MythoMax-L2-13b
-          - Gryphe/MythoMax-L2-13b-Lite
           - lgai/exaone-3-5-32b-instruct
           - lgai/exaone-deep-32b
           - marin-community/marin-8b-instruct
@@ -875,6 +873,7 @@ endpoints:
           - claude-3-sonnet
           - claude-3-sonnet-20240229
           - claude-3-sonnet-20240229-v1
+          - claude-4-opus
           - claude-4-sonnet
           - claude-opus-4
           - claude-opus-4-20250514
@@ -948,6 +947,7 @@ endpoints:
           - eva-llama-3-33-70b
           - eva-qwen-2-5-32b
           - eva-qwen-2-5-72b
+          - fimbulvetr-11b-v2
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
@@ -1087,6 +1087,7 @@ endpoints:
           - llama-2-13b-chat-v1
           - llama-2-13b-tiefighter
           - llama-2-70b
+          - llama-2-70b-chat
           - llama-2-70b-chat-hf
           - llama-2-70b-chat-v1
           - llama-2-70b-hf
@@ -1219,7 +1220,6 @@ endpoints:
           - mythalion-13b
           - mythomax
           - mythomax-l2-13b
-          - mythomax-l2-13b-lite
           - mythomax-l2-13b-turbo
           - nemotron-4-340b-instruct
           - noromaid-20b
@@ -1424,7 +1424,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-chat
           - deepseek-chat-cheaper
-          - deepseek-r1-70b
           - deepseek-r1-llama-70b
           - deepseek-r1-nano
           - deepseek-r1-sambanova
@@ -1547,7 +1546,7 @@ endpoints:
           - Llama-3.3-70B-Mokume-Gane-R1
           - Llama-3.3-70B-MS-Nevoria
           - Llama-3.3-70B-Vulpecula-R1
-          - llama3-3-70b
+          - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
           - mercury-coder-small
           - Meta-Llama-3-1-405B-Instruct-FP8
@@ -1574,7 +1573,6 @@ endpoints:
           - Mistral-Nemo-12B-Starcannon-Unleashed-v1.0
           - Mistral-Nemo-12B-UnslopNemo-v4.1
           - Mistral-Nemo-12B-Wayfarer
-          - mistral-small-3-1-24b
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/mistral-7b-instruct
@@ -1628,7 +1626,6 @@ endpoints:
           - qwen/qwen3-32b
           - Qwen/Qwen3-8B
           - Qwen/QwQ-32B-Preview
-          - qwen2-5-72b
           - Qwen2.5-32B-AGI
           - Qwen2.5-32B-Dazzling-Star-Aurora-32b-v0.0
           - Qwen2.5-32B-EVA-v0.2
@@ -1675,6 +1672,10 @@ endpoints:
           - step-2-16k-exp
           - step-2-mini
           - step-r1-v-mini
+          - TEE/deepseek-r1-70b
+          - TEE/llama3-3-70b
+          - TEE/mistral-small-3-1-24b
+          - TEE/qwen2-5-72b
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Rocinante-12B-v1.1
