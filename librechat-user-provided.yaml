@@ -1,4 +1,4 @@
-version: 1.2.6.20250615
+version: 1.2.8.20250617
 interface:
   cache: true
   privacyPolicy:
@@ -269,7 +269,6 @@ endpoints:
           - chutesai/Llama-3.1-405B-FP8
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Llama-4-Scout-17B-16E-Instruct
-          - chutesai/Magistral-Small-2506
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
@@ -287,6 +286,7 @@ endpoints:
           - microsoft/MAI-DS-R1-FP8
           - microsoft/Phi-4-reasoning
           - microsoft/Phi-4-reasoning-plus
+          - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-VL-A3B-Thinking
           - mrfakename/mistral-small-3.1-24b-instruct-2503-hf
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
@@ -320,7 +320,6 @@ endpoints:
           - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
-          - unsloth/Llama-3.2-1B-Instruct
           - unsloth/Llama-3.2-3B-Instruct
           - unsloth/Llama-3.3-70B-Instruct
           - unsloth/Meta-Llama-3.1-8B-Instruct
@@ -349,6 +348,7 @@ endpoints:
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
+          - deepseek-ai/DeepSeek-R1-0528-Turbo
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-R1-Turbo
@@ -918,6 +918,7 @@ endpoints:
           - deepseek-r1
           - deepseek-r1-0528
           - deepseek-r1-0528-qwen-3-8b
+          - deepseek-r1-0528-turbo
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-70b-free
           - deepseek-r1-distill-llama-8b
@@ -1063,6 +1064,7 @@ endpoints:
           - jamba-1-6-mini
           - jamba-instruct
           - jamba-instruct-v1
+          - kimi-dev-72b
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-euryale-70b
@@ -1578,6 +1580,7 @@ endpoints:
           - mistralai/mistral-saba
           - mistralai/mistral-tiny
           - mlabonne/NeuralDaredevil-8B-abliterated
+          - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-VL-A3B-Thinking
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
           - NeverSleep/Lumimaid-v0.2-70B
@@ -1832,7 +1835,6 @@ endpoints:
           - liquid/lfm-40b
           - liquid/lfm-7b
           - mancer/weaver
-          - meta-llama/llama-2-70b-chat
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-405b
@@ -1900,8 +1902,8 @@ endpoints:
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
+          - moonshotai/kimi-dev-72b:free
           - moonshotai/kimi-vl-a3b-thinking:free
-          - moonshotai/moonlight-16b-a3b-instruct:free
           - neversleep/llama-3-lumimaid-70b
           - neversleep/llama-3-lumimaid-8b
           - neversleep/llama-3.1-lumimaid-70b
@@ -1986,7 +1988,6 @@ endpoints:
           - qwen/qwen-vl-plus
           - qwen/qwen2.5-vl-32b-instruct
           - qwen/qwen2.5-vl-32b-instruct:free
-          - qwen/qwen2.5-vl-3b-instruct:free
           - qwen/qwen2.5-vl-72b-instruct
           - qwen/qwen2.5-vl-72b-instruct:free
           - qwen/qwen3-14b
