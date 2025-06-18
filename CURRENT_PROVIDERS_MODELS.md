@@ -846,7 +846,7 @@ I added 3 models that use capabilities of OpenRouter Web Search feature. OpenRou
 
 The models are;
 - `anthropic/claude-3.7-sonnet:online` based on **Claude 3.7 Sonnet**
-- `google/gemini-2.0-flash-001:online` based on **Gemini 2.0 Flash**
+- `google/gemini-2.5-flash:online` based on **Gemini 2.5 Flash Stable**
 - `openai/gpt-4.1:online` based on **OpenAI's GPT-4.1**
 
 ### NanoGPT Web Search Models 
@@ -855,7 +855,7 @@ Like OpenRouter above, i also added 6 models that can utilize the NanoGPT Web Se
 The models are;
 - `claude-3-7-sonnet-20250219:online` based on **Claude 3.7 Sonnet**
 - `claude-3-7-sonnet-20250219:online/linkup-deep` based on **Claude 3.7 Sonnet**
-- `gemini-2.0-flash-001:online` based on **Gemini 2.0 Flash**
-- `gemini-2.0-flash-001:online/linkup-deep` based on **Gemini 2.0 Flash**
+- `gemini-2.5-flash-preview-05-20:online` based on **Gemini 2.5 Flash Preview**
+- `gemini-2.5-flash-preview-05-20:online/linkup-deep` based on **Gemini 2.5 Flash Preview**
 - `openai/gpt-4.1:online` based on **OpenAI's GPT-4.1**
 - `openai/gpt-4.1:online/linkup-deep` based on **OpenAI's GPT-4.1**

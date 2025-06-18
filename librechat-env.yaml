@@ -1,4 +1,4 @@
-version: 1.2.8.20250618
+version: 1.2.8.20250618.2
 interface:
   cache: true
   privacyPolicy:
@@ -1455,8 +1455,6 @@ endpoints:
           - featherless-ai/Qwerky-72B
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - gemini-2.0-flash-001
-          - gemini-2.0-flash-001:online
-          - gemini-2.0-flash-001:online/linkup-deep
           - gemini-2.0-flash-exp
           - gemini-2.0-flash-exp-image-generation
           - gemini-2.0-flash-exp-search
@@ -1468,6 +1466,8 @@ endpoints:
           - gemini-2.5-flash-preview-04-17
           - gemini-2.5-flash-preview-04-17:thinking
           - gemini-2.5-flash-preview-05-20
+          - gemini-2.5-flash-preview-05-20:online
+          - gemini-2.5-flash-preview-05-20:online/linkup-deep
           - gemini-2.5-flash-preview-05-20:thinking
           - gemini-2.5-pro-exp-03-25
           - gemini-2.5-pro-preview-03-25
@@ -1800,7 +1800,6 @@ endpoints:
           - eva-unit-01/eva-qwen-2.5-72b
           - featherless/qwerky-72b:free
           - google/gemini-2.0-flash-001
-          - google/gemini-2.0-flash-001:online
           - google/gemini-2.0-flash-exp:free
           - google/gemini-2.0-flash-lite-001
           - google/gemini-2.5-flash
@@ -1809,6 +1808,7 @@ endpoints:
           - google/gemini-2.5-flash-preview-05-20
           - google/gemini-2.5-flash-preview-05-20:thinking
           - google/gemini-2.5-flash-preview:thinking
+          - google/gemini-2.5-flash:online
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-exp-03-25
           - google/gemini-2.5-pro-preview
