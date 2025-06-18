@@ -1,4 +1,4 @@
-version: 1.2.8.20250617
+version: 1.2.8.20250618
 interface:
   cache: true
   privacyPolicy:
@@ -208,7 +208,6 @@ endpoints:
           - gemma2-9b-it
           - llama-3.1-8b-instant
           - llama-3.3-70b-versatile
-          - llama-guard-3-8b
           - llama3-70b-8192
           - llama3-8b-8192
           - meta-llama/llama-4-maverick-17b-128e-instruct
@@ -266,19 +265,16 @@ endpoints:
           - ByteDance-Seed/Seed-Coder-8B-Reasoning-bf16
           - casperhansen/deepseek-r1-distill-qwen-32b-awq
           - chutesai/Devstral-Small-2505
-          - chutesai/Llama-3.1-405B-FP8
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Llama-4-Scout-17B-16E-Instruct
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
-          - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
-          - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3-Base
@@ -639,6 +635,7 @@ endpoints:
           - meta-llama/llama-4-maverick-17b-128e-instruct-fp8
           - meta-llama/llama-4-scout-17b-16e-instruct
           - microsoft/wizardlm-2-8x22b
+          - minimaxai/minimax-m1-80k
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-nemo
           - nousresearch/hermes-2-pro-llama-3-8b
@@ -960,6 +957,7 @@ endpoints:
           - gemini-2-0-flash-lite-001
           - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
+          - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-preview
           - gemini-2-5-flash-preview-04-17
           - gemini-2-5-flash-preview-05-20
@@ -1064,7 +1062,6 @@ endpoints:
           - jamba-1-6-mini
           - jamba-instruct
           - jamba-instruct-v1
-          - kimi-dev-72b
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-euryale-70b
@@ -1174,7 +1171,9 @@ endpoints:
           - mercury-coder-small-beta
           - midnight-rose-70b
           - minicpm-llama-3-v-2-5
+          - minimax
           - minimax-01
+          - minimax-m1
           - ministral-3b
           - ministral-8b
           - mistral-7b-instruct
@@ -1289,7 +1288,6 @@ endpoints:
           - qwen-2-5-vl-32b-instruct
           - qwen-2-5-vl-3b-instruct
           - qwen-2-5-vl-72b-instruct
-          - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-7b-instruct
           - qwen-2-large
@@ -1559,7 +1557,9 @@ endpoints:
           - microsoft/Phi-4-reasoning
           - microsoft/Phi-4-reasoning-plus
           - microsoft/wizardlm-2-8x22b
+          - MiniMax-M1
           - minimax/minimax-01
+          - MiniMaxAI/MiniMax-M1-80k
           - Mistral-Nemo-12B-ArliAI-RPMax-v1.1
           - Mistral-Nemo-12B-ArliAI-RPMax-v1.2
           - Mistral-Nemo-12B-ArliAI-RPMax-v1.3
@@ -1598,7 +1598,6 @@ endpoints:
           - o3-mini
           - o3-mini-high
           - o3-mini-low
-          - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-high
           - open-r1/OlympicCoder-32B
@@ -1686,6 +1685,7 @@ endpoints:
           - THUDM/GLM-Z1-9B-0414
           - THUDM/GLM-Z1-Rumination-32B-0414
           - tngtech/DeepSeek-R1T-Chimera
+          - Tongyi-Zhiwen/QwenLong-L1-32B
           - undi95/remm-slerp-l2-13b
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-1b-it
@@ -1778,7 +1778,6 @@ endpoints:
           - deepseek/deepseek-chat-v3-0324:free
           - deepseek/deepseek-chat:free
           - deepseek/deepseek-prover-v2
-          - deepseek/deepseek-prover-v2:free
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-0528-qwen3-8b
@@ -1793,7 +1792,6 @@ endpoints:
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-r1-distill-qwen-32b:free
           - deepseek/deepseek-r1-distill-qwen-7b
-          - deepseek/deepseek-r1-zero:free
           - deepseek/deepseek-r1:free
           - deepseek/deepseek-v3-base:free
           - eleutherai/llemma_7b
@@ -1805,10 +1803,13 @@ endpoints:
           - google/gemini-2.0-flash-001:online
           - google/gemini-2.0-flash-exp:free
           - google/gemini-2.0-flash-lite-001
+          - google/gemini-2.5-flash
+          - google/gemini-2.5-flash-lite-preview-06-17
           - google/gemini-2.5-flash-preview
           - google/gemini-2.5-flash-preview-05-20
           - google/gemini-2.5-flash-preview-05-20:thinking
           - google/gemini-2.5-flash-preview:thinking
+          - google/gemini-2.5-pro
           - google/gemini-2.5-pro-exp-03-25
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
@@ -1839,7 +1840,6 @@ endpoints:
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-405b
           - meta-llama/llama-3.1-405b-instruct
-          - meta-llama/llama-3.1-405b:free
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.1-8b-instruct:free
@@ -1871,6 +1871,8 @@ endpoints:
           - microsoft/phi-4-reasoning:free
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
+          - minimax/minimax-m1
+          - minimax/minimax-m1:extended
           - mistralai/codestral-2501
           - mistralai/devstral-small
           - mistralai/devstral-small:free
@@ -1976,7 +1978,6 @@ endpoints:
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-72b-instruct:free
           - qwen/qwen-2.5-7b-instruct
-          - qwen/qwen-2.5-7b-instruct:free
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-2.5-coder-32b-instruct:free
           - qwen/qwen-2.5-vl-7b-instruct
@@ -2081,7 +2082,9 @@ endpoints:
           - cline/o3-mini:medium
           - coding/claude-3-7-sonnet
           - coding/claude-4-sonnet
+          - coding/gemini-2.5-flash
           - coding/gemini-2.5-flash-preview-05-20
+          - coding/gemini-2.5-pro
           - coding/gemini-2.5-pro-preview-03-25
           - coding/gemini-2.5-pro-preview-05-06
           - deepinfra/Qwen/QwQ-32B
@@ -2111,14 +2114,15 @@ endpoints:
           - google/gemini-1.5-pro
           - google/gemini-1.5-pro-latest
           - google/gemini-2.0-flash-001
+          - google/gemini-2.5-flash
+          - google/gemini-2.5-flash-lite-preview-06-17
           - google/gemini-2.5-flash-preview-04-17
           - google/gemini-2.5-flash-preview-05-20
+          - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview-03-25
           - google/gemini-2.5-pro-preview-05-06
           - google/gemini-2.5-pro-preview-06-05
           - groq/qwen-qwq-32b
-          - minimaxi/DeepSeek-R1
-          - minimaxi/MiniMax-Text-01
           - mistral/devstral-small-latest
           - mistral/mistral-large-latest
           - mistral/mistral-small-latest
