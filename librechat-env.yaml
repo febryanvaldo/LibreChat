@@ -1,4 +1,4 @@
-version: 1.2.8.20250621
+version: 1.2.8.20250621.2
 interface:
   cache: true
   privacyPolicy:
@@ -1465,13 +1465,13 @@ endpoints:
           - gemini-2.5-flash-preview-04-17:thinking
           - gemini-2.5-flash-preview-05-20
           - gemini-2.5-flash-preview-05-20:thinking
+          - gemini-2.5-flash:online
+          - gemini-2.5-flash:online/linkup-deep
           - gemini-2.5-pro
           - gemini-2.5-pro-exp-03-25
           - gemini-2.5-pro-preview-03-25
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
-          - gemini-2.5:online
-          - gemini-2.5:online/linkup-deep
           - gemini-exp-1206
           - glm-4
           - glm-4-air
