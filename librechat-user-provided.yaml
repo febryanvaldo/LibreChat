@@ -1,4 +1,4 @@
-version: 1.2.8.20250620.2
+version: 1.2.8.20250621
 interface:
   cache: true
   privacyPolicy:
@@ -276,7 +276,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3-Base
-          - hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4
           - microsoft/MAI-DS-R1-FP8
           - microsoft/Phi-4-reasoning
           - microsoft/Phi-4-reasoning-plus
@@ -291,8 +290,8 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-32B-Instruct
           - Qwen/Qwen2.5-VL-72B-Instruct
-          - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/Qwen3-14B
+          - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-32B
           - Qwen/Qwen3-8B
@@ -306,7 +305,6 @@ endpoints:
           - tplr/TEMPLAR-I
           - unsloth/gemma-2-9b-it
           - unsloth/gemma-3-12b-it
-          - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
           - unsloth/Llama-3.2-3B-Instruct
@@ -933,6 +931,8 @@ endpoints:
           - dolphin-3-0-r1-mistral-24b
           - dolphin-mixtral-8x22b
           - eva-llama-3-33-70b
+          - eva-qwen-2-5-32b
+          - eva-qwen-2-5-72b
           - fimbulvetr-11b-v2
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
@@ -1034,7 +1034,9 @@ endpoints:
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
+          - grok-3
           - grok-3-beta
+          - grok-3-mini
           - grok-3-mini-beta
           - grok-beta
           - grok-vision-beta
@@ -1122,6 +1124,7 @@ endpoints:
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
+          - llama-3-70b-8192
           - llama-3-70b-instruct
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
@@ -1155,6 +1158,7 @@ endpoints:
           - magistral-medium-2506
           - magistral-small-2506
           - magnum-72b
+          - magnum-v2-72b
           - magnum-v4-72b
           - mai-ds-r1
           - marin-8b-instruct
@@ -1199,6 +1203,8 @@ endpoints:
           - mixtral-8x7b-instruct-0-1
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
+          - mn-celeste-12b
+          - mn-inferor-12b
           - mn-starcannon-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
@@ -1256,6 +1262,7 @@ endpoints:
           - phi-4-reasoning
           - phi-4-reasoning-plus
           - phind-codellama-34b-v2
+          - pixtral-12b
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
@@ -1814,7 +1821,6 @@ endpoints:
           - google/gemma-2-9b-it:free
           - google/gemma-3-12b-it
           - google/gemma-3-12b-it:free
-          - google/gemma-3-1b-it:free
           - google/gemma-3-27b-it
           - google/gemma-3-27b-it:free
           - google/gemma-3-4b-it
@@ -1906,7 +1912,6 @@ endpoints:
           - neversleep/noromaid-20b
           - nothingiisreal/mn-celeste-12b
           - nousresearch/deephermes-3-llama-3-8b-preview:free
-          - nousresearch/deephermes-3-mistral-24b-preview:free
           - nousresearch/hermes-2-pro-llama-3-8b
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
@@ -1916,7 +1921,6 @@ endpoints:
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
           - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1:free
-          - open-r1/olympiccoder-32b:free
           - openai/chatgpt-4o-latest
           - openai/codex-mini
           - openai/gpt-3.5-turbo
@@ -1974,7 +1978,6 @@ endpoints:
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-2.5-coder-32b-instruct:free
           - qwen/qwen-2.5-vl-7b-instruct
-          - qwen/qwen-2.5-vl-7b-instruct:free
           - qwen/qwen-max
           - qwen/qwen-plus
           - qwen/qwen-turbo
@@ -2019,12 +2022,13 @@ endpoints:
           - thudm/glm-z1-32b
           - thudm/glm-z1-32b:free
           - thudm/glm-z1-rumination-32b
-          - tngtech/deepseek-r1t-chimera:free
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
           - x-ai/grok-2-1212
           - x-ai/grok-2-vision-1212
+          - x-ai/grok-3
           - x-ai/grok-3-beta
+          - x-ai/grok-3-mini
           - x-ai/grok-3-mini-beta
           - x-ai/grok-beta
           - x-ai/grok-vision-beta
