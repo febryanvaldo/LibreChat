@@ -1,4 +1,4 @@
-version: 1.2.8.20250621.2
+version: 1.2.8.20250622
 interface:
   cache: true
   privacyPolicy:
@@ -268,6 +268,7 @@ endpoints:
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Llama-4-Scout-17B-16E-Instruct
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
+          - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
           - deepseek-ai/DeepSeek-R1-0528
@@ -1898,6 +1899,7 @@ endpoints:
           - mistralai/mistral-small-24b-instruct-2501:free
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.1-24b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
@@ -2022,6 +2024,7 @@ endpoints:
           - thudm/glm-z1-32b
           - thudm/glm-z1-32b:free
           - thudm/glm-z1-rumination-32b
+          - tngtech/deepseek-r1t-chimera:free
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
           - x-ai/grok-2-1212
@@ -2081,9 +2084,29 @@ endpoints:
           - coding/claude-4-sonnet
           - coding/gemini-2.5-flash
           - coding/gemini-2.5-flash-preview-05-20
+          - coding/gemini-2.5-flash@europe-central2
+          - coding/gemini-2.5-flash@europe-north1
+          - coding/gemini-2.5-flash@europe-west1
+          - coding/gemini-2.5-flash@europe-west4
+          - coding/gemini-2.5-flash@europe-west8
+          - coding/gemini-2.5-flash@us-central1
+          - coding/gemini-2.5-flash@us-east1
+          - coding/gemini-2.5-flash@us-east5
+          - coding/gemini-2.5-flash@us-south1
+          - coding/gemini-2.5-flash@us-west1
           - coding/gemini-2.5-pro
           - coding/gemini-2.5-pro-preview-03-25
           - coding/gemini-2.5-pro-preview-05-06
+          - coding/gemini-2.5-pro@europe-central2
+          - coding/gemini-2.5-pro@europe-north1
+          - coding/gemini-2.5-pro@europe-west1
+          - coding/gemini-2.5-pro@europe-west4
+          - coding/gemini-2.5-pro@europe-west8
+          - coding/gemini-2.5-pro@us-central1
+          - coding/gemini-2.5-pro@us-east1
+          - coding/gemini-2.5-pro@us-east5
+          - coding/gemini-2.5-pro@us-south1
+          - coding/gemini-2.5-pro@us-west1
           - deepinfra/Qwen/QwQ-32B
           - deepinfra/Qwen/Qwen2.5-72B-Instruct
           - deepinfra/Qwen/Qwen2.5-Coder-32B-Instruct
@@ -2276,6 +2299,10 @@ endpoints:
           - vertex/anthropic/claude-3-7-sonnet@us-east5
           - vertex/anthropic/claude-4-sonnet
           - vertex/anthropic/claude-4-sonnet-latest
+          - vertex/anthropic/claude-4-sonnet-latest@europe-west1
+          - vertex/anthropic/claude-4-sonnet-latest@us-east5
+          - vertex/anthropic/claude-4-sonnet@europe-west1
+          - vertex/anthropic/claude-4-sonnet@us-east5
           - xai/grok-2-1212
           - xai/grok-2-latest
           - xai/grok-3-beta
