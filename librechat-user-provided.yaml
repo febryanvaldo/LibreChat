@@ -1,4 +1,4 @@
-version: 1.2.8.20250624
+version: 1.2.8.20250625
 interface:
   cache: true
   privacyPolicy:
@@ -76,7 +76,6 @@ endpoints:
       baseURL: https://api.mistral.ai/v1
       models:
         default:
-          - codestral-2405
           - codestral-2411-rc5
           - codestral-2412
           - codestral-2501
@@ -91,20 +90,17 @@ endpoints:
           - ministral-3b-latest
           - ministral-8b-2410
           - ministral-8b-latest
-          - mistral-large-2402
           - mistral-large-2407
           - mistral-large-2411
           - mistral-large-latest
           - mistral-large-pixtral-2411
           - mistral-medium
-          - mistral-medium-2312
           - mistral-medium-2505
           - mistral-medium-latest
           - mistral-saba-2502
           - mistral-saba-latest
           - mistral-small
           - mistral-small-2312
-          - mistral-small-2402
           - mistral-small-2409
           - mistral-small-2501
           - mistral-small-2503
@@ -394,6 +390,7 @@ endpoints:
           - mistralai/Mistral-Nemo-Instruct-2407
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mistral-Small-3.1-24B-Instruct-2503
+          - mistralai/Mistral-Small-3.2-24B-Instruct-2506
           - mistralai/Mixtral-8x22B-Instruct-v0.1
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - NousResearch/Hermes-3-Llama-3.1-405B
@@ -933,7 +930,9 @@ endpoints:
           - dolphin-3-0-mistral-24b
           - dolphin-3-0-r1-mistral-24b
           - dolphin-mixtral-8x22b
+          - eva-llama-3-33-70b
           - eva-qwen-2-5-32b
+          - eva-qwen-2-5-72b
           - fimbulvetr-11b-v2
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
@@ -973,7 +972,6 @@ endpoints:
           - gemma-3-1b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
-          - gemma-3n-e4b-it
           - giant-context
           - glm-4-32b
           - glm-4-9b
@@ -1126,7 +1124,6 @@ endpoints:
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
-          - llama-3-70b-8192
           - llama-3-70b-instruct
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
@@ -1134,6 +1131,7 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
+          - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-4
           - llama-4-maverick
@@ -1152,12 +1150,12 @@ endpoints:
           - llama-guard-3-8b-dc-1-baf-04
           - llama-guard-4-12b
           - llama-guard-7b
-          - llama-vision-free
           - llemma-7b
           - lzlv-70b-fp16-hf
           - maestro-reasoning
           - magistral-medium-2506
           - magistral-small-2506
+          - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
           - mai-ds-r1
@@ -1195,6 +1193,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
+          - mistral-small-3-2-24b-instruct-2506
           - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
@@ -1204,6 +1203,7 @@ endpoints:
           - mixtral-8x7b-instruct-0-1
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
+          - mn-celeste-12b
           - mn-inferor-12b
           - mn-starcannon-12b
           - molmo-7b-d
@@ -1252,7 +1252,6 @@ endpoints:
           - open-mixtral-8x22b
           - open-mixtral-8x7b
           - openhands-lm-32b-v0-1
-          - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
           - phi-3-medium-4k-instruct
           - phi-3-medium-instruct
@@ -1691,6 +1690,8 @@ endpoints:
           - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
+          - venice-uncensored
+          - venice-uncensored-web
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - yi-34b-chat-0205
           - yi-34b-chat-200k
@@ -1851,7 +1852,6 @@ endpoints:
           - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-3.3-70b-instruct:free
-          - meta-llama/llama-3.3-8b-instruct:free
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-maverick:free
           - meta-llama/llama-4-scout
@@ -1925,10 +1925,7 @@ endpoints:
           - nvidia/llama-3.3-nemotron-super-49b-v1:free
           - openai/chatgpt-4o-latest
           - openai/codex-mini
-          - openai/gpt-3.5-turbo
-          - openai/gpt-3.5-turbo-0125
           - openai/gpt-3.5-turbo-0613
-          - openai/gpt-3.5-turbo-1106
           - openai/gpt-3.5-turbo-16k
           - openai/gpt-3.5-turbo-instruct
           - openai/gpt-4
@@ -2081,6 +2078,7 @@ endpoints:
           - cline/o3-mini:low
           - cline/o3-mini:medium
           - coding/claude-3-7-sonnet
+          - coding/claude-4-opus
           - coding/claude-4-sonnet
           - coding/gemini-2.5-flash
           - coding/gemini-2.5-flash-preview-05-20
