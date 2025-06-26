@@ -1,4 +1,4 @@
-version: 1.2.8.20250625
+version: 1.2.8.20250626
 interface:
   cache: true
   privacyPolicy:
@@ -234,16 +234,9 @@ endpoints:
           - DeepSeek-V3-0324
           - E5-Mistral-7B-Instruct
           - Llama-4-Maverick-17B-128E-Instruct
-          - Llama-4-Scout-17B-16E-Instruct
-          - Meta-Llama-3.1-405B-Instruct
           - Meta-Llama-3.1-8B-Instruct
-          - Meta-Llama-3.2-1B-Instruct
-          - Meta-Llama-3.2-3B-Instruct
           - Meta-Llama-3.3-70B-Instruct
-          - Meta-Llama-Guard-3-8B
-          - Qwen2-Audio-7B-Instruct
           - Qwen3-32B
-          - QwQ-32B
           - Whisper-Large-v3
         fetch: false
       titleConvo: true
@@ -275,14 +268,10 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3-Base
           - microsoft/MAI-DS-R1-FP8
-          - microsoft/Phi-4-reasoning
-          - microsoft/Phi-4-reasoning-plus
           - MiniMaxAI/MiniMax-M1-80k
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-VL-A3B-Thinking
-          - mrfakename/mistral-small-3.1-24b-instruct-2503-hf
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
-          - nvidia/Llama-3.1-Nemotron-Nano-8B-v1
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1
           - openbmb/MiniCPM4-8B
           - Qwen/Qwen2.5-72B-Instruct
@@ -305,8 +294,6 @@ endpoints:
           - unsloth/gemma-2-9b-it
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-27b-it
-          - unsloth/gemma-3-4b-it
-          - unsloth/Llama-3.2-3B-Instruct
           - unsloth/Meta-Llama-3.1-8B-Instruct
           - unsloth/Mistral-Nemo-Instruct-2407
           - unsloth/Mistral-Small-24B-Instruct-2501
@@ -564,6 +551,7 @@ endpoints:
           - meta-llama/Meta-Llama-3.1-8B-Instruct
           - meta-llama/Meta-Llama-3.1-8B-Instruct-fast
           - microsoft/phi-4
+          - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
           - mistralai/Mistral-Small-3.1-24B-Instruct-2503
           - NousResearch/Hermes-3-Llama-405B
@@ -1124,6 +1112,7 @@ endpoints:
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
+          - llama-3-70b-8192
           - llama-3-70b-instruct
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
@@ -1201,7 +1190,6 @@ endpoints:
           - mixtral-8x7b
           - mixtral-8x7b-instruct
           - mixtral-8x7b-instruct-0-1
-          - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
           - mn-celeste-12b
           - mn-inferor-12b
@@ -1252,6 +1240,7 @@ endpoints:
           - open-mixtral-8x22b
           - open-mixtral-8x7b
           - openhands-lm-32b-v0-1
+          - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
           - phi-3-medium-4k-instruct
           - phi-3-medium-instruct
@@ -1292,7 +1281,6 @@ endpoints:
           - qwen-3-1-7b
           - qwen-3-14b
           - qwen-3-235b-a22b
-          - qwen-3-235b-a22b-fp8
           - qwen-3-30b-a3b
           - qwen-3-32b
           - qwen-3-4b
@@ -1379,12 +1367,11 @@ endpoints:
           - azure-o3-mini
           - chatgpt-4o-latest
           - chatgpt-4o-latest-reasoner
+          - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20241022
           - claude-3-7-sonnet-20250219
-          - claude-3-7-sonnet-20250219:online
-          - claude-3-7-sonnet-20250219:online/linkup-deep
           - claude-3-7-sonnet-reasoner
           - claude-3-7-sonnet-thinking
           - claude-3-7-sonnet-thinking:1024
@@ -1399,6 +1386,8 @@ endpoints:
           - claude-opus-4-thinking:32768
           - claude-opus-4-thinking:8192
           - claude-sonnet-4-20250514
+          - claude-sonnet-4-20250514:online
+          - claude-sonnet-4-20250514:online/linkup-deep
           - claude-sonnet-4-thinking
           - claude-sonnet-4-thinking:1024
           - claude-sonnet-4-thinking:32768
@@ -1750,10 +1739,10 @@ endpoints:
           - anthropic/claude-3.5-sonnet:beta
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:beta
-          - anthropic/claude-3.7-sonnet:online
           - anthropic/claude-3.7-sonnet:thinking
           - anthropic/claude-opus-4
           - anthropic/claude-sonnet-4
+          - anthropic/claude-sonnet-4:online
           - arcee-ai/arcee-blitz
           - arcee-ai/caller-large
           - arcee-ai/coder-large
@@ -1791,7 +1780,6 @@ endpoints:
           - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-14b:free
           - deepseek/deepseek-r1-distill-qwen-32b
-          - deepseek/deepseek-r1-distill-qwen-32b:free
           - deepseek/deepseek-r1-distill-qwen-7b
           - deepseek/deepseek-r1:free
           - deepseek/deepseek-v3-base:free
@@ -1848,7 +1836,6 @@ endpoints:
           - meta-llama/llama-3.2-1b-instruct
           - meta-llama/llama-3.2-1b-instruct:free
           - meta-llama/llama-3.2-3b-instruct
-          - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-3.3-70b-instruct:free
@@ -1866,8 +1853,6 @@ endpoints:
           - microsoft/phi-4
           - microsoft/phi-4-multimodal-instruct
           - microsoft/phi-4-reasoning-plus
-          - microsoft/phi-4-reasoning-plus:free
-          - microsoft/phi-4-reasoning:free
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-m1
@@ -1888,7 +1873,6 @@ endpoints:
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
-          - mistralai/mistral-medium
           - mistralai/mistral-medium-3
           - mistralai/mistral-nemo
           - mistralai/mistral-nemo:free
@@ -1959,8 +1943,8 @@ endpoints:
           - openai/o3-pro
           - openai/o4-mini
           - openai/o4-mini-high
-          - opengvlab/internvl3-14b:free
-          - opengvlab/internvl3-2b:free
+          - opengvlab/internvl3-14b
+          - opengvlab/internvl3-2b
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
           - perplexity/r1-1776
