@@ -1,4 +1,4 @@
-version: 1.2.8.20250627
+version: 1.2.8.20250628
 interface:
   cache: true
   privacyPolicy:
@@ -755,6 +755,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-p-dp
           - google/gemma-2-27b-it
+          - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
           - lgai/exaone-3-5-32b-instruct
           - lgai/exaone-deep-32b
@@ -922,6 +923,7 @@ endpoints:
           - dolphin-3-0-r1-mistral-24b
           - dolphin-mixtral-8x22b
           - eva-llama-3-33-70b
+          - eva-qwen-2-5-32b
           - eva-qwen-2-5-72b
           - fimbulvetr-11b-v2
           - gemini-1-5-flash
@@ -936,7 +938,6 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
-          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-preview
@@ -1141,7 +1142,6 @@ endpoints:
           - llama-guard-4-12b
           - llama-guard-7b
           - llemma-7b
-          - lzlv-70b-fp16-hf
           - maestro-reasoning
           - magistral-medium-2506
           - magistral-small-2506
@@ -1225,8 +1225,6 @@ endpoints:
           - o1-pro-2025-03-19
           - o3
           - o3-2025-04-16
-          - o3-deep-research
-          - o3-deep-research-2025-06-26
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
@@ -1234,8 +1232,6 @@ endpoints:
           - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
-          - o4-mini-deep-research
-          - o4-mini-deep-research-2025-06-26
           - o4-mini-high
           - olympiccoder-32b
           - omni-moderation
@@ -1262,7 +1258,6 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pixtral-large-latest
           - premium
           - premium-coding
           - qvq-72b
@@ -1587,11 +1582,13 @@ endpoints:
           - o1-mini
           - o1-preview
           - o3
+          - o3-deep-research
           - o3-mini
           - o3-mini-high
           - o3-mini-low
           - o3-pro
           - o4-mini
+          - o4-mini-deep-research
           - o4-mini-high
           - open-r1/OlympicCoder-32B
           - open-r1/OlympicCoder-7b
