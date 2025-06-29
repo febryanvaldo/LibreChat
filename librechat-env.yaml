@@ -1,4 +1,4 @@
-version: 1.2.8.20250628
+version: 1.2.8.xxxxx
 interface:
   cache: true
   privacyPolicy:
@@ -261,7 +261,7 @@ endpoints:
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
-          - deepseek-ai/DeepSeek-R1-0528
+          - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-V3
@@ -272,6 +272,7 @@ endpoints:
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
+          - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1
           - openbmb/MiniCPM4-8B
           - Qwen/Qwen2.5-72B-Instruct
@@ -288,6 +289,7 @@ endpoints:
           - Salesforce/xgen-small-9B-instruct-r
           - sarvamai/sarvam-m
           - shisa-ai/shisa-v2-llama3.3-70b
+          - tencent/Hunyuan-A13B-Instruct
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-Z1-32B-0414
           - tplr/TEMPLAR-I
@@ -755,7 +757,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-p-dp
           - google/gemma-2-27b-it
-          - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
           - lgai/exaone-3-5-32b-instruct
           - lgai/exaone-deep-32b
@@ -938,6 +939,7 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
+          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-preview
@@ -1020,7 +1022,6 @@ endpoints:
           - grok
           - grok-2
           - grok-2-1212
-          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1111,13 +1112,11 @@ endpoints:
           - llama-3-3-70b-instruct-turbo
           - llama-3-3-70b-instruct-turbo-free
           - llama-3-3-70b-instruct-v1
-          - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
           - llama-3-70b-8192
           - llama-3-70b-instruct
           - llama-3-70b-instruct-v1
-          - llama-3-8b-8192
           - llama-3-8b-chat-hf
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
@@ -1152,7 +1151,6 @@ endpoints:
           - marin-8b-instruct
           - mercury
           - mercury-coder-small-beta
-          - midnight-rose-70b
           - minicpm-llama-3-v-2-5
           - minimax
           - minimax-01
@@ -1225,6 +1223,8 @@ endpoints:
           - o1-pro-2025-03-19
           - o3
           - o3-2025-04-16
+          - o3-deep-research
+          - o3-deep-research-2025-06-26
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
@@ -1232,6 +1232,8 @@ endpoints:
           - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
+          - o4-mini-deep-research
+          - o4-mini-deep-research-2025-06-26
           - o4-mini-high
           - olympiccoder-32b
           - omni-moderation
@@ -1258,6 +1260,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - pixtral-large-latest
           - premium
           - premium-coding
           - qvq-72b
@@ -1598,6 +1601,7 @@ endpoints:
           - openai/gpt-4.1:online
           - openai/gpt-4.1:online/linkup-deep
           - openai/o1-pro
+          - parasail-drummer-anubis-70b-1-1
           - parasail-valkyrie-49b-v1
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
