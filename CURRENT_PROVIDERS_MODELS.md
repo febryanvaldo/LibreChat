@@ -1,75 +1,5 @@
 ```plaintext
 ==================================================
-2025-06-29 11:07:10 GMT+7
-==================================================
-🤖 Anthropic   : 6 models (no change)
-🤖 Google      : 22 models (no change)
-🤖 OpenAI      : 42 models (no change)
-🤖 Cohere      : 11 models (no change)
-🤖 DeepSeek    : 2 models (no change)
-🤖 Mistral AI  : 45 models (no change)
-🤖 Perplexity  : 6 models (no change)
-🤖 xAI         : 7 models (no change)
-🤖 Cerebras    : 4 models (no change)
-🤖 Groq        : 19 models (no change)
-🤖 Sambanova   : 9 models (no change)
-🤖 Chutes      : 49 models (+2 models)
-🤖 DeepInfra   : 97 models (no change)
-🤖 Fireworks   : 25 models (no change)
-🤖 FriendliAI  : 3 models (no change)
-🤖 Hyperbolic  : 20 models (no change)
-🤖 KlusterAI   : 13 models (no change)
-🤖 Nebius      : 46 models (no change)
-🤖 Novita AI   : 46 models (no change)
-🤖 ShuttleAI   : 21 models (no change)
-🤖 Synthetic   : 21 models (no change)
-🤖 Targon      : 8 models (no change)
-🤖 Together AI : 58 models (-1 model)
-🤖 APIpie      : 529 models (+2 models)
-🤖 NanoGPT     : 341 models (+1 model)
-🤖 OpenRouter  : 320 models (no change)
-🤖 Requesty    : 267 models (no change)
-🤖 UnifyAI     : 174 models (no change)
-==================================================
-2025-06-29 11:07:10 GMT+7
-==================================================
-
-==================================================
-2025-06-30 10:17:23 GMT+7
-==================================================
-🤖 Anthropic   : 6 models (no change)
-🤖 Google      : 22 models (no change)
-🤖 OpenAI      : 42 models (no change)
-🤖 Cohere      : 11 models (no change)
-🤖 DeepSeek    : 2 models (no change)
-🤖 Mistral AI  : 45 models (no change)
-🤖 Perplexity  : 6 models (no change)
-🤖 xAI         : 7 models (no change)
-🤖 Cerebras    : 4 models (no change)
-🤖 Groq        : 19 models (no change)
-🤖 Sambanova   : 9 models (no change)
-🤖 Chutes      : 44 models (-5 models)
-🤖 DeepInfra   : 97 models (no change)
-🤖 Fireworks   : 25 models (no change)
-🤖 FriendliAI  : 3 models (no change)
-🤖 Hyperbolic  : 20 models (no change)
-🤖 KlusterAI   : 13 models (no change)
-🤖 Nebius      : 46 models (no change)
-🤖 Novita AI   : 47 models (+1 model)
-🤖 ShuttleAI   : 21 models (no change)
-🤖 Synthetic   : 21 models (no change)
-🤖 Targon      : 8 models (no change)
-🤖 Together AI : 58 models (no change)
-🤖 APIpie      : 531 models (+2 models)
-🤖 NanoGPT     : 342 models (+1 model)
-🤖 OpenRouter  : 321 models (+1 model)
-🤖 Requesty    : 267 models (no change)
-🤖 UnifyAI     : 174 models (no change)
-==================================================
-2025-06-30 10:17:23 GMT+7
-==================================================
-
-==================================================
 2025-07-01 10:16:01 GMT+7
 ==================================================
 🤖 Anthropic   : 6 models (no change)
@@ -102,6 +32,41 @@
 🤖 UnifyAI     : 173 models (-1 model)
 ==================================================
 2025-07-01 10:16:01 GMT+7
+==================================================
+
+==================================================
+2025-07-02 09:42:06 GMT+7
+==================================================
+🤖 Anthropic   : 6 models (no change)
+🤖 Google      : 22 models (no change)
+🤖 OpenAI      : 42 models (no change)
+🤖 Cohere      : 11 models (no change)
+🤖 DeepSeek    : 2 models (no change)
+🤖 Mistral AI  : 45 models (no change)
+🤖 Perplexity  : 6 models (no change)
+🤖 xAI         : 7 models (no change)
+🤖 Cerebras    : 4 models (no change)
+🤖 Groq        : 19 models (no change)
+🤖 Sambanova   : 9 models (no change)
+🤖 Chutes      : 51 models (+17 models)
+🤖 DeepInfra   : 98 models (no change)
+🤖 Fireworks   : 24 models (no change)
+🤖 FriendliAI  : 3 models (no change)
+🤖 Hyperbolic  : 20 models (no change)
+🤖 KlusterAI   : 14 models (+1 model)
+🤖 Nebius      : 46 models (no change)
+🤖 Novita AI   : 51 models (no change)
+🤖 ShuttleAI   : 21 models (no change)
+🤖 Synthetic   : 21 models (no change)
+🤖 Targon      : 3 models (-5 models)
+🤖 Together AI : 59 models (+1 model)
+🤖 APIpie      : 533 models (+3 models)
+🤖 NanoGPT     : 342 models (no change)
+🤖 OpenRouter  : 321 models (-1 model)
+🤖 Requesty    : 256 models (-11 models)
+🤖 UnifyAI     : 173 models (no change)
+==================================================
+2025-07-02 09:42:06 GMT+7
 ==================================================
 ```
 

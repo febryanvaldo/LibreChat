@@ -1,4 +1,4 @@
-version: 1.2.8.20250701
+version: 1.2.8.xxxxx
 interface:
   cache: true
   privacyPolicy:
@@ -253,34 +253,51 @@ endpoints:
           - agentica-org/DeepCoder-14B-Preview
           - ArliAI/QwQ-32B-ArliAI-RpR-v1
           - ByteDance-Seed/Seed-Coder-8B-Reasoning-bf16
+          - casperhansen/deepseek-r1-distill-qwen-32b-awq
           - chutesai/Devstral-Small-2505
+          - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
+          - chutesai/Llama-4-Scout-17B-16E-Instruct
+          - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - cognitivecomputations/Dolphin3.0-Mistral-24B
           - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
+          - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+          - deepseek-ai/DeepSeek-V3
+          - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3-Base
           - microsoft/MAI-DS-R1-FP8
+          - MiniMaxAI/MiniMax-M1-80k
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
+          - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1
           - openbmb/MiniCPM4-8B
+          - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen/Qwen2.5-VL-32B-Instruct
+          - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen3-14B
           - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-32B
+          - Qwen/Qwen3-8B
           - Qwen/QwQ-32B
           - RekaAI/reka-flash-3
           - Salesforce/xgen-small-9B-instruct-r
           - sarvamai/sarvam-m
           - shisa-ai/shisa-v2-llama3.3-70b
+          - tencent/Hunyuan-A13B-Instruct
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-Z1-32B-0414
+          - tngtech/DeepSeek-R1T-Chimera
           - tplr/TEMPLAR-I
           - unsloth/gemma-2-9b-it
           - unsloth/gemma-3-12b-it
+          - unsloth/gemma-3-27b-it
           - unsloth/Meta-Llama-3.1-8B-Instruct
           - unsloth/Mistral-Nemo-Instruct-2407
           - unsloth/Mistral-Small-24B-Instruct-2501
@@ -493,6 +510,7 @@ endpoints:
       baseURL: https://api.kluster.ai/v1
       models:
         default:
+          - BAAI/bge-m3
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3-0324
           - google/gemma-3-27b-it
@@ -710,13 +728,8 @@ endpoints:
       models:
         default:
           - deepseek-ai/DeepSeek-R1
-          - deepseek-ai/DeepSeek-R1-0528
-          - deepseek-ai/DeepSeek-R1-trt
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - Nitral-AI/Captain-Eris_Violet-V0.420-12B
-          - rica40325/10_14dpo
-          - TheDrummer/Cydonia-24B-v3
         fetch: false
       titleConvo: true
       titleModel: TheDrummer/Cydonia-24B-v2
@@ -747,6 +760,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-p-dp
           - google/gemma-2-27b-it
+          - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
           - lgai/exaone-3-5-32b-instruct
           - lgai/exaone-deep-32b
@@ -805,7 +819,7 @@ endpoints:
           - aion-1-0
           - aion-1-0-mini
           - aion-rp-llama-3-1-8b
-          - airoboros-70b
+          - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - arcee-blitz
           - babbage-002
@@ -855,7 +869,6 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2501
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -907,6 +920,7 @@ endpoints:
           - deepseek-v3-p-dp
           - devstral-small
           - devstral-small-2505
+          - dobby-mini-unhinged-plus-llama-3-1-8b
           - dolphin-2-6-mixtral-8x7b
           - dolphin-2-9-1-llama-3-70b
           - dolphin-3-0-mistral-24b
@@ -914,6 +928,7 @@ endpoints:
           - dolphin-mixtral-8x22b
           - ernie-4-5-300b-a47b
           - eva-llama-3-33-70b
+          - eva-qwen-2-5-32b
           - eva-qwen-2-5-72b
           - fimbulvetr-11b-v2
           - gemini-1-5-flash
@@ -1113,6 +1128,7 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
+          - llama-3-lumimaid-70b
           - llama-3-lumimaid-8b
           - llama-4
           - llama-4-maverick
@@ -1237,6 +1253,7 @@ endpoints:
           - open-mistral-nemo-2407
           - open-mixtral-8x22b
           - open-mixtral-8x7b
+          - openhands-lm-32b-v0-1
           - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
           - phi-3-medium-4k-instruct
@@ -1857,7 +1874,6 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-m1
-          - minimax/minimax-m1:extended
           - mistralai/codestral-2501
           - mistralai/devstral-small
           - mistralai/devstral-small:free
@@ -1947,6 +1963,7 @@ endpoints:
           - openai/o4-mini-high
           - opengvlab/internvl3-14b
           - opengvlab/internvl3-2b
+          - openrouter/cypher-alpha:free
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
           - perplexity/r1-1776
@@ -1994,7 +2011,6 @@ endpoints:
           - sao10k/l3.3-euryale-70b
           - sarvamai/sarvam-m:free
           - scb10x/llama3.1-typhoon2-70b-instruct
-          - sentientagi/dobby-mini-unhinged-plus-llama-3.1-8b
           - shisa-ai/shisa-v2-llama3.3-70b:free
           - sophosympatheia/midnight-rose-70b
           - thedrummer/anubis-70b-v1.1
@@ -2047,9 +2063,6 @@ endpoints:
           - anthropic/claude-3-sonnet-20240229
           - anthropic/claude-opus-4-20250514
           - anthropic/claude-sonnet-4-20250514
-          - cline/claude-3-5-sonnet
-          - cline/claude-3-5-sonnet:alpha
-          - cline/claude-3-5-sonnet:alpha-v2
           - cline/claude-3-7-sonnet
           - cline/claude-3-7-sonnet:1024
           - cline/claude-3-7-sonnet:16384
@@ -2121,12 +2134,7 @@ endpoints:
           - google/gemini-2.0-flash-001
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-lite-preview-06-17
-          - google/gemini-2.5-flash-preview-04-17
-          - google/gemini-2.5-flash-preview-05-20
           - google/gemini-2.5-pro
-          - google/gemini-2.5-pro-preview-03-25
-          - google/gemini-2.5-pro-preview-05-06
-          - google/gemini-2.5-pro-preview-06-05
           - groq/qwen-qwq-32b
           - mistral/devstral-small-latest
           - mistral/mistral-large-latest
@@ -2201,9 +2209,6 @@ endpoints:
           - openai/o1-2024-12-17
           - openai/o1-mini
           - openai/o1-mini-2024-09-12
-          - openai/o1-mini:high
-          - openai/o1-mini:low
-          - openai/o1-mini:medium
           - openai/o1:high
           - openai/o1:low
           - openai/o1:medium
