@@ -1,4 +1,4 @@
-version: 1.2.8.20250702
+version: 1.2.8.20250703
 interface:
   cache: true
   privacyPolicy:
@@ -446,6 +446,7 @@ endpoints:
           - accounts/fireworks/models/qwq-32b
           - accounts/instacart/models/srl-finetune-0417-debug
           - accounts/perplexity/models/r1-1776
+          - accounts/sentientfoundation-serverless/models/dobby-mini-unhinged-plus-llama-3-1-8b
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
           - accounts/uniphore/models/llama-v3p1-8b-instruct-lora-1
         fetch: false
@@ -795,6 +796,7 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen3-235B-A22B-fp8-tput
+          - Qwen/Qwen3-32B-FP8
           - Qwen/QwQ-32B
           - scb10x/scb10x-llama3-1-typhoon2-70b-instruct
           - scb10x/scb10x-typhoon-2-1-gemma3-12b
@@ -869,6 +871,7 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2501
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -892,6 +895,7 @@ endpoints:
           - computer-use
           - computer-use-preview
           - computer-use-preview-2025-03-11
+          - cypher-alpha
           - davinci-002
           - deepcoder-14b-preview
           - deephermes-3-llama-3-8b-preview
@@ -1084,7 +1088,6 @@ endpoints:
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
-          - llama-3-1-8b-instant
           - llama-3-1-8b-instruct
           - llama-3-1-8b-instruct-turbo
           - llama-3-1-8b-instruct-v1
@@ -1117,7 +1120,6 @@ endpoints:
           - llama-3-3-70b-instruct-turbo
           - llama-3-3-70b-instruct-turbo-free
           - llama-3-3-70b-instruct-v1
-          - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
           - llama-3-70b-8192
@@ -1157,8 +1159,8 @@ endpoints:
           - mai-ds-r1
           - marin-8b-instruct
           - mercury
+          - mercury-coder
           - mercury-coder-small-beta
-          - midnight-rose-70b
           - minicpm-llama-3-v-2-5
           - minimax
           - minimax-01
@@ -1200,9 +1202,7 @@ endpoints:
           - mixtral-8x7b-instruct-0-1
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
-          - mn-celeste-12b
           - mn-inferor-12b
-          - mn-starcannon-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - morph-v2
@@ -1435,6 +1435,10 @@ endpoints:
           - doubao-seed-1-6-250615
           - doubao-seed-1-6-flash-250615
           - doubao-seed-1-6-thinking-250615
+          - DS-R1-Distill-70B
+          - DS-R1-Distill-70B-abliterated
+          - DS-R1-Distill-70B-ArliAI-RpR-v4-Large
+          - DS-R1-Distill-70B-Electra
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - ernie-4.5-8k-preview
@@ -1475,6 +1479,11 @@ endpoints:
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
           - gemini-exp-1206
+          - Gemma-3-27B-ArliAI-RPMax-v3
+          - Gemma-3-27B-CardProjector-v4
+          - Gemma-3-27B-Glitter
+          - Gemma-3-27B-it
+          - Gemma-3-27B-it-Abliterated
           - glm-4
           - glm-4-air
           - glm-4-air-0111
@@ -1521,12 +1530,11 @@ endpoints:
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - learnlm-1.5-pro-experimental
           - Llama-3.3+(3.1v3.3)-70B-Hanami-x1
-          - Llama-3.3+(3.1v3.3)-70B-WhiteRabbitNeo-2
+          - Llama-3.3+(3.1v3.3)-70B-New-Dawn-v1.1
           - Llama-3.3+(3v3.3)-70B-TenyxChat-DaybreakStorywriter
           - Llama-3.3+3.1-70B-ArliAI-RPMax-v1.3
-          - Llama-3.3+3.1-70B-Euryale-v2.2
-          - Llama-3.3+3.1-70B-Hanami-x1
           - Llama-3.3-70B-Anubis-v1
+          - Llama-3.3-70B-Anubis-v1.1
           - Llama-3.3-70B-ArliAI-RPMax-v1.4
           - Llama-3.3-70B-ArliAI-RPMax-v2
           - Llama-3.3-70B-Bigger-Body
@@ -1536,12 +1544,18 @@ endpoints:
           - Llama-3.3-70B-Electra-R1
           - Llama-3.3-70B-Electranova-v1.0
           - Llama-3.3-70B-Fallen-R1-v1
+          - Llama-3.3-70B-Fallen-v1
+          - Llama-3.3-70B-Forgotten-Abomination-v5.0
           - Llama-3.3-70B-Forgotten-Safeword-3.6
+          - Llama-3.3-70B-GeneticLemonade-Unleashed-v3
           - Llama-3.3-70B-Legion-V2.1
           - Llama-3.3-70B-Magnum-v4-SE
+          - Llama-3.3-70B-Mhnnn-x1
           - Llama-3.3-70B-MiraiFanfare
           - Llama-3.3-70B-Mokume-Gane-R1
           - Llama-3.3-70B-MS-Nevoria
+          - Llama-3.3-70B-StrawberryLemonade-v1.0
+          - Llama-3.3-70B-Strawberrylemonade-v1.2
           - Llama-3.3-70B-Vulpecula-R1
           - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
@@ -1555,19 +1569,13 @@ endpoints:
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
           - microsoft/MAI-DS-R1-FP8
-          - microsoft/Phi-4-reasoning
-          - microsoft/Phi-4-reasoning-plus
           - microsoft/wizardlm-2-8x22b
           - MiniMax-M1
           - minimax/minimax-01
           - MiniMaxAI/MiniMax-M1-80k
-          - Mistral-Nemo-12B-ArliAI-RPMax-v1.1
-          - Mistral-Nemo-12B-ArliAI-RPMax-v1.3
           - Mistral-Nemo-12B-Instruct-2407
           - Mistral-Nemo-12B-Magnum-v4
           - Mistral-Nemo-12B-NemoMix-Unleashed
-          - Mistral-Nemo-12B-Nemomix-v4.0
-          - Mistral-Nemo-12B-SauerkrautLM
           - Mistral-Nemo-12B-Starcannon-Unleashed-v1.0
           - Mistral-Nemo-12B-UnslopNemo-v4.1
           - mistral-small-31-24b-instruct
@@ -1601,8 +1609,6 @@ endpoints:
           - o4-mini
           - o4-mini-deep-research
           - o4-mini-high
-          - open-r1/OlympicCoder-32B
-          - open-r1/OlympicCoder-7b
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
@@ -1626,24 +1632,20 @@ endpoints:
           - qwen/qwen3-32b
           - Qwen/Qwen3-8B
           - Qwen/QwQ-32B-Preview
-          - Qwen2.5-32B-AGI
-          - Qwen2.5-32B-Dazzling-Star-Aurora-32b-v0.0
           - Qwen2.5-32B-EVA-v0.2
-          - Qwen2.5-32B-Snowdrop-v0
           - Qwen2.5-72B-Chuluun-v0.08
           - Qwen2.5-72B-Evathene-v1.2
           - Qwen2.5-72B-Instruct
           - Qwen2.5-72B-Instruct-Abliterated
           - Qwen2.5-72B-Magnum-v4
           - qwen25-vl-72b-instruct
-          - Qwen3-32B
+          - Qwen3-14B-ArliAI-RpR-v5-Small
           - qwq-32b
+          - QwQ-32B-Abliterated
           - QwQ-32B-ArliAI-RpR-v1
           - QwQ-32B-ArliAI-RpR-v2
           - QwQ-32B-ArliAI-RpR-v3
           - QwQ-32B-ArliAI-RpR-v4
-          - QwQ-32B-Snowdrop-v0
-          - QwQ-32B-Snowdrop-v0-nothink
           - r1-1776
           - raifle/sorcererlm-8x22b
           - ReadyArt/The-Omega-Abomination-L-70B-v1.0
@@ -1834,7 +1836,7 @@ endpoints:
           - google/gemma-3n-e4b-it:free
           - gryphe/mythomax-l2-13b
           - inception/mercury
-          - inception/mercury-coder-small-beta
+          - inception/mercury-coder
           - infermatic/mn-inferor-12b
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
@@ -1848,11 +1850,9 @@ endpoints:
           - meta-llama/llama-3.1-405b-instruct
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
-          - meta-llama/llama-3.1-8b-instruct:free
           - meta-llama/llama-3.2-11b-vision-instruct
           - meta-llama/llama-3.2-11b-vision-instruct:free
           - meta-llama/llama-3.2-1b-instruct
-          - meta-llama/llama-3.2-1b-instruct:free
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
@@ -2063,6 +2063,66 @@ endpoints:
           - anthropic/claude-3-sonnet-20240229
           - anthropic/claude-opus-4-20250514
           - anthropic/claude-sonnet-4-20250514
+          - bedrock/anthropic/claude-3-7-sonnet
+          - bedrock/anthropic/claude-3-7-sonnet-20250219
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-central-1
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-north-1
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-west-1
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-west-3
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@us-east-1
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@us-east-2
+          - bedrock/anthropic/claude-3-7-sonnet-20250219@us-west-2
+          - bedrock/anthropic/claude-3-7-sonnet-latest
+          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-central-1
+          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-north-1
+          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-west-1
+          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-west-3
+          - bedrock/anthropic/claude-3-7-sonnet-latest@us-east-1
+          - bedrock/anthropic/claude-3-7-sonnet-latest@us-east-2
+          - bedrock/anthropic/claude-3-7-sonnet-latest@us-west-2
+          - bedrock/anthropic/claude-3-7-sonnet@eu-central-1
+          - bedrock/anthropic/claude-3-7-sonnet@eu-north-1
+          - bedrock/anthropic/claude-3-7-sonnet@eu-west-1
+          - bedrock/anthropic/claude-3-7-sonnet@eu-west-3
+          - bedrock/anthropic/claude-3-7-sonnet@us-east-1
+          - bedrock/anthropic/claude-3-7-sonnet@us-east-2
+          - bedrock/anthropic/claude-3-7-sonnet@us-west-2
+          - bedrock/anthropic/claude-4-opus
+          - bedrock/anthropic/claude-4-opus-20250514
+          - bedrock/anthropic/claude-4-opus-20250514@us-east-1
+          - bedrock/anthropic/claude-4-opus-20250514@us-east-2
+          - bedrock/anthropic/claude-4-opus-20250514@us-west-2
+          - bedrock/anthropic/claude-4-opus-latest
+          - bedrock/anthropic/claude-4-opus-latest@us-east-1
+          - bedrock/anthropic/claude-4-opus-latest@us-east-2
+          - bedrock/anthropic/claude-4-opus-latest@us-west-2
+          - bedrock/anthropic/claude-4-opus@us-east-1
+          - bedrock/anthropic/claude-4-opus@us-east-2
+          - bedrock/anthropic/claude-4-opus@us-west-2
+          - bedrock/anthropic/claude-4-sonnet
+          - bedrock/anthropic/claude-4-sonnet-20250514
+          - bedrock/anthropic/claude-4-sonnet-20250514@eu-central-1
+          - bedrock/anthropic/claude-4-sonnet-20250514@eu-north-1
+          - bedrock/anthropic/claude-4-sonnet-20250514@eu-west-1
+          - bedrock/anthropic/claude-4-sonnet-20250514@eu-west-3
+          - bedrock/anthropic/claude-4-sonnet-20250514@us-east-1
+          - bedrock/anthropic/claude-4-sonnet-20250514@us-east-2
+          - bedrock/anthropic/claude-4-sonnet-20250514@us-west-2
+          - bedrock/anthropic/claude-4-sonnet-latest
+          - bedrock/anthropic/claude-4-sonnet-latest@eu-central-1
+          - bedrock/anthropic/claude-4-sonnet-latest@eu-north-1
+          - bedrock/anthropic/claude-4-sonnet-latest@eu-west-1
+          - bedrock/anthropic/claude-4-sonnet-latest@eu-west-3
+          - bedrock/anthropic/claude-4-sonnet-latest@us-east-1
+          - bedrock/anthropic/claude-4-sonnet-latest@us-east-2
+          - bedrock/anthropic/claude-4-sonnet-latest@us-west-2
+          - bedrock/anthropic/claude-4-sonnet@eu-central-1
+          - bedrock/anthropic/claude-4-sonnet@eu-north-1
+          - bedrock/anthropic/claude-4-sonnet@eu-west-1
+          - bedrock/anthropic/claude-4-sonnet@eu-west-3
+          - bedrock/anthropic/claude-4-sonnet@us-east-1
+          - bedrock/anthropic/claude-4-sonnet@us-east-2
+          - bedrock/anthropic/claude-4-sonnet@us-west-2
           - cline/claude-3-7-sonnet
           - cline/claude-3-7-sonnet:1024
           - cline/claude-3-7-sonnet:16384
