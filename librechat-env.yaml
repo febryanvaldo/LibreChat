@@ -1,4 +1,4 @@
-version: 1.2.8.20250703
+version: 1.2.8.20250704
 interface:
   cache: true
   privacyPolicy:
@@ -294,6 +294,7 @@ endpoints:
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-Z1-32B-0414
           - tngtech/DeepSeek-R1T-Chimera
+          - tngtech/DeepSeek-TNG-R1T2-Chimera
           - tplr/TEMPLAR-I
           - unsloth/gemma-2-9b-it
           - unsloth/gemma-3-12b-it
@@ -448,7 +449,6 @@ endpoints:
           - accounts/perplexity/models/r1-1776
           - accounts/sentientfoundation-serverless/models/dobby-mini-unhinged-plus-llama-3-1-8b
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
-          - accounts/uniphore/models/llama-v3p1-8b-instruct-lora-1
         fetch: false
       titleConvo: true
       titleModel: accounts/fireworks/models/llama-v3p1-8b-instruct
@@ -729,6 +729,7 @@ endpoints:
       models:
         default:
           - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
         fetch: false
@@ -1038,8 +1039,6 @@ endpoints:
           - grok-3-beta
           - grok-3-mini
           - grok-3-mini-beta
-          - grok-beta
-          - grok-vision-beta
           - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
           - hermes-2-vision-7b
@@ -1088,6 +1087,7 @@ endpoints:
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
+          - llama-3-1-8b-instant
           - llama-3-1-8b-instruct
           - llama-3-1-8b-instruct-turbo
           - llama-3-1-8b-instruct-v1
@@ -1120,6 +1120,7 @@ endpoints:
           - llama-3-3-70b-instruct-turbo
           - llama-3-3-70b-instruct-turbo-free
           - llama-3-3-70b-instruct-v1
+          - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b-v1
           - llama-3-70b-8192
@@ -1161,6 +1162,7 @@ endpoints:
           - mercury
           - mercury-coder
           - mercury-coder-small-beta
+          - midnight-rose-70b
           - minicpm-llama-3-v-2-5
           - minimax
           - minimax-01
@@ -1202,7 +1204,8 @@ endpoints:
           - mixtral-8x7b-instruct-0-1
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
-          - mn-inferor-12b
+          - mn-celeste-12b
+          - mn-starcannon-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - morph-v2
@@ -2033,7 +2036,6 @@ endpoints:
           - x-ai/grok-3-beta
           - x-ai/grok-3-mini
           - x-ai/grok-3-mini-beta
-          - x-ai/grok-beta
           - x-ai/grok-vision-beta
         fetch: false
       titleConvo: true
@@ -2353,6 +2355,28 @@ endpoints:
           - vertex/anthropic/claude-4-sonnet-latest@us-east5
           - vertex/anthropic/claude-4-sonnet@europe-west1
           - vertex/anthropic/claude-4-sonnet@us-east5
+          - vertex/google/gemini-2.5-flash
+          - vertex/google/gemini-2.5-flash@europe-central2
+          - vertex/google/gemini-2.5-flash@europe-north1
+          - vertex/google/gemini-2.5-flash@europe-west1
+          - vertex/google/gemini-2.5-flash@europe-west4
+          - vertex/google/gemini-2.5-flash@europe-west8
+          - vertex/google/gemini-2.5-flash@us-central1
+          - vertex/google/gemini-2.5-flash@us-east1
+          - vertex/google/gemini-2.5-flash@us-east5
+          - vertex/google/gemini-2.5-flash@us-south1
+          - vertex/google/gemini-2.5-flash@us-west1
+          - vertex/google/gemini-2.5-pro
+          - vertex/google/gemini-2.5-pro@europe-central2
+          - vertex/google/gemini-2.5-pro@europe-north1
+          - vertex/google/gemini-2.5-pro@europe-west1
+          - vertex/google/gemini-2.5-pro@europe-west4
+          - vertex/google/gemini-2.5-pro@europe-west8
+          - vertex/google/gemini-2.5-pro@us-central1
+          - vertex/google/gemini-2.5-pro@us-east1
+          - vertex/google/gemini-2.5-pro@us-east5
+          - vertex/google/gemini-2.5-pro@us-south1
+          - vertex/google/gemini-2.5-pro@us-west1
           - xai/grok-2-1212
           - xai/grok-2-latest
           - xai/grok-3-beta
