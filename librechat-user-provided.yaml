@@ -1,4 +1,4 @@
-version: 1.2.8.20250704
+version: 1.2.8.20250705
 interface:
   cache: true
   privacyPolicy:
@@ -643,10 +643,6 @@ endpoints:
           - sao10k/l31-70b-euryale-v2.2
           - sophosympatheia/midnight-rose-70b
           - thudm/glm-4-32b-0414
-          - thudm/glm-4-9b-0414
-          - thudm/glm-z1-32b-0414
-          - thudm/glm-z1-9b-0414
-          - thudm/glm-z1-rumination-32b-0414
         fetch: false
       titleConvo: true
       titleModel: meta-llama/llama-3.2-3b-instruct
@@ -823,7 +819,6 @@ endpoints:
           - aion-1-0-mini
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
-          - anubis-pro-105b-v1
           - arcee-blitz
           - babbage-002
           - caller-large
@@ -977,9 +972,7 @@ endpoints:
           - giant-context
           - glm-4-32b
           - glm-4-9b
-          - glm-z1-32b
           - glm-z1-9b
-          - glm-z1-rumination-32b
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -1039,6 +1032,7 @@ endpoints:
           - grok-3-beta
           - grok-3-mini
           - grok-3-mini-beta
+          - grok-vision-beta
           - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
           - hermes-2-vision-7b
@@ -1047,7 +1041,6 @@ endpoints:
           - inflection-3-pi
           - inflection-3-productivity
           - internvl-3-14b
-          - internvl-3-2b
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-1-6-large
@@ -1205,6 +1198,7 @@ endpoints:
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
           - mn-celeste-12b
+          - mn-inferor-12b
           - mn-starcannon-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
@@ -1535,7 +1529,6 @@ endpoints:
           - Llama-3.3+(3.1v3.3)-70B-Hanami-x1
           - Llama-3.3+(3.1v3.3)-70B-New-Dawn-v1.1
           - Llama-3.3+(3v3.3)-70B-TenyxChat-DaybreakStorywriter
-          - Llama-3.3+3.1-70B-ArliAI-RPMax-v1.3
           - Llama-3.3-70B-Anubis-v1
           - Llama-3.3-70B-Anubis-v1.1
           - Llama-3.3-70B-ArliAI-RPMax-v1.4
@@ -1605,6 +1598,7 @@ endpoints:
           - o1-mini
           - o1-preview
           - o3
+          - o3-deep-research
           - o3-mini
           - o3-mini-high
           - o3-mini-low
@@ -1620,6 +1614,7 @@ endpoints:
           - openai/o1-pro
           - parasail-drummer-anubis-70b-1-1
           - parasail-valkyrie-49b-v1
+          - phala/deepseek-chat-v3-0324
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qvq-max
@@ -1693,12 +1688,16 @@ endpoints:
           - THUDM/GLM-Z1-9B-0414
           - THUDM/GLM-Z1-Rumination-32B-0414
           - tngtech/DeepSeek-R1T-Chimera
+          - tngtech/DeepSeek-TNG-R1T2-Chimera
           - Tongyi-Zhiwen/QwenLong-L1-32B
           - undi95/remm-slerp-l2-13b
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
+          - v0-1.0-md
+          - v0-1.5-lg
+          - v0-1.5-md
           - venice-uncensored
           - venice-uncensored-web
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
@@ -1965,7 +1964,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-high
           - opengvlab/internvl3-14b
-          - opengvlab/internvl3-2b
           - openrouter/cypher-alpha:free
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
@@ -2024,9 +2022,7 @@ endpoints:
           - thedrummer/valkyrie-49b-v1
           - thudm/glm-4-32b
           - thudm/glm-4-32b:free
-          - thudm/glm-z1-32b
           - thudm/glm-z1-32b:free
-          - thudm/glm-z1-rumination-32b
           - tngtech/deepseek-r1t-chimera:free
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
