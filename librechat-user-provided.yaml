@@ -1,4 +1,4 @@
-version: 1.2.8.20250705
+version: 1.2.8.20250706
 interface:
   cache: true
   privacyPolicy:
@@ -819,6 +819,7 @@ endpoints:
           - aion-1-0-mini
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
+          - anubis-pro-105b-v1
           - arcee-blitz
           - babbage-002
           - caller-large
@@ -972,6 +973,7 @@ endpoints:
           - giant-context
           - glm-4-32b
           - glm-4-9b
+          - glm-z1-32b
           - glm-z1-9b
           - goliath-120b
           - gpt-3-5-turbo
@@ -1076,7 +1078,6 @@ endpoints:
           - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-turbo
-          - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
@@ -1090,8 +1091,6 @@ endpoints:
           - llama-3-1-nemotron-70b-instruct
           - llama-3-1-nemotron-70b-instruct-hf
           - llama-3-1-nemotron-ultra-253b-v1
-          - llama-3-1-sonar-large-128k-online
-          - llama-3-1-sonar-small-128k-online
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-1-typhoon-2-70b-instruct
           - llama-3-2-11b-instruct
@@ -1728,7 +1727,6 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - alfredpros/codellama-7b-instruct-solidity
-          - all-hands/openhands-lm-32b-v0.1
           - alpindale/goliath-120b
           - alpindale/magnum-72b
           - amazon/nova-lite-v1
@@ -1805,7 +1803,6 @@ endpoints:
           - deepseek/deepseek-v3-base:free
           - eleutherai/llemma_7b
           - eva-unit-01/eva-llama-3.33-70b
-          - eva-unit-01/eva-qwen-2.5-32b
           - eva-unit-01/eva-qwen-2.5-72b
           - featherless/qwerky-72b:free
           - google/gemini-2.0-flash-001
@@ -1965,8 +1962,6 @@ endpoints:
           - openai/o4-mini-high
           - opengvlab/internvl3-14b
           - openrouter/cypher-alpha:free
-          - perplexity/llama-3.1-sonar-large-128k-online
-          - perplexity/llama-3.1-sonar-small-128k-online
           - perplexity/r1-1776
           - perplexity/sonar
           - perplexity/sonar-deep-research
