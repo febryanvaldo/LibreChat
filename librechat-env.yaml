@@ -1,4 +1,4 @@
-version: 1.2.8.20250707
+version: 1.2.8.20250708
 interface:
   cache: true
   privacyPolicy:
@@ -757,6 +757,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-p-dp
+          - eddie/Qwen3-32B
           - google/gemma-2-27b-it
           - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
@@ -858,7 +859,6 @@ endpoints:
           - claude-4-sonnet
           - claude-opus-4
           - claude-opus-4-20250514
-          - claude-opus-4-20250514-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -868,6 +868,7 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2501
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -1086,7 +1087,6 @@ endpoints:
           - llama-3-1-8b-instruct-turbo
           - llama-3-1-8b-instruct-v1
           - llama-3-1-large
-          - llama-3-1-lumimaid-70b
           - llama-3-1-lumimaid-8b
           - llama-3-1-nemotron-70b-instruct
           - llama-3-1-nemotron-70b-instruct-hf
@@ -1187,6 +1187,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1201,6 +1202,8 @@ endpoints:
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - morph-v2
+          - morph-v3-fast
+          - morph-v3-large
           - multimodal
           - mythalion-13b
           - mythomax
@@ -1907,9 +1910,10 @@ endpoints:
           - moonshotai/kimi-dev-72b:free
           - moonshotai/kimi-vl-a3b-thinking:free
           - morph/morph-v2
+          - morph/morph-v3-fast
+          - morph/morph-v3-large
           - neversleep/llama-3-lumimaid-70b
           - neversleep/llama-3-lumimaid-8b
-          - neversleep/llama-3.1-lumimaid-70b
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - nothingiisreal/mn-celeste-12b
@@ -2532,7 +2536,6 @@ endpoints:
           - mistral-medium@mistral-ai
           - mistral-nemo@deepinfra
           - mistral-nemo@mistral-ai
-          - mistral-nemo@vertex-ai
           - mistral-small@deepinfra
           - mistral-small@mistral-ai
           - mistral-small@together-ai
