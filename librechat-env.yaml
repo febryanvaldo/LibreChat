@@ -1,4 +1,4 @@
-version: 1.2.8.20250710
+version: 1.2.8.20250711
 interface:
   cache: true
   privacyPolicy:
@@ -80,7 +80,10 @@ endpoints:
           - codestral-2412
           - codestral-2501
           - codestral-latest
+          - devstral-medium-2507
+          - devstral-medium-latest
           - devstral-small-2505
+          - devstral-small-2507
           - devstral-small-latest
           - magistral-medium-2506
           - magistral-medium-latest
@@ -163,6 +166,7 @@ endpoints:
           - grok-3-fast
           - grok-3-mini
           - grok-3-mini-fast
+          - grok-4-0709
         fetch: false
       titleConvo: true
       titleModel: grok-3-mini-fast
@@ -252,6 +256,7 @@ endpoints:
       models:
         default:
           - agentica-org/DeepCoder-14B-Preview
+          - agentica-org/DeepSWE-Preview
           - ArliAI/QwQ-32B-ArliAI-RpR-v1
           - ByteDance-Seed/Seed-Coder-8B-Reasoning-bf16
           - casperhansen/deepseek-r1-distill-qwen-32b-awq
@@ -459,6 +464,7 @@ endpoints:
       baseURL: https://api.friendli.ai/serverless/v1
       models:
         default:
+          - deepseek-ai/DeepSeek-R1-0528
           - deepseek-r1
           - meta-llama-3.1-8b-instruct
           - meta-llama-3.3-70b-instruct
@@ -645,6 +651,7 @@ endpoints:
           - sao10k/l31-70b-euryale-v2.2
           - sophosympatheia/midnight-rose-70b
           - thudm/glm-4-32b-0414
+          - thudm/glm-4.1v-9b-thinking
         fetch: false
       titleConvo: true
       titleModel: meta-llama/llama-3.2-3b-instruct
@@ -786,6 +793,7 @@ endpoints:
           - mistralai/Mistral-7B-Instruct-v0.3
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mixtral-8x7B-Instruct-v0.1
+          - moz/Llama-3.3-70B-Instruct-Turbo
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - perplexity-ai/r1-1776
@@ -924,6 +932,7 @@ endpoints:
           - deepseek-v3-0324-turbo
           - deepseek-v3-base
           - deepseek-v3-p-dp
+          - devstral-medium
           - devstral-small
           - devstral-small-2505
           - dobby-mini-unhinged-plus-llama-3-1-8b
@@ -975,6 +984,7 @@ endpoints:
           - gemma-3-1b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
+          - gemma-3n-e2b-it
           - giant-context
           - glm-4-32b
           - glm-4-9b
@@ -1029,9 +1039,16 @@ endpoints:
           - gpt-4o-search-preview-2025-03-11
           - gpt-4o-transcribe
           - grok-2
+          - grok-2-1212
+          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
+          - grok-3
+          - grok-3-beta
+          - grok-3-mini
+          - grok-3-mini-beta
+          - grok-4
           - grok-vision-beta
           - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
@@ -1143,7 +1160,6 @@ endpoints:
           - llemma-7b
           - maestro-reasoning
           - magistral-medium-2506
-          - magistral-small-2506
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
@@ -1173,7 +1189,6 @@ endpoints:
           - mistral-large-2407
           - mistral-large-2411
           - mistral-large-latest
-          - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
           - mistral-saba-latest
@@ -1286,7 +1301,6 @@ endpoints:
           - qwen-2-large
           - qwen-2-small
           - qwen-2-vl-72b-instruct
-          - qwen-2-vl-7b-instruct
           - qwen-3-0-6b-04-28
           - qwen-3-1-7b
           - qwen-3-14b
@@ -1619,7 +1633,6 @@ endpoints:
           - openai/o1-pro
           - parasail-drummer-anubis-70b-1-1
           - parasail-valkyrie-49b-v1
-          - phala/deepseek-chat-v3-0324
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qvq-max
@@ -1677,6 +1690,7 @@ endpoints:
           - step-2-16k-exp
           - step-2-mini
           - step-r1-v-mini
+          - TEE/deepseek-chat-v3-0324
           - TEE/deepseek-r1-70b
           - TEE/llama3-3-70b
           - TEE/mistral-small-3-1-24b
@@ -1706,6 +1720,8 @@ endpoints:
           - venice-uncensored
           - venice-uncensored-web
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
+          - x-ai/grok-4-07-09
+          - x-ai/grok-4-07-09-extended
           - yi-34b-chat-0205
           - yi-34b-chat-200k
           - yi-large
@@ -1775,6 +1791,7 @@ endpoints:
           - arcee-ai/virtuoso-medium-v2
           - arliai/qwq-32b-arliai-rpr-v1:free
           - baidu/ernie-4.5-300b-a47b
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - cognitivecomputations/dolphin-mixtral-8x22b
           - cognitivecomputations/dolphin3.0-mistral-24b:free
           - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
@@ -1883,8 +1900,10 @@ endpoints:
           - minimax/minimax-01
           - minimax/minimax-m1
           - mistralai/codestral-2501
+          - mistralai/devstral-medium
           - mistralai/devstral-small
-          - mistralai/devstral-small:free
+          - mistralai/devstral-small-2505
+          - mistralai/devstral-small-2505:free
           - mistralai/magistral-medium-2506
           - mistralai/magistral-medium-2506:thinking
           - mistralai/magistral-small-2506
@@ -2033,13 +2052,13 @@ endpoints:
           - tngtech/deepseek-r1t2-chimera:free
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
-          - venice/uncensored:free
           - x-ai/grok-2-1212
           - x-ai/grok-2-vision-1212
           - x-ai/grok-3
           - x-ai/grok-3-beta
           - x-ai/grok-3-mini
           - x-ai/grok-3-mini-beta
+          - x-ai/grok-4
           - x-ai/grok-vision-beta
         fetch: false
       titleConvo: true
@@ -2391,6 +2410,7 @@ endpoints:
           - xai/grok-3-mini-fast-beta
           - xai/grok-3-mini-fast-beta:high
           - xai/grok-3-mini-fast-beta:low
+          - xai/grok-4
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-4.1-mini
