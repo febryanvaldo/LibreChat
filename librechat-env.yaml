@@ -1,4 +1,4 @@
-version: 1.2.8.20250712
+version: 1.2.8.20250713
 interface:
   cache: true
   privacyPolicy:
@@ -277,6 +277,7 @@ endpoints:
           - microsoft/MAI-DS-R1-FP8
           - MiniMaxAI/MiniMax-M1-80k
           - moonshotai/Kimi-Dev-72B
+          - moonshotai/Kimi-K2-Instruct
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
@@ -737,6 +738,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
+          - moonshotai/Kimi-K2-Instruct
         fetch: false
       titleConvo: true
       titleModel: TheDrummer/Cydonia-24B-v2
@@ -954,11 +956,13 @@ endpoints:
           - gemini-1-5-flash-8b-latest
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
+          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
+          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-preview
@@ -1697,8 +1701,8 @@ endpoints:
           - step-2-mini
           - step-r1-v-mini
           - TEE/deepseek-chat-v3-0324
-          - TEE/deepseek-r1-70b
-          - TEE/llama3-3-70b
+          - TEE/deepseek-r1-70b-distill
+          - TEE/llama-3.3-70b-instruct
           - TEE/mistral-small-3-1-24b
           - TEE/qwen2-5-72b
           - tencent/Hunyuan-A13B-Instruct
@@ -2271,6 +2275,7 @@ endpoints:
           - novita/microsoft/wizardlm-2-8x22b
           - novita/mistralai/mistral-7b-instruct
           - novita/mistralai/mistral-nemo
+          - novita/moonshotai/kimi-k2-instruct
           - novita/nousresearch/hermes-2-pro-llama-3-8b
           - novita/nousresearch/nous-hermes-llama2-13b
           - novita/openchat/openchat-7b
