@@ -1,4 +1,4 @@
-version: 1.2.8.20250713
+version: 1.2.8.20250714
 interface:
   cache: true
   privacyPolicy:
@@ -438,6 +438,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-v3
           - accounts/fireworks/models/deepseek-v3-0324
           - accounts/fireworks/models/firesearch-ocr-v6
+          - accounts/fireworks/models/kimi-k2-instruct
           - accounts/fireworks/models/llama-v3p1-405b-instruct
           - accounts/fireworks/models/llama-v3p1-70b-instruct
           - accounts/fireworks/models/llama-v3p1-8b-instruct
@@ -1044,15 +1045,10 @@ endpoints:
           - gpt-4o-search-preview-2025-03-11
           - gpt-4o-transcribe
           - grok-2
-          - grok-2-1212
           - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
-          - grok-3
-          - grok-3-beta
-          - grok-3-mini
-          - grok-3-mini-beta
           - grok-4
           - grok-vision-beta
           - hermes-2-mixtral-8x7b-dpo
@@ -1287,7 +1283,6 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pixtral-large-latest
           - premium
           - premium-coding
           - qvq-72b
@@ -1300,7 +1295,6 @@ endpoints:
           - qwen-2-5-coder-7b
           - qwen-2-5-large
           - qwen-2-5-small
-          - qwen-2-5-vl-32b-instruct
           - qwen-2-5-vl-3b-instruct
           - qwen-2-5-vl-72b-instruct
           - qwen-2-5-vl-7b-instruct
@@ -1945,6 +1939,7 @@ endpoints:
           - mistralai/pixtral-large-2411
           - moonshotai/kimi-dev-72b:free
           - moonshotai/kimi-k2
+          - moonshotai/kimi-k2:free
           - moonshotai/kimi-vl-a3b-thinking:free
           - morph/morph-v2
           - morph/morph-v3-fast
