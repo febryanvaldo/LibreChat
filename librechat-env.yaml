@@ -1,4 +1,4 @@
-version: 1.2.8.20250717
+version: 1.2.8.20250718
 interface:
   cache: true
   privacyPolicy:
@@ -125,7 +125,9 @@ endpoints:
           - pixtral-large-2411
           - pixtral-large-latest
           - voxtral-mini-2507
+          - voxtral-mini-latest
           - voxtral-small-2507
+          - voxtral-small-latest
         fetch: false
       titleConvo: true
       titleModel: ministral-3b-latest
@@ -281,6 +283,7 @@ endpoints:
           - MiniMaxAI/MiniMax-M1-80k
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct
+          - moonshotai/Kimi-K2-Instruct-vllm
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
@@ -803,6 +806,7 @@ endpoints:
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - moonshotai/Kimi-K2-Instruct
+          - moonshotai/Kimi-K2-Instruct-B200
           - moonshotai/Kimi-K2-Instruct-tgl-testing
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
@@ -879,6 +883,7 @@ endpoints:
           - claude-4-sonnet
           - claude-opus-4
           - claude-opus-4-20250514
+          - claude-opus-4-20250514-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -1169,8 +1174,6 @@ endpoints:
           - llama-guard-7b
           - llemma-7b
           - maestro-reasoning
-          - magistral-medium-2506
-          - magistral-small-2506
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
@@ -1430,6 +1433,7 @@ endpoints:
           - claude-sonnet-4-thinking:32768
           - claude-sonnet-4-thinking:64000
           - claude-sonnet-4-thinking:8192
+          - codellama/CodeLlama-70b-Instruct-hf
           - cognitivecomputations/dolphin-2.9.2-qwen2-72b
           - cognitivecomputations/dolphin-mixtral-8x22b
           - cohere/command-r
@@ -2316,6 +2320,7 @@ endpoints:
           - openai/o1:medium
           - openai/o3
           - openai/o3-2025-04-16
+          - openai/o3-deep-research
           - openai/o3-mini
           - openai/o3-mini-2025-01-31
           - openai/o3-mini:high
@@ -2325,6 +2330,7 @@ endpoints:
           - openai/o3:flex
           - openai/o4-mini
           - openai/o4-mini-2025-04-16
+          - openai/o4-mini-deep-research
           - openai/o4-mini:flex
           - openai/o4-mini:high
           - openai/o4-mini:low
