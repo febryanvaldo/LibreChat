@@ -1,4 +1,4 @@
-version: 1.2.8.20250718
+version: 1.2.8.20250719
 interface:
   cache: true
   privacyPolicy:
@@ -191,6 +191,7 @@ endpoints:
       models:
         default:
           - llama-3.3-70b
+          - llama-4-maverick-17b-128e-instruct
           - llama-4-scout-17b-16e-instruct
           - llama3.1-8b
           - qwen-3-235b-a22b
@@ -283,7 +284,7 @@ endpoints:
           - MiniMaxAI/MiniMax-M1-80k
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct
-          - moonshotai/Kimi-K2-Instruct-vllm
+          - moonshotai/Kimi-K2-Instruct-tools
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
@@ -806,8 +807,6 @@ endpoints:
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - moonshotai/Kimi-K2-Instruct
-          - moonshotai/Kimi-K2-Instruct-B200
-          - moonshotai/Kimi-K2-Instruct-tgl-testing
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - perplexity-ai/r1-1776
@@ -1040,7 +1039,6 @@ endpoints:
           - gpt-4o-mini-search
           - gpt-4o-mini-search-preview
           - gpt-4o-mini-search-preview-2025-03-11
-          - gpt-4o-mini-transcribe
           - gpt-4o-realtime
           - gpt-4o-realtime-preview
           - gpt-4o-realtime-preview-2024-10-01
@@ -1049,7 +1047,6 @@ endpoints:
           - gpt-4o-search
           - gpt-4o-search-preview
           - gpt-4o-search-preview-2025-03-11
-          - gpt-4o-transcribe
           - grok-2
           - grok-2-1212
           - grok-2-latest
@@ -1141,7 +1138,6 @@ endpoints:
           - llama-3-2-small
           - llama-3-3-70b-instruct
           - llama-3-3-70b-instruct-turbo
-          - llama-3-3-70b-instruct-turbo-free
           - llama-3-3-70b-instruct-v1
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
@@ -1174,6 +1170,8 @@ endpoints:
           - llama-guard-7b
           - llemma-7b
           - maestro-reasoning
+          - magistral-medium-2506
+          - magistral-small-2506
           - magnum-72b
           - magnum-v2-72b
           - magnum-v4-72b
@@ -2320,7 +2318,6 @@ endpoints:
           - openai/o1:medium
           - openai/o3
           - openai/o3-2025-04-16
-          - openai/o3-deep-research
           - openai/o3-mini
           - openai/o3-mini-2025-01-31
           - openai/o3-mini:high
@@ -2330,7 +2327,6 @@ endpoints:
           - openai/o3:flex
           - openai/o4-mini
           - openai/o4-mini-2025-04-16
-          - openai/o4-mini-deep-research
           - openai/o4-mini:flex
           - openai/o4-mini:high
           - openai/o4-mini:low
