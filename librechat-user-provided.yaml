@@ -1,4 +1,4 @@
-version: 1.2.8.20250719
+version: 1.2.8.20250720
 interface:
   cache: true
   privacyPolicy:
@@ -305,6 +305,7 @@ endpoints:
           - sarvamai/sarvam-m
           - shisa-ai/shisa-v2-llama3.3-70b
           - tencent/Hunyuan-A13B-Instruct
+          - TheDrummer/Tunguska-39B-v1
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-Z1-32B-0414
           - tngtech/DeepSeek-R1T-Chimera
@@ -313,6 +314,7 @@ endpoints:
           - unsloth/gemma-2-9b-it
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-27b-it
+          - unsloth/Llama-3.2-3B-Instruct
           - unsloth/Meta-Llama-3.1-8B-Instruct
           - unsloth/Mistral-Nemo-Instruct-2407
           - unsloth/Mistral-Small-24B-Instruct-2501
@@ -892,7 +894,6 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2501
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -1087,7 +1088,6 @@ endpoints:
           - l3-70b-euryale-v2-1
           - l3-8b-lunaris-v1
           - l3-8b-lunaris-v1-turbo
-          - l3-euryale-70b
           - l3-lunaris-8b
           - large-context
           - learnlm-1-5-pro-experimental
@@ -1213,7 +1213,6 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
-          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1565,12 +1564,16 @@ endpoints:
           - Llama-3.3+(3v3.3)-70B-TenyxChat-DaybreakStorywriter
           - Llama-3.3-70B-Anubis-v1
           - Llama-3.3-70B-Anubis-v1.1
+          - Llama-3.3-70B-Argunaut-1-SFT
           - Llama-3.3-70B-ArliAI-RPMax-v1.4
           - Llama-3.3-70B-ArliAI-RPMax-v2
+          - Llama-3.3-70B-ArliAI-RPMax-v3
+          - Llama-3.3-70B-Aurora-Borealis
           - Llama-3.3-70B-Bigger-Body
           - Llama-3.3-70B-Cirrus-x1
           - Llama-3.3-70B-Cu-Mai-R1
           - Llama-3.3-70B-Damascus-R1
+          - Llama-3.3-70B-Dark-Ages-v0.1
           - Llama-3.3-70B-Electra-R1
           - Llama-3.3-70B-Electranova-v1.0
           - Llama-3.3-70B-Fallen-R1-v1
@@ -1584,6 +1587,8 @@ endpoints:
           - Llama-3.3-70B-MiraiFanfare
           - Llama-3.3-70B-Mokume-Gane-R1
           - Llama-3.3-70B-MS-Nevoria
+          - Llama-3.3-70B-Predatorial-Extasy
+          - Llama-3.3-70B-Shakudo
           - Llama-3.3-70B-StrawberryLemonade-v1.0
           - Llama-3.3-70B-Strawberrylemonade-v1.2
           - Llama-3.3-70B-Vulpecula-R1
@@ -1670,7 +1675,17 @@ endpoints:
           - Qwen2.5-72B-Instruct-Abliterated
           - Qwen2.5-72B-Magnum-v4
           - qwen25-vl-72b-instruct
+          - Qwen3-14B
           - Qwen3-14B-ArliAI-RpR-v5-Small
+          - Qwen3-14B-Griffon
+          - Qwen3-14B-Gutenberg-Encore
+          - Qwen3-14B-Ophiuchi
+          - Qwen3-14B-Qweasd
+          - Qwen3-14B-Squelching-Fantasies
+          - Qwen3-14B-The-Omega-Directive-v1.1
+          - Qwen3-14B-Vitus
+          - Qwen3-14B-Xiaolong
+          - Qwen3-235B-A22B
           - qwq-32b
           - QwQ-32B-Abliterated
           - QwQ-32B-ArliAI-RpR-v1
