@@ -1,4 +1,4 @@
-version: 1.2.8.20250720
+version: 1.2.8.20250721
 interface:
   cache: true
   privacyPolicy:
@@ -479,7 +479,6 @@ endpoints:
       models:
         default:
           - deepseek-ai/DeepSeek-R1-0528
-          - deepseek-r1
           - LGAI-EXAONE/EXAONE-4.0-32B
           - meta-llama-3.1-8b-instruct
           - meta-llama-3.3-70b-instruct
@@ -797,6 +796,7 @@ endpoints:
           - meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
           - meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - meta-llama/Llama-4-Scout-17B-16E-Instruct
+          - meta-llama/Llama-4-Scout-17B-16E-Instruct-64k
           - meta-llama/Llama-Vision-Free
           - meta-llama/Meta-Llama-3-70B-Instruct-Turbo
           - meta-llama/Meta-Llama-3-8B-Instruct-Lite
@@ -894,6 +894,7 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2501
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -967,7 +968,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1088,6 +1088,7 @@ endpoints:
           - l3-70b-euryale-v2-1
           - l3-8b-lunaris-v1
           - l3-8b-lunaris-v1-turbo
+          - l3-euryale-70b
           - l3-lunaris-8b
           - large-context
           - learnlm-1-5-pro-experimental
@@ -1213,6 +1214,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
