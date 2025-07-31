@@ -1,4 +1,4 @@
-version: 1.2.8.20250730
+version: 1.2.8.20250731
 interface:
   cache: true
   privacyPolicy:
@@ -79,6 +79,7 @@ endpoints:
           - codestral-2411-rc5
           - codestral-2412
           - codestral-2501
+          - codestral-2508
           - codestral-latest
           - devstral-medium-2507
           - devstral-medium-latest
@@ -223,7 +224,6 @@ endpoints:
           - meta-llama/llama-guard-4-12b
           - meta-llama/llama-prompt-guard-2-22m
           - meta-llama/llama-prompt-guard-2-86m
-          - mistral-saba-24b
           - moonshotai/kimi-k2-instruct
           - playai-tts
           - playai-tts-arabic
@@ -464,7 +464,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-v3
           - accounts/fireworks/models/deepseek-v3-0324
           - accounts/fireworks/models/firesearch-ocr-v6
-          - accounts/fireworks/models/kimi-k2-instruct
+          - accounts/fireworks/models/glm-4p5
           - accounts/fireworks/models/llama-v3p1-405b-instruct
           - accounts/fireworks/models/llama-v3p1-70b-instruct
           - accounts/fireworks/models/llama-v3p1-8b-instruct
@@ -766,6 +766,8 @@ endpoints:
           - moonshotai/Kimi-K2-Instruct
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
+          - zai-org/GLM-4.5
+          - zai-org/GLM-4.5-Air
         fetch: false
       titleConvo: true
       titleModel: NousResearch/Hermes-3-Llama-3.1-8B
@@ -791,7 +793,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-V3
-          - eddiehou/meta-llama/Llama-3.1-405B
           - google/gemma-2-27b-it
           - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
@@ -840,6 +841,7 @@ endpoints:
           - togethercomputer/MoA-1-Turbo
           - togethercomputer/Refuel-Llm-V2
           - togethercomputer/Refuel-Llm-V2-Small
+          - zai-org/GLM-4.5-Air-FP8
         fetch: false
       titleConvo: true
       titleModel: meta-llama/Llama-3.2-3B-Instruct-Turbo
@@ -1066,7 +1068,6 @@ endpoints:
           - gpt-4o-search-preview-2025-03-11
           - grok-2
           - grok-2-1212
-          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1075,7 +1076,6 @@ endpoints:
           - grok-3-mini
           - grok-3-mini-beta
           - grok-4
-          - grok-4-0709
           - grok-vision-beta
           - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
@@ -1250,12 +1250,9 @@ endpoints:
           - mixtral-8x7b-instruct-v0-1
           - mn-celeste-12b
           - mn-inferor-12b
-          - moa-1
-          - moa-1-turbo
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - morph-v2
-          - morph-v3-fast
           - morph-v3-large
           - multimodal
           - mythalion-13b
@@ -1355,6 +1352,7 @@ endpoints:
           - qwen-3-235b-a22b-thinking
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
+          - qwen-3-30b-a3b-instruct-2507
           - qwen-3-32b
           - qwen-3-32b-fp8
           - qwen-3-4b
@@ -1401,7 +1399,6 @@ endpoints:
           - titan-text-lite-v1
           - titan-text-premier-v1
           - titan-tg-1-large
-          - toppy-m-7b
           - tts-1
           - ui-tars-1-5-7b
           - ui-tars-72b
@@ -1738,6 +1735,7 @@ endpoints:
           - Qwen3-14B-The-Omega-Directive-v1.1
           - Qwen3-14B-Vitus
           - Qwen3-14B-Xiaolong
+          - qwen3-30b-a3b-instruct-2507
           - qwq-32b
           - QwQ-32B-Abliterated
           - QwQ-32B-ArliAI-RpR-v1
@@ -2060,6 +2058,7 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-high
           - opengvlab/internvl3-14b
+          - openrouter/horizon-alpha
           - perplexity/r1-1776
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2087,10 +2086,10 @@ endpoints:
           - qwen/qwen3-14b:free
           - qwen/qwen3-235b-a22b
           - qwen/qwen3-235b-a22b-2507
-          - qwen/qwen3-235b-a22b-2507:free
           - qwen/qwen3-235b-a22b-thinking-2507
           - qwen/qwen3-235b-a22b:free
           - qwen/qwen3-30b-a3b
+          - qwen/qwen3-30b-a3b-instruct-2507
           - qwen/qwen3-30b-a3b:free
           - qwen/qwen3-32b
           - qwen/qwen3-4b:free
@@ -2285,7 +2284,6 @@ endpoints:
           - deepinfra/deepseek-ai/DeepSeek-R1
           - deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepinfra/deepseek-ai/DeepSeek-V3
-          - deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct
           - deepinfra/meta-llama/Llama-3.2-90B-Vision-Instruct
           - deepinfra/meta-llama/Llama-3.3-70B-Instruct
           - deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo
@@ -2294,6 +2292,8 @@ endpoints:
           - deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
           - deepinfra/microsoft/WizardLM-2-8x22B
           - deepinfra/microsoft/phi-4
+          - deepinfra/zai-org/GLM-4.5
+          - deepinfra/zai-org/GLM-4.5-Air
           - deepseek/deepseek-chat
           - deepseek/deepseek-reasoner
           - google/gemini-1.5-flash
@@ -2340,7 +2340,6 @@ endpoints:
           - novita/meta-llama/llama-3-8b-instruct
           - novita/meta-llama/llama-3.1-70b-instruct
           - novita/meta-llama/llama-3.1-8b-instruct
-          - novita/meta-llama/llama-3.1-8b-instruct-bf16
           - novita/meta-llama/llama-3.1-8b-instruct-max
           - novita/meta-llama/llama-3.2-11b-vision-instruct
           - novita/meta-llama/llama-3.2-1b-instruct
@@ -2365,6 +2364,7 @@ endpoints:
           - novita/sao10k/l31-70b-euryale-v2.2
           - novita/sophosympatheia/midnight-rose-70b
           - novita/teknium/openhermes-2.5-mistral-7b
+          - novita/zai-org/glm-4.5
           - openai/chatgpt-4o-latest
           - openai/gpt-4.1
           - openai/gpt-4.1-2025-04-14
@@ -2407,10 +2407,10 @@ endpoints:
           - parasail/parasail-deepseek-r1
           - parasail/parasail-eva-25-72b-v02-fp8
           - parasail/parasail-gemma3-27b-it
+          - parasail/parasail-glm-45
           - parasail/parasail-mistral-7b-instruct-03
           - parasail/parasail-mistral-nemo
           - parasail/parasail-mythomax-13b
-          - parasail/parasail-qwen-coder32b-longcontext-128
           - parasail/parasail-qwen25-vl-72b-instruct
           - parasail/parasail-qwen3-235b-a22b-instruct-2507
           - parasail/parasail-qwen3-coder-480b-a35b-instruct
