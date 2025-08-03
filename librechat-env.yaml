@@ -1,4 +1,4 @@
-version: 1.2.8.20250802
+version: 1.2.8.20250803
 interface:
   cache: true
   privacyPolicy:
@@ -341,6 +341,7 @@ endpoints:
       baseURL: https://api.deepinfra.com/v1/openai
       models:
         default:
+          - allenai/olmOCR-7B-0725-FP8
           - anthropic/claude-3-7-sonnet-latest
           - anthropic/claude-4-opus
           - anthropic/claude-4-sonnet
@@ -982,6 +983,7 @@ endpoints:
           - dolphin-3-0-r1-mistral-24b
           - dolphin-mistral-24b-venice-edition
           - dolphin-mixtral-8x22b
+          - ernie-4-5-300b-a47b
           - eva-qwen-2-5-32b
           - fimbulvetr-11b-v2
           - gemini-1-5-flash
@@ -1001,6 +1003,7 @@ endpoints:
           - gemini-2-5-flash-lite
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-preview-04-17
+          - gemini-2-5-flash-preview-05-20
           - gemini-2-5-pro
           - gemini-2-5-pro-exp
           - gemini-2-5-pro-exp-03-25
@@ -1093,7 +1096,9 @@ endpoints:
           - hermes-2-vision-7b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
+          - horizon
           - horizon-alpha
+          - horizon-beta
           - hunyuan-a13b-instruct
           - inflection-3-pi
           - inflection-3-productivity
@@ -1303,6 +1308,7 @@ endpoints:
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
+          - olmocr-7b-0725-fp8
           - olympiccoder-32b
           - omni-moderation
           - omni-moderation-2024-09-26
@@ -1328,7 +1334,6 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pixtral-large-latest
           - premium
           - premium-coding
           - qvq-72b
@@ -1446,6 +1451,7 @@ endpoints:
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - anubis-pro-105b-v1
+          - ArliAI-RpR-Ultra-235B
           - asi1-mini
           - azure-gpt-4-turbo
           - azure-gpt-4o
@@ -2068,7 +2074,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-high
           - opengvlab/internvl3-14b
-          - openrouter/horizon-alpha
           - openrouter/horizon-beta
           - perplexity/r1-1776
           - perplexity/sonar
@@ -2185,6 +2190,46 @@ endpoints:
           - anthropic/claude-3-opus-latest
           - anthropic/claude-opus-4-20250514
           - anthropic/claude-sonnet-4-20250514
+          - azure/gpt-4.1
+          - azure/gpt-4.1-mini
+          - azure/gpt-4.1-mini@eastus2
+          - azure/gpt-4.1-mini@francecentral
+          - azure/gpt-4.1-mini@swedencentral
+          - azure/gpt-4.1-mini@westus3
+          - azure/gpt-4.1-nano
+          - azure/gpt-4.1-nano@eastus2
+          - azure/gpt-4.1-nano@francecentral
+          - azure/gpt-4.1-nano@swedencentral
+          - azure/gpt-4.1-nano@westus3
+          - azure/gpt-4.1@eastus2
+          - azure/gpt-4.1@francecentral
+          - azure/gpt-4.1@swedencentral
+          - azure/gpt-4.1@westus3
+          - azure/o4-mini
+          - azure/o4-mini@eastus2
+          - azure/o4-mini@francecentral
+          - azure/o4-mini@swedencentral
+          - azure/o4-mini@westus3
+          - azure/openai/gpt-4.1
+          - azure/openai/gpt-4.1-mini
+          - azure/openai/gpt-4.1-mini@eastus2
+          - azure/openai/gpt-4.1-mini@francecentral
+          - azure/openai/gpt-4.1-mini@swedencentral
+          - azure/openai/gpt-4.1-mini@westus3
+          - azure/openai/gpt-4.1-nano
+          - azure/openai/gpt-4.1-nano@eastus2
+          - azure/openai/gpt-4.1-nano@francecentral
+          - azure/openai/gpt-4.1-nano@swedencentral
+          - azure/openai/gpt-4.1-nano@westus3
+          - azure/openai/gpt-4.1@eastus2
+          - azure/openai/gpt-4.1@francecentral
+          - azure/openai/gpt-4.1@swedencentral
+          - azure/openai/gpt-4.1@westus3
+          - azure/openai/o4-mini
+          - azure/openai/o4-mini@eastus2
+          - azure/openai/o4-mini@francecentral
+          - azure/openai/o4-mini@swedencentral
+          - azure/openai/o4-mini@westus3
           - bedrock/anthropic/claude-3-7-sonnet
           - bedrock/anthropic/claude-3-7-sonnet-20250219
           - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-central-1
