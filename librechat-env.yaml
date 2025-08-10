@@ -1,4 +1,4 @@
-version: 1.2.8.20250809
+version: 1.2.8.20250810
 interface:
   cache: true
   privacyPolicy:
@@ -289,6 +289,7 @@ endpoints:
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
+          - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
           - openai/gpt-oss-120b
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
@@ -306,6 +307,7 @@ endpoints:
           - shisa-ai/shisa-v2-llama3.3-70b
           - stepfun-ai/step3
           - tencent/Hunyuan-A13B-Instruct
+          - Tesslate/UIGEN-X-32B-0727
           - TheDrummer/Cydonia-24B-v2.1
           - TheDrummer/Gemmasutra-Pro-27B-v1.1
           - TheDrummer/Skyfall-36B-v2
@@ -788,6 +790,7 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
           - zai-org/GLM-4.5
+          - zai-org/GLM-4.5-Air
         fetch: false
       titleConvo: true
       titleModel: TheDrummer/Cydonia-24B-v2
@@ -1152,6 +1155,7 @@ endpoints:
           - llama-2-70b-chat-v1
           - llama-3-1-405b
           - llama-3-1-405b-instruct
+          - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
@@ -1711,6 +1715,7 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.1-Nemotron-Ultra-253B-v1
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
+          - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
           - o1
           - o1-mini
           - o1-preview
@@ -1822,6 +1827,7 @@ endpoints:
           - TEE/qwen2-5-72b
           - TEE/qwen3-coder
           - tencent/Hunyuan-A13B-Instruct
+          - Tesslate/UIGEN-X-32B-0727
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Cydonia-24B-v4
