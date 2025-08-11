@@ -1,4 +1,4 @@
-version: 1.2.8.20250810
+version: 1.2.8.20250811
 interface:
   cache: true
   privacyPolicy:
@@ -1001,7 +1001,6 @@ endpoints:
           - gemini-1-5-flash-8b-latest
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
-          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
