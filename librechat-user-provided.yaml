@@ -1,4 +1,4 @@
-version: 1.2.8.20250811
+version: 1.2.8.20250812
 interface:
   cache: true
   privacyPolicy:
@@ -129,6 +129,11 @@ endpoints:
           - pixtral-12b-latest
           - pixtral-large-2411
           - pixtral-large-latest
+          - voxtral-mini-2507
+          - voxtral-mini-latest
+          - voxtral-mini-transcribe-2507
+          - voxtral-small-2507
+          - voxtral-small-latest
         fetch: false
       titleConvo: true
       titleModel: ministral-3b-latest
@@ -270,7 +275,6 @@ endpoints:
           - ArliAI/QwQ-32B-ArliAI-RpR-v1
           - chutesai/Devstral-Small-2505
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
-          - chutesai/Llama-4-Scout-17B-16E-Instruct
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - cognitivecomputations/Dolphin3.0-Mistral-24B
@@ -326,6 +330,7 @@ endpoints:
           - zai-org/GLM-4-32B-0414
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-FP8
+          - zai-org/GLM-4.5V-FP8
           - zai-org/GLM-Z1-32B-0414
         fetch: false
       titleConvo: true
@@ -449,6 +454,7 @@ endpoints:
           - Sao10K/L3.3-70B-Euryale-v2.3
           - zai-org/GLM-4.5
           - zai-org/GLM-4.5-Air
+          - zai-org/GLM-4.5V
         fetch: false
       titleConvo: true
       titleModel: meta-llama/Llama-3.2-3B-Instruct
@@ -693,6 +699,7 @@ endpoints:
           - thudm/glm-4-32b-0414
           - thudm/glm-4.1v-9b-thinking
           - zai-org/glm-4.5
+          - zai-org/glm-4.5v
         fetch: false
       titleConvo: true
       titleModel: meta-llama/llama-3.2-3b-instruct
@@ -810,6 +817,7 @@ endpoints:
           - arcee_ai/arcee-spotlight
           - arize-ai/qwen-2-1.5b-instruct
           - deepcogito/cogito-v2-preview-deepseek-671b
+          - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528-tput
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
@@ -999,9 +1007,8 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-1-5-flash-8b-latest
-          - gemini-1-5-flash-latest
           - gemini-1-5-pro
-          - gemini-2-0-flash
+          - gemini-1-5-pro-latest
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1038,6 +1045,7 @@ endpoints:
           - glm-4-32b
           - glm-4-5
           - glm-4-5-air
+          - glm-4-5v
           - glm-4-9b
           - glm-z1-32b
           - glm-z1-9b
@@ -1889,16 +1897,11 @@ endpoints:
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - anthropic/claude-3-haiku
-          - anthropic/claude-3-haiku:beta
           - anthropic/claude-3-opus
-          - anthropic/claude-3-opus:beta
           - anthropic/claude-3.5-haiku
           - anthropic/claude-3.5-haiku-20241022
-          - anthropic/claude-3.5-haiku:beta
           - anthropic/claude-3.5-sonnet
           - anthropic/claude-3.5-sonnet-20240620
-          - anthropic/claude-3.5-sonnet-20240620:beta
-          - anthropic/claude-3.5-sonnet:beta
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:beta
           - anthropic/claude-3.7-sonnet:thinking
@@ -2177,6 +2180,7 @@ endpoints:
           - thedrummer/valkyrie-49b-v1
           - thudm/glm-4-32b
           - thudm/glm-4.1v-9b-thinking
+          - thudm/glm-z1-32b
           - thudm/glm-z1-32b:free
           - tngtech/deepseek-r1t-chimera
           - tngtech/deepseek-r1t-chimera:free
@@ -2194,6 +2198,7 @@ endpoints:
           - z-ai/glm-4.5
           - z-ai/glm-4.5-air
           - z-ai/glm-4.5-air:free
+          - z-ai/glm-4.5v
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-4.1-mini
@@ -2345,21 +2350,24 @@ endpoints:
           - bedrock/claude-4-sonnet@us-east-1
           - bedrock/claude-4-sonnet@us-east-2
           - bedrock/claude-4-sonnet@us-west-2
-          - cline/claude-3-7-sonnet
-          - cline/claude-3-7-sonnet:1024
-          - cline/claude-3-7-sonnet:16384
-          - cline/claude-3-7-sonnet:64000
-          - cline/claude-3-7-sonnet:8192
-          - cline/claude-3-7-sonnet:high
-          - cline/claude-3-7-sonnet:low
-          - cline/claude-3-7-sonnet:max
-          - cline/claude-3-7-sonnet:medium
-          - cline/o3-mini
-          - cline/o3-mini:high
-          - cline/o3-mini:low
-          - cline/o3-mini:medium
           - coding/claude-3-7-sonnet
           - coding/claude-3-7-sonnet-20250219
+          - coding/claude-3-7-sonnet-20250219:1024
+          - coding/claude-3-7-sonnet-20250219:16384
+          - coding/claude-3-7-sonnet-20250219:64000
+          - coding/claude-3-7-sonnet-20250219:8192
+          - coding/claude-3-7-sonnet-20250219:high
+          - coding/claude-3-7-sonnet-20250219:low
+          - coding/claude-3-7-sonnet-20250219:max
+          - coding/claude-3-7-sonnet-20250219:medium
+          - coding/claude-3-7-sonnet:1024
+          - coding/claude-3-7-sonnet:16384
+          - coding/claude-3-7-sonnet:64000
+          - coding/claude-3-7-sonnet:8192
+          - coding/claude-3-7-sonnet:high
+          - coding/claude-3-7-sonnet:low
+          - coding/claude-3-7-sonnet:max
+          - coding/claude-3-7-sonnet:medium
           - coding/claude-4-opus
           - coding/claude-4-sonnet
           - coding/claude-opus-4-20250514
@@ -2518,6 +2526,9 @@ endpoints:
           - openai/o3-2025-04-16
           - openai/o3-mini
           - openai/o3-mini-2025-01-31
+          - openai/o3-mini-2025-01-31:high
+          - openai/o3-mini-2025-01-31:low
+          - openai/o3-mini-2025-01-31:medium
           - openai/o3-mini:high
           - openai/o3-mini:low
           - openai/o3-mini:medium
@@ -2525,6 +2536,9 @@ endpoints:
           - openai/o3:flex
           - openai/o4-mini
           - openai/o4-mini-2025-04-16
+          - openai/o4-mini-2025-04-16:high
+          - openai/o4-mini-2025-04-16:low
+          - openai/o4-mini-2025-04-16:medium
           - openai/o4-mini:flex
           - openai/o4-mini:high
           - openai/o4-mini:low
@@ -2674,6 +2688,8 @@ endpoints:
           - claude-4-sonnet@replicate
           - claude-4-sonnet@vertex-ai
           - claude-4.1-opus@anthropic
+          - claude-4.1-opus@aws-bedrock
+          - claude-4.1-opus@vertex-ai
           - command-r-plus@aws-bedrock
           - deepseek-r1@aws-bedrock
           - deepseek-r1@deepinfra
@@ -2720,13 +2736,24 @@ endpoints:
           - gpt-4o@openai
           - gpt-5-chat-latest@openai
           - gpt-5-mini@openai
+          - gpt-5-mini@replicate
           - gpt-5-nano@openai
+          - gpt-5-nano@replicate
           - gpt-5@openai
-          - grok-2-vision@xai
-          - grok-2@xai
+          - gpt-5@replicate
+          - gpt-oss-120b@aws-bedrock
+          - gpt-oss-120b@deepinfra
+          - gpt-oss-120b@fireworks-ai
+          - gpt-oss-120b@groq
+          - gpt-oss-120b@replicate
+          - gpt-oss-120b@together-ai
+          - gpt-oss-20b@aws-bedrock
+          - gpt-oss-20b@deepinfra
+          - gpt-oss-20b@fireworks-ai
+          - gpt-oss-20b@groq
+          - gpt-oss-20b@replicate
+          - gpt-oss-20b@together-ai
           - grok-3-fast@xai
-          - grok-3-mini-fast@xai
-          - grok-3-mini@xai
           - grok-3@xai
           - grok-4@xai
           - llama-3-70b-chat@aws-bedrock
@@ -2758,7 +2785,6 @@ endpoints:
           - llama-3.2-11b-chat@together-ai
           - llama-3.2-11b-chat@vertex-ai
           - llama-3.2-1b-chat@aws-bedrock
-          - llama-3.2-1b-chat@deepinfra
           - llama-3.2-3b-chat@aws-bedrock
           - llama-3.2-3b-chat@deepinfra
           - llama-3.2-3b-chat@together-ai
