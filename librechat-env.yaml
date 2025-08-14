@@ -1,4 +1,4 @@
-version: 1.2.8.20250813
+version: 1.2.8.20250814
 interface:
   cache: true
   privacyPolicy:
@@ -108,8 +108,6 @@ endpoints:
           - mistral-ocr-latest
           - mistral-saba-2502
           - mistral-saba-latest
-          - mistral-small
-          - mistral-small-2312
           - mistral-small-2409
           - mistral-small-2501
           - mistral-small-2503
@@ -124,7 +122,6 @@ endpoints:
           - open-mistral-nemo-2407
           - open-mixtral-8x22b
           - open-mixtral-8x22b-2404
-          - open-mixtral-8x7b
           - pixtral-12b
           - pixtral-12b-2409
           - pixtral-12b-latest
@@ -646,6 +643,7 @@ endpoints:
       baseURL: https://api.novita.ai/v3/openai
       models:
         default:
+          - baichuan/baichuan-m2-32b
           - baidu/ernie-4.5-0.3b
           - baidu/ernie-4.5-21B-a3b
           - baidu/ernie-4.5-300b-a47b-paddle
@@ -812,6 +810,7 @@ endpoints:
       baseURL: https://api.together.xyz/v1
       models:
         default:
+          - arcee-ai/AFM-4.5B
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/virtuoso-large
@@ -857,6 +856,7 @@ endpoints:
           - moonshotai/Kimi-K2-Instruct
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - perplexity-ai/r1-1776
           - Qwen/Qwen2-72B-Instruct
@@ -904,8 +904,8 @@ endpoints:
           - cheap
           - cheap-fast
           - claude-3-5-haiku
+          - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
-          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -1124,6 +1124,7 @@ endpoints:
           - horizon
           - horizon-beta
           - hunyuan-a13b-instruct
+          - image-01
           - inflection-3-pi
           - inflection-3-productivity
           - internvl-3-14b
@@ -1246,10 +1247,10 @@ endpoints:
           - mercury-coder
           - mercury-coder-small-beta
           - midnight-rose-70b
-          - minicpm-llama-3-v-2-5
           - minimax
           - minimax-01
           - minimax-m1
+          - minimax-text-01
           - ministral-3b
           - ministral-8b
           - mistral-7b-instruct
@@ -1278,7 +1279,6 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
-          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1384,7 +1384,6 @@ endpoints:
           - qwen-3-235b-a22b-fp8-tput
           - qwen-3-235b-a22b-instruct
           - qwen-3-235b-a22b-instruct-2507
-          - qwen-3-235b-a22b-instruct-2507-tput
           - qwen-3-235b-a22b-thinking
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
@@ -1415,6 +1414,7 @@ endpoints:
           - rocinante-12b
           - router
           - sarvam-m
+          - seedream-3-0-t2i-250415
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
           - skyfall-36b-v2
@@ -2029,6 +2029,7 @@ endpoints:
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
           - mistralai/mistral-medium-3
+          - mistralai/mistral-medium-3.1
           - mistralai/mistral-nemo
           - mistralai/mistral-nemo:free
           - mistralai/mistral-saba
