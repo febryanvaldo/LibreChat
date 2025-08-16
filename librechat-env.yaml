@@ -1,4 +1,4 @@
-version: 1.2.8.20250814
+version: 1.2.8.20250816
 interface:
   cache: true
   privacyPolicy:
@@ -108,6 +108,8 @@ endpoints:
           - mistral-ocr-latest
           - mistral-saba-2502
           - mistral-saba-latest
+          - mistral-small
+          - mistral-small-2312
           - mistral-small-2409
           - mistral-small-2501
           - mistral-small-2503
@@ -122,6 +124,7 @@ endpoints:
           - open-mistral-nemo-2407
           - open-mixtral-8x22b
           - open-mixtral-8x22b-2404
+          - open-mixtral-8x7b
           - pixtral-12b
           - pixtral-12b-2409
           - pixtral-12b-latest
@@ -304,6 +307,7 @@ endpoints:
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-32B
           - Qwen/Qwen3-8B
+          - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
           - Salesforce/xgen-small-9B-instruct-r
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -849,7 +853,6 @@ endpoints:
           - meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo
           - meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
           - mistralai/Mistral-7B-Instruct-v0.1
-          - mistralai/Mistral-7B-Instruct-v0.2
           - mistralai/Mistral-7B-Instruct-v0.3
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mixtral-8x7B-Instruct-v0.1
@@ -906,6 +909,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -1001,7 +1005,9 @@ endpoints:
           - dolphin-3-0-r1-mistral-24b
           - dolphin-mistral-24b-venice-edition
           - dolphin-mixtral-8x22b
+          - ernie-4-5-21b-a3b
           - ernie-4-5-300b-a47b
+          - ernie-4-5-vl-28b-a3b
           - eva-qwen-2-5-32b
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
@@ -1199,7 +1205,6 @@ endpoints:
           - llama-3-2-small
           - llama-3-3-70b-instruct
           - llama-3-3-70b-instruct-turbo
-          - llama-3-3-70b-instruct-turbo-free
           - llama-3-3-70b-instruct-v1
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
@@ -1279,6 +1284,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1330,7 +1336,6 @@ endpoints:
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
-          - olmocr-7b-0725-fp8
           - olympiccoder-32b
           - omni-moderation
           - omni-moderation-2024-09-26
@@ -1437,7 +1442,6 @@ endpoints:
           - ui-tars-72b
           - ultra-fast
           - unslopnemo-12b
-          - valkyrie-49b-v1
           - virtuoso-large
           - visionx
           - wan-2-1-t2v-1-3b
@@ -1905,7 +1909,9 @@ endpoints:
           - arcee-ai/virtuoso-large
           - arliai/qwq-32b-arliai-rpr-v1
           - arliai/qwq-32b-arliai-rpr-v1:free
+          - baidu/ernie-4.5-21b-a3b
           - baidu/ernie-4.5-300b-a47b
+          - baidu/ernie-4.5-vl-28b-a3b
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - cognitivecomputations/dolphin-mixtral-8x22b
@@ -2022,7 +2028,6 @@ endpoints:
           - mistralai/ministral-8b
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-7b-instruct-v0.1
-          - mistralai/mistral-7b-instruct-v0.2
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-large
@@ -2167,7 +2172,6 @@ endpoints:
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
-          - thedrummer/valkyrie-49b-v1
           - thudm/glm-4-32b
           - thudm/glm-4.1v-9b-thinking
           - thudm/glm-z1-32b
