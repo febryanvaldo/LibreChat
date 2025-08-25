@@ -1,4 +1,4 @@
-version: 1.2.8.20250824
+version: 1.2.8.20250825
 interface:
   cache: true
   privacyPolicy:
@@ -315,6 +315,7 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-30B-A3B-Instruct-2507
+          - Qwen/Qwen3-30B-A3B-Thinking-2507
           - Qwen/Qwen3-32B
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
@@ -876,7 +877,6 @@ endpoints:
           - openai/gpt-oss-20b
           - perplexity-ai/r1-1776
           - Qwen/Qwen2-72B-Instruct
-          - Qwen/Qwen2-VL-72B-Instruct
           - Qwen/Qwen2.5-72B-Instruct-Turbo
           - Qwen/Qwen2.5-7B-Instruct-Turbo
           - Qwen/Qwen2.5-Coder-32B-Instruct
@@ -945,8 +945,8 @@ endpoints:
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
-          - claude-opus-4-20250514-v1
           - claude-sonnet-4
+          - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
@@ -1032,7 +1032,6 @@ endpoints:
           - gemini-1-5-flash-8b-latest
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
-          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
@@ -1376,6 +1375,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -1393,7 +1393,6 @@ endpoints:
           - qwen-2-72b-instruct
           - qwen-2-large
           - qwen-2-small
-          - qwen-2-vl-72b-instruct
           - qwen-3-0-6b-04-28
           - qwen-3-1-7b
           - qwen-3-14b
@@ -1888,8 +1887,11 @@ endpoints:
           - yi-lightning
           - yi-medium-200k
           - zai-org/GLM-4.5-Air
+          - zai-org/GLM-4.5-Air:thinking
           - zai-org/GLM-4.5-FP8
+          - zai-org/GLM-4.5-FP8:thinking
           - zai-org/GLM-4.5V-FP8
+          - zai-org/GLM-4.5V-FP8:thinking
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-4.1-mini
@@ -2252,6 +2254,7 @@ endpoints:
           - anthropic/claude-opus-4-1-20250805
           - anthropic/claude-opus-4-20250514
           - anthropic/claude-sonnet-4-20250514
+          - anthropic/claude-sonnet-4-20250514-1m
           - azure/gpt-4.1
           - azure/gpt-4.1-mini
           - azure/gpt-4.1-mini@eastus2
