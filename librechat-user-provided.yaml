@@ -1,4 +1,4 @@
-version: 1.2.8.20250825
+version: 1.2.8.20250826
 interface:
   cache: true
   privacyPolicy:
@@ -256,6 +256,7 @@ endpoints:
           - DeepSeek-R1-0528
           - DeepSeek-R1-Distill-Llama-70B
           - DeepSeek-V3-0324
+          - DeepSeek-V3.1
           - E5-Mistral-7B-Instruct
           - Llama-3.3-Swallow-70B-Instruct-v0.4
           - Llama-4-Maverick-17B-128E-Instruct
@@ -278,6 +279,7 @@ endpoints:
           - agentica-org/DeepCoder-14B-Preview
           - all-hands/openhands-lm-32b-v0.1-ep3
           - ArliAI/QwQ-32B-ArliAI-RpR-v1
+          - ByteDance-Seed/Seed-OSS-36B-Instruct
           - chutesai/Devstral-Small-2505
           - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
@@ -752,6 +754,7 @@ endpoints:
           - openai/gpt-4.1-nano-2025-04-14
           - openai/gpt-4o-2024-11-20
           - openai/gpt-4o-mini
+          - openai/gpt-oss-120b
           - openai/o3-2025-04-16
           - openai/o3-mini
           - openai/o4-mini-2025-04-16
@@ -840,6 +843,7 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
           - deepcogito/cogito-v2-preview-llama-70B
+          - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528-tput
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
@@ -874,6 +878,7 @@ endpoints:
           - moonshotai/Kimi-K2-Instruct
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - perplexity-ai/r1-1776
           - Qwen/Qwen2-72B-Instruct
@@ -945,6 +950,7 @@ endpoints:
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
+          - claude-opus-4-20250514-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -1032,6 +1038,7 @@ endpoints:
           - gemini-1-5-flash-8b-latest
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
+          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
@@ -1297,7 +1304,6 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
-          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1497,6 +1503,7 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baseten/Kimi-K2-Instruct-FP4
+          - ByteDance-Seed/Seed-OSS-36B-Instruct
           - chatgpt-4o-latest
           - chatgpt-4o-latest-reasoner
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
@@ -2029,8 +2036,11 @@ endpoints:
           - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-3.3-70b-instruct:free
+          - meta-llama/llama-3.3-8b-instruct:free
           - meta-llama/llama-4-maverick
+          - meta-llama/llama-4-maverick:free
           - meta-llama/llama-4-scout
+          - meta-llama/llama-4-scout:free
           - meta-llama/llama-guard-2-8b
           - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
@@ -2471,6 +2481,7 @@ endpoints:
           - moonshot/kimi-k2-turbo-preview
           - nebius/Qwen/QwQ-32B
           - nebius/Qwen/QwQ-32B-fast
+          - nebius/Qwen/Qwen3-Coder-480B-A35B-Instruct
           - nebius/deepseek-ai/DeepSeek-R1
           - nebius/deepseek-ai/DeepSeek-R1-0528
           - nebius/deepseek-ai/DeepSeek-R1-fast
@@ -2478,6 +2489,8 @@ endpoints:
           - nebius/deepseek-ai/DeepSeek-V3-0324
           - nebius/deepseek-ai/DeepSeek-V3-0324-fast
           - nebius/meta-llama/Llama-3.3-70B-Instruct
+          - nebius/moonshotai/Kimi-K2-Instruct
+          - nebius/zai-org/GLM-4.5
           - netmind/deepseek-ai/DeepSeek-R1-0528
           - novita/Sao10K/L3-8B-Stheno-v3.2
           - novita/deepseek/deepseek-prover-v2-671b
@@ -2704,10 +2717,6 @@ endpoints:
           - claude-3.5-haiku@aws-bedrock
           - claude-3.5-haiku@replicate
           - claude-3.5-haiku@vertex-ai
-          - claude-3.5-sonnet@anthropic
-          - claude-3.5-sonnet@aws-bedrock
-          - claude-3.5-sonnet@replicate
-          - claude-3.5-sonnet@vertex-ai
           - claude-3.7-sonnet@anthropic
           - claude-3.7-sonnet@aws-bedrock
           - claude-3.7-sonnet@replicate
@@ -2731,6 +2740,8 @@ endpoints:
           - deepseek-r1@together-ai
           - deepseek-v3-0324@deepinfra
           - deepseek-v3-0324@fireworks-ai
+          - deepseek-v3.1@deepinfra
+          - deepseek-v3.1@fireworks-ai
           - deepseek-v3@deepinfra
           - deepseek-v3@deepseek
           - deepseek-v3@fireworks-ai
@@ -2802,25 +2813,20 @@ endpoints:
           - llama-3.1-405b-chat@vertex-ai
           - llama-3.1-70b-chat@aws-bedrock
           - llama-3.1-70b-chat@deepinfra
-          - llama-3.1-70b-chat@fireworks-ai
           - llama-3.1-70b-chat@together-ai
-          - llama-3.1-70b-chat@vertex-ai
           - llama-3.1-8b-chat@aws-bedrock
           - llama-3.1-8b-chat@deepinfra
           - llama-3.1-8b-chat@fireworks-ai
           - llama-3.1-8b-chat@groq
           - llama-3.1-8b-chat@together-ai
-          - llama-3.1-8b-chat@vertex-ai
           - llama-3.1-nemotron-70b-chat@deepinfra
           - llama-3.2-11b-chat@deepinfra
-          - llama-3.2-11b-chat@vertex-ai
           - llama-3.2-1b-chat@aws-bedrock
           - llama-3.2-3b-chat@aws-bedrock
           - llama-3.2-3b-chat@deepinfra
           - llama-3.2-3b-chat@together-ai
           - llama-3.2-90b-chat@deepinfra
           - llama-3.2-90b-chat@together-ai
-          - llama-3.2-90b-chat@vertex-ai
           - llama-3.3-70b-chat@aws-bedrock
           - llama-3.3-70b-chat@deepinfra
           - llama-3.3-70b-chat@fireworks-ai
@@ -2834,7 +2840,6 @@ endpoints:
           - llama-4-maverick-instruct@together-ai
           - llama-4-maverick-instruct@vertex-ai
           - llama-4-scout-instruct@deepinfra
-          - llama-4-scout-instruct@fireworks-ai
           - llama-4-scout-instruct@groq
           - llama-4-scout-instruct@replicate
           - llama-4-scout-instruct@together-ai
@@ -2847,7 +2852,6 @@ endpoints:
           - mistral-small@mistral-ai
           - mistral-small@together-ai
           - mistral-small@vertex-ai
-          - mixtral-8x22b-instruct-v0.1@fireworks-ai
           - mixtral-8x7b-instruct-v0.1@deepinfra
           - o1-mini@openai
           - o1-pro@openai
@@ -2857,7 +2861,6 @@ endpoints:
           - o4-mini@openai
           - o4-mini@replicate
           - qwen-2.5-72b-instruct@deepinfra
-          - qwen-2.5-72b-instruct@fireworks-ai
           - qwen-2.5-72b-instruct@together-ai
           - qwen-2.5-7b-instruct@deepinfra
           - qwen-2.5-7b-instruct@together-ai
@@ -2866,7 +2869,6 @@ endpoints:
           - qwen-3-235b-a22b-instruct@fireworks-ai
           - qwen-3-235b-a22b-instruct@together-ai
           - qwen-3-30b-a3b-instruct@deepinfra
-          - qwen-3-30b-a3b-instruct@fireworks-ai
           - qwen-qwq-32b@deepinfra
           - qwen-qwq-32b@together-ai
         fetch: false
