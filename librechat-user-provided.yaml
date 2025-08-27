@@ -1,4 +1,4 @@
-version: 1.2.8.20250826
+version: 1.2.8.20250827
 interface:
   cache: true
   privacyPolicy:
@@ -42,9 +42,9 @@ endpoints:
           - command-light-nightly
           - command-nightly
           - command-r
-          - command-r-08-2024
           - command-r-plus
           - command-r-plus-08-2024
+          - command-r7b-12-2024
           - command-r7b-arabic-02-2025
         fetch: false
       titleConvo: true
@@ -181,6 +181,7 @@ endpoints:
           - grok-3-mini-fast
           - grok-4-0709
           - grok-4-0709-eu
+          - grok-code-fast-1
         fetch: false
       titleConvo: true
       titleModel: grok-3-mini-fast
@@ -281,7 +282,6 @@ endpoints:
           - ArliAI/QwQ-32B-ArliAI-RpR-v1
           - ByteDance-Seed/Seed-OSS-36B-Instruct
           - chutesai/Devstral-Small-2505
-          - chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8
           - chutesai/Mistral-Small-3.1-24B-Instruct-2503
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - cognitivecomputations/Dolphin3.0-Mistral-24B
@@ -292,21 +292,19 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - deepseek-ai/DeepSeek-V3-Base
           - deepseek-ai/DeepSeek-V3.1
           - deepseek-ai/DeepSeek-V3.1-Base
-          - internlm/Intern-S1
-          - Meridian
           - microsoft/MAI-DS-R1-FP8
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct
           - moonshotai/Kimi-VL-A3B-Thinking
           - NousResearch/DeepHermes-3-Llama-3-8B-Preview
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
+          - NousResearch/Hermes-4-405B-FP8
+          - NousResearch/Hermes-4-70B
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - Proxima
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen2.5-VL-32B-Instruct
@@ -324,7 +322,6 @@ endpoints:
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
           - Salesforce/xgen-small-9B-instruct-r
           - shisa-ai/shisa-v2-llama3.3-70b
-          - stepfun-ai/step3
           - tencent/Hunyuan-A13B-Instruct
           - Tesslate/UIGEN-X-32B-0727
           - TheDrummer/Cydonia-24B-v2.1
@@ -347,7 +344,6 @@ endpoints:
           - zai-org/GLM-4.5-FP8
           - zai-org/GLM-4.5V-FP8
           - zai-org/GLM-Z1-32B-0414
-          - Zenith
         fetch: false
       titleConvo: true
       titleModel: unsloth/Llama-3.2-3B-Instruct
@@ -626,6 +622,8 @@ endpoints:
           - mistralai/Mistral-Small-3.1-24B-Instruct-2503
           - moonshotai/Kimi-K2-Instruct
           - NousResearch/Hermes-3-Llama-405B
+          - NousResearch/Hermes-4-405B
+          - NousResearch/Hermes-4-70B
           - nvidia/Llama-3_1-Nemotron-Ultra-253B-v1
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1
           - openai/gpt-oss-120b
@@ -777,22 +775,17 @@ endpoints:
         default:
           - hf:deepseek-ai/DeepSeek-R1
           - hf:deepseek-ai/DeepSeek-R1-0528
-          - hf:deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - hf:deepseek-ai/DeepSeek-V3
           - hf:deepseek-ai/DeepSeek-V3-0324
           - hf:meta-llama/Llama-3.1-405B-Instruct
           - hf:meta-llama/Llama-3.1-70B-Instruct
           - hf:meta-llama/Llama-3.1-8B-Instruct
-          - hf:meta-llama/Llama-3.2-3B-Instruct
           - hf:meta-llama/Llama-3.3-70B-Instruct
           - hf:meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - hf:meta-llama/Llama-4-Scout-17B-16E-Instruct
           - hf:moonshotai/Kimi-K2-Instruct
           - hf:openai/gpt-oss-120b
-          - hf:Qwen/Qwen2.5-72B-Instruct
-          - hf:Qwen/Qwen2.5-7B-Instruct
           - hf:Qwen/Qwen2.5-Coder-32B-Instruct
-          - hf:Qwen/Qwen3-235B-A22B
           - hf:Qwen/Qwen3-235B-A22B-Instruct-2507
           - hf:Qwen/Qwen3-235B-A22B-Thinking-2507
           - hf:Qwen/Qwen3-Coder-480B-A35B-Instruct
@@ -850,6 +843,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-V3
+          - deepseek-ai/DeepSeek-V3.1
           - google/gemma-2-27b-it
           - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
@@ -877,7 +871,6 @@ endpoints:
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - moonshotai/Kimi-K2-Instruct
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
-          - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - perplexity-ai/r1-1776
@@ -1046,6 +1039,7 @@ endpoints:
           - gemini-2-0-flash-lite-001
           - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
+          - gemini-2-5-flash-image-preview
           - gemini-2-5-flash-lite
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-preview-04-17
@@ -1146,11 +1140,14 @@ endpoints:
           - grok-3-mini-beta
           - grok-4
           - grok-4-0709
+          - grok-code-fast-1
           - grok-vision-beta
           - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
+          - hermes-4-405b
+          - hermes-4-70b
           - horizon
           - horizon-beta
           - hunyuan-a13b-instruct
@@ -1304,6 +1301,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1602,6 +1600,7 @@ endpoints:
           - gemini-2.0-pro-exp-02-05
           - gemini-2.0-pro-reasoner
           - gemini-2.5-flash
+          - gemini-2.5-flash-image-preview
           - gemini-2.5-flash-lite-preview-06-17
           - gemini-2.5-flash-nothinking
           - gemini-2.5-flash-preview-04-17
@@ -1756,6 +1755,8 @@ endpoints:
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - nousresearch/hermes-3-llama-3.1-405b
+          - nousresearch/hermes-4-405b
+          - nousresearch/hermes-4-70b
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.1-Nemotron-Ultra-253B-v1
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
@@ -1888,6 +1889,7 @@ endpoints:
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - x-ai/grok-4-07-09
           - x-ai/grok-4-07-09-extended
+          - x-ai/grok-code-fast-1
           - yi-34b-chat-0205
           - yi-34b-chat-200k
           - yi-large
@@ -1982,14 +1984,14 @@ endpoints:
           - deepseek/deepseek-r1-distill-qwen-14b:free
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-r1:free
-          - deepseek/deepseek-v3-base
           - deepseek/deepseek-v3.1-base
           - eleutherai/llemma_7b
-          - featherless/qwerky-72b:free
           - google/gemini-2.0-flash-001
           - google/gemini-2.0-flash-exp:free
           - google/gemini-2.0-flash-lite-001
           - google/gemini-2.5-flash
+          - google/gemini-2.5-flash-image-preview
+          - google/gemini-2.5-flash-image-preview:free
           - google/gemini-2.5-flash-lite
           - google/gemini-2.5-flash-lite-preview-06-17
           - google/gemini-2.5-flash:online
@@ -2105,6 +2107,8 @@ endpoints:
           - nousresearch/hermes-2-pro-llama-3-8b
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
+          - nousresearch/hermes-4-405b
+          - nousresearch/hermes-4-70b
           - nousresearch/nous-hermes-2-mixtral-8x7b-dpo
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
@@ -2227,6 +2231,7 @@ endpoints:
           - x-ai/grok-3-mini
           - x-ai/grok-3-mini-beta
           - x-ai/grok-4
+          - x-ai/grok-code-fast-1
           - x-ai/grok-vision-beta
           - z-ai/glm-4-32b
           - z-ai/glm-4.5
