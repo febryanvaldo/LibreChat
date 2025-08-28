@@ -1,4 +1,4 @@
-version: 1.2.8.20250827
+version: 1.2.8.20250828
 interface:
   cache: true
   privacyPolicy:
@@ -777,6 +777,7 @@ endpoints:
           - hf:deepseek-ai/DeepSeek-R1-0528
           - hf:deepseek-ai/DeepSeek-V3
           - hf:deepseek-ai/DeepSeek-V3-0324
+          - hf:deepseek-ai/DeepSeek-V3.1
           - hf:meta-llama/Llama-3.1-405B-Instruct
           - hf:meta-llama/Llama-3.1-70B-Instruct
           - hf:meta-llama/Llama-3.1-8B-Instruct
@@ -840,26 +841,19 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-0528-tput
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
-          - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3.1
-          - google/gemma-2-27b-it
           - google/gemma-3-27b-it
           - google/gemma-3n-E4B-it
           - lgai/exaone-3-5-32b-instruct
           - lgai/exaone-deep-32b
           - marin-community/marin-8b-instruct
           - meta-llama/Llama-3-70b-chat-hf
-          - meta-llama/Llama-3-8b-chat-hf
-          - meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo
           - meta-llama/Llama-3.2-3B-Instruct-Turbo
-          - meta-llama/Llama-3.2-90B-Vision-Instruct-Turbo
-          - meta-llama/Llama-3.3-70B-Instruct-Turbo
           - meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
           - meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - meta-llama/Llama-4-Scout-17B-16E-Instruct
-          - meta-llama/Llama-Vision-Free
           - meta-llama/Meta-Llama-3-70B-Instruct-Turbo
           - meta-llama/Meta-Llama-3-8B-Instruct-Lite
           - meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo
@@ -873,7 +867,6 @@ endpoints:
           - NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - perplexity-ai/r1-1776
           - Qwen/Qwen2-72B-Instruct
           - Qwen/Qwen2.5-72B-Instruct-Turbo
           - Qwen/Qwen2.5-7B-Instruct-Turbo
@@ -996,7 +989,6 @@ endpoints:
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-70b-free
           - deepseek-r1-distill-llama-8b
-          - deepseek-r1-distill-qwen-1-5b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
           - deepseek-r1-turbo
@@ -1037,7 +1029,6 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
-          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-image-preview
           - gemini-2-5-flash-lite
@@ -1142,7 +1133,6 @@ endpoints:
           - grok-4-0709
           - grok-code-fast-1
           - grok-vision-beta
-          - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
@@ -1211,14 +1201,12 @@ endpoints:
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
           - llama-3-2-11b-vision-instruct
-          - llama-3-2-11b-vision-instruct-turbo
           - llama-3-2-1b-instruct
           - llama-3-2-1b-instruct-v1
           - llama-3-2-3b-instruct
           - llama-3-2-3b-instruct-v1
           - llama-3-2-90b-instruct-v1
           - llama-3-2-90b-vision-instruct
-          - llama-3-2-90b-vision-instruct-turbo
           - llama-3-2-large
           - llama-3-2-small
           - llama-3-3-70b-instruct
@@ -1233,7 +1221,6 @@ endpoints:
           - llama-3-70b-instruct-turbo
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
-          - llama-3-8b-chat-hf
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
@@ -1979,7 +1966,6 @@ endpoints:
           - deepseek/deepseek-r1-distill-llama-70b
           - deepseek/deepseek-r1-distill-llama-70b:free
           - deepseek/deepseek-r1-distill-llama-8b
-          - deepseek/deepseek-r1-distill-qwen-1.5b
           - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-14b:free
           - deepseek/deepseek-r1-distill-qwen-32b
@@ -2031,7 +2017,6 @@ endpoints:
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-11b-vision-instruct
-          - meta-llama/llama-3.2-11b-vision-instruct:free
           - meta-llama/llama-3.2-1b-instruct
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.2-3b-instruct:free
@@ -2702,6 +2687,7 @@ endpoints:
           - xai/grok-3-mini-fast-beta:high
           - xai/grok-3-mini-fast-beta:low
           - xai/grok-4
+          - xai/grok-code-fast-1
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-4.1-mini
