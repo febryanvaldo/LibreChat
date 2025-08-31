@@ -1,4 +1,4 @@
-version: 1.2.8.20250830
+version: 1.2.8.20250831
 interface:
   cache: true
   privacyPolicy:
@@ -991,6 +991,7 @@ endpoints:
           - deepseek-r1-zero
           - deepseek-r1t-chimera
           - deepseek-r1t2-chimera
+          - deepseek-r3-1
           - deepseek-v3
           - deepseek-v3-0324
           - deepseek-v3-0324-turbo
@@ -1017,7 +1018,6 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-1-5-flash-8b-latest
-          - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
           - gemini-2-0-flash
@@ -1118,7 +1118,6 @@ endpoints:
           - gpt-oss-20b
           - grok-2
           - grok-2-1212
-          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1298,6 +1297,7 @@ endpoints:
           - mn-inferor-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
+          - morph-v3-fast
           - morph-v3-large
           - multimodal
           - mythalion-13b
@@ -2076,6 +2076,7 @@ endpoints:
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
+          - moonshotai/kimi-dev-72b
           - moonshotai/kimi-dev-72b:free
           - moonshotai/kimi-k2
           - moonshotai/kimi-k2:free
