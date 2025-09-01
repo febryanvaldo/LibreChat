@@ -1,4 +1,4 @@
-version: 1.2.8.20250831
+version: 1.2.8.20250901
 interface:
   cache: true
   privacyPolicy:
@@ -226,8 +226,6 @@ endpoints:
           - gemma2-9b-it
           - llama-3.1-8b-instant
           - llama-3.3-70b-versatile
-          - llama3-70b-8192
-          - llama3-8b-8192
           - meta-llama/llama-4-maverick-17b-128e-instruct
           - meta-llama/llama-4-scout-17b-16e-instruct
           - meta-llama/llama-guard-4-12b
@@ -291,6 +289,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1
           - deepseek-ai/DeepSeek-V3.1-Base
+          - meituan-longcat/LongCat-Flash-Chat-FP8
           - microsoft/MAI-DS-R1-FP8
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct
@@ -852,6 +851,7 @@ endpoints:
           - meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
           - meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - meta-llama/Llama-4-Scout-17B-16E-Instruct
+          - meta-llama/Llama-4-Scout-17B-16E-Instruct-batch
           - meta-llama/Meta-Llama-3-70B-Instruct-Turbo
           - meta-llama/Meta-Llama-3-8B-Instruct-Lite
           - meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo
@@ -862,7 +862,6 @@ endpoints:
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - moonshotai/Kimi-K2-Instruct
-          - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - Qwen/Qwen2.5-72B-Instruct-Turbo
           - Qwen/Qwen2.5-7B-Instruct-Turbo
@@ -1018,8 +1017,8 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-1-5-flash-8b-latest
+          - gemini-1-5-flash-latest
           - gemini-1-5-pro
-          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
@@ -1118,6 +1117,7 @@ endpoints:
           - gpt-oss-20b
           - grok-2
           - grok-2-1212
+          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1256,7 +1256,6 @@ endpoints:
           - minimax
           - minimax-01
           - minimax-m1
-          - minimax-text-01
           - ministral-3b
           - ministral-8b
           - mistral-7b-instruct
@@ -1706,6 +1705,7 @@ endpoints:
           - Llama-3.3-70B-Vulpecula-R1
           - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
+          - meituan-longcat/LongCat-Flash-Chat-FP8
           - mercury-coder-small
           - Meta-Llama-3-1-405B-Instruct-FP8
           - Meta-Llama-3-1-8B-Instruct-FP8
@@ -2597,8 +2597,6 @@ endpoints:
           - perplexity/sonar
           - perplexity/sonar-pro
           - perplexity/sonar-reasoning-pro
-          - rooquesty/gemini-2.5-flash
-          - rooquesty/gemini-2.5-pro
           - smart/task
           - together/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - together/Qwen/QwQ-32B-Preview
