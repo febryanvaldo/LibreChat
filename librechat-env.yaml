@@ -1,4 +1,4 @@
-version: 1.2.8.20250901 
+version: 1.2.8.20250902
 interface:
   cache: true
   privacyPolicy:
@@ -835,6 +835,7 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-70B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528-tput
+          - deepseek-ai/DeepSeek-R1-DE
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
@@ -1019,6 +1020,7 @@ endpoints:
           - gemini-1-5-flash-8b-latest
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
+          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
@@ -1256,6 +1258,7 @@ endpoints:
           - minimax
           - minimax-01
           - minimax-m1
+          - minimax-text-01
           - ministral-3b
           - ministral-8b
           - mistral-7b-instruct
@@ -1362,7 +1365,6 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -2736,6 +2738,8 @@ endpoints:
           - deepseek-v3-0324@fireworks-ai
           - deepseek-v3.1@deepinfra
           - deepseek-v3.1@fireworks-ai
+          - deepseek-v3.1@replicate
+          - deepseek-v3.1@together-ai
           - deepseek-v3@deepinfra
           - deepseek-v3@deepseek
           - deepseek-v3@fireworks-ai
@@ -2820,7 +2824,6 @@ endpoints:
           - llama-3.2-3b-chat@deepinfra
           - llama-3.2-3b-chat@together-ai
           - llama-3.2-90b-chat@deepinfra
-          - llama-3.2-90b-chat@together-ai
           - llama-3.3-70b-chat@aws-bedrock
           - llama-3.3-70b-chat@deepinfra
           - llama-3.3-70b-chat@fireworks-ai
