@@ -137,6 +137,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    SYNTHETIC_KEY=Your_API_Key_Here
    TARGON_KEY=Your_API_Key_Here 
    TOGETHERAI_KEY=Your_API_Key_Here
+   302AI_KEY=Your_API_Key_Here
    APIPIE_KEY=Your_API_Key_Here
    NANOGPT_KEY=Your_API_Key_Here
    OPENROUTER_KEY=Your_API_Key_Here
