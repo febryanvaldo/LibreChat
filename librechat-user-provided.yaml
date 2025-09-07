@@ -1,4 +1,4 @@
-version: 1.2.9.20250906
+version: 1.2.9.20250907
 interface:
   cache: true
   privacyPolicy:
@@ -317,17 +317,14 @@ endpoints:
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
-          - Salesforce/xgen-small-9B-instruct-r
           - shisa-ai/shisa-v2-llama3.3-70b
           - tencent/Hunyuan-A13B-Instruct
           - Tesslate/UIGEN-X-32B-0727
-          - TheDrummer/Cydonia-24B-v2.1
           - TheDrummer/Gemmasutra-Pro-27B-v1.1
           - TheDrummer/Skyfall-36B-v2
           - TheDrummer/Tunguska-39B-v1
           - tngtech/DeepSeek-R1T-Chimera
           - tngtech/DeepSeek-TNG-R1T2-Chimera
-          - tplr/TEMPLAR-I
           - unsloth/gemma-2-9b-it
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-27b-it
@@ -1660,7 +1657,6 @@ endpoints:
           - gpt-oss-20b
           - grok-2
           - grok-2-1212
-          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1840,8 +1836,6 @@ endpoints:
           - mn-inferor-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
-          - morph-v3-fast
-          - morph-v3-large
           - multimodal
           - mythalion-13b
           - mythomax
@@ -1965,6 +1959,7 @@ endpoints:
           - rocinante-12b
           - router
           - sarvam-m
+          - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
@@ -1974,6 +1969,8 @@ endpoints:
           - sonar-pro
           - sonar-reasoning
           - sonar-reasoning-pro
+          - sonoma-dusk-alpha
+          - sonoma-sky-alpha
           - sorcererlm-8x22b
           - spotlight
           - step-3
@@ -2202,7 +2199,6 @@ endpoints:
           - jamba-mini-1.6
           - jamba-mini-1.7
           - kimi-k2-instruct-fast
-          - kimi-latest
           - kimi-thinking-preview
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - learnlm-1.5-pro-experimental
@@ -2277,6 +2273,7 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct
+          - moonshotai/kimi-k2-instruct-0711
           - moonshotai/Kimi-K2-Instruct-0905
           - moonshotai/Kimi-VL-A3B-Thinking
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
@@ -2286,7 +2283,7 @@ endpoints:
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-4-405b
-          - NousResearch/Hermes-4-405B-FP8:thinking
+          - nousresearch/hermes-4-405b:thinking
           - nousresearch/hermes-4-70b
           - NousResearch/Hermes-4-70B:thinking
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
@@ -2383,7 +2380,6 @@ endpoints:
           - step-2-mini
           - step-3
           - step-r1-v-mini
-          - study_gpt-chatgpt-4o-latest
           - TEE/deepseek-chat-v3-0324
           - TEE/deepseek-r1-70b-distill
           - TEE/gemma-3-27b-it
