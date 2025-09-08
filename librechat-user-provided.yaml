@@ -1,4 +1,4 @@
-version: 1.2.9.20250907
+version: 1.2.9.xxxxx
 interface:
   cache: true
   privacyPolicy:
@@ -543,6 +543,7 @@ endpoints:
           - accounts/fireworks/models/qwen3-coder-30b-a3b-instruct
           - accounts/fireworks/models/qwen3-coder-480b-a35b-instruct
           - accounts/fireworks/models/qwen3-embedding-8b
+          - accounts/lukablaskovic2000-738cce/models/bio-mistral-7b
           - accounts/perplexity/models/r1-1776
           - accounts/scale-ai/models/arctic-text2sql-r1-7b-public
           - accounts/sentientfoundation-serverless/models/dobby-mini-unhinged-plus-llama-3-1-8b
@@ -1657,6 +1658,7 @@ endpoints:
           - gpt-oss-20b
           - grok-2
           - grok-2-1212
+          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1836,6 +1838,8 @@ endpoints:
           - mn-inferor-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
+          - morph-v3-fast
+          - morph-v3-large
           - multimodal
           - mythalion-13b
           - mythomax
@@ -1924,7 +1928,6 @@ endpoints:
           - qwen-3-235b-a22b
           - qwen-3-235b-a22b-07-25
           - qwen-3-235b-a22b-2507
-          - qwen-3-235b-a22b-fp8-tput
           - qwen-3-235b-a22b-instruct
           - qwen-3-235b-a22b-instruct-2507
           - qwen-3-235b-a22b-thinking
