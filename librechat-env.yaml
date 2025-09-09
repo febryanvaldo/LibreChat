@@ -1,4 +1,4 @@
-version: 1.2.9.xxxxx
+version: 1.2.9.20250909
 interface:
   cache: true
   privacyPolicy:
@@ -254,6 +254,7 @@ endpoints:
           - DeepSeek-V3-0324
           - DeepSeek-V3.1
           - E5-Mistral-7B-Instruct
+          - gpt-oss-120b
           - Llama-3.3-Swallow-70B-Instruct-v0.4
           - Llama-4-Maverick-17B-128E-Instruct
           - Meta-Llama-3.1-8B-Instruct
@@ -367,6 +368,14 @@ endpoints:
           - black-forest-labs/FLUX-1.1-pro
           - black-forest-labs/FLUX-pro
           - black-forest-labs/FLUX.1-Kontext-dev
+          - Bria/blur_background
+          - Bria/enhance
+          - Bria/erase
+          - Bria/erase_foreground
+          - Bria/expand
+          - Bria/gen_fill
+          - Bria/remove_background
+          - Bria/replace_background
           - cognitivecomputations/dolphin-2.6-mixtral-8x7b
           - cognitivecomputations/dolphin-2.9.1-llama-3-70b
           - CompVis/stable-diffusion-v1-4
@@ -543,7 +552,6 @@ endpoints:
           - accounts/fireworks/models/qwen3-coder-30b-a3b-instruct
           - accounts/fireworks/models/qwen3-coder-480b-a35b-instruct
           - accounts/fireworks/models/qwen3-embedding-8b
-          - accounts/lukablaskovic2000-738cce/models/bio-mistral-7b
           - accounts/perplexity/models/r1-1776
           - accounts/scale-ai/models/arctic-text2sql-r1-7b-public
           - accounts/sentientfoundation-serverless/models/dobby-mini-unhinged-plus-llama-3-1-8b
@@ -882,7 +890,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-V3
-          - deepseek-ai/DeepSeek-V3.1
           - google/gemma-3n-E4B-it
           - lgai/exaone-3-5-32b-instruct
           - lgai/exaone-deep-32b
@@ -909,7 +916,6 @@ endpoints:
           - mistralai/Mistral-Small-24B-Instruct-2501
           - mistralai/Mixtral-8x7B-Instruct-v0.1
           - moonshotai/Kimi-K2-Instruct
-          - moonshotai/Kimi-K2-Instruct-0905
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - Qwen/Qwen2.5-72B-Instruct
@@ -1469,7 +1475,6 @@ endpoints:
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
-          - claude-opus-4-20250514-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -1846,6 +1851,7 @@ endpoints:
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
           - nemotron-4-340b-instruct
+          - nemotron-nano-9b-v2
           - noromaid-20b
           - nova-lite
           - nova-lite-v1
@@ -2194,7 +2200,6 @@ endpoints:
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
-          - internlm/Intern-S1
           - jamba-large
           - jamba-large-1.6
           - jamba-large-1.7
@@ -2314,8 +2319,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/o1-pro
-          - OpenGVLab/InternVL3-14B
-          - OpenGVLab/InternVL3-2B
           - OpenGVLab/InternVL3-78B
           - pamanseau/OpenReasoning-Nemotron-32B
           - parasail-drummer-anubis-70b-1-1
@@ -2530,7 +2533,6 @@ endpoints:
           - google/gemini-2.5-flash-lite-preview-06-17
           - google/gemini-2.5-flash:online
           - google/gemini-2.5-pro
-          - google/gemini-2.5-pro-exp-03-25
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
           - google/gemini-flash-1.5
@@ -2648,6 +2650,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
           - nvidia/llama-3.3-nemotron-super-49b-v1
+          - nvidia/nemotron-nano-9b-v2
           - openai/chatgpt-4o-latest
           - openai/codex-mini
           - openai/gpt-3.5-turbo
@@ -3296,12 +3299,14 @@ endpoints:
           - deepseek-r1@fireworks-ai
           - deepseek-r1@replicate
           - deepseek-r1@together-ai
+          - deepseek-r1@vertex-ai
           - deepseek-v3-0324@deepinfra
           - deepseek-v3-0324@fireworks-ai
           - deepseek-v3.1@deepinfra
           - deepseek-v3.1@fireworks-ai
           - deepseek-v3.1@replicate
           - deepseek-v3.1@together-ai
+          - deepseek-v3.1@vertex-ai
           - deepseek-v3@deepinfra
           - deepseek-v3@deepseek
           - deepseek-v3@fireworks-ai
@@ -3349,17 +3354,19 @@ endpoints:
           - gpt-oss-120b@groq
           - gpt-oss-120b@replicate
           - gpt-oss-120b@together-ai
+          - gpt-oss-120b@vertex-ai
           - gpt-oss-20b@aws-bedrock
           - gpt-oss-20b@deepinfra
           - gpt-oss-20b@fireworks-ai
           - gpt-oss-20b@groq
           - gpt-oss-20b@replicate
           - gpt-oss-20b@together-ai
+          - gpt-oss-20b@vertex-ai
           - grok-3-fast@xai
           - grok-3@xai
           - grok-4@xai
+          - grok-code-fast@xai
           - llama-3-70b-chat@aws-bedrock
-          - llama-3-70b-chat@deepinfra
           - llama-3-70b-chat@groq
           - llama-3-70b-chat@replicate
           - llama-3-8b-chat@aws-bedrock
@@ -3385,7 +3392,6 @@ endpoints:
           - llama-3.2-3b-chat@aws-bedrock
           - llama-3.2-3b-chat@deepinfra
           - llama-3.2-3b-chat@together-ai
-          - llama-3.2-90b-chat@deepinfra
           - llama-3.3-70b-chat@aws-bedrock
           - llama-3.3-70b-chat@deepinfra
           - llama-3.3-70b-chat@fireworks-ai
@@ -3403,7 +3409,6 @@ endpoints:
           - llama-4-scout-instruct@replicate
           - llama-4-scout-instruct@together-ai
           - llama-4-scout-instruct@vertex-ai
-          - mistral-7b-instruct-v0.3@deepinfra
           - mistral-large@mistral-ai
           - mistral-large@vertex-ai
           - mistral-medium@mistral-ai
@@ -3423,7 +3428,6 @@ endpoints:
           - qwen-2.5-72b-instruct@together-ai
           - qwen-2.5-7b-instruct@deepinfra
           - qwen-2.5-7b-instruct@together-ai
-          - qwen-2.5-coder-32b-instruct@deepinfra
           - qwen-3-235b-a22b-instruct@deepinfra
           - qwen-3-235b-a22b-instruct@fireworks-ai
           - qwen-3-235b-a22b-instruct@together-ai
