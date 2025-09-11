@@ -1,4 +1,4 @@
-version: 1.2.9.20250910
+version: 1.2.9.20250911
 interface:
   cache: true
   privacyPolicy:
@@ -643,12 +643,8 @@ endpoints:
       baseURL: https://api.studio.nebius.ai/v1
       models:
         default:
-          - aaditya/Llama3-OpenBioLLM-70B
-          - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-fast
-          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
-          - deepseek-ai/DeepSeek-R1-fast
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3-0324-fast
@@ -660,41 +656,27 @@ endpoints:
           - meta-llama/Llama-3.3-70B-Instruct-fast
           - meta-llama/Llama-Guard-3-8B
           - meta-llama/Meta-Llama-3.1-405B-Instruct
-          - meta-llama/Meta-Llama-3.1-70B-Instruct
           - meta-llama/Meta-Llama-3.1-8B-Instruct
           - meta-llama/Meta-Llama-3.1-8B-Instruct-fast
-          - microsoft/phi-4
           - mistralai/Devstral-Small-2505
-          - mistralai/Mistral-Nemo-Instruct-2407
-          - mistralai/Mistral-Small-3.1-24B-Instruct-2503
           - moonshotai/Kimi-K2-Instruct
           - NousResearch/Hermes-3-Llama-405B
           - NousResearch/Hermes-4-405B
           - NousResearch/Hermes-4-70B
           - nvidia/Llama-3_1-Nemotron-Ultra-253B-v1
-          - nvidia/Llama-3_3-Nemotron-Super-49B-v1
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - Qwen/Qwen2-VL-72B-Instruct
-          - Qwen/Qwen2.5-32B-Instruct
-          - Qwen/Qwen2.5-32B-Instruct-fast
           - Qwen/Qwen2.5-72B-Instruct
-          - Qwen/Qwen2.5-72B-Instruct-fast
-          - Qwen/Qwen2.5-Coder-32B-Instruct
-          - Qwen/Qwen2.5-Coder-32B-Instruct-fast
-          - Qwen/Qwen2.5-Coder-7B
           - Qwen/Qwen2.5-Coder-7B-fast
           - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen3-14B
-          - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-235B-A22B-Instruct-2507
+          - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-30B-A3B
-          - Qwen/Qwen3-30B-A3B-fast
           - Qwen/Qwen3-30B-A3B-Instruct-2507
           - Qwen/Qwen3-30B-A3B-Thinking-2507
           - Qwen/Qwen3-32B
           - Qwen/Qwen3-32B-fast
-          - Qwen/Qwen3-4B-fast
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
           - Qwen/Qwen3-Embedding-8B
@@ -877,7 +859,6 @@ endpoints:
       baseURL: https://api.together.xyz/v1
       models:
         default:
-          - arcee-ai/AFM-4.5B
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/virtuoso-large
@@ -1198,6 +1179,7 @@ endpoints:
           - hunyuan-turbos-20250226
           - hunyuan-turbos-20250716
           - hunyuan-vision
+          - inclusionAI/Ling-mini-2.0
           - internlm/internlm2_5-7b-chat
           - kimi-k2-0711-preview
           - kimi-k2-0905-preview
@@ -1697,7 +1679,6 @@ endpoints:
           - hermes-4-70b
           - horizon
           - horizon-beta
-          - hunyuan-a13b-instruct
           - image-01
           - inflection-3-pi
           - inflection-3-productivity
@@ -1714,10 +1695,10 @@ endpoints:
           - jamba-instruct
           - jamba-large-1-7
           - jamba-mini-1-7
-          - kimi-dev-72b
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-instruct
+          - kimi-k2-instruct-0905
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-euryale-70b
@@ -1771,7 +1752,8 @@ endpoints:
           - llama-3-3-70b-instruct-v1
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
-          - llama-3-3-nemotron-super-49b-v1
+          - llama-3-3-nemotron-super-49b
+          - llama-3-3-nemotron-super-49b-v1-5
           - llama-3-70b-8192
           - llama-3-70b-chat-hf
           - llama-3-70b-instruct
@@ -1800,6 +1782,7 @@ endpoints:
           - llama-guard-4-12b
           - llama-guard-7b
           - llemma-7b
+          - longcat-flash-chat
           - maestro-reasoning
           - magistral-medium
           - magistral-medium-2506
@@ -1854,13 +1837,11 @@ endpoints:
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
           - mn-celeste-12b
-          - mn-inferor-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - morph-v3-fast
           - morph-v3-large
           - multimodal
-          - mythalion-13b
           - mythomax
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
@@ -2134,6 +2115,7 @@ endpoints:
           - ernie-x1-32k
           - ernie-x1-32k-preview
           - ernie-x1-turbo-32k
+          - ernie-x1.1-preview
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
           - eva-unit-01/eva-qwen-2.5-72b
@@ -2575,12 +2557,12 @@ endpoints:
           - gryphe/mythomax-l2-13b
           - inception/mercury
           - inception/mercury-coder
-          - infermatic/mn-inferor-12b
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - liquid/lfm-3b
           - liquid/lfm-7b
           - mancer/weaver
+          - meituan/longcat-flash-chat
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-405b
@@ -2671,8 +2653,8 @@ endpoints:
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
-          - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/nemotron-nano-9b-v2
+          - nvidia/nemotron-nano-9b-v2:free
           - openai/chatgpt-4o-latest
           - openai/codex-mini
           - openai/gpt-3.5-turbo
@@ -2724,7 +2706,6 @@ endpoints:
           - perplexity/sonar-pro
           - perplexity/sonar-reasoning
           - perplexity/sonar-reasoning-pro
-          - pygmalionai/mythalion-13b
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-72b-instruct:free
           - qwen/qwen-2.5-7b-instruct
@@ -2816,6 +2797,7 @@ endpoints:
           - alibaba/qwen-turbo
           - alibaba/qwen3-30b-a3b-instruct-2507
           - alibaba/qwen3-coder-plus
+          - alibaba/qwen3-max-preview
           - anthropic/claude-3-5-haiku-20241022
           - anthropic/claude-3-5-haiku-latest
           - anthropic/claude-3-5-sonnet-20240620
@@ -3031,6 +3013,7 @@ endpoints:
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-lite-preview-06-17
           - google/gemini-2.5-pro
+          - groq/moonshotai/Kimi-K2-Instruct-0905
           - groq/moonshotai/kimi-k2-instruct
           - groq/openai/gpt-oss-120b
           - groq/openai/gpt-oss-20b
