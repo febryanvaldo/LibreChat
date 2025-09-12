@@ -1,4 +1,4 @@
-version: 1.2.9.20250911
+version: 1.2.9.20250912
 interface:
   cache: true
   privacyPolicy:
@@ -318,6 +318,8 @@ endpoints:
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
+          - Qwen/Qwen3-Next-80B-A3B-Instruct
+          - Qwen/Qwen3-Next-80B-A3B-Thinking
           - shisa-ai/shisa-v2-llama3.3-70b
           - tencent/Hunyuan-A13B-Instruct
           - Tesslate/UIGEN-X-32B-0727
@@ -369,6 +371,8 @@ endpoints:
           - black-forest-labs/FLUX-pro
           - black-forest-labs/FLUX.1-Kontext-dev
           - Bria/blur_background
+          - Bria/Bria-3.2
+          - Bria/Bria-3.2-vector
           - Bria/enhance
           - Bria/erase
           - Bria/erase_foreground
@@ -486,6 +490,8 @@ endpoints:
           - Qwen/Qwen3-Embedding-0.6B
           - Qwen/Qwen3-Embedding-4B
           - Qwen/Qwen3-Embedding-8B
+          - Qwen/Qwen3-Next-80B-A3B-Instruct
+          - Qwen/Qwen3-Next-80B-A3B-Thinking
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - run-diffusion/Juggernaut-Flux
@@ -748,6 +754,8 @@ endpoints:
           - qwen/qwen3-4b-fp8
           - qwen/qwen3-8b-fp8
           - qwen/qwen3-coder-480b-a35b-instruct
+          - qwen/qwen3-next-80b-a3b-instruct
+          - qwen/qwen3-next-80b-a3b-thinking
           - sao10k/l3-70b-euryale-v2.1
           - sao10k/l3-8b-lunaris
           - Sao10K/L3-8B-Stheno-v3.2
@@ -859,6 +867,7 @@ endpoints:
       baseURL: https://api.together.xyz/v1
       models:
         default:
+          - arcee-ai/AFM-4.5B
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/virtuoso-large
@@ -1336,6 +1345,8 @@ endpoints:
           - qwen3-coder-480b-a35b-instruct
           - qwen3-coder-plus
           - qwen3-max-preview
+          - qwen3-next-80b-a3b-instruct
+          - qwen3-next-80b-a3b-thinking
           - qwq-32b
           - qwq-32b-preview
           - qwq-plus
@@ -1560,7 +1571,6 @@ endpoints:
           - gemini-1-5-flash-8b-latest
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
-          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
@@ -1679,6 +1689,7 @@ endpoints:
           - hermes-4-70b
           - horizon
           - horizon-beta
+          - hunyuan-a13b-instruct
           - image-01
           - inflection-3-pi
           - inflection-3-productivity
@@ -1695,6 +1706,7 @@ endpoints:
           - jamba-instruct
           - jamba-large-1-7
           - jamba-mini-1-7
+          - kimi-dev-72b
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-instruct
@@ -1839,7 +1851,6 @@ endpoints:
           - mn-celeste-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
-          - morph-v3-fast
           - morph-v3-large
           - multimodal
           - mythomax
@@ -1948,8 +1959,11 @@ endpoints:
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-max
+          - qwen-3-next-80b-a3b-instruct
+          - qwen-3-next-80b-a3b-thinking
           - qwen-max
           - qwen-plus
+          - qwen-plus-2025-07-28
           - qwen-turbo
           - qwen-vl-max
           - qwen-vl-plus
@@ -2342,6 +2356,8 @@ endpoints:
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
           - qwen/qwen3-max
+          - Qwen/Qwen3-Next-80B-A3B-Instruct
+          - Qwen/Qwen3-Next-80B-A3B-Thinking
           - Qwen/QwQ-32B-Preview
           - Qwen2.5-32B-EVA-v0.2
           - Qwen2.5-72B-Chuluun-v0.08
@@ -2714,6 +2730,8 @@ endpoints:
           - qwen/qwen-2.5-vl-7b-instruct
           - qwen/qwen-max
           - qwen/qwen-plus
+          - qwen/qwen-plus-2025-07-28
+          - qwen/qwen-plus-2025-07-28:thinking
           - qwen/qwen-turbo
           - qwen/qwen-vl-max
           - qwen/qwen-vl-plus
@@ -2739,6 +2757,8 @@ endpoints:
           - qwen/qwen3-coder-30b-a3b-instruct
           - qwen/qwen3-coder:free
           - qwen/qwen3-max
+          - qwen/qwen3-next-80b-a3b-instruct
+          - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwq-32b
           - qwen/qwq-32b-preview
           - qwen/qwq-32b:free
