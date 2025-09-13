@@ -442,14 +442,12 @@
 🤖 Cerebras    : 9 models (no change)
 🤖 Groq        : 19 models (no change)
 🤖 Sambanova   : 12 models (no change)
-🤖 Chutes      : 68 models (no change)
 🤖 DeepInfra   : 117 models (-49 models)
 🤖 Fireworks   : 33 models (no change)
 🤖 FriendliAI  : 10 models (no change)
 🤖 Hyperbolic  : 27 models (+5 models)
 🤖 Nebius      : 41 models (no change)
 🤖 Novita AI   : 62 models (no change)
-🤖 ShuttleAI   : 22 models (no change)
 🤖 Synthetic   : 19 models (no change)
 🤖 Targon      : 9 models (no change)
 🤖 Together AI : 63 models (+1 model)
@@ -459,7 +457,9 @@
 🤖 OpenRouter  : 334 models (no change)
 🤖 Requesty    : 471 models (no change)
 🤖 UnifyAI     : 164 models (no change)
+🤖 Chutes      : === REMOVED ===
 🤖 KlusterAI   : === REMOVED ===
+🤖 ShuttleAI   : === REMOVED ===
 ==================================================
 2025-09-13 11:27:56 GMT+7
 ==================================================
