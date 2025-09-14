@@ -125,6 +125,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    CEREBRAS_KEY=Your_API_Key_Here
    GROQ_KEY=Your_API_Key_Here
    SAMBANOVA_KEY=Your_API_Key_Here
+   BASETEN_KEY=Your_API_Key_Here
    DEEPINFRA_KEY=Your_API_Key_Here
    FIREWORKSAI_KEY=Your_API_Key_Here
    FRIENDLIAI_KEY=Your_API_Key_Here
