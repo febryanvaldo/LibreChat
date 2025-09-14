@@ -1,4 +1,4 @@
-version: 1.2.9.2025092025
+version: 1.2.9.xxxxx
 interface:
   cache: true
   privacyPolicy:
@@ -268,6 +268,30 @@ endpoints:
       summaryModel: Meta-Llama-3.1-8B-Instruct
       modelDisplayLabel: SambaNova
       iconURL: https://i.febryan.me/qgy8p.webp
+    - name: Baseten
+      apiKey: user_provided
+      baseURL: https://inference.baseten.co/v1
+      models:
+        default:
+          - deepseek-ai/DeepSeek-R1
+          - deepseek-ai/DeepSeek-R1-0528
+          - deepseek-ai/DeepSeek-V3-0324
+          - deepseek-ai/DeepSeek-V3.1
+          - meta-llama/Llama-4-Maverick-17B-128E-Instruct
+          - meta-llama/Llama-4-Scout-17B-16E-Instruct
+          - moonshotai/Kimi-K2-Instruct
+          - moonshotai/Kimi-K2-Instruct-0905
+          - openai/gpt-oss-120b
+          - Qwen/Qwen3-235B-A22B-Instruct-2507
+          - Qwen/Qwen3-Coder-480B-A35B-Instruct
+        fetch: false
+      titleConvo: true
+      titleModel: openai/gpt-oss-120b
+      summarize: false
+      summaryModel: openai/gpt-oss-120b
+      titleMessageRole: user
+      modelDisplayLabel: Baseten
+      iconURL: https://i.febryan.me/piegy.svg
     - name: DeepInfra
       apiKey: user_provided
       baseURL: https://api.deepinfra.com/v1/openai
@@ -750,6 +774,7 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-Instruct-2507-tput
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
+          - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-Next-80B-A3B-Thinking
           - Qwen/QwQ-32B
           - scb10x/scb10x-typhoon-2-1-gemma3-12b
@@ -1398,7 +1423,6 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-1-5-flash-8b-latest
-          - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
           - gemini-2-0-flash
@@ -1565,7 +1589,6 @@ endpoints:
           - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-turbo
-          - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
@@ -1605,6 +1628,7 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
+          - llama-3-lumimaid-70b
           - llama-4
           - llama-4-maverick
           - llama-4-maverick-17b-128e-instruct-fp8
@@ -2097,6 +2121,7 @@ endpoints:
           - Llama-3.3-70B-The-Omega-Directive-Unslop-v2.0
           - Llama-3.3-70B-The-Omega-Directive-Unslop-v2.1
           - Llama-3.3-70B-Vulpecula-R1
+          - LLM360/K2-Think
           - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
           - meituan-longcat/LongCat-Flash-Chat-FP8
