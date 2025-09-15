@@ -129,6 +129,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    DEEPINFRA_KEY=Your_API_Key_Here
    FIREWORKSAI_KEY=Your_API_Key_Here
    FRIENDLIAI_KEY=Your_API_Key_Here
+   HUGGINGFACE_KEY=YourAPI_Key_Here
    HYPERBOLIC_KEY=Your_API_Key_Here
    NEBIUS_KEY=Your_API_Key_Here
    NOVITAAI_KEY=Your_API_Key_Here
