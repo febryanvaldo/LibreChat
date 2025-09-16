@@ -1,4 +1,4 @@
-version: 1.2.9.20250915
+version: 1.2.9.20250916
 interface:
   cache: true
   privacyPolicy:
@@ -33,10 +33,10 @@ endpoints:
         default:
           - c4ai-aya-vision-32b
           - c4ai-aya-vision-8b
+          - command-a-03-2025
           - command-a-reasoning-08-2025
           - command-light
           - command-light-nightly
-          - command-nightly
           - command-r
           - command-r-plus
           - command-r-plus-08-2024
@@ -172,17 +172,15 @@ endpoints:
           - grok-2-image-1212
           - grok-2-vision-1212
           - grok-3
-          - grok-3-fast
           - grok-3-mini
-          - grok-3-mini-fast
           - grok-4-0709
           - grok-4-0709-eu
           - grok-code-fast-1
         fetch: false
       titleConvo: true
-      titleModel: grok-3-mini-fast
+      titleModel: grok-3-mini
       summarize: false
-      summaryModel: grok-3-mini-fast
+      summaryModel: grok-3-mini
       forcePrompt: false
       modelDisplayLabel: xAI
       dropParams:
@@ -239,9 +237,9 @@ endpoints:
           - qwen/qwen3-32b
         fetch: false
       titleConvo: true
-      titleModel: llama-3.1-8b-instant
+      titleModel: openai/gpt-oss-20b
       summarize: false
-      summaryModel: llama-3.1-8b-instant
+      summaryModel: openai/gpt-oss-20b
       modelDisplayLabel: Groq
       iconURL: https://i.febryan.me/gesbn.svg
     - name: SambaNova
@@ -416,9 +414,9 @@ endpoints:
           - zai-org/GLM-4.5V
         fetch: false
       titleConvo: true
-      titleModel: meta-llama/Llama-3.2-3B-Instruct
+      titleModel: openai/gpt-oss-20b
       summarize: false
-      summaryModel: meta-llama/Llama-3.2-3B-Instruct
+      summaryModel: openai/gpt-oss-20b
       titleMessageRole: user
       modelDisplayLabel: DeepInfra
       iconURL: https://i.febryan.me/1nwdm.svg
@@ -462,9 +460,9 @@ endpoints:
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
         fetch: false
       titleConvo: true
-      titleModel: accounts/fireworks/models/llama-v3p1-8b-instruct
+      titleModel: accounts/fireworks/models/gpt-oss-20b
       summarize: false
-      summaryModel: accounts/fireworks/models/llama-v3p1-8b-instruct
+      summaryModel: accounts/fireworks/models/gpt-oss-20b
       forcePrompt: false
       modelDisplayLabel: Fireworks AI
       iconURL: https://i.febryan.me/r99kc.svg
@@ -511,8 +509,6 @@ endpoints:
           - CohereLabs/aya-vision-8b
           - CohereLabs/c4ai-command-a-03-2025
           - CohereLabs/c4ai-command-r-08-2024
-          - CohereLabs/c4ai-command-r-plus
-          - CohereLabs/c4ai-command-r-v01
           - CohereLabs/c4ai-command-r7b-12-2024
           - CohereLabs/c4ai-command-r7b-arabic-02-2025
           - CohereLabs/command-a-reasoning-08-2025
@@ -535,7 +531,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1
-          - dphn/dolphin-2.9.2-mixtral-8x22b
           - google/gemma-2-2b-it
           - google/gemma-2-9b-it
           - google/gemma-3-27b-it
@@ -645,9 +640,9 @@ endpoints:
           - SDXL1.0-base
         fetch: false
       titleConvo: true
-      titleModel: meta-llama/Llama-3.2-3B-Instruct
+      titleModel: openai/gpt-oss-20b
       summarize: false
-      summaryModel: meta-llama/Llama-3.2-3B-Instruct
+      summaryModel: openai/gpt-oss-20b
       modelDisplayLabel: Hyperbolic
       iconURL: https://i.febryan.me/4mbk2.svg
     - name: Nebius
@@ -698,9 +693,9 @@ endpoints:
           - zai-org/GLM-4.5-Air
         fetch: false
       titleConvo: true
-      titleModel: google/gemma-2-9b-it-fast
+      titleModel: openai/gpt-oss-20b
       summarize: false
-      summaryModel: google/gemma-2-9b-it-fast
+      summaryModel: openai/gpt-oss-20b
       forcePrompt: false
       modelDisplayLabel: Nebius
       iconURL: https://i.febryan.me/9e0o7.svg
@@ -715,7 +710,6 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b-paddle
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
-          - cognitivecomputations/dolphin-mixtral-8x22b
           - deepseek/deepseek-prover-v2-671b
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-0528-qwen3-8b
@@ -773,9 +767,9 @@ endpoints:
           - zai-org/glm-4.5v
         fetch: false
       titleConvo: true
-      titleModel: meta-llama/llama-3.2-3b-instruct
+      titleModel: openai/gpt-oss-20b
       summarize: false
-      summaryModel: meta-llama/llama-3.2-3b-instruct
+      summaryModel: openai/gpt-oss-20b
       forcePrompt: false
       modelDisplayLabel: Novita AI
       iconURL: https://i.febryan.me/jqyk5.svg
@@ -827,9 +821,9 @@ endpoints:
           - zai-org/GLM-4.5
         fetch: false
       titleConvo: true
-      titleModel: TheDrummer/Cydonia-24B-v2
+      titleModel: openai/gpt-oss-120b
       summarize: false
-      summaryModel: TheDrummer/Cydonia-24B-v2
+      summaryModel: openai/gpt-oss-120b
       forcePrompt: false
       modelDisplayLabel: Targon
       iconURL: https://i.febryan.me/wlzxq.svg
@@ -893,7 +887,6 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-Instruct-2507-tput
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
-          - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-Next-80B-A3B-Thinking
           - Qwen/QwQ-32B
           - scb10x/scb10x-typhoon-2-1-gemma3-12b
@@ -904,9 +897,9 @@ endpoints:
           - zai-org/GLM-4.5-Air-FP8
         fetch: false
       titleConvo: true
-      titleModel: meta-llama/Llama-3.2-3B-Instruct-Turbo
+      titleModel: openai/gpt-oss-20b
       summarize: false
-      summaryModel: meta-llama/Llama-3.2-3B-Instruct-Turbo
+      summaryModel: openai/gpt-oss-20b
       forcePrompt: false
       modelDisplayLabel: Together AI
       iconURL: https://i.febryan.me/728b4.svg
@@ -1532,7 +1525,6 @@ endpoints:
           - dolphin-3-0-mistral-24b
           - dolphin-3-0-r1-mistral-24b
           - dolphin-mistral-24b-venice-edition
-          - dolphin-mixtral-8x22b
           - ernie-4-5-21b-a3b
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
@@ -1550,6 +1542,7 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
+          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-image-preview
           - gemini-2-5-flash-lite
@@ -1780,7 +1773,6 @@ endpoints:
           - mercury
           - mercury-coder
           - mercury-coder-small-beta
-          - midnight-rose-70b
           - minimax
           - minimax-01
           - minimax-m1
@@ -2176,6 +2168,7 @@ endpoints:
           - grok-3-mini-beta
           - grok-3-mini-fast-beta
           - Gryphe/MythoMax-L2-13b
+          - hermes-3-llama-3.1-405b
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.1-Nemotron-70B-Instruct-HF-abliterated
@@ -2383,7 +2376,7 @@ endpoints:
           - TEE/deepseek-r1-70b-distill
           - TEE/gemma-3-27b-it
           - TEE/gpt-oss-120b
-          - TEE/llama-3.3-70b-instruct
+          - TEE/llama3-3-70b
           - TEE/mistral-small-3-1-24b
           - TEE/qwen2-5-72b
           - TEE/qwen3-coder
@@ -2415,6 +2408,7 @@ endpoints:
           - venice-uncensored
           - venice-uncensored-web
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
+          - wizardlm-2-8x22b
           - x-ai/grok-4-07-09
           - x-ai/grok-4-07-09-extended
           - x-ai/grok-code-fast-1
@@ -2483,7 +2477,6 @@ endpoints:
           - bytedance/seed-oss-36b-instruct
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - cognitivecomputations/dolphin-mixtral-8x22b
           - cognitivecomputations/dolphin3.0-mistral-24b
           - cognitivecomputations/dolphin3.0-mistral-24b:free
           - cognitivecomputations/dolphin3.0-r1-mistral-24b
@@ -2514,7 +2507,6 @@ endpoints:
           - deepseek/deepseek-r1-distill-llama-70b:free
           - deepseek/deepseek-r1-distill-llama-8b
           - deepseek/deepseek-r1-distill-qwen-14b
-          - deepseek/deepseek-r1-distill-qwen-14b:free
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-r1:free
           - deepseek/deepseek-v3.1-base
@@ -2643,7 +2635,6 @@ endpoints:
           - nousresearch/hermes-4-70b
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
           - nvidia/nemotron-nano-9b-v2
           - nvidia/nemotron-nano-9b-v2:free
           - openai/chatgpt-4o-latest
@@ -2689,6 +2680,7 @@ endpoints:
           - openai/o3-pro
           - openai/o4-mini
           - openai/o4-mini-high
+          - opengvlab/internvl3-78b
           - openrouter/sonoma-dusk-alpha
           - openrouter/sonoma-sky-alpha
           - perplexity/r1-1776
@@ -2745,7 +2737,6 @@ endpoints:
           - sao10k/l3.3-euryale-70b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2-llama3.3-70b:free
-          - sophosympatheia/midnight-rose-70b
           - stepfun-ai/step3
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
@@ -2755,7 +2746,6 @@ endpoints:
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
-          - thudm/glm-4-32b
           - thudm/glm-4.1v-9b-thinking
           - thudm/glm-z1-32b
           - tngtech/deepseek-r1t-chimera
