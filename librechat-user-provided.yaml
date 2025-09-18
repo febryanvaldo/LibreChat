@@ -1,4 +1,4 @@
-version: 1.2.9.20250918
+version: 1.2.9.20250918 
 interface:
   cache: true
   privacyPolicy:
