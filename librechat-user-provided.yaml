@@ -1,4 +1,4 @@
-version: 1.2.9.20250918 
+version: 1.2.9.20250919
 interface:
   cache: true
   privacyPolicy:
@@ -175,7 +175,6 @@ endpoints:
           - grok-3
           - grok-3-mini
           - grok-4-0709
-          - grok-4-0709-eu
           - grok-code-fast-1
         fetch: false
       titleConvo: true
@@ -1105,6 +1104,10 @@ endpoints:
           - gpt-5
           - gpt-5-2025-08-07
           - gpt-5-chat-latest
+          - gpt-5-codex
+          - gpt-5-codex-high
+          - gpt-5-codex-low
+          - gpt-5-codex-medium
           - gpt-5-mini
           - gpt-5-mini-2025-08-07
           - gpt-5-nano
@@ -1382,7 +1385,6 @@ endpoints:
           - aion-1-0
           - aion-1-0-mini
           - aion-rp-llama-3-1-8b
-          - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
           - chatgpt-4o
@@ -1394,6 +1396,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -1503,6 +1506,7 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-1-5-flash-8b-latest
+          - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
           - gemini-2-0-flash
@@ -1600,7 +1604,9 @@ endpoints:
           - gpt-5-nano
           - gpt-5-nano-2025-08-07
           - gpt-oss-120b
+          - gpt-oss-120b-1
           - gpt-oss-20b
+          - gpt-oss-20b-1
           - grok-2
           - grok-2-latest
           - grok-2-vision
@@ -1669,6 +1675,7 @@ endpoints:
           - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-turbo
+          - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
@@ -1851,6 +1858,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -1936,6 +1944,7 @@ endpoints:
           - titan-text-lite-v1
           - titan-text-premier-v1
           - titan-tg-1-large
+          - tongyi-deepresearch-30b-a3b
           - ui-tars-1-5-7b
           - ui-tars-72b
           - ultra-fast
@@ -2414,6 +2423,7 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - alfredpros/codellama-7b-instruct-solidity
+          - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/molmo-7b-d
           - allenai/olmo-2-0325-32b-instruct
           - alpindale/goliath-120b
