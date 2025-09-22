@@ -1,4 +1,4 @@
-version: 1.2.9.20250921
+version: 1.2.9.20250922
 interface:
   cache: true
   privacyPolicy:
@@ -505,6 +505,7 @@ endpoints:
           - baichuan-inc/Baichuan-M2-32B
           - baidu/ERNIE-4.5-0.3B-PT
           - baidu/ERNIE-4.5-21B-A3B-PT
+          - baidu/ERNIE-4.5-21B-A3B-Thinking
           - baidu/ERNIE-4.5-300B-A47B-Base-PT
           - baidu/ERNIE-4.5-VL-28B-A3B-PT
           - baidu/ERNIE-4.5-VL-424B-A47B-Base-PT
@@ -713,6 +714,7 @@ endpoints:
           - baichuan/baichuan-m2-32b
           - baidu/ernie-4.5-0.3b
           - baidu/ernie-4.5-21B-a3b
+          - baidu/ernie-4.5-21B-a3b-thingking
           - baidu/ernie-4.5-300b-a47b-paddle
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
@@ -766,7 +768,6 @@ endpoints:
           - sao10k/l3-8b-lunaris
           - Sao10K/L3-8B-Stheno-v3.2
           - sao10k/l31-70b-euryale-v2.2
-          - sophosympatheia/midnight-rose-70b
           - thudm/glm-4-32b-0414
           - thudm/glm-4.1v-9b-thinking
           - zai-org/glm-4.5
