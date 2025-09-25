@@ -1,4 +1,4 @@
-version: 1.2.9.20250924
+version: 1.2.9.xxxxx
 interface:
   cache: true
   privacyPolicy:
@@ -278,6 +278,8 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1
+          - meta-llama/Llama-4-Maverick-17B-128E-Instruct
+          - meta-llama/Llama-4-Scout-17B-16E-Instruct
           - moonshotai/Kimi-K2-Instruct
           - moonshotai/Kimi-K2-Instruct-0905
           - openai/gpt-oss-120b
@@ -498,6 +500,7 @@ endpoints:
       models:
         default:
           - aisingapore/Gemma-SEA-LION-v4-27B-IT
+          - alpindale/WizardLM-2-8x22B
           - arcee-ai/AFM-4.5B
           - baichuan-inc/Baichuan-M2-32B
           - baidu/ERNIE-4.5-0.3B-PT
@@ -590,6 +593,8 @@ endpoints:
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-Next-80B-A3B-Thinking
+          - Qwen/Qwen3-VL-235B-A22B-Instruct
+          - Qwen/Qwen3-VL-235B-A22B-Thinking
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Sao10K/L3-70B-Euryale-v2.1
@@ -763,6 +768,8 @@ endpoints:
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
+          - qwen/qwen3-vl-235b-a22b-instruct
+          - qwen/qwen3-vl-235b-a22b-thinking
           - sao10k/l3-70b-euryale-v2.1
           - sao10k/l3-8b-lunaris
           - Sao10K/L3-8B-Stheno-v3.2
@@ -789,6 +796,7 @@ endpoints:
           - hf:deepseek-ai/DeepSeek-V3
           - hf:deepseek-ai/DeepSeek-V3-0324
           - hf:deepseek-ai/DeepSeek-V3.1
+          - hf:deepseek-ai/DeepSeek-V3.1-Terminus
           - hf:meta-llama/Llama-3.1-405B-Instruct
           - hf:meta-llama/Llama-3.1-70B-Instruct
           - hf:meta-llama/Llama-3.1-8B-Instruct
@@ -1520,8 +1528,8 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-1-5-flash-8b-latest
-          - gemini-1-5-flash-latest
           - gemini-1-5-pro
+          - gemini-1-5-pro-latest
           - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
@@ -1529,6 +1537,7 @@ endpoints:
           - gemini-2-0-flash-lite-001
           - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
+          - gemini-2-5-flash-image
           - gemini-2-5-flash-image-preview
           - gemini-2-5-flash-lite
           - gemini-2-5-flash-lite-preview-06-17
@@ -1624,6 +1633,7 @@ endpoints:
           - grok-2
           - grok-2-latest
           - grok-2-vision
+          - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
@@ -1662,6 +1672,7 @@ endpoints:
           - jamba-mini-1-7
           - kimi-dev-72b
           - kimi-k2
+          - kimi-k2-0905
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-vl-a3b-thinking
@@ -1728,6 +1739,7 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
+          - llama-3-lumimaid-70b
           - llama-4
           - llama-4-maverick
           - llama-4-maverick-17b-128e-instruct-fp8
@@ -1791,6 +1803,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1903,10 +1916,12 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-32b-fp8
+          - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
+          - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
@@ -1916,6 +1931,7 @@ endpoints:
           - qwen-3-next-80b-a3b-instruct
           - qwen-3-next-80b-a3b-thinking
           - qwen-3-vl-235b-a22b-instruct
+          - qwen-3-vl-235b-a22b-thinking
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -2336,6 +2352,8 @@ endpoints:
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
+          - qwen3-vl-235b-a22b-instruct
+          - qwen3-vl-235b-a22b-thinking
           - qwq-32b
           - QwQ-32B-ArliAI-RpR-v1
           - r1-1776
@@ -2367,6 +2385,7 @@ endpoints:
           - step-2-mini
           - step-3
           - step-r1-v-mini
+          - study_gpt-chatgpt-4o-latest
           - TEE/deepseek-chat-v3-0324
           - TEE/deepseek-r1-70b-distill
           - TEE/gemma-3-27b-it
@@ -2996,6 +3015,8 @@ endpoints:
           - groq/openai/gpt-oss-120b
           - groq/openai/gpt-oss-20b
           - groq/qwen-qwq-32b
+          - ionstream/deepseek-ai/DeepSeek-V3.1
+          - ionstream/moonshotai/Kimi-K2-Instruct-0905
           - mistral/codestral-latest
           - mistral/devstral-medium-2507
           - mistral/devstral-small-2507
@@ -3063,6 +3084,7 @@ endpoints:
           - novita/sophosympatheia/midnight-rose-70b
           - novita/teknium/openhermes-2.5-mistral-7b
           - novita/zai-org/glm-4.5
+          - openai-responses/gpt-5-codex
           - openai/chatgpt-4o-latest
           - openai/gpt-4.1
           - openai/gpt-4.1-2025-04-14
@@ -3240,6 +3262,7 @@ endpoints:
           - xai/grok-3-mini-fast-beta:low
           - xai/grok-4
           - xai/grok-code-fast-1
+          - zai/GLM-4.5
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-4.1-mini
