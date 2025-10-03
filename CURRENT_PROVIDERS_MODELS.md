@@ -74,7 +74,7 @@
 I added 3 models that use capabilities of OpenRouter Web Search feature. OpenRouter use Exa.ai for the Web Search.
 
 The models are;
-- `anthropic/claude-sonnet-4:online` based on **Claude 4 Sonnet**
+- `anthropic/claude-sonnet-4.5:online` based on **Claude 4.5 Sonnet**
 - `google/gemini-2.5-flash:online` based on **Gemini 2.5 Flash Stable**
 - `openai/gpt-4.1:online` based on **OpenAI's GPT-4.1**
 
@@ -82,8 +82,8 @@ The models are;
 Like OpenRouter above, i also added 6 models that can utilize the NanoGPT Web Search feature. NanoGPT uses Linkup.so for the Web Search. The `:online` is the **standard** one, while `:online/linkup-deep` is the **deep search** one.
 
 The models are;
-- `claude-sonnet-4-20250514:online` based on **Claude 4 Sonnet**
-- `claude-sonnet-4-20250514:online/linkup-deep` based on **Claude 4 Sonnet**
+- `claude-sonnet-4-5-20250929:online` based on **Claude 4.5 Sonnet**
+- `claude-sonnet-4-5-20250929:online/linkup-deep` based on **Claude 4.5 Sonnet**
 - `gemini-2.5-flash:online` based on **Gemini 2.5 Flash Stable**
 - `gemini-2.5-flash:online/linkup-deep` based on **Gemini 2.5 Flash Stable**
 - `openai/gpt-4.1:online` based on **OpenAI's GPT-4.1**
