@@ -1,4 +1,4 @@
-version: 1.2.9.20251003
+version: 1.2.9.xxxxx
 interface:
   cache: true
   privacyPolicy:
@@ -2111,10 +2111,10 @@ endpoints:
           - claude-opus-4-thinking:32768
           - claude-opus-4-thinking:8192
           - claude-sonnet-4-20250514
-          - claude-sonnet-4-20250514:online
-          - claude-sonnet-4-20250514:online/linkup-deep
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-5-20250929-thinking
+          - claude-sonnet-4-5-20250929:online
+          - claude-sonnet-4-5-20250929:online/linkup-deep
           - claude-sonnet-4-thinking
           - claude-sonnet-4-thinking:1024
           - claude-sonnet-4-thinking:32768
@@ -2558,7 +2558,7 @@ endpoints:
           - anthropic/claude-opus-4.1
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
-          - anthropic/claude-sonnet-4:online
+          - anthropic/claude-sonnet-4.5:online
           - arcee-ai/afm-4.5b
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
