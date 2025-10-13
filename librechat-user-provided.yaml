@@ -1,4 +1,4 @@
-version: 1.2.9.20251009
+version: 1.2.9.20251013
 interface:
   cache: true
   privacyPolicy:
@@ -218,7 +218,6 @@ endpoints:
       models:
         default:
           - allam-2-7b
-          - deepseek-r1-distill-llama-70b
           - groq/compound
           - groq/compound-mini
           - llama-3.1-8b-instant
@@ -526,6 +525,7 @@ endpoints:
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
+          - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
@@ -610,7 +610,9 @@ endpoints:
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air-FP8
           - zai-org/GLM-4.5V
+          - zai-org/GLM-4.5V-FP8
           - zai-org/GLM-4.6
+          - zai-org/GLM-4.6-FP8
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-oss-20b
@@ -716,7 +718,6 @@ endpoints:
       models:
         default:
           - baichuan/baichuan-m2-32b
-          - baidu/ernie-4.5-0.3b
           - baidu/ernie-4.5-21B-a3b
           - baidu/ernie-4.5-21B-a3b-thinking
           - baidu/ernie-4.5-300b-a47b-paddle
@@ -767,18 +768,16 @@ endpoints:
           - qwen/qwen3-32b-fp8
           - qwen/qwen3-4b-fp8
           - qwen/qwen3-8b-fp8
+          - qwen/qwen3-coder-30b-a3b-instruct
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
-          - qwen/qwen3-omni-30b-a3b-instruct
-          - qwen/qwen3-omni-30b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-235b-a22b-thinking
           - sao10k/l3-70b-euryale-v2.1
           - sao10k/l3-8b-lunaris
           - Sao10K/L3-8B-Stheno-v3.2
           - sao10k/l31-70b-euryale-v2.2
-          - thudm/glm-4-32b-0414
           - thudm/glm-4.1v-9b-thinking
           - zai-org/glm-4.5
           - zai-org/glm-4.5v
@@ -863,7 +862,6 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
           - deepcogito/cogito-v2-preview-llama-70B
-          - deepseek-ai/deepseek-llm-67b-chat
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528-tput
           - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
@@ -903,6 +901,7 @@ endpoints:
           - nvidia/NVIDIA-Nemotron-Nano-9B-v2
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
+          - Qwen/Qwen2.5-14B-Instruct
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-72B-Instruct-Turbo
           - Qwen/Qwen2.5-7B-Instruct-Turbo
@@ -1546,7 +1545,6 @@ endpoints:
           - deepseek-r1-0528-turbo
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-70b-free
-          - deepseek-r1-distill-llama-8b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
           - deepseek-r1-qwen-3-8b
@@ -1576,6 +1574,7 @@ endpoints:
           - dolphin-3-r1-mistral-24b
           - dolphin-mistral-24b-venice-edition
           - ernie-4-5-21b-a3b
+          - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
           - ernie-4-5-vl-424b-a47b
@@ -1587,7 +1586,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1739,6 +1737,7 @@ endpoints:
           - kimi-k2-instruct-0905
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
+          - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
           - l3-3-70b-euryale-v2-3
           - l3-3-electra-r1-70b
@@ -1757,7 +1756,6 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
-          - llama-2-70b-hf
           - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-turbo
@@ -1791,11 +1789,10 @@ endpoints:
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
           - llama-3-3-nemotron-super-49b
+          - llama-3-3-nemotron-super-49b-1-5
           - llama-3-3-nemotron-super-49b-v1-5
           - llama-3-70b-8192
-          - llama-3-70b-chat-hf
           - llama-3-70b-instruct
-          - llama-3-70b-instruct-turbo
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
           - llama-3-8b-instruct
@@ -1865,7 +1862,6 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
-          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1952,7 +1948,6 @@ endpoints:
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
-          - qwen-2-5-72b-instruct-turbo
           - qwen-2-5-7b-instruct
           - qwen-2-5-7b-instruct-turbo
           - qwen-2-5-coder-32b-instruct
@@ -1998,6 +1993,8 @@ endpoints:
           - qwen-3-next-80b-a3b-thinking
           - qwen-3-vl-235b-a22b-instruct
           - qwen-3-vl-235b-a22b-thinking
+          - qwen-3-vl-30b-a3b-instruct
+          - qwen-3-vl-30b-a3b-thinking
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -2078,7 +2075,6 @@ endpoints:
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - anubis-pro-105b-v1
-          - ArliAI-RpR-Ultra-235B
           - asi1-mini
           - azure-gpt-4-turbo
           - azure-gpt-4o
@@ -2263,7 +2259,9 @@ endpoints:
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - hunyuan-t1-latest
           - hunyuan-turbos-20250226
+          - inclusionai/ling-1t
           - inclusionAI/Ling-flash-2.0
+          - inclusionai/ring-1t-preview
           - inclusionAI/Ring-flash-2.0
           - Infermatic/MN-12B-Inferor-v0.0
           - inflatebot/MN-12B-Mag-Mell-R1
@@ -2411,6 +2409,7 @@ endpoints:
           - qwen/qwen3-30b-a3b
           - qwen/qwen3-32b
           - Qwen/Qwen3-8B
+          - qwen/qwen3-coder
           - qwen/qwen3-coder-flash
           - qwen/qwen3-coder-plus
           - qwen/qwen3-max
@@ -2569,6 +2568,7 @@ endpoints:
           - arliai/qwq-32b-arliai-rpr-v1
           - arliai/qwq-32b-arliai-rpr-v1:free
           - baidu/ernie-4.5-21b-a3b
+          - baidu/ernie-4.5-21b-a3b-thinking
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
@@ -2630,6 +2630,7 @@ endpoints:
           - gryphe/mythomax-l2-13b
           - inception/mercury
           - inception/mercury-coder
+          - inclusionai/ling-1t
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - liquid/lfm-3b
@@ -2682,6 +2683,7 @@ endpoints:
           - mistralai/ministral-8b
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-7b-instruct-v0.1
+          - mistralai/mistral-7b-instruct-v0.2
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-large
@@ -2723,6 +2725,7 @@ endpoints:
           - nousresearch/hermes-4-70b
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
+          - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-nano-9b-v2
           - nvidia/nemotron-nano-9b-v2:free
           - openai/chatgpt-4o-latest
@@ -2818,11 +2821,14 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-235b-a22b-thinking
+          - qwen/qwen3-vl-30b-a3b-instruct
+          - qwen/qwen3-vl-30b-a3b-thinking
           - qwen/qwq-32b
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
+          - sao10k/l3.1-70b-hanami-x1
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
           - shisa-ai/shisa-v2-llama3.3-70b
