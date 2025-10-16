@@ -1,4 +1,4 @@
-version: 1.2.9.20251013
+version: 1.2.9.20251016
 interface:
   cache: true
   privacyPolicy:
@@ -198,7 +198,6 @@ endpoints:
         default:
           - gpt-oss-120b
           - llama-3.3-70b
-          - llama-4-maverick-17b-128e-instruct
           - llama-4-scout-17b-16e-instruct
           - llama3.1-8b
           - qwen-3-235b-a22b-instruct-2507
@@ -279,6 +278,7 @@ endpoints:
           - openai/gpt-oss-120b
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
+          - zai-org/GLM-4.6
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-oss-120b
@@ -404,6 +404,14 @@ endpoints:
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-Next-80B-A3B-Thinking
+          - Qwen/Qwen3-VL-235B-A22B-Instruct
+          - Qwen/Qwen3-VL-235B-A22B-Thinking
+          - Qwen/Qwen3-VL-30B-A3B-Instruct
+          - Qwen/Qwen3-VL-30B-A3B-Thinking
+          - Qwen/Qwen3-VL-4B-Instruct
+          - Qwen/Qwen3-VL-4B-Thinking
+          - Qwen/Qwen3-VL-8B-Instruct
+          - Qwen/Qwen3-VL-8B-Thinking
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Sao10K/L3-70B-Euryale-v2.1
@@ -857,7 +865,6 @@ endpoints:
           - arcee_ai/arcee-spotlight
           - arize-ai/qwen-2-1.5b-instruct
           - codellama/CodeLlama-34b-Instruct-hf
-          - databricks/dbrx-instruct
           - deepcogito/cogito-v2-preview-deepseek-671b
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
@@ -870,8 +877,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3.1
           - google/gemma-3n-E4B-it
-          - Gryphe/MythoMax-L2-13b
-          - Gryphe/MythoMax-L2-13b-Lite
           - marin-community/marin-8b-instruct
           - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-3-70b-chat-hf
@@ -969,6 +974,7 @@ endpoints:
           - claude-3-7-sonnet-latest
           - claude-3-haiku-20240307
           - claude-3-opus-20240229
+          - claude-haiku-4-5-20251001
           - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-thinking
           - claude-opus-4-20250514
@@ -1183,6 +1189,7 @@ endpoints:
           - hunyuan-turbos-20250226
           - hunyuan-turbos-20250716
           - hunyuan-vision
+          - inclusionAI/Ling-1T
           - inclusionAI/Ling-flash-2.0
           - inclusionAI/Ling-mini-2.0
           - inclusionAI/Ring-flash-2.0
@@ -1248,6 +1255,7 @@ endpoints:
           - Pro/deepseek-ai/DeepSeek-V3
           - Pro/deepseek-ai/DeepSeek-V3.1
           - Pro/deepseek-ai/DeepSeek-V3.1-Terminus
+          - Pro/deepseek-ai/DeepSeek-V3.2-Exp
           - Pro/moonshotai/Kimi-K2-Instruct-0905
           - Pro/Qwen/Qwen2-7B-Instruct
           - Pro/Qwen/Qwen2.5-7B-Instruct
@@ -1301,8 +1309,13 @@ endpoints:
           - qwen/qwen3-coder-480b-a35b-instruct
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-Next-80B-A3B-Thinking
+          - Qwen/Qwen3-Omni-30B-A3B-Captioner
+          - Qwen/Qwen3-Omni-30B-A3B-Instruct
+          - Qwen/Qwen3-Omni-30B-A3B-Thinking
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-235b-a22b-thinking
+          - Qwen/Qwen3-VL-30B-A3B-Instruct
+          - Qwen/Qwen3-VL-30B-A3B-Thinking
           - Qwen/QwQ-32B
           - qwen2-72b-instruct
           - qwen2-7b-instruct
@@ -1353,6 +1366,7 @@ endpoints:
           - sf/zai-org/GLM-4.5
           - sf/zai-org/GLM-4.5-Air
           - sf/zai-org/GLM-4.5V
+          - sf/zai-org/GLM-4.6
           - sonar
           - sonar-deep-research
           - sonar-pro
@@ -1368,8 +1382,10 @@ endpoints:
           - sophnet/DeepSeek-V3-Fast
           - sophnet/DeepSeek-V3.1
           - sophnet/DeepSeek-V3.1-Fast
+          - sophnet/DeepSeek-V3.2-Exp
           - sophnet/GLM-4.5
           - sophnet/GLM-4.5V
+          - sophnet/GLM-4.6
           - sophnet/Kimi-K2
           - sophnet/Kimi-K2-0905
           - sophnet/LongCat-Flash-Chat
@@ -1477,6 +1493,7 @@ endpoints:
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
           - claude-4-sonnet
+          - claude-haiku-4-5
           - claude-instant-v1
           - claude-opus-4
           - claude-opus-4-1
@@ -1586,6 +1603,7 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
+          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1679,12 +1697,15 @@ endpoints:
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
+          - gpt-5-image
           - gpt-5-mini
           - gpt-5-mini-2025-08-07
           - gpt-5-nano
           - gpt-5-nano-2025-08-07
           - gpt-5-pro
           - gpt-5-pro-2025-10-06
+          - gpt-5-search-api
+          - gpt-5-search-api-2025-10-14
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -1749,6 +1770,7 @@ endpoints:
           - learnlm-1-5-pro-experimental
           - lfm-3b
           - lfm-7b
+          - ling-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-chat-v1
@@ -1862,6 +1884,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1995,6 +2018,8 @@ endpoints:
           - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
+          - qwen-3-vl-4b-instruct
+          - qwen-3-vl-8b-instruct
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -2005,7 +2030,6 @@ endpoints:
           - qwq-32b
           - qwq-32b-arliai-rpr
           - qwq-32b-arliai-rpr-v1
-          - r1-1776
           - reasoners
           - refuel-llm-v2-small
           - reka-flash-3
@@ -2014,6 +2038,7 @@ endpoints:
           - rocinante-12b
           - router
           - sarvam-m
+          - seed-1-6-250915
           - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
@@ -2074,7 +2099,6 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
-          - anubis-pro-105b-v1
           - asi1-mini
           - azure-gpt-4-turbo
           - azure-gpt-4o
@@ -2101,6 +2125,7 @@ endpoints:
           - claude-3-7-sonnet-thinking:32768
           - claude-3-7-sonnet-thinking:8192
           - claude-3-opus-20240229
+          - claude-haiku-4-5-20251001
           - claude-opus-4-1-20250805
           - claude-opus-4-1-thinking
           - claude-opus-4-1-thinking:1024
@@ -2261,7 +2286,7 @@ endpoints:
           - hunyuan-turbos-20250226
           - inclusionai/ling-1t
           - inclusionAI/Ling-flash-2.0
-          - inclusionai/ring-1t-preview
+          - inclusionai/ring-1t
           - inclusionAI/Ring-flash-2.0
           - Infermatic/MN-12B-Inferor-v0.0
           - inflatebot/MN-12B-Mag-Mell-R1
@@ -2282,8 +2307,6 @@ endpoints:
           - Llama-3.3+(3.1v3.3)-70B-New-Dawn-v1.1
           - Llama-3.3+(3v3.3)-70B-TenyxChat-DaybreakStorywriter
           - Llama-3.3-70B-Anthrobomination
-          - Llama-3.3-70B-Anubis-v1
-          - Llama-3.3-70B-Anubis-v1.1
           - Llama-3.3-70B-Argunaut-1-SFT
           - Llama-3.3-70B-ArliAI-RPMax-v1.4
           - Llama-3.3-70B-ArliAI-RPMax-v2
@@ -2292,7 +2315,6 @@ endpoints:
           - Llama-3.3-70B-Bigger-Body
           - Llama-3.3-70B-Cirrus-x1
           - Llama-3.3-70B-Cu-Mai-R1
-          - Llama-3.3-70B-Damascus-R1
           - Llama-3.3-70B-Dark-Ages-v0.1
           - Llama-3.3-70B-Electra-R1
           - Llama-3.3-70B-Electranova-v1.0
@@ -2357,7 +2379,6 @@ endpoints:
           - moonshotai/Kimi-K2-Instruct-0905
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
           - NeverSleep/Lumimaid-v0.2-70B
-          - Nexusflow/Athene-V2-Chat
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - nousresearch/hermes-3-llama-3.1-405b
@@ -2392,7 +2413,6 @@ endpoints:
           - openai/o1-pro
           - OpenGVLab/InternVL3-78B
           - pamanseau/OpenReasoning-Nemotron-32B
-          - parasail-drummer-anubis-70b-1-1
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qvq-max
@@ -2415,23 +2435,12 @@ endpoints:
           - qwen/qwen3-max
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-VL-235B-A22B-Instruct
-          - Qwen/QwQ-32B-Preview
           - qwen/qwq-32b-preview
           - Qwen2.5-32B-EVA-v0.2
-          - Qwen2.5-72B-Chuluun-v0.08
-          - Qwen2.5-72B-Doctor-Kunou
-          - Qwen2.5-72B-Eva-Mindlink
-          - Qwen2.5-72B-Evathene-v1.2
-          - Qwen2.5-72B-Evathene-v1.3
-          - Qwen2.5-72B-Instruct
-          - Qwen2.5-72B-Instruct-Abliterated
-          - Qwen2.5-72B-Instruct-Malaysian
-          - Qwen2.5-72B-Magnum-v4
-          - Qwen2.5-72B-spiral-da-HYAH
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
-          - qwen3-vl-235b-a22b-instruct
+          - qwen3-vl-235b-a22b-instruct-original
           - qwen3-vl-235b-a22b-thinking
           - qwq-32b
           - QwQ-32B-ArliAI-RpR-v1
@@ -2474,6 +2483,7 @@ endpoints:
           - TEE/qwen2-5-72b
           - TEE/qwen3-coder
           - TheDrummer/Anubis-70B-v1
+          - TheDrummer/Anubis-70B-v1.1
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Cydonia-24B-v4
           - TheDrummer/Cydonia-24B-v4.1
@@ -2555,6 +2565,7 @@ endpoints:
           - anthropic/claude-3.5-sonnet-20240620
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:thinking
+          - anthropic/claude-haiku-4.5
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
           - anthropic/claude-sonnet-4
@@ -2756,6 +2767,7 @@ endpoints:
           - openai/gpt-5
           - openai/gpt-5-chat
           - openai/gpt-5-codex
+          - openai/gpt-5-image
           - openai/gpt-5-mini
           - openai/gpt-5-nano
           - openai/gpt-5-pro
@@ -2767,13 +2779,14 @@ endpoints:
           - openai/o1-mini-2024-09-12
           - openai/o1-pro
           - openai/o3
+          - openai/o3-deep-research
           - openai/o3-mini
           - openai/o3-mini-high
           - openai/o3-pro
           - openai/o4-mini
+          - openai/o4-mini-deep-research
           - openai/o4-mini-high
           - opengvlab/internvl3-78b
-          - perplexity/r1-1776
           - perplexity/sonar
           - perplexity/sonar-deep-research
           - perplexity/sonar-pro
@@ -2823,6 +2836,8 @@ endpoints:
           - qwen/qwen3-vl-235b-a22b-thinking
           - qwen/qwen3-vl-30b-a3b-instruct
           - qwen/qwen3-vl-30b-a3b-thinking
+          - qwen/qwen3-vl-8b-instruct
+          - qwen/qwen3-vl-8b-thinking
           - qwen/qwq-32b
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
@@ -2878,68 +2893,49 @@ endpoints:
           - alibaba/qwen-plus
           - alibaba/qwen-turbo
           - alibaba/qwen3-30b-a3b-instruct-2507
+          - alibaba/qwen3-coder-flash
           - alibaba/qwen3-coder-plus
-          - alibaba/qwen3-max-preview
+          - alibaba/qwen3-max
           - anthropic/claude-3-5-haiku-20241022
-          - anthropic/claude-3-5-haiku-latest
           - anthropic/claude-3-5-sonnet-20240620
           - anthropic/claude-3-5-sonnet-20241022
-          - anthropic/claude-3-5-sonnet-latest
           - anthropic/claude-3-7-sonnet-20250219
-          - anthropic/claude-3-7-sonnet-latest
           - anthropic/claude-3-haiku-20240307
           - anthropic/claude-3-opus-20240229
-          - anthropic/claude-3-opus-latest
-          - anthropic/claude-opus-4
-          - anthropic/claude-opus-4-1
+          - anthropic/claude-haiku-4-5-20251001
           - anthropic/claude-opus-4-1-20250805
           - anthropic/claude-opus-4-20250514
-          - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4-20250514
           - anthropic/claude-sonnet-4-20250514-1m
-          - anthropic/claude-sonnet-4-5
           - anthropic/claude-sonnet-4-5-20250929
           - azure/gpt-4.1
           - azure/gpt-4.1-mini
           - azure/gpt-4.1-mini@eastus2
           - azure/gpt-4.1-mini@francecentral
           - azure/gpt-4.1-mini@swedencentral
+          - azure/gpt-4.1-mini@uksouth
           - azure/gpt-4.1-mini@westus3
           - azure/gpt-4.1-nano
           - azure/gpt-4.1-nano@eastus2
           - azure/gpt-4.1-nano@francecentral
           - azure/gpt-4.1-nano@swedencentral
+          - azure/gpt-4.1-nano@uksouth
           - azure/gpt-4.1-nano@westus3
           - azure/gpt-4.1@eastus2
           - azure/gpt-4.1@francecentral
           - azure/gpt-4.1@swedencentral
+          - azure/gpt-4.1@uksouth
           - azure/gpt-4.1@westus3
+          - azure/gpt-5
+          - azure/gpt-5@eastus2
+          - azure/gpt-5@swedencentral
+          - azure/gpt-5@uksouth
           - azure/o4-mini
           - azure/o4-mini@eastus2
           - azure/o4-mini@francecentral
           - azure/o4-mini@swedencentral
+          - azure/o4-mini@uksouth
           - azure/o4-mini@westus3
-          - azure/openai/gpt-4.1
-          - azure/openai/gpt-4.1-mini
-          - azure/openai/gpt-4.1-mini@eastus2
-          - azure/openai/gpt-4.1-mini@francecentral
-          - azure/openai/gpt-4.1-mini@swedencentral
-          - azure/openai/gpt-4.1-mini@westus3
-          - azure/openai/gpt-4.1-nano
-          - azure/openai/gpt-4.1-nano@eastus2
-          - azure/openai/gpt-4.1-nano@francecentral
-          - azure/openai/gpt-4.1-nano@swedencentral
-          - azure/openai/gpt-4.1-nano@westus3
-          - azure/openai/gpt-4.1@eastus2
-          - azure/openai/gpt-4.1@francecentral
-          - azure/openai/gpt-4.1@swedencentral
-          - azure/openai/gpt-4.1@westus3
-          - azure/openai/o4-mini
-          - azure/openai/o4-mini@eastus2
-          - azure/openai/o4-mini@francecentral
-          - azure/openai/o4-mini@swedencentral
-          - azure/openai/o4-mini@westus3
-          - bedrock/anthropic/claude-3-7-sonnet
           - bedrock/anthropic/claude-3-7-sonnet-20250219
           - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-central-1
           - bedrock/anthropic/claude-3-7-sonnet-20250219@eu-north-1
@@ -2948,34 +2944,10 @@ endpoints:
           - bedrock/anthropic/claude-3-7-sonnet-20250219@us-east-1
           - bedrock/anthropic/claude-3-7-sonnet-20250219@us-east-2
           - bedrock/anthropic/claude-3-7-sonnet-20250219@us-west-2
-          - bedrock/anthropic/claude-3-7-sonnet-latest
-          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-central-1
-          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-north-1
-          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-west-1
-          - bedrock/anthropic/claude-3-7-sonnet-latest@eu-west-3
-          - bedrock/anthropic/claude-3-7-sonnet-latest@us-east-1
-          - bedrock/anthropic/claude-3-7-sonnet-latest@us-east-2
-          - bedrock/anthropic/claude-3-7-sonnet-latest@us-west-2
-          - bedrock/anthropic/claude-3-7-sonnet@eu-central-1
-          - bedrock/anthropic/claude-3-7-sonnet@eu-north-1
-          - bedrock/anthropic/claude-3-7-sonnet@eu-west-1
-          - bedrock/anthropic/claude-3-7-sonnet@eu-west-3
-          - bedrock/anthropic/claude-3-7-sonnet@us-east-1
-          - bedrock/anthropic/claude-3-7-sonnet@us-east-2
-          - bedrock/anthropic/claude-3-7-sonnet@us-west-2
-          - bedrock/anthropic/claude-4-opus
           - bedrock/anthropic/claude-4-opus-20250514
           - bedrock/anthropic/claude-4-opus-20250514@us-east-1
           - bedrock/anthropic/claude-4-opus-20250514@us-east-2
           - bedrock/anthropic/claude-4-opus-20250514@us-west-2
-          - bedrock/anthropic/claude-4-opus-latest
-          - bedrock/anthropic/claude-4-opus-latest@us-east-1
-          - bedrock/anthropic/claude-4-opus-latest@us-east-2
-          - bedrock/anthropic/claude-4-opus-latest@us-west-2
-          - bedrock/anthropic/claude-4-opus@us-east-1
-          - bedrock/anthropic/claude-4-opus@us-east-2
-          - bedrock/anthropic/claude-4-opus@us-west-2
-          - bedrock/anthropic/claude-4-sonnet
           - bedrock/anthropic/claude-4-sonnet-20250514
           - bedrock/anthropic/claude-4-sonnet-20250514@eu-central-1
           - bedrock/anthropic/claude-4-sonnet-20250514@eu-north-1
@@ -2984,42 +2956,6 @@ endpoints:
           - bedrock/anthropic/claude-4-sonnet-20250514@us-east-1
           - bedrock/anthropic/claude-4-sonnet-20250514@us-east-2
           - bedrock/anthropic/claude-4-sonnet-20250514@us-west-2
-          - bedrock/anthropic/claude-4-sonnet-latest
-          - bedrock/anthropic/claude-4-sonnet-latest@eu-central-1
-          - bedrock/anthropic/claude-4-sonnet-latest@eu-north-1
-          - bedrock/anthropic/claude-4-sonnet-latest@eu-west-1
-          - bedrock/anthropic/claude-4-sonnet-latest@eu-west-3
-          - bedrock/anthropic/claude-4-sonnet-latest@us-east-1
-          - bedrock/anthropic/claude-4-sonnet-latest@us-east-2
-          - bedrock/anthropic/claude-4-sonnet-latest@us-west-2
-          - bedrock/anthropic/claude-4-sonnet@eu-central-1
-          - bedrock/anthropic/claude-4-sonnet@eu-north-1
-          - bedrock/anthropic/claude-4-sonnet@eu-west-1
-          - bedrock/anthropic/claude-4-sonnet@eu-west-3
-          - bedrock/anthropic/claude-4-sonnet@us-east-1
-          - bedrock/anthropic/claude-4-sonnet@us-east-2
-          - bedrock/anthropic/claude-4-sonnet@us-west-2
-          - bedrock/claude-3-7-sonnet
-          - bedrock/claude-3-7-sonnet@eu-central-1
-          - bedrock/claude-3-7-sonnet@eu-north-1
-          - bedrock/claude-3-7-sonnet@eu-west-1
-          - bedrock/claude-3-7-sonnet@eu-west-3
-          - bedrock/claude-3-7-sonnet@us-east-1
-          - bedrock/claude-3-7-sonnet@us-east-2
-          - bedrock/claude-3-7-sonnet@us-west-2
-          - bedrock/claude-4-opus
-          - bedrock/claude-4-opus@us-east-1
-          - bedrock/claude-4-opus@us-east-2
-          - bedrock/claude-4-opus@us-west-2
-          - bedrock/claude-4-sonnet
-          - bedrock/claude-4-sonnet@eu-central-1
-          - bedrock/claude-4-sonnet@eu-north-1
-          - bedrock/claude-4-sonnet@eu-west-1
-          - bedrock/claude-4-sonnet@eu-west-3
-          - bedrock/claude-4-sonnet@us-east-1
-          - bedrock/claude-4-sonnet@us-east-2
-          - bedrock/claude-4-sonnet@us-west-2
-          - coding/claude-3-7-sonnet
           - coding/claude-3-7-sonnet-20250219
           - coding/claude-3-7-sonnet-20250219:1024
           - coding/claude-3-7-sonnet-20250219:16384
@@ -3029,16 +2965,6 @@ endpoints:
           - coding/claude-3-7-sonnet-20250219:low
           - coding/claude-3-7-sonnet-20250219:max
           - coding/claude-3-7-sonnet-20250219:medium
-          - coding/claude-3-7-sonnet:1024
-          - coding/claude-3-7-sonnet:16384
-          - coding/claude-3-7-sonnet:64000
-          - coding/claude-3-7-sonnet:8192
-          - coding/claude-3-7-sonnet:high
-          - coding/claude-3-7-sonnet:low
-          - coding/claude-3-7-sonnet:max
-          - coding/claude-3-7-sonnet:medium
-          - coding/claude-4-opus
-          - coding/claude-4-sonnet
           - coding/claude-opus-4-20250514
           - coding/claude-sonnet-4-20250514
           - coding/gemini-2.5-flash
@@ -3172,58 +3098,46 @@ endpoints:
           - novita/zai-org/glm-4.5
           - novita/zai-org/glm-4.6
           - openai-responses/gpt-5-codex
+          - openai-responses/gpt-5-mini
+          - openai-responses/gpt-5-nano
           - openai-responses/gpt-5-pro
-          - openai-responses/gpt-5-pro-2025-10-06
-          - openai/chatgpt-4o-latest
+          - openai-responses/o3-mini
+          - openai-responses/o3-pro
+          - openai-responses/o4-mini
+          - openai/chatgpt-4o
           - openai/gpt-4.1
-          - openai/gpt-4.1-2025-04-14
           - openai/gpt-4.1-mini
-          - openai/gpt-4.1-mini-2025-04-14
           - openai/gpt-4.1-nano
-          - openai/gpt-4.1-nano-2025-04-14
           - openai/gpt-4o
           - openai/gpt-4o-2024-05-13
           - openai/gpt-4o-2024-08-06
           - openai/gpt-4o-2024-11-20
           - openai/gpt-4o-mini
-          - openai/gpt-4o-mini-2024-07-18
           - openai/gpt-5
-          - openai/gpt-5-2025-08-07
           - openai/gpt-5-chat
-          - openai/gpt-5-chat-latest
           - openai/gpt-5-mini
-          - openai/gpt-5-mini-2025-08-07
           - openai/gpt-5-mini:flex
           - openai/gpt-5-mini:priority
           - openai/gpt-5-nano
-          - openai/gpt-5-nano-2025-08-07
           - openai/gpt-5-nano:flex
           - openai/gpt-5:flex
           - openai/gpt-5:priority
           - openai/o1
-          - openai/o1-2024-12-17
           - openai/o1-mini
-          - openai/o1-mini-2024-09-12
+          - openai/o1-pro
           - openai/o1:high
           - openai/o1:low
           - openai/o1:medium
           - openai/o3
-          - openai/o3-2025-04-16
+          - openai/o3-deep-research
           - openai/o3-mini
-          - openai/o3-mini-2025-01-31
-          - openai/o3-mini-2025-01-31:high
-          - openai/o3-mini-2025-01-31:low
-          - openai/o3-mini-2025-01-31:medium
           - openai/o3-mini:high
           - openai/o3-mini:low
           - openai/o3-mini:medium
           - openai/o3-pro
           - openai/o3:flex
           - openai/o4-mini
-          - openai/o4-mini-2025-04-16
-          - openai/o4-mini-2025-04-16:high
-          - openai/o4-mini-2025-04-16:low
-          - openai/o4-mini-2025-04-16:medium
+          - openai/o4-mini-deep-research
           - openai/o4-mini:flex
           - openai/o4-mini:high
           - openai/o4-mini:low
@@ -3272,60 +3186,24 @@ endpoints:
           - together/meta-llama/Meta-Llama-Guard-3-8B
           - together/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - together/upstage/SOLAR-10.7B-Instruct-v1.0
-          - vertex/anthropic/claude-3-5-sonnet
           - vertex/anthropic/claude-3-5-sonnet-20241022
           - vertex/anthropic/claude-3-5-sonnet-20241022@europe-west1
           - vertex/anthropic/claude-3-5-sonnet-20241022@us-east5
-          - vertex/anthropic/claude-3-5-sonnet-latest
-          - vertex/anthropic/claude-3-5-sonnet-latest@europe-west1
-          - vertex/anthropic/claude-3-5-sonnet-latest@us-east5
-          - vertex/anthropic/claude-3-5-sonnet@europe-west1
-          - vertex/anthropic/claude-3-5-sonnet@us-east5
-          - vertex/anthropic/claude-3-7-sonnet
           - vertex/anthropic/claude-3-7-sonnet-20250219
           - vertex/anthropic/claude-3-7-sonnet-20250219@europe-west1
           - vertex/anthropic/claude-3-7-sonnet-20250219@us-east5
-          - vertex/anthropic/claude-3-7-sonnet-latest
-          - vertex/anthropic/claude-3-7-sonnet-latest@europe-west1
-          - vertex/anthropic/claude-3-7-sonnet-latest@us-east5
-          - vertex/anthropic/claude-3-7-sonnet@europe-west1
-          - vertex/anthropic/claude-3-7-sonnet@us-east5
           - vertex/anthropic/claude-4-1-opus
           - vertex/anthropic/claude-4-1-opus@europe-west1
           - vertex/anthropic/claude-4-1-opus@us-east5
           - vertex/anthropic/claude-4-5-sonnet
-          - vertex/anthropic/claude-4-5-sonnet-latest
-          - vertex/anthropic/claude-4-5-sonnet-latest@europe-west1
-          - vertex/anthropic/claude-4-5-sonnet-latest@us-east5
           - vertex/anthropic/claude-4-5-sonnet@europe-west1
           - vertex/anthropic/claude-4-5-sonnet@us-east5
           - vertex/anthropic/claude-4-opus
           - vertex/anthropic/claude-4-opus@europe-west1
           - vertex/anthropic/claude-4-opus@us-east5
           - vertex/anthropic/claude-4-sonnet
-          - vertex/anthropic/claude-4-sonnet-latest
-          - vertex/anthropic/claude-4-sonnet-latest@europe-west1
-          - vertex/anthropic/claude-4-sonnet-latest@us-east5
           - vertex/anthropic/claude-4-sonnet@europe-west1
           - vertex/anthropic/claude-4-sonnet@us-east5
-          - vertex/claude-3-5-sonnet
-          - vertex/claude-3-5-sonnet@europe-west1
-          - vertex/claude-3-5-sonnet@us-east5
-          - vertex/claude-3-7-sonnet
-          - vertex/claude-3-7-sonnet@europe-west1
-          - vertex/claude-3-7-sonnet@us-east5
-          - vertex/claude-4-1-opus
-          - vertex/claude-4-1-opus@europe-west1
-          - vertex/claude-4-1-opus@us-east5
-          - vertex/claude-4-5-sonnet
-          - vertex/claude-4-5-sonnet@europe-west1
-          - vertex/claude-4-5-sonnet@us-east5
-          - vertex/claude-4-opus
-          - vertex/claude-4-opus@europe-west1
-          - vertex/claude-4-opus@us-east5
-          - vertex/claude-4-sonnet
-          - vertex/claude-4-sonnet@europe-west1
-          - vertex/claude-4-sonnet@us-east5
           - vertex/google/gemini-2.5-flash
           - vertex/google/gemini-2.5-flash-image-preview
           - vertex/google/gemini-2.5-flash@europe-central2
@@ -3415,6 +3293,7 @@ endpoints:
           - deepseek-v3.1@replicate
           - deepseek-v3.1@together-ai
           - deepseek-v3.1@vertex-ai
+          - deepseek-v3.2@deepinfra
           - deepseek-v3@deepinfra
           - deepseek-v3@deepseek
           - deepseek-v3@fireworks-ai
@@ -3513,13 +3392,13 @@ endpoints:
           - mistral-large@mistral-ai
           - mistral-large@vertex-ai
           - mistral-medium@mistral-ai
+          - mistral-medium@vertex-ai
           - mistral-small@deepinfra
           - mistral-small@mistral-ai
           - mistral-small@together-ai
           - mistral-small@vertex-ai
           - mixtral-8x7b-instruct-v0.1@deepinfra
           - o1-mini@openai
-          - o1-pro@openai
           - o1@openai
           - o3-mini@openai
           - o3@openai
@@ -3533,7 +3412,6 @@ endpoints:
           - qwen-3-235b-a22b-instruct@fireworks-ai
           - qwen-3-235b-a22b-instruct@together-ai
           - qwen-3-30b-a3b-instruct@deepinfra
-          - qwen-qwq-32b@deepinfra
           - qwen-qwq-32b@together-ai
         fetch: false
       titleConvo: true
