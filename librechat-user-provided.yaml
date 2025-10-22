@@ -1,4 +1,4 @@
-version: 1.2.9.xxxxx
+version: 1.3.0.20251022
 interface:
   cache: true
   privacyPolicy:
@@ -88,22 +88,47 @@ endpoints:
           - devstral-small-latest
           - magistral-medium-2506
           - magistral-medium-2507
+          - magistral-medium-2509
+          - magistral-medium-latest
           - magistral-small-2506
+          - magistral-small-2507
+          - magistral-small-2509
+          - magistral-small-latest
           - ministral-8b-2410
           - ministral-8b-latest
+          - mistral-large-2407
           - mistral-large-2411
           - mistral-large-latest
+          - mistral-large-pixtral-2411
+          - mistral-medium
           - mistral-medium-2505
+          - mistral-medium-2508
+          - mistral-medium-latest
+          - mistral-ocr-2503
+          - mistral-ocr-2505
+          - mistral-ocr-latest
+          - mistral-small
+          - mistral-small-2312
           - mistral-small-2409
           - mistral-small-2501
           - mistral-small-2503
           - mistral-small-2506
           - mistral-small-latest
+          - mistral-tiny
+          - mistral-tiny-2312
+          - mistral-tiny-2407
+          - mistral-tiny-latest
+          - open-mistral-7b
+          - open-mistral-nemo
+          - open-mistral-nemo-2407
           - open-mixtral-8x22b
           - open-mixtral-8x22b-2404
+          - open-mixtral-8x7b
           - pixtral-12b
           - pixtral-12b-2409
           - pixtral-12b-latest
+          - pixtral-large-2411
+          - pixtral-large-latest
           - voxtral-mini-2507
           - voxtral-mini-latest
           - voxtral-mini-transcribe-2507
@@ -267,6 +292,8 @@ endpoints:
       baseURL: https://api.deepinfra.com/v1/openai
       models:
         default:
+          - allenai/olmOCR-2
+          - allenai/olmOCR-2-7B-1025
           - allenai/olmOCR-7B-0725-FP8
           - allenai/olmOCR-7B-0825
           - allenai/olmOCR-7B-1025
@@ -421,6 +448,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-v3p1-terminus
           - accounts/fireworks/models/glm-4p5
           - accounts/fireworks/models/glm-4p5-air
+          - accounts/fireworks/models/glm-4p6
           - accounts/fireworks/models/gpt-oss-120b
           - accounts/fireworks/models/gpt-oss-20b
           - accounts/fireworks/models/kimi-k2-instruct
@@ -493,9 +521,7 @@ endpoints:
           - baidu/ERNIE-4.5-VL-28B-A3B-PT
           - baidu/ERNIE-4.5-VL-424B-A47B-Base-PT
           - CohereLabs/aya-expanse-32b
-          - CohereLabs/aya-expanse-8b
           - CohereLabs/aya-vision-32b
-          - CohereLabs/aya-vision-8b
           - CohereLabs/c4ai-command-a-03-2025
           - CohereLabs/c4ai-command-r-08-2024
           - CohereLabs/c4ai-command-r7b-12-2024
@@ -580,6 +606,9 @@ endpoints:
           - Qwen/Qwen3-Next-80B-A3B-Thinking
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen/Qwen3-VL-235B-A22B-Thinking
+          - Qwen/Qwen3-VL-30B-A3B-Instruct
+          - Qwen/Qwen3-VL-30B-A3B-Thinking
+          - Qwen/Qwen3-VL-8B-Instruct
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Sao10K/L3-70B-Euryale-v2.1
@@ -595,7 +624,6 @@ endpoints:
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air-FP8
           - zai-org/GLM-4.5V
-          - zai-org/GLM-4.5V-FP8
           - zai-org/GLM-4.6
           - zai-org/GLM-4.6-FP8
         fetch: false
@@ -759,12 +787,16 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-235b-a22b-thinking
+          - qwen/qwen3-vl-30b-a3b-instruct
+          - qwen/qwen3-vl-30b-a3b-thinking
+          - qwen/qwen3-vl-8b-instruct
           - sao10k/l3-70b-euryale-v2.1
           - sao10k/l3-8b-lunaris
           - Sao10K/L3-8B-Stheno-v3.2
           - sao10k/l31-70b-euryale-v2.2
           - thudm/glm-4.1v-9b-thinking
           - zai-org/glm-4.5
+          - zai-org/glm-4.5-air
           - zai-org/glm-4.5v
           - zai-org/glm-4.6
         fetch: false
@@ -1331,6 +1363,7 @@ endpoints:
           - qwq-32b
           - qwq-32b-preview
           - qwq-plus
+          - s1
           - SenseChat-5
           - SenseChat-Turbo
           - SenseNova-V6-5-Pro
@@ -1434,6 +1467,7 @@ endpoints:
           - aion-1-0
           - aion-1-0-mini
           - aion-rp-llama-3-1-8b
+          - andromeda-alpha
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
@@ -1689,6 +1723,7 @@ endpoints:
           - gpt-oss-120b-turbo
           - gpt-oss-20b
           - gpt-oss-20b-1
+          - granite-4-0-h-micro
           - grok-2
           - grok-2-latest
           - grok-2-vision
@@ -1746,8 +1781,6 @@ endpoints:
           - l3-lunaris-8b
           - large-context
           - learnlm-1-5-pro-experimental
-          - lfm-3b
-          - lfm-7b
           - ling-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
@@ -1815,7 +1848,6 @@ endpoints:
           - llama-guard-3-8b-dc-1-baf-04
           - llama-guard-4-12b
           - llama-guard-7b
-          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
@@ -1916,6 +1948,7 @@ endpoints:
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
           - olmo-2-0325-32b-instruct
+          - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0725-fp8
           - olmocr-7b-0825
@@ -2532,7 +2565,6 @@ endpoints:
           - alfredpros/codellama-7b-instruct-solidity
           - alibaba/tongyi-deepresearch-30b-a3b
           - alibaba/tongyi-deepresearch-30b-a3b:free
-          - allenai/molmo-7b-d
           - allenai/olmo-2-0325-32b-instruct
           - alpindale/goliath-120b
           - amazon/nova-lite-v1
@@ -2624,14 +2656,13 @@ endpoints:
           - google/gemma-3n-e4b-it
           - google/gemma-3n-e4b-it:free
           - gryphe/mythomax-l2-13b
+          - ibm-granite/granite-4.0-h-micro
           - inception/mercury
           - inception/mercury-coder
           - inclusionai/ling-1t
           - inclusionai/ring-1t
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
-          - liquid/lfm-3b
-          - liquid/lfm-7b
           - mancer/weaver
           - meituan/longcat-flash-chat
           - meituan/longcat-flash-chat:free
@@ -2774,6 +2805,7 @@ endpoints:
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
           - opengvlab/internvl3-78b
+          - openrouter/andromeda-alpha
           - perplexity/sonar
           - perplexity/sonar-deep-research
           - perplexity/sonar-pro
@@ -2796,7 +2828,6 @@ endpoints:
           - qwen/qwen2.5-vl-32b-instruct
           - qwen/qwen2.5-vl-32b-instruct:free
           - qwen/qwen2.5-vl-72b-instruct
-          - qwen/qwen2.5-vl-72b-instruct:free
           - qwen/qwen3-14b
           - qwen/qwen3-14b:free
           - qwen/qwen3-235b-a22b
@@ -2914,6 +2945,14 @@ endpoints:
           - azure/gpt-4.1@uksouth
           - azure/gpt-4.1@westus3
           - azure/gpt-5
+          - azure/gpt-5-mini
+          - azure/gpt-5-mini@eastus2
+          - azure/gpt-5-mini@swedencentral
+          - azure/gpt-5-mini@uksouth
+          - azure/gpt-5-nano
+          - azure/gpt-5-nano@eastus2
+          - azure/gpt-5-nano@swedencentral
+          - azure/gpt-5-nano@uksouth
           - azure/gpt-5@eastus2
           - azure/gpt-5@swedencentral
           - azure/gpt-5@uksouth
@@ -3267,6 +3306,10 @@ endpoints:
           - claude-4.1-opus@anthropic
           - claude-4.1-opus@aws-bedrock
           - claude-4.1-opus@vertex-ai
+          - claude-4.5-haiku@anthropic
+          - claude-4.5-haiku@aws-bedrock
+          - claude-4.5-haiku@replicate
+          - claude-4.5-haiku@vertex-ai
           - claude-4.5-sonnet@anthropic
           - claude-4.5-sonnet@aws-bedrock
           - claude-4.5-sonnet@replicate
@@ -3390,7 +3433,6 @@ endpoints:
           - mistral-small@together-ai
           - mistral-small@vertex-ai
           - mixtral-8x7b-instruct-v0.1@deepinfra
-          - o1-mini@openai
           - o1@openai
           - o3-mini@openai
           - o3@openai
