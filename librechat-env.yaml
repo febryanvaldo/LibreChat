@@ -1,4 +1,4 @@
-version: 1.3.0.20251101
+version: 1.3.0.20251104
 interface:
   cache: true
   privacyPolicy:
@@ -198,7 +198,6 @@ endpoints:
         default:
           - gpt-oss-120b
           - llama-3.3-70b
-          - llama-4-scout-17b-16e-instruct
           - llama3.1-8b
           - qwen-3-235b-a22b-instruct-2507
           - qwen-3-235b-a22b-thinking-2507
@@ -323,7 +322,6 @@ endpoints:
           - meta-llama/Llama-3.3-70B-Instruct-Turbo
           - meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - meta-llama/Llama-4-Scout-17B-16E-Instruct
-          - meta-llama/Llama-Guard-3-8B
           - meta-llama/Llama-Guard-4-12B
           - meta-llama/Meta-Llama-3-8B-Instruct
           - meta-llama/Meta-Llama-3.1-70B-Instruct
@@ -360,11 +358,6 @@ endpoints:
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen/Qwen3-VL-30B-A3B-Instruct
-          - Qwen/Qwen3-VL-30B-A3B-Thinking
-          - Qwen/Qwen3-VL-4B-Instruct
-          - Qwen/Qwen3-VL-4B-Thinking
-          - Qwen/Qwen3-VL-8B-Instruct
-          - Qwen/Qwen3-VL-8B-Thinking
           - Sao10K/L3-8B-Lunaris-v1-Turbo
           - Sao10K/L3.1-70B-Euryale-v2.2
           - Sao10K/L3.3-70B-Euryale-v2.3
@@ -497,7 +490,6 @@ endpoints:
           - google/gemma-3-27b-it
           - HuggingFaceTB/SmolLM3-3B
           - katanemo/Arch-Router-1.5B
-          - Kwaipilot/KAT-Dev
           - marin-community/marin-8b-instruct
           - meta-llama/Llama-3.1-405B-Instruct
           - meta-llama/Llama-3.1-70B-Instruct
@@ -702,7 +694,6 @@ endpoints:
           - google/gemma-3-27b-it
           - gryphe/mythomax-l2-13b
           - kat-coder
-          - kwaipilot/kat-dev
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-8b-instruct
@@ -778,7 +769,6 @@ endpoints:
           - hf:moonshotai/Kimi-K2-Instruct
           - hf:moonshotai/Kimi-K2-Instruct-0905
           - hf:openai/gpt-oss-120b
-          - hf:Qwen/Qwen2.5-Coder-32B-Instruct
           - hf:Qwen/Qwen3-235B-A22B-Instruct-2507
           - hf:Qwen/Qwen3-235B-A22B-Thinking-2507
           - hf:Qwen/Qwen3-Coder-480B-A35B-Instruct
@@ -948,6 +938,7 @@ endpoints:
           - coder-claude-3-5-sonnet-20240620
           - coder-claude-3-5-sonnet-20241022
           - codex-mini-latest
+          - deepseek-ai/DeepSeek-OCR
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
@@ -1118,22 +1109,13 @@ endpoints:
           - gpt-5-thinking
           - gpt-oss-120b
           - gpt-oss-20b
-          - grok-2-1212
           - grok-2-vision-1212
           - grok-3
-          - grok-3-beta
-          - grok-3-deepsearch
-          - grok-3-fast-beta
-          - grok-3-mini-beta
-          - grok-3-mini-fast-beta
-          - grok-3-reasoner
-          - grok-4
+          - grok-3-mini
           - grok-4-0709
           - grok-4-fast-non-reasoning
           - grok-4-fast-reasoning
-          - grok-beta
           - grok-code-fast-1
-          - grok-vision-beta
           - hunyuan-code
           - hunyuan-functioncall
           - hunyuan-lite
@@ -1157,7 +1139,6 @@ endpoints:
           - KAT-Coder-Pro-V1
           - kimi-k2-0711-preview
           - kimi-k2-0905-preview
-          - kimi-k2-0905-turbo-preview
           - kimi-k2-250711
           - kimi-k2-turbo-preview
           - kimi-latest
@@ -1435,6 +1416,7 @@ endpoints:
           - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
+          - claude-3-5-sonnet-20240620-v1
           - claude-3-5-sonnet-20241022-v2
           - claude-3-5-sonnet-latest
           - claude-3-7-sonnet
@@ -1564,7 +1546,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1666,7 +1647,6 @@ endpoints:
           - gpt-5-pro
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
-          - gpt-5-search-api-2025-10-14
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -1807,7 +1787,6 @@ endpoints:
           - magistral-medium-2506
           - magistral-small
           - magistral-small-2506
-          - magnum-v2-72b
           - magnum-v4-72b
           - mai-ds-r1
           - marin-8b-instruct
@@ -2224,7 +2203,9 @@ endpoints:
           - glm-4.1v-thinking-flash
           - glm-4.1v-thinking-flashx
           - GLM-4.5-Air-Iceblink
+          - GLM-4.5-Air-Iceblink:thinking
           - GLM-4.5-Air-Steam-v1
+          - GLM-4.5-Air-Steam-v1:thinking
           - glm-z1-air
           - glm-z1-airx
           - glm-zero-preview
@@ -2354,6 +2335,7 @@ endpoints:
           - moonshotai/Kimi-Dev-72B
           - moonshotai/kimi-k2-instruct-0711
           - moonshotai/Kimi-K2-Instruct-0905
+          - moonshotai/Kimi-Linear-48B-A3B-Instruct
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
           - NeverSleep/Lumimaid-v0.2-70B
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
@@ -2533,7 +2515,6 @@ endpoints:
           - amazon/nova-micro-v1
           - amazon/nova-premier-v1
           - amazon/nova-pro-v1
-          - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - anthropic/claude-3-haiku
           - anthropic/claude-3-opus
@@ -2770,7 +2751,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
-          - openai/text-embedding-3-large
           - opengvlab/internvl3-78b
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2974,7 +2954,6 @@ endpoints:
           - coding/claude-opus-4-20250514
           - coding/claude-sonnet-4-20250514
           - coding/gemini-2.5-flash
-          - coding/gemini-2.5-flash-preview-05-20
           - coding/gemini-2.5-flash@europe-central2
           - coding/gemini-2.5-flash@europe-north1
           - coding/gemini-2.5-flash@europe-west1
@@ -2986,8 +2965,6 @@ endpoints:
           - coding/gemini-2.5-flash@us-south1
           - coding/gemini-2.5-flash@us-west1
           - coding/gemini-2.5-pro
-          - coding/gemini-2.5-pro-preview-03-25
-          - coding/gemini-2.5-pro-preview-05-06
           - coding/gemini-2.5-pro@europe-central2
           - coding/gemini-2.5-pro@europe-north1
           - coding/gemini-2.5-pro@europe-west1
@@ -2998,7 +2975,6 @@ endpoints:
           - coding/gemini-2.5-pro@us-east5
           - coding/gemini-2.5-pro@us-south1
           - coding/gemini-2.5-pro@us-west1
-          - deepinfra/Qwen/QwQ-32B
           - deepinfra/Qwen/Qwen2.5-72B-Instruct
           - deepinfra/Qwen/Qwen2.5-Coder-32B-Instruct
           - deepinfra/Qwen/Qwen3-235B-A22B
@@ -3019,12 +2995,6 @@ endpoints:
           - deepinfra/zai-org/GLM-4.5-Air
           - deepseek/deepseek-chat
           - deepseek/deepseek-reasoner
-          - google/gemini-1.5-flash
-          - google/gemini-1.5-flash-8b
-          - google/gemini-1.5-flash-8b-latest
-          - google/gemini-1.5-flash-latest
-          - google/gemini-1.5-pro
-          - google/gemini-1.5-pro-latest
           - google/gemini-2.0-flash-001
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-lite-preview-06-17
@@ -3033,14 +3003,11 @@ endpoints:
           - groq/moonshotai/kimi-k2-instruct
           - groq/openai/gpt-oss-120b
           - groq/openai/gpt-oss-20b
-          - groq/qwen-qwq-32b
-          - ionstream/moonshotai/Kimi-K2-Instruct-0905
           - minimaxi/MiniMax-M2
           - mistral/codestral-latest
           - mistral/devstral-medium-2507
           - mistral/devstral-small-2507
           - mistral/devstral-small-latest
-          - mistral/magistral-medium-latest
           - mistral/mistral-large-latest
           - mistral/mistral-medium-latest
           - mistral/mistral-small-latest
@@ -3051,9 +3018,7 @@ endpoints:
           - nebius/Qwen/QwQ-32B
           - nebius/Qwen/QwQ-32B-fast
           - nebius/Qwen/Qwen3-Coder-480B-A35B-Instruct
-          - nebius/deepseek-ai/DeepSeek-R1
           - nebius/deepseek-ai/DeepSeek-R1-0528
-          - nebius/deepseek-ai/DeepSeek-R1-fast
           - nebius/deepseek-ai/DeepSeek-V3
           - nebius/deepseek-ai/DeepSeek-V3-0324
           - nebius/deepseek-ai/DeepSeek-V3-0324-fast
@@ -3070,37 +3035,24 @@ endpoints:
           - novita/deepseek/deepseek-v3-0324
           - novita/deepseek/deepseek-v3-turbo
           - novita/deepseek/deepseek_v3
-          - novita/google/gemma-2-9b-it
           - novita/gryphe/mythomax-l2-13b
-          - novita/jondurbin/airoboros-l2-70b
           - novita/meta-llama/llama-3-70b-instruct
           - novita/meta-llama/llama-3-8b-instruct
-          - novita/meta-llama/llama-3.1-70b-instruct
           - novita/meta-llama/llama-3.1-8b-instruct
-          - novita/meta-llama/llama-3.1-8b-instruct-max
-          - novita/meta-llama/llama-3.2-11b-vision-instruct
           - novita/meta-llama/llama-3.2-1b-instruct
           - novita/meta-llama/llama-3.2-3b-instruct
           - novita/meta-llama/llama-3.3-70b-instruct
           - novita/meta-llama/llama-4-maverick-17b-128e-instruct-fp8
           - novita/microsoft/wizardlm-2-8x22b
-          - novita/mistralai/mistral-7b-instruct
           - novita/mistralai/mistral-nemo
           - novita/moonshotai/kimi-k2-instruct
           - novita/nousresearch/hermes-2-pro-llama-3-8b
-          - novita/nousresearch/nous-hermes-llama2-13b
-          - novita/openchat/openchat-7b
-          - novita/qwen/qwen-2-7b-instruct
-          - novita/qwen/qwen-2-vl-72b-instruct
           - novita/qwen/qwen-2.5-72b-instruct
           - novita/qwen/qwen2.5-vl-72b-instruct
           - novita/qwen/qwen3-235b-a22b-fp8
-          - novita/qwen/qwq-32b
           - novita/sao10k/l3-70b-euryale-v2.1
           - novita/sao10k/l3-8b-lunaris
           - novita/sao10k/l31-70b-euryale-v2.2
-          - novita/sophosympatheia/midnight-rose-70b
-          - novita/teknium/openhermes-2.5-mistral-7b
           - novita/zai-org/glm-4.5
           - novita/zai-org/glm-4.6
           - openai-responses/gpt-5-codex
@@ -3129,7 +3081,6 @@ endpoints:
           - openai/gpt-5:flex
           - openai/gpt-5:priority
           - openai/o1
-          - openai/o1-mini
           - openai/o1-pro
           - openai/o1:high
           - openai/o1:low
@@ -3140,7 +3091,6 @@ endpoints:
           - openai/o3-mini:high
           - openai/o3-mini:low
           - openai/o3-mini:medium
-          - openai/o3-pro
           - openai/o3:flex
           - openai/o4-mini
           - openai/o4-mini-deep-research
@@ -3148,50 +3098,32 @@ endpoints:
           - openai/o4-mini:high
           - openai/o4-mini:low
           - openai/o4-mini:medium
-          - parasail/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
-          - parasail/meta-llama/Llama-4-Scout-17B-16E-Instruct
-          - parasail/parasail-anubis-pro
           - parasail/parasail-deepseek-r1
           - parasail/parasail-deepseek-v3-0324
-          - parasail/parasail-eva-25-72b-v02-fp8
           - parasail/parasail-gemma3-27b-it
           - parasail/parasail-glm-45
           - parasail/parasail-kimi-k2-instruct
-          - parasail/parasail-mistral-7b-instruct-03
-          - parasail/parasail-mistral-nemo
           - parasail/parasail-qwen25-vl-72b-instruct
           - parasail/parasail-qwen3-235b-a22b-instruct-2507
-          - parasail/parasail-qwen3-coder-480b-a35b-instruct
           - perplexity/sonar
           - perplexity/sonar-pro
           - perplexity/sonar-reasoning-pro
           - smart/task
-          - together/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
           - together/Qwen/QwQ-32B-Preview
-          - together/Qwen/Qwen2-72B-Instruct
           - together/Qwen/Qwen2.5-72B-Instruct-Turbo
           - together/Qwen/Qwen2.5-7B-Instruct-Turbo
           - together/Qwen/Qwen2.5-Coder-32B-Instruct
           - together/deepseek-ai/DeepSeek-R1
           - together/deepseek-ai/DeepSeek-V3
-          - together/deepseek-llm-67b-chat
-          - together/meta-llama/Llama-2-13b-chat-hf
-          - together/meta-llama/Llama-2-70b-hf
-          - together/meta-llama/Llama-2-7b-chat-hf
           - together/meta-llama/Llama-3-70b-chat-hf
-          - together/meta-llama/Llama-3-8b-chat-hf
           - together/meta-llama/Llama-3.2-3B-Instruct-Turbo
           - together/meta-llama/Llama-3.3-70B-Instruct-Turbo
           - together/meta-llama/LlamaGuard-2-8b
-          - together/meta-llama/Meta-Llama-3-70B-Instruct-Lite
           - together/meta-llama/Meta-Llama-3-70B-Instruct-Turbo
           - together/meta-llama/Meta-Llama-3-8B-Instruct-Lite
-          - together/meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo
           - together/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo
           - together/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
           - together/meta-llama/Meta-Llama-Guard-3-8B
-          - together/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
-          - together/upstage/SOLAR-10.7B-Instruct-v1.0
           - vertex/claude-3-5-sonnet
           - vertex/claude-3-5-sonnet@europe-west1
           - vertex/claude-3-5-sonnet@us-east5
@@ -3203,9 +3135,7 @@ endpoints:
           - vertex/claude-haiku-4-5@us-east5
           - vertex/claude-opus-4
           - vertex/claude-opus-4-1
-          - vertex/claude-opus-4-1@europe-west1
           - vertex/claude-opus-4-1@us-east5
-          - vertex/claude-opus-4@europe-west1
           - vertex/claude-opus-4@us-east5
           - vertex/claude-sonnet-4
           - vertex/claude-sonnet-4-5
