@@ -1,4 +1,4 @@
-version: 1.3.0.20251006
+version: 1.3.0.20251010
 interface:
   cache: true
   privacyPolicy:
@@ -198,7 +198,7 @@ endpoints:
           - qwen-3-235b-a22b-instruct-2507
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-32b
-          - qwen-3-coder-480b
+          - zai-glm-4.6
         fetch: false
       titleConvo: true
       titleModel: llama3.1-8b
@@ -348,7 +348,6 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-32B
-          - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo
           - Qwen/Qwen3-Next-80B-A3B-Instruct
@@ -381,6 +380,7 @@ endpoints:
           - accounts/fireworks/models/gpt-oss-20b
           - accounts/fireworks/models/kimi-k2-instruct
           - accounts/fireworks/models/kimi-k2-instruct-0905
+          - accounts/fireworks/models/kimi-k2-thinking
           - accounts/fireworks/models/llama-v3p1-405b-instruct
           - accounts/fireworks/models/llama-v3p1-70b-instruct
           - accounts/fireworks/models/llama-v3p1-8b-instruct
@@ -395,7 +395,6 @@ endpoints:
           - accounts/fireworks/models/qwen3-235b-a22b-instruct-2507
           - accounts/fireworks/models/qwen3-235b-a22b-thinking-2507
           - accounts/fireworks/models/qwen3-30b-a3b
-          - accounts/fireworks/models/qwen3-30b-a3b-thinking-2507
           - accounts/fireworks/models/qwen3-8b
           - accounts/fireworks/models/qwen3-coder-480b-a35b-instruct
           - accounts/fireworks/models/qwen3-embedding-8b
@@ -459,13 +458,14 @@ endpoints:
           - CohereLabs/c4ai-command-a-03-2025
           - CohereLabs/c4ai-command-r-08-2024
           - CohereLabs/c4ai-command-r7b-12-2024
-          - CohereLabs/c4ai-command-r7b-arabic-02-2025
           - CohereLabs/command-a-reasoning-08-2025
           - CohereLabs/command-a-translate-08-2025
+          - CohereLabs/command-a-vision-07-2025
           - deepcogito/cogito-v2-preview-deepseek-671B-MoE
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
           - deepcogito/cogito-v2-preview-llama-70B
+          - deepseek-ai/DeepSeek-OCR
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -503,6 +503,7 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - moonshotai/Kimi-K2-Instruct
           - moonshotai/Kimi-K2-Instruct-0905
+          - moonshotai/Kimi-K2-Thinking
           - NousResearch/Hermes-2-Pro-Llama-3-8B
           - NousResearch/Hermes-3-Llama-3.1-70B
           - NousResearch/Hermes-4-405B
@@ -518,6 +519,7 @@ endpoints:
           - Qwen/Qwen2.5-Coder-3B-Instruct
           - Qwen/Qwen2.5-Coder-7B
           - Qwen/Qwen2.5-Coder-7B-Instruct
+          - Qwen/Qwen2.5-VL-32B-Instruct
           - Qwen/Qwen2.5-VL-72B-Instruct
           - Qwen/Qwen2.5-VL-7B-Instruct
           - Qwen/Qwen3-14B
@@ -692,6 +694,7 @@ endpoints:
           - mistralai/mistral-nemo
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-instruct
+          - moonshotai/kimi-k2-thinking
           - nousresearch/hermes-2-pro-llama-3-8b
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -754,6 +757,7 @@ endpoints:
           - hf:MiniMaxAI/MiniMax-M2
           - hf:moonshotai/Kimi-K2-Instruct
           - hf:moonshotai/Kimi-K2-Instruct-0905
+          - hf:moonshotai/Kimi-K2-Thinking
           - hf:openai/gpt-oss-120b
           - hf:Qwen/Qwen3-235B-A22B-Instruct-2507
           - hf:Qwen/Qwen3-235B-A22B-Thinking-2507
@@ -800,7 +804,6 @@ endpoints:
           - arcee-ai/virtuoso-large
           - arcee_ai/arcee-spotlight
           - arize-ai/qwen-2-1.5b-instruct
-          - codellama/CodeLlama-34b-Instruct-hf
           - deepcogito/cogito-v2-preview-deepseek-671b
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
@@ -812,6 +815,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3.1
+          - eddie/gemma-2b-it
           - google/gemma-3n-E4B-it
           - marin-community/marin-8b-instruct
           - meta-llama/Llama-3-70b-chat-hf
@@ -819,6 +823,7 @@ endpoints:
           - meta-llama/Llama-3.2-1B-Instruct
           - meta-llama/Llama-3.2-3B-Instruct-Turbo
           - meta-llama/Llama-3.3-70B-Instruct-Turbo
+          - meta-llama/Llama-3.3-70B-Instruct-Turbo-batch
           - meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
           - meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
           - meta-llama/Llama-4-Scout-17B-16E-Instruct
@@ -861,6 +866,7 @@ endpoints:
           - togethercomputer/Refuel-Llm-V2
           - togethercomputer/Refuel-Llm-V2-Small
           - zai-org/GLM-4.5-Air-FP8
+          - zai-org/GLM-4.6
         fetch: false
       titleConvo: true
       titleModel: openai/gpt-oss-20b
@@ -1126,6 +1132,8 @@ endpoints:
           - kimi-k2-0711-preview
           - kimi-k2-0905-preview
           - kimi-k2-250711
+          - kimi-k2-thinking
+          - kimi-k2-thinking-turbo
           - kimi-k2-turbo-preview
           - kimi-latest
           - kimi-thinking-preview
@@ -1435,17 +1443,16 @@ endpoints:
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-5-20250929-v1
           - codegemma-7b-it
-          - codellama-7b-instruct-solidity
           - coder-large
           - codestral
           - codestral-2405
           - codestral-2501
           - codestral-2508
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
           - cogito-2-deepseek-671b
-          - cogito-2-llama-109b-moe
           - cogito-v2-preview-deepseek-671b
           - cogito-v2-preview-llama-109b-moe
           - cogito-v2-preview-llama-405b
@@ -1531,7 +1538,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1644,7 +1650,6 @@ endpoints:
           - grok-2
           - grok-2-latest
           - grok-2-vision
-          - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
@@ -1660,6 +1665,7 @@ endpoints:
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
           - hermes-4-405b
+          - hermes-4-70b
           - horizon
           - horizon-beta
           - hunyuan-a13b-instruct
@@ -1685,6 +1691,8 @@ endpoints:
           - kimi-k2-0905
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
+          - kimi-k2-thinking
+          - kimi-linear-48b-a3b-instruct
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
@@ -1885,6 +1893,7 @@ endpoints:
           - open-mixtral-8x7b
           - openhands-lm-32b-v0-1
           - paddleocr-vl-0-9b
+          - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
           - phi-3-medium-instruct
@@ -1898,6 +1907,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - polaris-alpha
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -1948,7 +1958,6 @@ endpoints:
           - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
-          - qwen-3-vl-32b-instruct
           - qwen-3-vl-4b-thinking
           - qwen-3-vl-8b-instruct
           - qwen-3-vl-8b-thinking
@@ -1956,7 +1965,6 @@ endpoints:
           - qwen-plus
           - qwen-plus-2025-07-28
           - qwen-turbo
-          - qwen-vl-max
           - qwen-vl-plus
           - qwerky-72b
           - qwq-32b
@@ -2095,7 +2103,6 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-70B
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3.1
           - deepseek-ai/DeepSeek-V3.1-Terminus
           - deepseek-ai/DeepSeek-V3.1-Terminus:thinking
@@ -2207,7 +2214,6 @@ endpoints:
           - gpt-5-codex
           - gpt-5-mini
           - gpt-5-nano
-          - gpt-5-pro
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
@@ -2317,6 +2323,9 @@ endpoints:
           - moonshotai/Kimi-Dev-72B
           - moonshotai/kimi-k2-instruct-0711
           - moonshotai/Kimi-K2-Instruct-0905
+          - moonshotai/kimi-k2-thinking
+          - moonshotai/kimi-k2-thinking-original
+          - moonshotai/kimi-k2-thinking-turbo-original
           - NeverSleep/Llama-3-Lumimaid-70B-v0.1
           - NeverSleep/Lumimaid-v0.2-70B
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
@@ -2665,7 +2674,9 @@ endpoints:
           - moonshotai/kimi-k2
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-0905:exacto
+          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2:free
+          - moonshotai/kimi-linear-48b-a3b-instruct
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - neversleep/llama-3.1-lumimaid-8b
@@ -2733,6 +2744,7 @@ endpoints:
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
           - opengvlab/internvl3-78b
+          - openrouter/polaris-alpha
           - perplexity/sonar
           - perplexity/sonar-deep-research
           - perplexity/sonar-pro
@@ -2874,7 +2886,6 @@ endpoints:
           - azure/gpt-5-nano
           - azure/gpt-5-nano@eastus2
           - azure/gpt-5-nano@swedencentral
-          - azure/gpt-5-nano@uksouth
           - azure/gpt-5@eastus2
           - azure/gpt-5@swedencentral
           - azure/gpt-5@uksouth
@@ -2993,11 +3004,8 @@ endpoints:
           - mistral/pixtral-large-latest
           - moonshot/kimi-k2-0711-preview
           - moonshot/kimi-k2-turbo-preview
-          - nebius/Qwen/QwQ-32B
-          - nebius/Qwen/QwQ-32B-fast
           - nebius/Qwen/Qwen3-Coder-480B-A35B-Instruct
           - nebius/deepseek-ai/DeepSeek-R1-0528
-          - nebius/deepseek-ai/DeepSeek-V3
           - nebius/deepseek-ai/DeepSeek-V3-0324
           - nebius/deepseek-ai/DeepSeek-V3-0324-fast
           - nebius/meta-llama/Llama-3.3-70B-Instruct
