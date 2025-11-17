@@ -1,4 +1,4 @@
-version: 1.3.0.20251115
+version: 1.3.0.20251117
 interface:
   cache: true
   privacyPolicy:
@@ -105,9 +105,6 @@ endpoints:
           - mistral-medium-2505
           - mistral-medium-2508
           - mistral-medium-latest
-          - mistral-ocr-2503
-          - mistral-ocr-2505
-          - mistral-ocr-latest
           - mistral-small-2409
           - mistral-small-2501
           - mistral-small-2503
@@ -513,7 +510,6 @@ endpoints:
           - NousResearch/Hermes-4-405B
           - NousResearch/Hermes-4-70B
           - nvidia/Llama-3_1-Nemotron-Ultra-253B-v1
-          - nvidia/NVIDIA-Nemotron-Nano-12B-v2
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
@@ -1442,6 +1438,7 @@ endpoints:
           - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
+          - claude-opus-4-20250514-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -1658,6 +1655,7 @@ endpoints:
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
           - gpt-oss-20b
+          - gpt-oss-20b-1
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-2
@@ -1730,6 +1728,7 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
+          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
@@ -1771,6 +1770,7 @@ endpoints:
           - llama-3-8b-instruct-v1
           - llama-4
           - llama-4-maverick
+          - llama-4-maverick-17b-128e-instruct-fp8
           - llama-4-maverick-17b-128e-instruct-turbo
           - llama-4-maverick-17b-instruct
           - llama-4-maverick-17b-instruct-v1
@@ -1933,7 +1933,6 @@ endpoints:
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
           - qwen-2-5-vl-3b-instruct
-          - qwen-2-5-vl-72b-instruct
           - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-large
@@ -1953,12 +1952,10 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-32b-fp8
-          - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
-          - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
@@ -1997,6 +1994,8 @@ endpoints:
           - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
+          - sherlock-dash-alpha
+          - sherlock-think-alpha
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
@@ -2530,7 +2529,6 @@ endpoints:
           - anthropic/claude-3.5-haiku
           - anthropic/claude-3.5-haiku-20241022
           - anthropic/claude-3.5-sonnet
-          - anthropic/claude-3.5-sonnet-20240620
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:thinking
           - anthropic/claude-haiku-4.5
@@ -2633,11 +2631,8 @@ endpoints:
           - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-3.3-70b-instruct:free
-          - meta-llama/llama-3.3-8b-instruct:free
           - meta-llama/llama-4-maverick
-          - meta-llama/llama-4-maverick:free
           - meta-llama/llama-4-scout
-          - meta-llama/llama-4-scout:free
           - meta-llama/llama-guard-2-8b
           - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
@@ -2767,6 +2762,8 @@ endpoints:
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
           - opengvlab/internvl3-78b
+          - openrouter/sherlock-dash-alpha
+          - openrouter/sherlock-think-alpha
           - perplexity/sonar
           - perplexity/sonar-deep-research
           - perplexity/sonar-pro
