@@ -1,3 +1,5 @@
+
+
 # LibreChat YAML Configuration Files
 
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -141,6 +143,7 @@ This repository provides YAML configuration files for [LibreChat](https://www.li
    NANOGPT_KEY=Your_API_Key_Here
    OPENROUTER_KEY=Your_API_Key_Here
    REQUESTY_KEY=Your_API_Key_Here
+   UNIFYAI_KEY=Your_API_Key_Here
    ```
 
 ---
